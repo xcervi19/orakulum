@@ -1,0 +1,14 @@
+    - Email: ${sanitized.email}
+    - Věk: ${sanitized.age}
+    - Lokace: ${sanitized.country}, ${sanitized.city}
+    - Ochota k relokaci: ${sanitized.relocation}
+    - Cílové firmy: ${sanitized.targetCompanies}
+    - Vysněná pozice: ${sanitized.dreamRole}
+    - Motivace (1–10): ${sanitized.motivationLevel}
+    - Technické dovednosti: ${sanitized.tech}
+    - Soft Skills: ${sanitized.softSkills}
+    - Vzdělání: ${sanitized.education}
+    - Jazyky: ${sanitized.languages.join(", ")}
+    - Firmy, do kterých se již hlásil: ${sanitized.companiesApplied}
+    - Zkušenost s pohovory: ${sanitized.interviewExp}
+    - Největší blok nebo strach: ${sanitized.fearBlocker}
