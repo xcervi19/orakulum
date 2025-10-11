@@ -93,19 +93,27 @@ def send_text(text: str):
     pyautogui.hotkey(mod, "v")
 
 
-def find_and_click(image_path, threshold=0.5):
-    template = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-    if template is None: return False
+def find_and_click(image_path, threshold=0.9, monitor=1):
+    t = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+    if t is None: return False
     with mss.mss() as sct:
-        img = np.array(sct.grab(sct.monitors[1]))
-    gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
-    res = cv2.matchTemplate(gray, template, cv2.TM_CCOEFF_NORMED)
-    _, max_val, _, max_loc = cv2.minMaxLoc(res)
-    print(f"DEBUG: max_val: {max_val}, max_loc: {max_loc}")
-    if max_val < threshold: return False
-    h, w = template.shape[:2]
-    x, y = max_loc[0] + w // 2, max_loc[1] + h // 2
-    pyautogui.moveTo(x, y, duration=0.1)
+        scr = np.array(sct.grab(sct.monitors[monitor]))
+    g = cv2.cvtColor(scr, cv2.COLOR_BGRA2GRAY)
+    cv2.imshow('Screenshot Region', g)
+    cv2.waitKey(1000)
+    cv2.destroyAllWindows()
+    et = cv2.Canny(t, 50, 150)
+    eg = cv2.Canny(g, 50, 150)
+    res = cv2.matchTemplate(eg, et, cv2.TM_CCOEFF_NORMED)
+    _, mv, _, ml = cv2.minMaxLoc(res)
+    print(f"DEBUG: max_val: {mv}, max_loc: {ml}")
+    if mv < threshold: return False
+    h, w = t.shape[:2]
+    x, y = ml[0] + w // 2, ml[1] + h // 2
+    lw, lh = pyautogui.size()
+    sw, sh = eg.shape[1], eg.shape[0]
+    sx, sy = lw / sw, lh / sh
+    pyautogui.moveTo(int(x * sx), int(y * sy), duration=0.1)
     pyautogui.click()
     return True
 
