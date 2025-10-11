@@ -1,12 +1,16 @@
 import shutil
 import tempfile
 import os
+import platform
 from patchright.sync_api import sync_playwright
 
 def seznam_search():
     with sync_playwright() as p:
-        # Cesty k profilům
-        chrome_user_data = r"C:\Users\cervicek\AppData\Local\Google\Chrome\User Data"
+        # Cesty k profilům - macOS compatible
+        if platform.system() == "Darwin":  # macOS
+            chrome_user_data = os.path.expanduser("~/Library/Application Support/Google/Chrome")
+        else:  # Windows
+            chrome_user_data = r"C:\Users\cervicek\AppData\Local\Google\Chrome\User Data"
         
         # Vytvoř dočasný adresář pro Playwright Chromium
         temp_user_data = os.path.join(tempfile.gettempdir(), "playwright_chrome_profile")
