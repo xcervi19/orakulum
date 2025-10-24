@@ -9,7 +9,6 @@ load_dotenv()
 import os
 from db import ConversationDB
 from jinja2 import Environment, BaseLoader
-from expander import auto_expand
 import json
 import asyncio
 from expander import expand
@@ -139,8 +138,8 @@ def find_and_click(image_path,threshold=0.6,monitor=0):
         cv2.imwrite('debug.png', template)
         res=cv2.matchTemplate(gray,template,cv2.TM_CCOEFF_NORMED)
         _,max_val,_,max_loc=cv2.minMaxLoc(res)
-        print(image_path)
-        print(max_val)
+        # print(image_path)
+        # print(max_val)
         if max_val>=threshold:
             x=max_loc[0]+w//2
             y=max_loc[1]+h//2
@@ -158,10 +157,10 @@ def is_loading(threshold=0.90,monitor=0):
         gray=cv2.cvtColor(img,cv2.COLOR_BGRA2GRAY)
         res=cv2.matchTemplate(gray,template,cv2.TM_CCOEFF_NORMED)
         _,max_val,_,max_loc=cv2.minMaxLoc(res)
-        print("max_val is_loading")
-        print(max_val)
+        # print("max_val is_loading")
+        # print(max_val)
         if max_val > threshold:
-            print("KONEC CEKANI")
+            # print("KONEC CEKANI")
             return True
         time.sleep(1)
 
@@ -195,7 +194,7 @@ if __name__=="__main__":
     # position_data = pyperclip.paste()
     # print(position_data)
     # db.create_conversation_root(conversation_id, "system", "initialization", json_data=position_data, text_data=position_description)
-
+    # time.sleep(1)
     # pyautogui.hotkey('ctrl', 'shift', 'o')
     # time.sleep(1)
     # if find_and_click(str(textarea)):

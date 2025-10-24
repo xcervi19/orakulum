@@ -1,230 +1,77 @@
 {
-  "id": "karierni_plan_uvod",
-  "title": "Kariérní plán: React junior, 14 dní × 30 min",
-  "nodes": [
-    {
-      "type": "heading",
-      "level": "h1",
-      "text": "Špičkový plán pro rychlý posun v Reactu"
-    },
-    {
-      "type": "text",
-      "text": "Cíl: 14 dní, denně 30 min. Získáš jasné úkoly, miniprojekty, testy, a11y a měřitelné metriky. Připraveno pro pohovory v ČR/EU."
-    },
-    {
-      "type": "bullet_list",
-      "items": [
-        "Denní micro-learning a miniprojekt",
-        "Jest test s expect",
-        "A11y kontrola",
-        "Metrika úspěchu a checklist",
-        "Příprava na otázky z praxe"
-      ]
-    },
-    { "type": "divider" },
-    {
-      "type": "section",
-      "id": "technologicka_dominance",
-      "title": "1) Technologická dominance",
-      "summary": "14denní plán pro React junior (30 min/den): cíl, micro-learning, miniprojekt, test, a11y, metrika, checklist.",
-      "actions": [
-        { "id": "open_td", "label": "Otevřít plán", "kind": "expand" }
-      ],
-      "expand": {
-        "prompt_template": "Vytvoř 14denní plán pro {{focus}} na úrovni {{level}} s denní dotací {{time_per_day}} minut. Každý den uveď cíl, micro-learning, miniprojekt, jest test s expect, a11y úkol, metriku úspěchu a checklist.",
-        "inputs": [
-          {
-            "name": "focus",
-            "type": "enum",
-            "required": true,
-            "options": ["React", "Next.js", "TypeScript"]
-          },
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "medior"]
-          },
-          { "name": "time_per_day", "type": "number", "required": true }
-        ]
-      }
-    },
-    {
-      "type": "section",
-      "id": "interview_dekonstrukce",
-      "title": "2) Interview dekonstrukce",
-      "summary": "Otázky: JS/TS, React patterns, testování, systémový design light, SQL. Struktura odpovědí STAR + kód.",
-      "actions": [
-        { "id": "open_id", "label": "Trénovat otázky", "kind": "expand" }
-      ],
-      "expand": {
-        "prompt_template": "Vytvoř sadu 20 otázek a modelových odpovědí pro roli {{role}} v ČR. Rozděl na: JS/TS, React, testy, systémový design light, SQL. Přidej ukázkový kód a kontrolní checklist.",
-        "inputs": [
-          {
-            "name": "role",
-            "type": "enum",
-            "required": true,
-            "options": [
-              "Frontend Engineer",
-              "React Developer",
-              "Fullstack (React/Node)"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "type": "section",
-      "id": "roadmapa_60",
-      "title": "3) Roadmapa na 60 dní",
-      "summary": "Týdny 1–8: cíle, milníky, projekty do portfolia, testy, a11y revize, měřitelné KPI.",
-      "actions": [
-        { "id": "open_r60", "label": "Generovat roadmapu", "kind": "expand" }
-      ],
-      "expand": {
-        "prompt_template": "Navrhni 60denní roadmapu pro {{focus}} na úrovni {{level}}. Po týdnech: cíle, projekt, KPI, testy, a11y revize, demo checklist.",
-        "inputs": [
-          {
-            "name": "focus",
-            "type": "enum",
-            "required": true,
-            "options": ["React", "Next.js"]
-          },
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "medior"]
-          }
-        ]
-      }
-    },
-    {
-      "type": "section",
-      "id": "mindset_confidence",
-      "title": "4) Mindset & confidence",
-      "summary": "Rituály, anti-prokrastinace, feedback smyčky, simulace stresu, mini-win metriky.",
-      "actions": [
-        { "id": "open_mc", "label": "Aktivovat rituály", "kind": "expand" }
-      ],
-      "expand": {
-        "prompt_template": "Vytvoř 4týdenní plán mindset návyků pro roli {{role}} s denní investicí {{minutes}} minut. Zaměř se na rituály, focus, zpětnou vazbu a stres management.",
-        "inputs": [
-          {
-            "name": "role",
-            "type": "enum",
-            "required": true,
-            "options": ["React Developer", "Frontend Engineer"]
-          },
-          { "name": "minutes", "type": "number", "required": true }
-        ]
-      }
-    }
-  ],
-  "actions": [
-    {
-      "id": "cta_start",
-      "label": "Začít 14denní plán",
-      "kind": "expand",
-      "payload": { "section_id": "technologicka_dominance" }
-    },
-    {
-      "id": "open_support",
-      "label": "Mentorská podpora",
-      "kind": "open_url",
-      "payload": {
-        "url": "[https://techartsociety.com/support](https://techartsociety.com/support)"
-      }
-    }
-  ],
-  "next": {
-    "llm_context": {
-      "system_hint": "Jsi špičkový kariérní poradce pro český IT trh. Dodej konkrétní, akční a měřitelné výstupy.",
-      "conversation_summary": "Klient chce 14denní React plán pro juniora s 30 min/den včetně testů, a11y, metrik a checklistů.",
-      "variables": {
-        "focus": "React",
-        "level": "junior",
-        "time_per_day": 30,
-        "client_prompt": "Vytvoř detailní 14denní plán pro React na úrovni junior s denní dotací 30 min."
-      }
-    },
-    "prompts": [
-      {
-        "id": "p_14denni_plan",
-        "label": "Vygenerovat 14denní React plán",
-        "purpose": "Technologická dominance",
-        "template": "Vytvoř 14denní denní plán pro {{focus}} na úrovni {{level}} s dotací {{time_per_day}} minut/den. Každý den uveď: cíl, micro-learning, miniprojekt, jest test s expect, a11y úkol, metriku úspěchu a kontrolní checklist.",
-        "inputs": [
-          {
-            "name": "focus",
-            "type": "enum",
-            "required": true,
-            "options": ["React", "Next.js"]
-          },
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "medior"]
-          },
-          { "name": "time_per_day", "type": "number", "required": true }
-        ]
-      },
-      {
-        "id": "p_mock_interview",
-        "label": "Simulace interview (CZ/EU)",
-        "purpose": "Interview dekonstrukce",
-        "template": "Připrav simulaci 45min rozhovoru pro roli {{role}} v ČR. Struktura: 10 min CV deep-dive, 15 min React/JS úkol s kódem, 10 min systémový design light, 10 min Q&A. Uveď hodnotící rubriku a modelové odpovědi.",
-        "inputs": [
-          {
-            "name": "role",
-            "type": "enum",
-            "required": true,
-            "options": ["React Developer", "Frontend Engineer"]
-          }
-        ]
-      },
-      {
-        "id": "p_weekly_plan",
-        "label": "Týdenní exekuce & KPI",
-        "purpose": "Roadmapa řízení",
-        "template": "Sestav týdenní plán pro {{focus}} na úrovni {{level}}. Uveď: 5 denních bloků (30 min), 1 demo úkol, 3 KPI s cílovými hodnotami, checklist na pátek a retro otázky.",
-        "inputs": [
-          {
-            "name": "focus",
-            "type": "enum",
-            "required": true,
-            "options": ["React", "Next.js"]
-          },
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "medior"]
-          }
-        ]
-      },
-      {
-        "id": "p_portfolio_micro",
-        "label": "Portfolio miniprojekt",
-        "purpose": "Důkaz schopností",
-        "template": "Navrhni miniprojekt pro {{focus}} na úrovni {{level}} dokončitelný za 3 × {{time_per_day}} minut. Uveď MVP scope, akceptační kritéria, testy (jest), a11y checklist a rubriku hodnocení.",
-        "inputs": [
-          {
-            "name": "focus",
-            "type": "enum",
-            "required": true,
-            "options": ["React", "Next.js"]
-          },
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "medior"]
-          },
-          { "name": "time_per_day", "type": "number", "required": true }
-        ]
-      }
-    ]
-  }
+"id": "career_magnet_start",
+"title": "Kariérní magnet: hackni pohovor i růst",
+"nodes": [
+{ "type": "heading", "level": "h1", "text": "Získej nabídky díky ostrým signálům hodnoty" },
+{ "type": "text", "text": "Tvoje výhoda: rychlé demonstrace, měřitelné dopady, sebejisté vedení dialogu. Krátké hacky níže ti zvednou status už v prvních minutách." },
+{ "type": "card", "title": "Signal oslnění", "body": "Začni číslem: „Ušetřil jsem X %, zrychlil Y×, snížil Z chyb.“ Pak mini-demo: `npx create-speed && speed --audit` → předlož metriku, ne názor." },
+{ "type": "divider" },
+{ "type": "section", "id": "technologicka_dominance", "title": "Technologická dominance", "summary": "Vypadat jako člověk, který problém vlastní. Důkaz výkonu, ne názvosloví.", "actions": [ { "id": "expand_technologicka_dominance", "label": "Prohloubit (hloubka)", "kind": "expand", "payload": { "path_id": "technologicka_dominance", "expand_mode": "depth" } } ], "expand": { "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, zajímavé poznatky a mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} outline={{outline_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} block={{ngram_blocklist_json}} th={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} tc={{targetcompanies}} dr={{dreamrole}} ci={{clientinput}}", "inputs": [ { "name": "trace_id", "type": "string", "required": true }, { "name": "parent_path_id", "type": "string", "required": true }, { "name": "expand_mode", "type": "enum", "required": true, "options": ["depth", "width"] }, { "name": "outline_json", "type": "string", "required": true }, { "name": "coverage_json", "type": "string", "required": true }, { "name": "seen_leaf_ids_json", "type": "string", "required": true }, { "name": "recent_spans_sha256_json", "type": "string", "required": true }, { "name": "minhash_signatures_json", "type": "string", "required": true }, { "name": "ngram_blocklist_json", "type": "string", "required": true }, { "name": "novelty_threshold", "type": "number", "required": true }, { "name": "allowed_children_json", "type": "string", "required": true }, { "name": "max_depth_remaining", "type": "number", "required": true }, { "name": "targetcompanies", "type": "string", "required": false }, { "name": "dreamrole", "type": "string", "required": false }, { "name": "clientinput", "type": "string", "required": false } ] } },
+{ "type": "section", "id": "interview_dekonstrukce", "title": "Interview dekonstrukce", "summary": "Neodpovídej, veď. Strukturuj, zrcadli metriky, definuj success kritéria.", "actions": [ { "id": "expand_interview_dekonstrukce", "label": "Prohloubit (hloubka)", "kind": "expand", "payload": { "path_id": "interview_dekonstrukce", "expand_mode": "depth" } } ], "expand": { "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, zajímavé poznatky a mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} outline={{outline_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} block={{ngram_blocklist_json}} th={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} tc={{targetcompanies}} dr={{dreamrole}} ci={{clientinput}}", "inputs": [ { "name": "trace_id", "type": "string", "required": true }, { "name": "parent_path_id", "type": "string", "required": true }, { "name": "expand_mode", "type": "enum", "required": true, "options": ["depth", "width"] }, { "name": "outline_json", "type": "string", "required": true }, { "name": "coverage_json", "type": "string", "required": true }, { "name": "seen_leaf_ids_json", "type": "string", "required": true }, { "name": "recent_spans_sha256_json", "type": "string", "required": true }, { "name": "minhash_signatures_json", "type": "string", "required": true }, { "name": "ngram_blocklist_json", "type": "string", "required": true }, { "name": "novelty_threshold", "type": "number", "required": true }, { "name": "allowed_children_json", "type": "string", "required": true }, { "name": "max_depth_remaining", "type": "number", "required": true }, { "name": "targetcompanies", "type": "string", "required": false }, { "name": "dreamrole", "type": "string", "required": false }, { "name": "clientinput", "type": "string", "required": false } ] } },
+{ "type": "section", "id": "strategicka_mapa_dovednosti", "title": "Strategická mapa dovedností", "summary": "Co firmy kupují: dopad, autonomii, čitelnost rizik. Zmapuj to do signálů.", "actions": [ { "id": "expand_strategicka_mapa_dovednosti", "label": "Rozšířit (šířka)", "kind": "expand", "payload": { "path_id": "strategicka_mapa_dovednosti", "expand_mode": "width" } } ], "expand": { "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, zajímavé poznatky a mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} outline={{outline_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} block={{ngram_blocklist_json}} th={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} tc={{targetcompanies}} dr={{dreamrole}} ci={{clientinput}}", "inputs": [ { "name": "trace_id", "type": "string", "required": true }, { "name": "parent_path_id", "type": "string", "required": true }, { "name": "expand_mode", "type": "enum", "required": true, "options": ["depth", "width"] }, { "name": "outline_json", "type": "string", "required": true }, { "name": "coverage_json", "type": "string", "required": true }, { "name": "seen_leaf_ids_json", "type": "string", "required": true }, { "name": "recent_spans_sha256_json", "type": "string", "required": true }, { "name": "minhash_signatures_json", "type": "string", "required": true }, { "name": "ngram_blocklist_json", "type": "string", "required": true }, { "name": "novelty_threshold", "type": "number", "required": true }, { "name": "allowed_children_json", "type": "string", "required": true }, { "name": "max_depth_remaining", "type": "number", "required": true }, { "name": "targetcompanies", "type": "string", "required": false }, { "name": "dreamrole", "type": "string", "required": false }, { "name": "clientinput", "type": "string", "required": false } ] } },
+{ "type": "section", "id": "mindset_upgrade", "title": "Mindset upgrade & confidence hacking", "summary": "Klid na výkon, rámování výsledků, přesměrování těžkých otázek.", "actions": [ { "id": "expand_mindset_upgrade", "label": "Prohloubit (hloubka)", "kind": "expand", "payload": { "path_id": "mindset_upgrade", "expand_mode": "depth" } } ], "expand": { "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, zajímavé poznatky a mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} outline={{outline_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} block={{ngram_blocklist_json}} th={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} tc={{targetcompanies}} dr={{dreamrole}} ci={{clientinput}}", "inputs": [ { "name": "trace_id", "type": "string", "required": true }, { "name": "parent_path_id", "type": "string", "required": true }, { "name": "expand_mode", "type": "enum", "required": true, "options": ["depth", "width"] }, { "name": "outline_json", "type": "string", "required": true }, { "name": "coverage_json", "type": "string", "required": true }, { "name": "seen_leaf_ids_json", "type": "string", "required": true }, { "name": "recent_spans_sha256_json", "type": "string", "required": true }, { "name": "minhash_signatures_json", "type": "string", "required": true }, { "name": "ngram_blocklist_json", "type": "string", "required": true }, { "name": "novelty_threshold", "type": "number", "required": true }, { "name": "allowed_children_json", "type": "string", "required": true }, { "name": "max_depth_remaining", "type": "number", "required": true }, { "name": "targetcompanies", "type": "string", "required": false }, { "name": "dreamrole", "type": "string", "required": false }, { "name": "clientinput", "type": "string", "required": false } ] } },
+{ "type": "card", "title": "Mini-demo kódu", "body": "`const t=performance.now(); heavy(); console.log((performance.now()-t).toFixed(2)+\"ms\")` → ukaž latency, navrhni cache a limituj IO." },
+{ "type": "bullet_list", "items": [ "Odpověď v osách: Dopad • Riziko • Náklady", "„Scope to Success“: definuj minimální vítězství", "„Reverse Brief“: shrň požadavky lépe než zadavatel", "Vždy číslo + důkaz + trade-off" ] },
+{ "type": "card", "title": "Story struktura", "body": "Problém → Hypotéza → Experiment → Metrika → Rozhodnutí. Krátké, dravé, měřitelné. `pytest -q && k6 run api.js`" },
+{ "type": "text", "text": "Chceš high-end trénink s přímou přípravou na nabídky? Odemkni plný program a zrychli kariérní návratnost." }
+],
+"actions": [
+{ "id": "cta_program", "label": "Odemknout plný program", "kind": "open_url", "payload": { "url": "[https://forecastsociety.com/program](https://forecastsociety.com/program)" } }
+],
+"next": {
+"llm_context": {
+"system_hint": "Buď ostrý, praktický, důkazní. Generuj jen nové, neopakuj. Udržuj virální tón a krátké hacky.",
+"conversation_summary": "Uživatel chce magnetický průvodce pro český IT trh: dominance, interview, dovednosti, mindset.",
+"variables": {
+"trace_id": "trc_f5a7c1c9",
+"targetcompanies": "",
+"dreamrole": "",
+"clientinput": "",
+"outline_json": "{"root":["technologicka_dominance","interview_dekonstrukce","strategicka_mapa_dovednosti","mindset_upgrade"]}",
+"coverage_json": "{}",
+"seen_leaf_ids_json": [],
+"recent_spans_sha256_json": [],
+"minhash_signatures_json": [],
+"ngram_blocklist_json": [],
+"novelty_threshold": 0.72,
+"allowed_children_json": [],
+"max_depth_remaining": 7,
+"parent_path_id": "career_magnet_start",
+"expand_mode": "width"
+}
+},
+"prompts": [
+{
+"id": "p_expand_section",
+"label": "Generuj delta uzly",
+"purpose": "Rozšířit či prohloubit konkrétní sekci bez opakování",
+"template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}. Generuj originální tipy, kódy (≤4 řádky), mikrostrategie. Zamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}. Nepoužívej časové rámce. Výstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.",
+"inputs": [
+{ "name": "parent_path_id", "type": "string", "required": true },
+{ "name": "expand_mode", "type": "enum", "required": true, "options": ["depth", "width"] },
+{ "name": "coverage_json", "type": "string", "required": true }
+]
+},
+{
+"id": "p_craft_hook",
+"label": "Vytvoř virální hook",
+"purpose": "Krátká věta, která otevře dveře k hodnotě a drží pozornost",
+"template": "Vygeneruj 1–2 věty s ostrým dopadovým hookem k {{parent_path_id}}. Zahrň metriku nebo kontrast. Nepoužívej časové rámce. Maximálně 140 znaků.",
+"inputs": [
+{ "name": "parent_path_id", "type": "string", "required": true },
+{ "name": "targetcompanies", "type": "string", "required": false }
+]
+},
+{
+"id": "p_code_bit",
+"label": "Mini kód",
+"purpose": "Dát mikro-demo výkonu nebo čitelnosti",
+"template": "Vrať 1 úryvek kódu do 4 řádků pro {{parent_path_id}}. Bez komentářů. Zacílit na dopad a měřitelnost.",
+"inputs": [
+{ "name": "parent_path_id", "type": "string", "required": true },
+{ "name": "dreamrole", "type": "string", "required": false }
+]
+}
+]
+}
 }

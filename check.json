@@ -1,281 +1,167 @@
 {
-    "id": "intro_screen_junior_frontend",
-    "title": "Kariérní plán: Junior Frontend (React/Next.js) pro Shoptet, Kiwi.com, Mall Group",
-    "nodes": [
-      {
-        "type": "heading",
-        "level": "h1",
-        "text": "Start: Tvůj elitní plán na 60 dní"
-      },
-      {
-        "type": "text",
-        "text": "Cíl: získat nabídku jako Junior Frontend (React/Next.js). Níže otevři sekce a generuj detailní kroky."
-      },
-      {
-        "type": "card",
-        "title": "Zacílení firem",
-        "body": "Shoptet · Kiwi.com · Mall Group. Požadavky: React, Next.js, TS, testy, a11y, UX, Git, REST/GraphQL.",
-        "actions": [
-          {
-            "id": "open_company_research",
-            "label": "Generovat profil firmy",
-            "kind": "run_tool",
-            "payload": {
-              "tool": "company_profile",
-              "company": "Shoptet"
-            }
-          }
-        ]
-      },
-      {
-        "type": "divider"
-      },
-      {
-        "type": "section",
-        "id": "tech_dominance",
-        "title": "1) Technologická dominance – rozvoj schopností",
-        "summary": "Zmapuj dovednosti, vypiš mezery a vytvoř mikro-cíle pro React, Next.js, TS, testy, a11y.",
-        "actions": [
-          {
-            "id": "expand_tech",
-            "label": "Otevřít",
-            "kind": "expand"
-          }
-        ],
-        "expand": {
-          "prompt_template": "Vytvoř 14denní tech plán pro {{focus}} na úrovni {{level}}. Denně {{time_per_day}} min. Výstupy: checklist, miniprojekty, testy, a11y úkoly, metriky úspěchu.",
-          "inputs": [
-            {
-              "name": "focus",
-              "type": "enum",
-              "required": true,
-              "options": ["React", "Next.js", "TypeScript", "Testování", "A11y"]
-            },
-            {
-              "name": "level",
-              "type": "enum",
-              "required": true,
-              "options": ["junior", "medior"]
-            },
-            {
-              "name": "time_per_day",
-              "type": "number",
-              "required": true
-            }
-          ]
+  "id": "karierni_booster_screen_v1",
+  "title": "Kariérní Booster: elitní IT hra",
+  "nodes": [
+    {
+      "type": "heading",
+      "level": "h1",
+      "text": "Získej technologickou a komunikační převahu"
+    },
+    {
+      "type": "text",
+      "text": "Krátké hacky, ostré myšlenky, mini-kód. Přepni se do ligy, kde si firmy říkají o tebe."
+    },
+    { "type": "divider" },
+    {
+      "type": "section",
+      "id": "technologicka_dominance",
+      "title": "Technologická dominance",
+      "summary": "Vypadat jako expert je málo. Předveď to hned a nech stopu v hlavě tazatele.",
+      "actions": [
+        {
+          "id": "expand_td",
+          "label": "Rozšířit: hloubka",
+          "kind": "expand",
+          "payload": { "mode": "depth" }
         }
-      },
-      {
-        "type": "section",
-        "id": "interview_deconstruction",
-        "title": "2) Interview dekonstrukce",
-        "summary": "Rozpad kol: HR, tech screen, live coding, systémový návrh, kultura. Vzory odpovědí.",
-        "actions": [
-          {
-            "id": "expand_interview",
-            "label": "Otevřít",
-            "kind": "expand"
-          }
-        ],
-        "expand": {
-          "prompt_template": "Připrav simulaci pohovoru pro {{company}} na roli {{role}}. Kol {{rounds}}. Zaměření: {{areas}}. Vrať otázky, ideální odpovědi, hodnoticí kritéria, follow-upy.",
-          "inputs": [
-            {
-              "name": "company",
-              "type": "enum",
-              "required": true,
-              "options": ["Shoptet", "Kiwi.com", "Mall Group"]
-            },
-            {
-              "name": "role",
-              "type": "string",
-              "required": true
-            },
-            {
-              "name": "rounds",
-              "type": "number",
-              "required": true
-            },
-            {
-              "name": "areas",
-              "type": "string",
-              "required": true
-            }
-          ]
-        }
-      },
-      {
-        "type": "section",
-        "id": "roadmap_60_days",
-        "title": "3) Roadmapa na 60 dní",
-        "summary": "Týdenní sprinty: skills, projekt, testy, portfolio, CV, LinkedIn, networking, přihlášky.",
-        "actions": [
-          {
-            "id": "expand_roadmap",
-            "label": "Otevřít",
-            "kind": "expand"
-          }
-        ],
-        "expand": {
-          "prompt_template": "Sestav 8týdenní plán od {{start_week}}. Každý týden: cíle, úkoly, deliverables, časové odhady, metriky, rizika a mitigace.",
-          "inputs": [
-            {
-              "name": "start_week",
-              "type": "string",
-              "required": true
-            }
-          ]
-        }
-      },
-      {
-        "type": "section",
-        "id": "mindset_confidence",
-        "title": "4) Mindset upgrade & confidence hacking",
-        "summary": "Rituály, anti-prokrastinační taktiky, simulace stresu, skripty pro self-talk.",
-        "actions": [
-          {
-            "id": "expand_mindset",
-            "label": "Otevřít",
-            "kind": "expand"
-          }
-        ],
-        "expand": {
-          "prompt_template": "Navrhni 10denní rutinu pro {{issue}} s denním časem {{minutes}} min. Vrať ranní/večerní rituály, triggery, kontrolní otázky, měřitelné cíle.",
-          "inputs": [
-            {
-              "name": "issue",
-              "type": "enum",
-              "required": true,
-              "options": ["stres", "prokrastinace", "nízké sebevědomí"]
-            },
-            {
-              "name": "minutes",
-              "type": "number",
-              "required": true
-            }
-          ]
-        }
+      ],
+      "expand": {
+        "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} parent={{parent_path_id}} mode={{expand_mode}} outline={{outline_json}} cover={{coverage_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} minhash={{minhash_signatures_json}} block={{ngram_blocklist_json}} nov={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} targets={{targetcompanies}} role={{dreamrole}} input={{clientinput}}",
+        "inputs": []
       }
-    ],
-    "actions": [
-      {
-        "id": "continue_to_generation",
-        "label": "Pokračovat",
-        "kind": "continue"
+    },
+    {
+      "type": "section",
+      "id": "interview_dekonstrukce",
+      "title": "Interview dekonstrukce",
+      "summary": "Otoč dynamiku: teze, řízené otázky, mikropříběh s dopadem a čísly.",
+      "actions": [
+        {
+          "id": "expand_id",
+          "label": "Rozšířit: taktiky",
+          "kind": "expand",
+          "payload": { "mode": "width" }
+        }
+      ],
+      "expand": {
+        "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} parent={{parent_path_id}} mode={{expand_mode}} outline={{outline_json}} cover={{coverage_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} minhash={{minhash_signatures_json}} block={{ngram_blocklist_json}} nov={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} targets={{targetcompanies}} role={{dreamrole}} input={{clientinput}}",
+        "inputs": []
       }
-    ],
-    "next": {
-      "llm_context": {
-        "system_hint": "Jsi špičkový kariérní poradce pro český IT trh. Dodávej konkrétní, akční, ověřitelné kroky a měřitelné výstupy.",
-        "conversation_summary": "Klient chce 60denní plán na roli Junior Frontend (React/Next.js) cílený na Shoptet, Kiwi.com a Mall Group.",
-        "variables": {
-          "target_role": "Junior Frontend Developer",
-          "target_companies": "Shoptet, Kiwi.com, Mall Group",
-          "locale": "cs-CZ",
-          "seniority": "junior"
+    },
+    {
+      "type": "section",
+      "id": "strategicka_mapa_dovednosti",
+      "title": "Strategická mapa dovedností",
+      "summary": "Mapuj stack na byznys výsledky: z kódu k metrikám cashflow, riziko, rychlost.",
+      "actions": [
+        {
+          "id": "expand_smd",
+          "label": "Rozšířit: priorita",
+          "kind": "expand",
+          "payload": { "mode": "depth" }
         }
-      },
-      "prompts": [
+      ],
+      "expand": {
+        "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} parent={{parent_path_id}} mode={{expand_mode}} outline={{outline_json}} cover={{coverage_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} minhash={{minhash_signatures_json}} block={{ngram_blocklist_json}} nov={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} targets={{targetcompanies}} role={{dreamrole}} input={{clientinput}}",
+        "inputs": []
+      }
+    },
+    {
+      "type": "section",
+      "id": "mindset_upgrade",
+      "title": "Mindset upgrade & confidence hacking",
+      "summary": "Klid v tlaku, rozhodnost v nejistotě. Vyjednávání bez obrany, s rámcem.",
+      "actions": [
         {
-          "id": "deep_tech_module",
-          "label": "Generuj deep tech modul",
-          "purpose": "Prohloubení konkrétní technologie",
-          "template": "Vytvoř 7denní modul pro {{topic}} na úrovni {{level}}. Denně {{minutes}} min. Výstup: roadmapa, miniprojekt, test scénáře, checklist a KPI.",
-          "inputs": [
-            {
-              "name": "topic",
-              "type": "enum",
-              "required": true,
-              "options": ["React hooks", "Next.js routing", "TypeScript types", "RTK Query", "Jest/RTL", "A11y WCAG"]
-            },
-            {
-              "name": "level",
-              "type": "enum",
-              "required": true,
-              "options": ["junior", "medior"]
-            },
-            {
-              "name": "minutes",
-              "type": "number",
-              "required": true
-            }
-          ]
-        },
-        {
-          "id": "mock_interview_generator",
-          "label": "Simulace interview",
-          "purpose": "Komplexní nácvik pohovoru",
-          "template": "Udělej 45min simulaci pro {{company}}. Role: {{role}}. Obtížnost: {{difficulty}}. Zaměření: {{focus}}. Vrať otázky, ideální odpovědi, scoring rubriku a zpětnou vazbu.",
-          "inputs": [
-            {
-              "name": "company",
-              "type": "enum",
-              "required": true,
-              "options": ["Shoptet", "Kiwi.com", "Mall Group"]
-            },
-            {
-              "name": "role",
-              "type": "string",
-              "required": true
-            },
-            {
-              "name": "difficulty",
-              "type": "enum",
-              "required": true,
-              "options": ["lehké", "střední", "těžké"]
-            },
-            {
-              "name": "focus",
-              "type": "string",
-              "required": true
-            }
-          ]
-        },
-        {
-          "id": "weekly_execution_plan",
-          "label": "Týdenní exekuční plán",
-          "purpose": "Rozpad úkolů na týden",
-          "template": "Sestav plán pro týden {{week}}. Limit: {{hours}} h. Priorita: {{priority}}. Vrať úkoly, časování, deliverables, KPI a rizika.",
-          "inputs": [
-            {
-              "name": "week",
-              "type": "string",
-              "required": true
-            },
-            {
-              "name": "hours",
-              "type": "number",
-              "required": true
-            },
-            {
-              "name": "priority",
-              "type": "enum",
-              "required": true,
-              "options": ["skills", "projekt", "interview", "portfolio"]
-            }
-          ]
-        },
-        {
-          "id": "portfolio_project_spec",
-          "label": "Specifikace portfolia",
-          "purpose": "Projekt sladěný s firmami",
-          "template": "Navrhni projekt pro {{company}}: stack {{stack}}. Vrať user stories, API kontrakty, datový model, testy, a11y checklist, demo scénář a kritéria hotovo.",
-          "inputs": [
-            {
-              "name": "company",
-              "type": "enum",
-              "required": true,
-              "options": ["Shoptet", "Kiwi.com", "Mall Group"]
-            },
-            {
-              "name": "stack",
-              "type": "enum",
-              "required": true,
-              "options": ["React+Next.js+TS+RTK", "React+Next.js+TS+SWR"]
-            }
-          ]
+          "id": "expand_mu",
+          "label": "Prohloubit: vliv",
+          "kind": "expand",
+          "payload": { "mode": "depth" }
         }
+      ],
+      "expand": {
+        "prompt_template": "Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.\nGeneruj tipy, triky, rady, ukázky kódu, mikrostrategie.\nZamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.\nNepoužívej časové rámce.\nText musí být virální, inspirativní a dopaminový.\nVýstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}.\ntrace={{trace_id}} parent={{parent_path_id}} mode={{expand_mode}} outline={{outline_json}} cover={{coverage_json}} seen={{seen_leaf_ids_json}} spans={{recent_spans_sha256_json}} minhash={{minhash_signatures_json}} block={{ngram_blocklist_json}} nov={{novelty_threshold}} allow={{allowed_children_json}} depth={{max_depth_remaining}} targets={{targetcompanies}} role={{dreamrole}} input={{clientinput}}",
+        "inputs": []
+      }
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Řekni tezi v jedné větě, pak důkaz v číslech.",
+        "Ukaž mini-demo: 3 klávesy, 1 výsledek.",
+        "Metafora → diagram → číslo. Sekvence, co lepí.",
+        "Otázka, která vzbudí hlad: „Co by se stalo, kdyby…?“"
       ]
+    },
+    {
+      "type": "card",
+      "title": "Mini-kód: hodnotová věta",
+      "body": "`const pitch=(x,y)=>`Zvedl jsem ${x} a snížil ${y}.`;\\nconsole.log(pitch('konverzi o 12%','latenci o 35%'));`"
+    },
+    {
+      "type": "card",
+      "title": "Mikrostrategie: 3xJ",
+      "body": "Jasně: 1 věta cíl. Jednoduše: 1 krok cesta. Jadrně: 1 číslo dopad. Uzavírej: „Chcete ukázku na vašem use-case?“"
     }
+  ],
+  "actions": [
+    {
+      "id": "continue_next",
+      "label": "Pokračovat k personalizaci",
+      "kind": "continue"
+    }
+  ],
+  "next": {
+    "llm_context": {
+      "system_hint": "Generuj pouze nové, neotřelé, krátké a silné uzly. Žádné časové rámce. Priorita: dopad na hiring rozhodnutí.",
+      "conversation_summary": "Magnetický průvodce pro český IT trh: dominance, interview, dovednosti, mindset.",
+      "variables": {
+        "trace_id": "trc_7f2e1a_cz_it",
+        "targetcompanies": "STRV, Apify, Productboard, Avast, Kiwi",
+        "dreamrole": "Senior/Lead Engineer s architektonickým vlivem",
+        "clientinput": "",
+        "outline_json": "{}",
+        "coverage_json": "{}",
+        "seen_leaf_ids_json": [],
+        "recent_spans_sha256_json": [],
+        "minhash_signatures_json": [],
+        "ngram_blocklist_json": [],
+        "novelty_threshold": 0.68,
+        "allowed_children_json": [],
+        "max_depth_remaining": 9,
+        "parent_path_id": "root",
+        "expand_mode": "width"
+      }
+    },
+    "prompts": [
+      {
+        "id": "p_deepen_tech",
+        "label": "Prohloubit: Technologická dominance",
+        "purpose": "Vygenerovat nové takticko-kódové hacky bez opakování",
+        "template": "Expanduj {{parent_path_id}} v režimu {{expand_mode}}. Přidej krátké kódy, demo-nápady a měřitelné teze. Respektuj {{coverage_json}} a {{ngram_blocklist_json}}. Vrať pouze delta.",
+        "inputs": []
+      },
+      {
+        "id": "p_deconstruct_interview",
+        "label": "Rozšířit: Interview dekonstrukce",
+        "purpose": "Nové otázky, rámce odpovědí a patterny řízení rozhovoru",
+        "template": "Na základě {{outline_json}} vygeneruj nové taktiky: hook, řízené otázky, closing. Zamez kolizím se {{seen_leaf_ids_json}}.",
+        "inputs": []
+      },
+      {
+        "id": "p_skills_map",
+        "label": "Prohloubit: Mapa dovedností",
+        "purpose": "Nová propojení skill→byznys metriky",
+        "template": "Generuj nové páry skill→metrika a mikro-case pro {{targetcompanies}} a {{dreamrole}}. Sleduj {{novelty_threshold}}.",
+        "inputs": []
+      },
+      {
+        "id": "p_mindset_boost",
+        "label": "Rozšířit: Mindset & vliv",
+        "purpose": "Mentální modely a vyjednávací věty s dopadem",
+        "template": "Přidej krátké modely jednání, resetové věty a silné hranice. Neopakuj {{recent_spans_sha256_json}}.",
+        "inputs": []
+      }
+    ]
   }
-  
+}
