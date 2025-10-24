@@ -1,0 +1,75 @@
+{
+    "nabidky": [
+      {
+        "nazev_pozice": "Junior front-end developer",
+        "spolecnost": "Giant",
+        "lokace": "Praha",
+        "url": "https://cz.indeed.com/viewjob?jk=Giant-Junior-front-end-developer"
+      },
+      {
+        "nazev_pozice": "Front-end programátor, kreativec, start-up",
+        "spolecnost": "Train-time",
+        "lokace": "Praha",
+        "url": "https://cz.indeed.com/viewjob?jk=Train-time-Front-end-programátor"
+      },
+      {
+        "nazev_pozice": "Front-end developer (React, Electron, JavaScript)",
+        "spolecnost": "IT4Innovations",
+        "lokace": "Ostrava",
+        "url": "https://cz.indeed.com/viewjob?jk=IT4Innovations-Front-end-developer"
+      },
+      {
+        "nazev_pozice": "Junior front-end developer, IBM produkty, ABSOLVENTI vítáni",
+        "spolecnost": "TIP IT Solutions s.r.o.",
+        "lokace": "Praha",
+        "url": "https://cz.indeed.com/viewjob?jk=TIP-IT-Solutions-Junior-front-end-developer"
+      },
+      {
+        "nazev_pozice": "Frontend Developer / Kodér",
+        "spolecnost": "Digital Media Publishing",
+        "lokace": "Praha",
+        "url": "https://www.volnamista.cz/prace/frontend-developer-koder-digital-media-publishing-praha"
+      },
+      {
+        "nazev_pozice": "Frontend Developer / Kodér",
+        "spolecnost": "ROIMARK",
+        "lokace": "Brno",
+        "url": "https://www.volnamista.cz/prace/frontend-developer-koder-roimark-brno"
+      },
+      {
+        "nazev_pozice": "Frontend Developer (React / Next.js / TypeScript)",
+        "spolecnost": "oXyShop",
+        "lokace": "Brno",
+        "url": "https://www.volnamista.cz/prace/frontend-developer-react-nextjs-ox yshop-brno"
+      },
+      {
+        "nazev_pozice": "Frontend Developer - junior/senior",
+        "spolecnost": "agentes IT s.r.o.",
+        "lokace": "České Budějovice",
+        "url": "https://www.volnamista.cz/prace/frontend-developer-junior-senior-agentes-it"
+      },
+      {
+        "nazev_pozice": "Junior frontend – SentiSquare (No-code NLP produkt)",
+        "spolecnost": "SentiSquare",
+        "lokace": "Plzeň",
+        "url": "https://cz.jooble.org/práce-junior-frontend-SentiSquare-Plzeň"
+      },
+      {
+        "nazev_pozice": "Juniorní front-end dev (startup jobs)",
+        "spolecnost": "Futurum Technology Ltd.",
+        "lokace": "remote / Česko",
+        "url": "https://startup.jobs/roles/frontend-engineer/futurum-technology-junior-front-end"
+      }
+    ],
+    "doporucene_firmy": [
+      "Shoptet",
+      "Kiwi.com",
+      "Mall Group"
+    ],
+    "vysnena_pozice": {
+      "nazev_pozice": "Junior Frontend Developer (React / Next.js)",
+      "spolecnost": "startup / technologická firma v ČR",
+      "lokace": "Praha / Brno / remote",
+      "url": ""
+    }
+  }

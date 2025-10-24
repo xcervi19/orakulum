@@ -1,0 +1,132 @@
+{
+  "id": "a11y_screen_v1",
+  "title": "A11y plánovač",
+  "nodes": [
+    { "type": "heading", "level": "h2", "text": "Scénáře přístupnosti" },
+    { "type": "text", "text": "Vyber úroveň a rozbal sekci." },
+    { "type": "divider" },
+    {
+      "type": "section",
+      "id": "a11y_guidelines",
+      "title": "A11y scénáře",
+      "summary": "WCAG, testy a edge případy.",
+      "actions": [
+        { "id": "exp_a11y", "label": "Zobrazit scénáře", "kind": "expand" }
+      ],
+      "expand": {
+        "prompt_template": "Navrhni a11y scénáře pro {{focus}} na úrovni {{level}} dle WCAG. Uveď kroky a očekávané výsledky.",
+        "inputs": [
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "mid", "senior"]
+          },
+          {
+            "name": "focus",
+            "type": "enum",
+            "required": true,
+            "options": ["React"]
+          }
+        ]
+      }
+    },
+    { "type": "divider" },
+    {
+      "type": "input",
+      "id": "priority",
+      "label": "Priorita",
+      "inputType": "select",
+      "options": ["nízká", "střední", "vysoká"],
+      "required": true
+    },
+    {
+      "type": "input",
+      "id": "max_scenarios",
+      "label": "Počet scénářů",
+      "inputType": "number",
+      "required": true
+    },
+    {
+      "type": "button",
+      "action": {
+        "id": "act_generate",
+        "label": "Vygenerovat",
+        "kind": "continue"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "wcag_link",
+      "label": "WCAG 2.2",
+      "kind": "open_url",
+      "payload": {
+        "url": "[https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/)"
+      }
+    }
+  ],
+  "next": {
+    "llm_context": {
+      "system_hint": "Buď konkrétní, krátké kroky, měřitelné výsledky, bez omáčky.",
+      "conversation_summary": "Uživatel chce rychle generovat A11y scénáře dle WCAG pro React.",
+      "variables": {
+        "default_level": "mid",
+        "default_focus": "React",
+        "max_scenarios": 8,
+        "priority": "střední",
+        "wcag_version": "2.2"
+      }
+    },
+    "prompts": [
+      {
+        "id": "gen_a11y_scenarios", 
+        "label": "Generuj scénáře",
+        "purpose": "Test plány dle WCAG",
+        "template": "Vytvoř {{count}} A11y scénářů pro {{framework}} na úrovni {{level}} dle WCAG {{wcag}}. Každý scénář: název, kroky (1–5), očekávaný výsledek, priorita {{priority}}.",
+        "inputs": [
+          {
+            "name": "framework",
+            "type": "enum",
+            "required": true,
+            "options": ["React"]
+          },
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "mid", "senior"]
+          },
+          {
+            "name": "priority",
+            "type": "enum",
+            "required": true,
+            "options": ["nízká", "střední", "vysoká"]
+          },
+          { "name": "count", "type": "number", "required": true },
+          { "name": "wcag", "type": "string", "required": true }
+        ]
+      },
+      {
+        "id": "gen_edge_cases",
+        "label": "Edge případy",
+        "purpose": "Rizika a pokrytí",
+        "template": "Sepiš edge případy pro {{framework}} na úrovni {{level}}: popis rizika, kroky reprodukce, jak testovat a kritéria úspěchu.",
+        "inputs": [
+          {
+            "name": "framework",
+            "type": "enum",
+            "required": true,
+            "options": ["React"]
+          },
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "mid", "senior"]
+          }
+        ]
+      }
+    ]
+  }
+}

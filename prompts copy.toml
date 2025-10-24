@@ -104,7 +104,32 @@ PRAVIDLA:
 - Pokud nelze splnit požadavek, vrať validní Screen s popisem problému v "title" a prázdným "prompts":[].
 
 VSTUP:
-[[user_input]]
+    {
+      "type": "section",
+      "id": "a11y_guidelines",
+      "title": "A11y scénáře",
+      "summary": "WCAG, testy a edge případy.",
+      "actions": [
+        { "id": "exp_a11y", "label": "Zobrazit scénáře", "kind": "expand" }
+      ],
+      "expand": {
+        "prompt_template": "Navrhni a11y scénáře pro {{focus}} na úrovni {{level}} dle WCAG. Uveď kroky a očekávané výsledky.",
+        "inputs": [
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "mid", "senior"]
+          },
+          {
+            "name": "focus",
+            "type": "enum",
+            "required": true,
+            "options": ["React"]
+          }
+        ]
+      }
+    },
 
 VÝSTUP: jen jeden objekt Screen jako validní JSON.
 """

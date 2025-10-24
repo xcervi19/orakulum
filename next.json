@@ -1,0 +1,230 @@
+{
+  "id": "karierni_plan_uvod",
+  "title": "Kariérní plán: React junior, 14 dní × 30 min",
+  "nodes": [
+    {
+      "type": "heading",
+      "level": "h1",
+      "text": "Špičkový plán pro rychlý posun v Reactu"
+    },
+    {
+      "type": "text",
+      "text": "Cíl: 14 dní, denně 30 min. Získáš jasné úkoly, miniprojekty, testy, a11y a měřitelné metriky. Připraveno pro pohovory v ČR/EU."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Denní micro-learning a miniprojekt",
+        "Jest test s expect",
+        "A11y kontrola",
+        "Metrika úspěchu a checklist",
+        "Příprava na otázky z praxe"
+      ]
+    },
+    { "type": "divider" },
+    {
+      "type": "section",
+      "id": "technologicka_dominance",
+      "title": "1) Technologická dominance",
+      "summary": "14denní plán pro React junior (30 min/den): cíl, micro-learning, miniprojekt, test, a11y, metrika, checklist.",
+      "actions": [
+        { "id": "open_td", "label": "Otevřít plán", "kind": "expand" }
+      ],
+      "expand": {
+        "prompt_template": "Vytvoř 14denní plán pro {{focus}} na úrovni {{level}} s denní dotací {{time_per_day}} minut. Každý den uveď cíl, micro-learning, miniprojekt, jest test s expect, a11y úkol, metriku úspěchu a checklist.",
+        "inputs": [
+          {
+            "name": "focus",
+            "type": "enum",
+            "required": true,
+            "options": ["React", "Next.js", "TypeScript"]
+          },
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "medior"]
+          },
+          { "name": "time_per_day", "type": "number", "required": true }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "id": "interview_dekonstrukce",
+      "title": "2) Interview dekonstrukce",
+      "summary": "Otázky: JS/TS, React patterns, testování, systémový design light, SQL. Struktura odpovědí STAR + kód.",
+      "actions": [
+        { "id": "open_id", "label": "Trénovat otázky", "kind": "expand" }
+      ],
+      "expand": {
+        "prompt_template": "Vytvoř sadu 20 otázek a modelových odpovědí pro roli {{role}} v ČR. Rozděl na: JS/TS, React, testy, systémový design light, SQL. Přidej ukázkový kód a kontrolní checklist.",
+        "inputs": [
+          {
+            "name": "role",
+            "type": "enum",
+            "required": true,
+            "options": [
+              "Frontend Engineer",
+              "React Developer",
+              "Fullstack (React/Node)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "id": "roadmapa_60",
+      "title": "3) Roadmapa na 60 dní",
+      "summary": "Týdny 1–8: cíle, milníky, projekty do portfolia, testy, a11y revize, měřitelné KPI.",
+      "actions": [
+        { "id": "open_r60", "label": "Generovat roadmapu", "kind": "expand" }
+      ],
+      "expand": {
+        "prompt_template": "Navrhni 60denní roadmapu pro {{focus}} na úrovni {{level}}. Po týdnech: cíle, projekt, KPI, testy, a11y revize, demo checklist.",
+        "inputs": [
+          {
+            "name": "focus",
+            "type": "enum",
+            "required": true,
+            "options": ["React", "Next.js"]
+          },
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "medior"]
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "id": "mindset_confidence",
+      "title": "4) Mindset & confidence",
+      "summary": "Rituály, anti-prokrastinace, feedback smyčky, simulace stresu, mini-win metriky.",
+      "actions": [
+        { "id": "open_mc", "label": "Aktivovat rituály", "kind": "expand" }
+      ],
+      "expand": {
+        "prompt_template": "Vytvoř 4týdenní plán mindset návyků pro roli {{role}} s denní investicí {{minutes}} minut. Zaměř se na rituály, focus, zpětnou vazbu a stres management.",
+        "inputs": [
+          {
+            "name": "role",
+            "type": "enum",
+            "required": true,
+            "options": ["React Developer", "Frontend Engineer"]
+          },
+          { "name": "minutes", "type": "number", "required": true }
+        ]
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "cta_start",
+      "label": "Začít 14denní plán",
+      "kind": "expand",
+      "payload": { "section_id": "technologicka_dominance" }
+    },
+    {
+      "id": "open_support",
+      "label": "Mentorská podpora",
+      "kind": "open_url",
+      "payload": {
+        "url": "[https://techartsociety.com/support](https://techartsociety.com/support)"
+      }
+    }
+  ],
+  "next": {
+    "llm_context": {
+      "system_hint": "Jsi špičkový kariérní poradce pro český IT trh. Dodej konkrétní, akční a měřitelné výstupy.",
+      "conversation_summary": "Klient chce 14denní React plán pro juniora s 30 min/den včetně testů, a11y, metrik a checklistů.",
+      "variables": {
+        "focus": "React",
+        "level": "junior",
+        "time_per_day": 30,
+        "client_prompt": "Vytvoř detailní 14denní plán pro React na úrovni junior s denní dotací 30 min."
+      }
+    },
+    "prompts": [
+      {
+        "id": "p_14denni_plan",
+        "label": "Vygenerovat 14denní React plán",
+        "purpose": "Technologická dominance",
+        "template": "Vytvoř 14denní denní plán pro {{focus}} na úrovni {{level}} s dotací {{time_per_day}} minut/den. Každý den uveď: cíl, micro-learning, miniprojekt, jest test s expect, a11y úkol, metriku úspěchu a kontrolní checklist.",
+        "inputs": [
+          {
+            "name": "focus",
+            "type": "enum",
+            "required": true,
+            "options": ["React", "Next.js"]
+          },
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "medior"]
+          },
+          { "name": "time_per_day", "type": "number", "required": true }
+        ]
+      },
+      {
+        "id": "p_mock_interview",
+        "label": "Simulace interview (CZ/EU)",
+        "purpose": "Interview dekonstrukce",
+        "template": "Připrav simulaci 45min rozhovoru pro roli {{role}} v ČR. Struktura: 10 min CV deep-dive, 15 min React/JS úkol s kódem, 10 min systémový design light, 10 min Q&A. Uveď hodnotící rubriku a modelové odpovědi.",
+        "inputs": [
+          {
+            "name": "role",
+            "type": "enum",
+            "required": true,
+            "options": ["React Developer", "Frontend Engineer"]
+          }
+        ]
+      },
+      {
+        "id": "p_weekly_plan",
+        "label": "Týdenní exekuce & KPI",
+        "purpose": "Roadmapa řízení",
+        "template": "Sestav týdenní plán pro {{focus}} na úrovni {{level}}. Uveď: 5 denních bloků (30 min), 1 demo úkol, 3 KPI s cílovými hodnotami, checklist na pátek a retro otázky.",
+        "inputs": [
+          {
+            "name": "focus",
+            "type": "enum",
+            "required": true,
+            "options": ["React", "Next.js"]
+          },
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "medior"]
+          }
+        ]
+      },
+      {
+        "id": "p_portfolio_micro",
+        "label": "Portfolio miniprojekt",
+        "purpose": "Důkaz schopností",
+        "template": "Navrhni miniprojekt pro {{focus}} na úrovni {{level}} dokončitelný za 3 × {{time_per_day}} minut. Uveď MVP scope, akceptační kritéria, testy (jest), a11y checklist a rubriku hodnocení.",
+        "inputs": [
+          {
+            "name": "focus",
+            "type": "enum",
+            "required": true,
+            "options": ["React", "Next.js"]
+          },
+          {
+            "name": "level",
+            "type": "enum",
+            "required": true,
+            "options": ["junior", "medior"]
+          },
+          { "name": "time_per_day", "type": "number", "required": true }
+        ]
+      }
+    ]
+  }
+}

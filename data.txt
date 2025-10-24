@@ -1,0 +1,14 @@
+**Pozice:**
+Frontend Developer
+
+**Technologie a dovednosti:**
+– JavaScript (ES6+)
+– TypeScript
+– React.js / Next.js
+– HTML5, CSS3
+– Tailwind CSS / Sass
+– Git (GitHub / GitLab)
+– REST API / GraphQL
+– Základy UX/UI designu
+– Responzivní a přístupný webdesign
+– Testování (Jest / React Testing Library)
