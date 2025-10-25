@@ -61,12 +61,21 @@ text klienta :
 {rawinput}
 """
 
+
+
+
+
+
+
+
 setup = """
 Jsi generátor UI a vzdělávacího obsahu.  
 Tvým úkolem je vytvořit JSON podle níže uvedeného schématu.  
 VÝSTUP musí být současně:  
-1) struktura pro UI strom (sekce, rozbalitelné části, akce),  
-2) i přímý obsah (tipy, triky, krátké ukázky kódu, mikrostrategie, motivační myšlenky),  
+
+
+1) Jsi generátor 1 obrazovky s jedním „composition“ uzlem pro chytlavý kariérní obsah.
+2) Přímý obsah (tipy, triky, krátké ukázky kódu, mikrostrategie, motivační myšlenky),  
 3) extrémně kvalitní, konkrétní, chytlavý a virální,  
 4) nikdy neobsahuje časové rámce (dny, týdny, měsíce).  
 
@@ -76,115 +85,127 @@ Nepíšeme učebnici, ale chytrý, magnetický průvodce pro moderní IT profík
 ---
 
 SCHEMA:
-Screen = {
-  "id": string,
-  "title": string,
-  "nodes": Node[],
-  "actions"?: Action[],
-  "next": {
-    "llm_context": { 
-      "system_hint": string, 
-      "conversation_summary": string, 
-      "variables": Record<string,string|number|boolean> 
-    },
-    "prompts": { 
-      "id": string, 
-      "label": string, 
-      "purpose": string, 
-      "template": string, 
-      "inputs": { 
-        "name": string, 
-        "type": "string"|"number"|"boolean"|"enum", 
-        "required": boolean, 
-        "options"?: string[] 
-      }[] 
-    }[] 
-  }
+{
+"id": string,
+"title": string,
+"nodes": [
+{
+"type":"composition",
+"id":string,
+"title":string,
+"elements": Element[],
+"actions":[{ "id":string,"label":string,"kind":"expand" }],
+"expand":{ "prompt_template":string, "inputs":[] }
+}
+],
+"actions": [],
+"next":{
+"llm_context":{
+"system_hint":string,
+"conversation_summary":string,
+"variables":{
+"trace_id":string,
+"parent_path_id":string,
+"expand_mode":"depth"|"width",
+"targetcompanies":string,
+"dreamrole":string,
+"clientinput":string
+}
+},
+}
 }
 
-Node =
+Element =
 | { "type":"heading","level":"h1"|"h2"|"h3","text":string }
 | { "type":"text","text":string }
-| { "type":"bullet_list","items":string[] }
-| { "type":"card","title":string,"body":string,"actions"?:Action[] }
+| { "type":"bullets","items":string }
+| { "type":"code","lang":"ts"|"js"|"py"|"bash","lines":string }
+| { "type":"callout","style":"info"|"warn"|"success","text":string }
+| { "type":"stat","label":string,"value":string }
+| { "type":"metric","label":string,"value":string,"trend":"up"|"down"|"flat" }
+| { "type":"badge","text":string }
+| { "type":"quote","text":string,"source"?:string }
 | { "type":"divider" }
-| { "type":"section","id":string,"title":string,"summary":string,"actions":Action[],"expand":{ "prompt_template":string,"inputs":{ "name":string,"type":"string"|"number"|"boolean"|"enum","required":boolean,"options"?:string[] }[] } }
-
-Action = { "id":string,"label":string,"kind":"continue"|"branch"|"open_url"|"run_tool"|"expand","payload"?:{[k:string]:any}}
-
----
 
 PRAVIDLA:
-- Vrať přísně JSON bez markdownu nebo komentářů.
-- Texty v češtině, stručné, ale obsahově silné.
-- Maximálně 12 uzlů na screen, text < 280 znaků.
-- ID unikátní (snake_case).
-- Žádné formuláře, žádné vstupy od uživatele.
-- Nikdy nepiš časové rámce (např. „během 30 dnů“ apod.).
-- Obsah musí působit jako „rychlý hack“ – inteligentní, atraktivní, ne akademický.
-- Každý section musí obsahovat akci "expand" a jasně vyznačit, zda rozšiřuje nebo prohlubuje obsah.
-- Každý Screen musí obsahovat `next.llm_context` s kontextovými proměnnými a alespoň 3 položky v `prompts`.
-- Každé další volání (expand) generuje pouze nové unikátní části (delta_nodes).
-- Obsah může obsahovat i krátké úryvky kódu, ale nikdy ne dlouhé bloky (max 4 řádky).
 
----
+Přesně 1 uzel „composition“.
 
-### KONTEXTOVÉ PROMĚNNÉ (LLM paměť)
-Každé volání LLM musí chápat, co už bylo vygenerováno, aby se neopakovalo.
-Ukládej a používej tyto proměnné v `next.llm_context.variables`:
+Max 12 elements; každý text < 280 znaků; kód ≤ 30 řádky.
 
-{
-  "trace_id": string,
-  "targetcompanies": string,
-  "dreamrole": string,
-  "clientinput": string,
-  "outline_json": string,
-  "coverage_json": string,
-  "seen_leaf_ids_json": string[],
-  "recent_spans_sha256_json": string[],
-  "minhash_signatures_json": string[],
-  "ngram_blocklist_json": string[],
-  "novelty_threshold": number,
-  "allowed_children_json": string[],
-  "max_depth_remaining": number,
-  "parent_path_id": string,
-  "expand_mode": "depth"|"width"
-}
+Jediná akce: "expand" (1 tlačítko).
 
-LLM musí z těchto dat vyvodit, které části už byly prozkoumány, a generovat pouze nové, zajímavé, relevantní části, které přidávají hloubku nebo šířku.
+Žádné formuláře, žádné jiné akce.
 
----
+Obsah musí být magnetický, praktický, s jasnou hodnotou, bez zmiňování AI.
 
-### TEMPLATE PRO EXPAND
-Každý expand.prompt_template MUSÍ obsahovat tyto placeholdery:
+Styl: osobní mentor, orientace na výsledek, micro-hacky, mini-frameworky, krátké ukázky kódu.
 
-{{trace_id}} {{parent_path_id}} {{expand_mode}} {{outline_json}} {{coverage_json}} {{seen_leaf_ids_json}} {{recent_spans_sha256_json}} {{minhash_signatures_json}} {{ngram_blocklist_json}} {{novelty_threshold}} {{allowed_children_json}} {{max_depth_remaining}} {{targetcompanies}} {{dreamrole}} {{clientinput}}
+Každý expand vrací pouze {delta_nodes}.
 
-Příklad obsahu šablony:
-"Vrať pouze nové uzly pro {{parent_path_id}} v režimu {{expand_mode}}.  
-Generuj tipy, triky, rady, ukázky kódu, zajímavé poznatky a mikrostrategie.  
-Zamez opakování podle {{coverage_json}} a {{minhash_signatures_json}}.  
-Nepoužívej časové rámce.  
-Text musí být virální, inspirativní a dopaminový.  
-Výstup: {delta_nodes, updated_coverage, updated_seen_leaf_ids, updated_hashes}."
+EXPAND.TEMPLATE (použij přesně):
+"Vrať pouze {delta_nodes} pro {{parent_path_id}} v režimu {{expand_mode}}.
+Navazuj na 'conversation_summary'. Generuj nové prvky: nadpisy, krátké texty, odrážky, callouty, stat/metric, badge, quote, code.
+Bez časových rámců. Styl osobní mentor, dopaminový."
 
----
+VÝSTUP:
+Validní JSON objekt typu Screen.
 
 VSTUP:
-[[user_input]]
+Jsi špičkový kariérní poradce pro český IT trh.
+Tvoříš fascinující obsah, který připraví kandidáty na pohovory i životní změnu.
+Generuj strukturu a zároveň kvalitní, inspirativní obsah (tipy, kódy, hacky, myšlenky).
+Generuj akviziční funnel: vytvoř osobní mini-plán, který zaujme a motivuje k pokračování.
+Bez časových rámců.  
+Jake temata je potreba generovat, postupne projit:
+1) Technologická dominance – jak působit jako výjimečný technik
+2) Interview dekonstrukce – jak reagovat, překvapit, vést pohovor
+3) Strategická mapa dovedností – co firmy skutečně chtějí
+4) Mindset upgrade & confidence hacking – mentální síla a vliv
+
+Cíl: posunout uživatele k prémiu přes hodnotné „aha“ momenty.
+
+Toto je shrnuti stavu KONTEXT. dalsi krok je treba navazat na temata. Pokud jsme ve vazi kdy jsme tema jeste dostatecne nevycerpaly dal rozvadej tema.
+Pokud plnohodnotne rozvedeno prejdi na dalsi tema.
+
+KONTEXT:
+[[kontext]]
 
 VÝSTUP:
 Jeden objekt Screen jako validní JSON.
 """
 
-user_input = """
-Jsi špičkový kariérní poradce pro český IT trh.
-Tvoříš fascinující obsah, který připraví kandidáty na pohovory i životní změnu.
-Generuj strukturu a zároveň kvalitní, inspirativní obsah (tipy, kódy, hacky, myšlenky).
-Bez časových rámců.  
-Sekce:
-1) Technologická dominance – jak působit jako výjimečný technik
-2) Interview dekonstrukce – jak reagovat, překvapit, vést pohovor
-3) Strategická mapa dovedností – co firmy skutečně chtějí
-4) Mindset upgrade & confidence hacking – mentální síla a vliv
+
+expand_prompt = """
+Vrať striktně JSON pouze {"delta_nodes": Element[]}.
+Krátké, konkrétní, virální, bez časových rámců, česky.
+
+Element =
+| { "type": "heading", "level": "h1"|"h2"|"h3", "text": string }
+| { "type": "text", "text": string }
+| { "type": "bullets", "items": string[] }
+| { "type": "code", "lang": "ts"|"js"|"py"|"bash", "lines": string[] }
+| { "type": "callout", "style": "info"|"warn"|"success"|"emphasis", "text": string }
+| { "type": "stat", "label": string, "value": string }
+| { "type": "metric", "label": string, "value": string, "trend": "up"|"down"|"flat" }
+| { "type": "badge", "text": string }
+| { "type": "quote", "text": string, "source"?: string }
+| { "type": "divider" }
+
+PRAVIDLA:
+- ≤ 8 prvků
+- text < 220 znaků
+- code ≤ 12 řádky
+- žádné formuláře
+- žádné jiné klíče
+"""
+
+INPUT = """
+conversation_summary: [[summary_updated]]
+trace_id: [[trace_id]]
+parent_path_id: [[node_id]]
+expand_mode: depth
+targetcompanies: [[targets]]
+dreamrole: [[role]]
+clientinput: [[input]]
 """

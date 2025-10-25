@@ -11,7 +11,7 @@ from db import ConversationDB
 from jinja2 import Environment, BaseLoader
 import json
 import asyncio
-from expander import expand
+from expander import expand, extract_context, build_llm_prompt
 from collections import deque
 
 WAIT_OPEN=1
@@ -32,17 +32,34 @@ def _normalize(x):
 def _children(x):
     x=_normalize(x)
     try:
-        return list(expand(x))[:1]
+        return list(expand(x))
     except:
         return []
 
-def _render(child):
-    filled_user_input = env.from_string(user_input).render(clientinput=json.dumps(child, indent=2, ensure_ascii=False))
-    full_prompt = env.from_string(setup).render(user_input=filled_user_input)
-    return full_prompt
+def _render(previous_response):
+    # previous_response = JSON returned by last LLM call (INIT or EXPAND)
+    context = extract_context(previous_response)
+
+    # create next expand prompt
+    expand_data = expand(
+        previous_response,
+        summary=context["summary"],
+        trace_id=context["trace_id"],
+        targets=context["targets"],
+        role=context["role"],
+        client_input=context["client_input"]
+    )
+
+    # combine to actual text prompt for LLM
+    prompt_text = build_llm_prompt(expand_data)
+    return prompt_text
+    # now send `prompt_text` into LLM chat/completion call
+
+
+    # full_prompt = env.from_string(setup).render(clientinput=json.dumps(child, indent=2, ensure_ascii=False))
+    # return full_prompt
 
 def _send_and_get(child):
-    pyautogui.hotkey('ctrl', 'shift', 'o')
     time.sleep(WAIT_OPEN)
     find_and_click(str(textarea))
     send_text(_render(child))
@@ -56,8 +73,6 @@ def _send_and_get(child):
     find_and_click(str(copybutton))
     resp=pyperclip.paste()
     return _normalize(resp)
-
-    return None
 
 def process(root, max_depth=None):
     q=deque((c,0) for c in _children(root))
@@ -194,28 +209,30 @@ if __name__=="__main__":
     # position_data = pyperclip.paste()
     # print(position_data)
     # db.create_conversation_root(conversation_id, "system", "initialization", json_data=position_data, text_data=position_description)
-    # time.sleep(1)
-    # pyautogui.hotkey('ctrl', 'shift', 'o')
-    # time.sleep(1)
-    # if find_and_click(str(textarea)):
-    #     position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
-    #     companies = data_adhoc_json['doporucene_firmy'] 
-    #     send_text(collect_starting_prompt(position_description, position_name, companies))
-    # time.sleep(1)
-    # pyautogui.press('enter')
-    # while is_loading():
-    #     print("loading")
-    # if find_and_click(str(scroll)):
-    #     print("scrolled")
-    # time.sleep(3)
-    # if find_and_click(str(copybutton)):
-    #     print("copied")
-    # response = pyperclip.paste()
-    # db.create_conversation_root(conversation_id, "system", "initialization", json_data=response)
+    time.sleep(1)
+    pyautogui.hotkey('ctrl', 'shift', 'o')
+    time.sleep(1)
+    if find_and_click(str(textarea)):
+        position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
+        companies = data_adhoc_json['doporucene_firmy'] 
+        send_text(collect_starting_prompt(position_description, position_name, companies))
+    time.sleep(1)
+    pyautogui.press('enter')
+    while is_loading():
+        print("loading")
+    if find_and_click(str(scroll)):
+        print("scrolled")
+    time.sleep(3)
+    if find_and_click(str(copybutton)):
+        print("copied")
+    response = pyperclip.paste()
 
+    with open('check.json', 'w') as f:
+        json.dump(response, f)
+    time.sleep(1)
     with open('check.json', encoding='utf-8') as f:
         initial_screen = json.load(f)
-    time.sleep(2)
+    time.sleep(1)
 
     process(initial_screen, max_depth=None)
 

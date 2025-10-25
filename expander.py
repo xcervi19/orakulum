@@ -121,3 +121,84 @@ def expand(initial_screen, tool_registry=None, title="Auto plan", max_depth=3, f
                 child={"prompt":prompt,"meta":meta}
                 yield child
             visited+=1
+
+
+def extract_context(response: dict) -> dict:
+    llm_ctx = response.get("next", {}).get("llm_context", {})
+    variables = llm_ctx.get("variables", {})
+
+    summary = llm_ctx.get("conversation_summary", "")
+    trace_id = variables.get("trace_id", "")
+    targets = variables.get("targetcompanies", "")
+    role = variables.get("dreamrole", "")
+    client_input = variables.get("clientinput", "")
+
+    return {
+        "summary": summary,
+        "trace_id": trace_id,
+        "targets": targets,
+        "role": role,
+        "client_input": client_input
+    }
+
+
+def expand(previous_response: dict, summary: str, trace_id: str, targets: str, role: str, client_input: str):
+    node_id = previous_response["nodes"][0]["id"] if "nodes" in previous_response else previous_response.get("parent_path_id", "root")
+    expand_prompt = """
+Vrať striktně JSON pouze {"delta_nodes": Element[]}.
+Krátké, konkrétní, virální, bez časových rámců, česky.
+
+Element =
+| { "type": "heading", "level": "h1"|"h2"|"h3", "text": string }
+| { "type": "text", "text": string }
+| { "type": "bullets", "items": string[] }
+| { "type": "code", "lang": "ts"|"js"|"py"|"bash", "lines": string[] }
+| { "type": "callout", "style": "info"|"warn"|"success"|"emphasis", "text": string }
+| { "type": "stat", "label": string, "value": string }
+| { "type": "metric", "label": string, "value": string, "trend": "up"|"down"|"flat" }
+| { "type": "badge", "text": string }
+| { "type": "quote", "text": string, "source"?: string }
+| { "type": "divider" }
+
+PRAVIDLA:
+- ≤ 8 prvků
+- text < 220 znaků
+- code ≤ 4 řádky
+- žádné formuláře
+- žádné jiné klíče
+"""
+
+    expand_input = f"""
+conversation_summary: "{summary}"
+trace_id: "{trace_id}"
+parent_path_id: "{node_id}"
+expand_mode: depth
+targetcompanies: "{targets}"
+dreamrole: "{role}"
+clientinput: "{client_input}"
+"""
+
+    return {
+        "setup": expand_prompt.strip(),
+        "input": expand_input.strip(),
+        "context": {
+            "trace_id": trace_id,
+            "parent_path_id": node_id,
+            "expand_mode": "depth",
+            "targetcompanies": targets,
+            "dreamrole": role,
+            "clientinput": client_input,
+            "conversation_summary": summary
+        }
+    }
+
+def build_llm_prompt(data: dict) -> str:
+    setup = data["setup"].strip()
+    input_block = data["input"].strip()
+
+    prompt = f"""{setup}
+
+        INPUT:
+        {input_block}
+        """
+    return prompt.strip()
