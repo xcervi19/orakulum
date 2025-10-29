@@ -146,7 +146,19 @@ def expand(previous_response: dict, summary: str, trace_id: str, targets: str, r
     node_id = previous_response["nodes"][0]["id"] if "nodes" in previous_response else previous_response.get("parent_path_id", "root")
     expand_prompt = """
 Vrať striktně JSON pouze {"delta_nodes": Element[]}.
-Krátké, konkrétní, virální, bez časových rámců, česky.
+{"delta_nodes": Element[]} generuj pro vytvoreni webove stranky. 
+Elementy musí tvořit plnohodnotný edukační obsah. Elementy jsou podcasty edukačního plánu.
+Nepoužívej callouty pro doplňování informací. Uživatel musí informace číst a vstřebávat.
+Obsah musí být virální, inspirativní a dopaminový.
+Bez časových rámců. Styl osobního mentora, dopaminový.
+Musíš navazovat na **conversation_summary**.
+Pokud je **expand_mode = depth**, navazuj na **conversation_summary** a generuj další uzly.
+Pokud je **expand_mode = width**, navazuj na **conversation_summary** a generuj další edukační texty a kódy.
+Texty musí čtenáře připravovat na pohovory a další kariérní růst.
+Cílem generování je konkurovat knize *“How to Crack the Coding Interview”*, ale obsah musí být rychlý, úderný a vyvolávat dojem důležitosti.
+Pokud je **expand_mode = width**, podle **conversation_summary** generuj nová témata o tom, jak obstát na technickém pohovoru.
+Neopakuj informace z **conversation_summary** – doplňuj nová témata a nápady.
+
 
 Element =
 | { "type": "heading", "level": "h1"|"h2"|"h3", "text": string }
@@ -160,12 +172,6 @@ Element =
 | { "type": "quote", "text": string, "source"?: string }
 | { "type": "divider" }
 
-PRAVIDLA:
-- ≤ 8 prvků
-- text < 220 znaků
-- code ≤ 4 řádky
-- žádné formuláře
-- žádné jiné klíče
 """
 
     expand_input = f"""

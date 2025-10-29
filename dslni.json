@@ -1,132 +1,133 @@
 {
-  "id": "a11y_screen_v1",
-  "title": "A11y plánovač",
-  "nodes": [
-    { "type": "heading", "level": "h2", "text": "Scénáře přístupnosti" },
-    { "type": "text", "text": "Vyber úroveň a rozbal sekci." },
-    { "type": "divider" },
-    {
-      "type": "section",
-      "id": "a11y_guidelines",
-      "title": "A11y scénáře",
-      "summary": "WCAG, testy a edge případy.",
-      "actions": [
-        { "id": "exp_a11y", "label": "Zobrazit scénáře", "kind": "expand" }
-      ],
-      "expand": {
-        "prompt_template": "Navrhni a11y scénáře pro {{focus}} na úrovni {{level}} dle WCAG. Uveď kroky a očekávané výsledky.",
-        "inputs": [
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "mid", "senior"]
-          },
-          {
-            "name": "focus",
-            "type": "enum",
-            "required": true,
-            "options": ["React"]
-          }
-        ]
-      }
-    },
-    { "type": "divider" },
-    {
-      "type": "input",
-      "id": "priority",
-      "label": "Priorita",
-      "inputType": "select",
-      "options": ["nízká", "střední", "vysoká"],
-      "required": true
-    },
-    {
-      "type": "input",
-      "id": "max_scenarios",
-      "label": "Počet scénářů",
-      "inputType": "number",
-      "required": true
-    },
-    {
-      "type": "button",
-      "action": {
-        "id": "act_generate",
-        "label": "Vygenerovat",
-        "kind": "continue"
-      }
-    }
-  ],
-  "actions": [
-    {
-      "id": "wcag_link",
-      "label": "WCAG 2.2",
-      "kind": "open_url",
-      "payload": {
-        "url": "[https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/)"
-      }
-    }
-  ],
-  "next": {
-    "llm_context": {
-      "system_hint": "Buď konkrétní, krátké kroky, měřitelné výsledky, bez omáčky.",
-      "conversation_summary": "Uživatel chce rychle generovat A11y scénáře dle WCAG pro React.",
-      "variables": {
-        "default_level": "mid",
-        "default_focus": "React",
-        "max_scenarios": 8,
-        "priority": "střední",
-        "wcag_version": "2.2"
-      }
-    },
-    "prompts": [
-      {
-        "id": "gen_a11y_scenarios", 
-        "label": "Generuj scénáře",
-        "purpose": "Test plány dle WCAG",
-        "template": "Vytvoř {{count}} A11y scénářů pro {{framework}} na úrovni {{level}} dle WCAG {{wcag}}. Každý scénář: název, kroky (1–5), očekávaný výsledek, priorita {{priority}}.",
-        "inputs": [
-          {
-            "name": "framework",
-            "type": "enum",
-            "required": true,
-            "options": ["React"]
-          },
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "mid", "senior"]
-          },
-          {
-            "name": "priority",
-            "type": "enum",
-            "required": true,
-            "options": ["nízká", "střední", "vysoká"]
-          },
-          { "name": "count", "type": "number", "required": true },
-          { "name": "wcag", "type": "string", "required": true }
-        ]
-      },
-      {
-        "id": "gen_edge_cases",
-        "label": "Edge případy",
-        "purpose": "Rizika a pokrytí",
-        "template": "Sepiš edge případy pro {{framework}} na úrovni {{level}}: popis rizika, kroky reprodukce, jak testovat a kritéria úspěchu.",
-        "inputs": [
-          {
-            "name": "framework",
-            "type": "enum",
-            "required": true,
-            "options": ["React"]
-          },
-          {
-            "name": "level",
-            "type": "enum",
-            "required": true,
-            "options": ["junior", "mid", "senior"]
-          }
-        ]
-      }
-    ]
+  "elements": [
+  {
+  "type": "heading",
+  "content": "Junior Frontend Developer: Mini-plán pro technologickou dominanci a interview mastery"
+  },
+  {
+  "type": "paragraph",
+  "content": "Získáš praktický rámec pro React/Next.js, jak vést pohovor, jak ukázat technické myšlení a jak působit jako výjimečný kandidát. Bez termínů, jen jasné tahy."
+  },
+  {
+  "type": "list",
+  "content": [
+  "Technologická dominance: umíš vysvětlit trade-offy a navrhnout zlepšení",
+  "Interview dekonstrukce: přebíráš iniciativu, strukturuješ odpovědi",
+  "Positioning: jasná technologická identita a T/π-shape mapa",
+  "Decision-making: konzistentní argumentace dopadu na byznys a tým"
+  ]
+  },
+  {
+  "type": "table",
+  "title": "Strategická mapa dovedností",
+  "columns": ["Dovednost", "Důkaz v portfoliu/pohovoru", "Metrika"],
+  "rows": [
+  ["React/Next.js", "SSR/ISR, routing, server actions", "TTFB < 200 ms lokálně, lighthouse PWA 90+"],
+  ["TypeScript", "striktní typy, znovupoužitelné typy", "% any = 0, TS errors = 0"],
+  ["UI přístupnost", "role, aria-*, klávesová navigace", "Axe: 0 vysokých problémů"],
+  ["Stav a data", "cache, SWR strategie, optimistic UI", "API chybovost < 1 %, retriable flow"],
+  ["Testy", "Jest/RTL scénáře, edge cases", "Coverage kritických cest ≥ 80 %"],
+  ["Komunikace", "STAR++ příběhy, trade-offy", "Konkrétní dopad v číslech"]
+  ]
+  },
+  {
+  "type": "code",
+  "language": "tsx",
+  "title": "Next.js 14 server action: validace, optimistic flow, A11y-ready UI",
+  "content": "import { z } from "zod";\nimport { revalidatePath } from "next/cache";\nconst TodoSchema = z.object({ title: z.string().min(1), priority: z.enum(["low","med","high"]) });\nexport async function createTodo(prevState: any, formData: FormData) {\n  "use server";\n  const data = Object.fromEntries(formData);\n  const parsed = TodoSchema.safeParse(data);\n  if (!parsed.success) return { ok: false, errors: parsed.error.flatten().fieldErrors };\n  await fetch(process.env.API_URL + "/todos", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(parsed.data) });\n  revalidatePath("/todos");\n  return { ok: true };\n}\nexport default function NewTodo() {\n  return (\n    <form action={createTodo} aria-labelledby="todo-heading">\n      <h2 id="todo-heading">Nový úkol</h2>\n      <label htmlFor="title">Název</label>\n      <input id="title" name="title" required />\n      <label htmlFor="priority">Priorita</label>\n      <select id="priority" name="priority" defaultValue="med">\n        <option value="low">low</option>\n        <option value="med">med</option>\n        <option value="high">high</option>\n      </select>\n      <button type="submit">Vytvořit</button>\n    </form>\n  );\n}"
+  },
+  {
+  "type": "code",
+  "language": "tsx",
+  "title": "React: debounced vyhledávání + klávesová navigace",
+  "content": "import { useEffect, useMemo, useRef, useState } from "react";\nexport function SearchBox({ source }: { source: (q: string) => Promise<string[]> }) {\n  const [q,setQ]=useState("");\n  const [items,setItems]=useState<string[]>([]);\n  const [i,setI]=useState(-1);\n  const t=useRef<NodeJS.Timeout|null>(null);\n  const run = useMemo(()=>async(v:string)=>{const r=await source(v);setItems(r);setI(-1);},[source]);\n  useEffect(()=>{if(t.current) clearTimeout(t.current); t.current=setTimeout(()=>run(q),250);},[q,run]);\n  return (\n    <div role="combobox" aria-expanded={items.length>0} aria-owns="r" aria-haspopup="listbox">\n      <input aria-autocomplete="list" value={q} onChange={e=>setQ(e.target.value)} onKeyDown={e=>{if(e.key==="ArrowDown") setI(p=>Math.min(p+1,items.length-1)); if(e.key==="ArrowUp") setI(p=>Math.max(p-1,-1)); if(e.key==="Enter"&&i>=0) setQ(items[i]);}} />\n      <ul id="r" role="listbox">\n        {items.map((x,idx)=>(<li key={x} role="option" aria-selected={i===idx}>{x}</li>))}\n      </ul>\n    </div>\n  );\n}"
+  },
+  {
+  "type": "code",
+  "language": "ts",
+  "title": "REST a GraphQL fetch s typy",
+  "content": "type Post={id:number;title:string;body:string};\nexport async function fetchPosts():Promise<Post[]>{\n  const r=await fetch("/api/posts",{cache:"no-store"});\n  if(!r.ok) throw new Error("HTTP"+r.status);\n  return r.json();\n}\nexport type GUser={id:string;name:string};\nexport async function fetchUserGQL(id:string):Promise<GUser>{\n  const q=`query($id:ID!){user(id:$id){id name}}`;\n  const r=await fetch("/graphql",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({query:q,variables:{id}})});\n  const j=await r.json();\n  return j.data.user as GUser;\n}"
+  },
+  {
+  "type": "code",
+  "language": "tsx",
+  "title": "Jest + RTL: kritická cesta",
+  "content": "import { render, screen, fireEvent } from "@testing-library/react";\nimport NewTodo from "./NewTodo";\nimport { createTodo } from "./NewTodo";\njest.mock("./NewTodo",()=>({__esModule:true,default:jest.fn(()=><div />),createTodo:jest.fn()}));\ntest("odesílá validní formulář", async()=>{\n  render(<form action={createTodo as any}><input name="title" defaultValue="A" /><select name="priority" defaultValue="med"><option value="med">med</option></select><button type="submit">ok</button></form>);\n  fireEvent.submit(screen.getByText("ok"));\n  expect(createTodo).toHaveBeenCalled();\n});"
+  },
+  {
+  "type": "framework",
+  "title": "Mini-frameworky",
+  "content": [
+  "STAR++: Situation, Task, Action, Result, Reflection, Risk",
+  "DECIDE: Define, Explore options, Compare trade-offy, Impact, Decide, Explain",
+  "UX-Signal 5: Jasnost, Rychlost, Přístupnost, Konzistence, Odezva",
+  "Trade-off Triáda: výkon, složitost, DX",
+  "Positioning π-shape: hluboký React/Next.js, širší web platforma"
+  ]
+  },
+  {
+  "type": "list",
+  "title": "Interview dekonstrukce: jak vést pohovor",
+  "content": [
+  "Zarámuj problém DECIDE a navrhni 2 varianty",
+  "Propoj dopad s byznysem a metrikou",
+  "Ukaž riziko a mitigaci",
+  "Zeptej se na kontext a omezení"
+  ]
+  },
+  {
+  "type": "table",
+  "title": "Behavioral & situational mastery (STAR++)",
+  "columns": ["Téma", "Stručný příběh", "Dopad"],
+  "rows": [
+  ["Refaktor stavu", "Převedení prop-drillingu na context + reducer", "Snížení kódu o 18 %, rychlejší onboard"],
+  ["A11y upgrade", "Audit a role/aria u komponent", "0 kritických nálezů, vyšší konverze"],
+  ["API spolehlivost", "Retry/backoff a idempotence", "Chybovost 500→0.3 %"]
+  ]
+  },
+  {
+  "type": "metrics",
+  "title": "Signal scoreboard",
+  "content": [
+  { "name": "Perf", "value": 88 },
+  { "name": "A11y", "value": 92 },
+  { "name": "Stabilita", "value": 85 },
+  { "name": "DX", "value": 80 },
+  { "name": "Komunikace", "value": 90 }
+  ]
+  },
+  {
+  "type": "exercise",
+  "title": "Decision-making drill",
+  "content": "Navrhni ISR vs SSR pro katalog s filtrováním. Uveď varianty, trade-offy, metriky TTFB/recency/náklady a finální rozhodnutí podle DECIDE."
+  },
+  {
+  "type": "checklist",
+  "title": "Pre-interview checklist",
+  "content": [
+  "Umím jasně popsat 2 architektury pro stejný problém",
+  "Mám 1 příklad dopadu s čísly",
+  "Mám příběh selhání s reflexí",
+  "Mám ukázku testu kritické cesty",
+  "Mám otázky na kontext a omezení"
+  ]
+  },
+  {
+  "type": "cta",
+  "title": "Osobní mini-plán",
+  "content": [
+  "Sestav π-shape pro svou identitu",
+  "Vyber 1 kritickou cestu a napiš test",
+  "Navrhni 2 řešení stejného UI a obhaj jedno",
+  "Připrav 1 STAR++ příběh s čísly",
+  "Nacvič DECIDE na 2 otázky z performance a DX"
+  ]
+  },
+  {
+  "type": "summary",
+  "content": "Založili jsme pevný základ: mapu dovedností, mini-frameworky, kódové důkazy, způsob vedení pohovoru a osobní mini-plán. Téma lze dále prohloubit na technický judgment a storytelling portfolia."
   }
-}
+  ],
+  "suggestion": "Pojď vytvořit ukázkový mikro-projekt v Next.js, kde aplikuješ DECIDE na SSR/ISR, změříš metriky a připravíš STAR++ case s čísly."
+  }
+  

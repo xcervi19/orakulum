@@ -23,50 +23,29 @@ RETRIES=3
 
 def _normalize(x):
     if isinstance(x, str):
-        try:
-            return json.loads(x)
-        except Exception:
-            return x
+        return json.loads(x)
     return x
 
 def _children(x):
     x=_normalize(x)
-    try:
-        return list(expand(x))
-    except:
-        return []
+    return [_render(x)]
+    
 
 def _render(previous_response):
-    # previous_response = JSON returned by last LLM call (INIT or EXPAND)
-    context = extract_context(previous_response)
-
-    # create next expand prompt
-    expand_data = expand(
-        previous_response,
-        summary=context["summary"],
-        trace_id=context["trace_id"],
-        targets=context["targets"],
-        role=context["role"],
-        client_input=context["client_input"]
-    )
-
-    # combine to actual text prompt for LLM
-    prompt_text = build_llm_prompt(expand_data)
-    return prompt_text
-    # now send `prompt_text` into LLM chat/completion call
-
-
-    # full_prompt = env.from_string(setup).render(clientinput=json.dumps(child, indent=2, ensure_ascii=False))
-    # return full_prompt
+    print("--------------------------------")
+    print("previous_response")
+    print(previous_response)
+    print("--------------------------------")
+    return previous_response["suggestion"]
 
 def _send_and_get(child):
     time.sleep(WAIT_OPEN)
     find_and_click(str(textarea))
-    send_text(_render(child))
+    send_text(child)
     pyautogui.press('enter')
     time.sleep(AFTER_ENTER)
     while is_loading():
-        print("loading")
+        time.sleep(1)
 
     find_and_click(str(scroll))
     time.sleep(SCROLL_DELAY)
@@ -74,24 +53,53 @@ def _send_and_get(child):
     resp=pyperclip.paste()
     return _normalize(resp)
 
+def _send_and_get_summary():
+    time.sleep(WAIT_OPEN)
+    find_and_click(str(textarea))
+    send_text(summary_prompt)
+    pyautogui.press('enter')
+    time.sleep(AFTER_ENTER)
+    while is_loading():
+        time.sleep(1)
+
+    find_and_click(str(scroll))
+    time.sleep(SCROLL_DELAY)
+    find_and_click(str(copybutton))
+    resp=pyperclip.paste()
+    return resp
+
+def fill_next_prompt(summary, suggestion):
+    position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
+    full_prompt = env.from_string(main_prompt).render(
+        dreamrole=position_name,
+        clientinput=position_description,
+        llmcontext_init=summary,
+        llmsuggestion_init=suggestion
+    )
+    return full_prompt
+    
 def process(root, max_depth=None):
-    q=deque((c,0) for c in _children(root))
+    q=deque([(c,0) for c in _children(root)])
+    # print("q")
+    # print(q)
     while q:
         node,depth=q.popleft()
         if max_depth is not None and depth>=max_depth:
             continue
         print(node)
         print("--------------------------------")
-        resp=_send_and_get(node)
+        summary = _send_and_get_summary()
+        next_prompt = fill_next_prompt(summary, node)
+        print("next_prompt")
+        print(next_prompt)
+        resp=_send_and_get(next_prompt)
         # print("responce")
         # print(resp)
         if resp is None:
             continue
 
-        for c in _children(resp):
-            print("_children(resp)")
-            print(c)
-            q.append((c,depth+1))
+        c = _normalize(resp)["suggestion"]
+        q.append((c,depth+1))
 
 
 with open('data.json') as f:
@@ -107,10 +115,12 @@ with open('data.txt') as f:
 with open("prompts.toml", "rb") as f:
     data = tomllib.load(f)
 
-setup = data["prompts"]["setup"]
-user_input = data["prompts"]["user_input"]
+main_prompt = data["prompts"]["main"]
 raw_input = data["prompts"]["raw_input"]
 raw_input_json = data["prompts"]["raw_input_json"]
+llmcontext_init = data["prompts"]["llmcontext_init"]
+llmsuggestion_init = data["prompts"]["llmsuggestion_init"]
+summary_prompt = data["prompts"]["summary"]
 
 textarea = Path("buttons/textarea.png")
 firebutton = Path("buttons/firebutton.png")
@@ -126,14 +136,13 @@ raw_input_filled = raw_input.format(rawinput=clientinput)
 env = Environment(loader=BaseLoader(), variable_start_string='[[', variable_end_string=']]')
 
 
-def collect_starting_prompt(input, position_name, companies):
-    filled_user_input = env.from_string(user_input).render(
+def collect_starting_prompt(input, position_name, llmcontext_init, llmsuggestion_init):
+    full_prompt = env.from_string(main_prompt).render(
         dreamrole=position_name,
-        targetcompanies=companies,
-        clientinput=input
+        clientinput=input,
+        llmcontext_init=llmcontext_init,
+        llmsuggestion_init=llmsuggestion_init
     )
-
-    full_prompt = env.from_string(setup).render(user_input=filled_user_input)
     return full_prompt
 
 def send_text(text: str):
@@ -209,13 +218,14 @@ if __name__=="__main__":
     # position_data = pyperclip.paste()
     # print(position_data)
     # db.create_conversation_root(conversation_id, "system", "initialization", json_data=position_data, text_data=position_description)
+    
+    
     time.sleep(1)
     pyautogui.hotkey('ctrl', 'shift', 'o')
     time.sleep(1)
     if find_and_click(str(textarea)):
         position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
-        companies = data_adhoc_json['doporucene_firmy'] 
-        send_text(collect_starting_prompt(position_description, position_name, companies))
+        send_text(collect_starting_prompt(position_description, position_name, llmcontext_init, llmsuggestion_init))
     time.sleep(1)
     pyautogui.press('enter')
     while is_loading():
@@ -230,9 +240,11 @@ if __name__=="__main__":
     with open('check.json', 'w') as f:
         json.dump(response, f)
     time.sleep(1)
+
     with open('check.json', encoding='utf-8') as f:
         initial_screen = json.load(f)
     time.sleep(1)
+    print(initial_screen)
 
     process(initial_screen, max_depth=None)
 
