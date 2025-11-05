@@ -78,28 +78,32 @@ def fill_next_prompt(summary, suggestion):
     )
     return full_prompt
     
-def process(root, max_depth=None):
-    q=deque([(c,0) for c in _children(root)])
-    # print("q")
-    # print(q)
+def process(root, max_depth=5):
+    pages = []
+    q = deque([(c, 0) for c in _children(root)])
     while q:
-        node,depth=q.popleft()
-        if max_depth is not None and depth>=max_depth:
-            continue
+        node, depth = q.popleft()
+        print("depth")
+        print(depth)
+        print("--------------------------------")
         print(node)
         print("--------------------------------")
         summary = _send_and_get_summary()
         next_prompt = fill_next_prompt(summary, node)
         print("next_prompt")
         print(next_prompt)
-        resp=_send_and_get(next_prompt)
-        # print("responce")
-        # print(resp)
+        resp = _send_and_get(next_prompt)
         if resp is None:
             continue
-
-        c = _normalize(resp)["suggestion"]
-        q.append((c,depth+1))
+        normalized_resp = _normalize(resp)
+        elements = normalized_resp.get("elements") or normalized_resp.get("elemnts")
+        if elements:
+            pages.append(elements)
+        c = normalized_resp.get("suggestion")
+        if max_depth is not None and depth >= max_depth:
+            break
+        q.append((c, depth + 1))
+    return {"pages": pages}
 
 
 with open('data.json') as f:
@@ -220,34 +224,37 @@ if __name__=="__main__":
     # db.create_conversation_root(conversation_id, "system", "initialization", json_data=position_data, text_data=position_description)
     
     
-    time.sleep(1)
-    pyautogui.hotkey('ctrl', 'shift', 'o')
-    time.sleep(1)
-    if find_and_click(str(textarea)):
-        position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
-        send_text(collect_starting_prompt(position_description, position_name, llmcontext_init, llmsuggestion_init))
-    time.sleep(1)
-    pyautogui.press('enter')
-    while is_loading():
-        print("loading")
-    if find_and_click(str(scroll)):
-        print("scrolled")
-    time.sleep(3)
-    if find_and_click(str(copybutton)):
-        print("copied")
-    response = pyperclip.paste()
+    # time.sleep(1)
+    # pyautogui.hotkey('ctrl', 'shift', 'o')
+    # time.sleep(1)
+    # if find_and_click(str(textarea)):
+    #     position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
+    #     send_text(collect_starting_prompt(position_description, position_name, llmcontext_init, llmsuggestion_init))
+    # time.sleep(1)
+    # pyautogui.press('enter')
+    # while is_loading():
+    #     print("loading")
+    # if find_and_click(str(scroll)):
+    #     print("scrolled")
+    # time.sleep(3)
+    # if find_and_click(str(copybutton)):
+    #     print("copied")
+    # response = pyperclip.paste()
 
-    with open('check.json', 'w') as f:
-        json.dump(response, f)
-    time.sleep(1)
+    # with open('check.json', 'w') as f:
+    #     json.dump(response, f)
+    # time.sleep(1)
 
     with open('check.json', encoding='utf-8') as f:
         initial_screen = json.load(f)
     time.sleep(1)
     print(initial_screen)
 
-    process(initial_screen, max_depth=None)
+    pages = process(initial_screen)
 
+    os.makedirs('results', exist_ok=True)
+    with open('results/pages.json', 'w', encoding='utf-8') as f:
+        json.dump(pages, f)
     # db.disconnect()
 
 
