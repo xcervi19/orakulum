@@ -1,0 +1,633 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<blok-2>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "label",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Konstrukce fundamentálních kompetencí"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "label",
+            "children": [
+              {
+                "type": "text",
+                "text": "Hlavní záměr: Postavit pevný balík dovedností, na kterém se dá škálovat specializace."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "\n\n```\n"
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "label",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* detailní vysvětlení tématu"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Tento krok vytváří technicko-kreativní základ, který ti umožní fungovat jako samostatný tvůrce mini-kampaní. Kombinuje growth marketing, psychologii pozornosti, kompozici, barvu a mikro-copywriting do jednotné sady kompetencí. Recruiter díky tomu uvidí, že jsi schopný dodat kompletní výsledek bez dohledu — jednu z nejžádanějších vlastností v digitálním marketingu."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "label",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* příklady"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ul",
+                    "ui": "bullet-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "• Psychologie pozornosti: drobné posuny kontrastu a hierarchie mohou zvýšit čitelnost banneru o 20–40 %."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "• Growth princip: rychlé iterace → 3–5 variant vizuálu → test → vítězná kreativa získá 1,3–1,7× lepší CTR."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "• Kompozice: diagonální linie používající „Z-pattern“ pro rychlé čtení vizuálů u mobilních uživatelů."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "• Copy CTA:"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Původní: „Zjistit více“"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Nové: „Získej výhodu během 30 sekund“ → měřitelně zvyšuje motivaci i percepci hodnoty."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "label",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* případové studie nebo modelové situace"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Situace: Marketér s roční praxí má solidní estetiku, ale nezná growth principy. Po aplikaci tohoto kroku vezme starý vizuál kampaně pro e-shop, vytvoří 4 verze: různé CTA, jiný kontrast, jiný hero element. Po A/B/C/D testu výsledek ukáže, že varianta s jasným value proposition a diagonálním vedením očí má o 38 % lepší výkon. Na pohovoru tak dokáže přesně popsat *proč* a *jak* výsledek vznikl."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "label",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* typické pohovorové otázky a optimální odpovědi"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "div",
+                    "ui": "qa-block",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Jak přistupujete k tvorbě kampaní, aby měly výkonnostní dopad?“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Optimální odpověď: „Začínám od psychologických driverů. Definuji motiv, vytvořím 3–5 vizuálních variant, iteruji kontrast, hierarchii, CTA a následně volím vítěze podle dat. Tím zvyšuju predikovatelnost výsledků.“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Jak pracujete s barvami a kompozicí?“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Optimální odpověď: „Používám systém kontrastních párů a jasnou vizuální hierarchii. Kompozici stavím podle Z-patternu nebo F-patternu podle typu vizuálu. Mám interní audit check-list, který minimalizuje slepá místa.“"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "label",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* mini úkoly nebo praktická cvičení"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ol",
+                    "ui": "numbered-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "1. Vyber starý vizuál a vytvoř jeho 3 nové verze: kontrastní, minimalistickou a growth-verzi s jasnou value proposition."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "2. Přepiš CTA ve 3 stylech: urgentní, hodnotové, transformační."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "3. Vyber jednu platformu (FB/IG/TikTok) a popiš 5 faktorů, které určují první sekundu pozornosti."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "label",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* návaznost na krok n-1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Navazuje přímo na mapu jádra: kompetence z kroku 1 se nyní překlápějí do systémové praxe, která umožní tvořit kampaň od nuly a obhájit ji u pohovoru."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "\n```\n\n  "
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "pre",
+            "ui": "code-block",
+            "attrs": {
+              "data-language": "algorithm"
+            },
+            "children": [
+              {
+                "type": "element",
+                "tag": "code",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini-algoritmus pro tvorbu kompletní mini-kampaně:\n1. Definuj motiv uživatele: {\"chci\": \"...\", \"brání mi\": \"...\"}  \n2. Navrhni vizuální hierarchii: [\"hero\", \"benefit\", \"CTA\"]  \n3. Barvy: vytvoř dvojici {\"primary\": \"#FF5A1E\", \"contrast\": \"#0C0C0C\"}  \n4. Copy: CTA = funkce(motiv) → např. f(\"ušetřit čas\") = \"Zrychli to hned\"  \n5. Export 3 variant → označ jako A/B/C  \n6. Vyhodnocení: metriku definuj jako CTR nebo engagement_delta  "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "metric-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* dokážeš vytvořit mini-kampaň (copy + vizuál + cílení) bez dohledu"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* umíš vysvětlit, proč tvůj vizuál funguje psychologicky i výkonnostně"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* tvoje práce má měřitelný dopad (CTR, reach efektivita, engagement delta)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "* umíš obhájit designové volby u pohovoru v jasné logice a metrice"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "block",
+            "children": [
+              {
+                "type": "text",
+                "text": "<inner-block-2>"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Porovnej 3 top kampaně konkurence a vytvoř z nich vlastní „design-marketing vocabulary“. Použij techniku lingvistického rozkladu: extrahuj slovní rytmus CTA, opakující se vizuální archetypy, kompoziční schémata a psycho-motivace. Vznikne osobní knihovna vzorů, kterou můžeš aplikovat při tvorbě konceptů — podobně jako hudební producenti používají sampling pro rychlejší kreativní tvorbu."
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "block",
+            "children": [
+              {
+                "type": "text",
+                "text": "<end-inner-block-2>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<end-blok-2>"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+Vygeneruj kompletní obsah kariérního kroku s číslem [n] podle této přesné struktury:
+
+<blok-n>
+Název kroku: ...
+Hlavní záměr: ...
+Obsah kroku:
+- detailní vysvětlení tématu
+- příklady (mohou být technické, kódové, analogické, příběhové)
+- případové studie nebo modelové situace
+- typické pohovorové otázky a optimální odpovědi
+- mini úkoly nebo praktická cvičení
+- návaznost na krok n-1
+Praktická část:
+- může obsahovat kód, algoritmus, diagram, hádanku, live-coding postup nebo strukturovaný problém
+Ukazatele úspěchu:
+- měřitelné nebo jasně pozorovatelné indikátory
+<inner-block-n>
+Bonus / laterální rozšíření:
+- originální pohled, neobvyklý rámec, průnik jiných disciplín, meta-heuristika
+<end-inner-block-n>
+<end-blok-n>
+
+VSTUP:
+<<<
+Název kroku: Pokročilá vizuální komunikace
+Cíl kroku: Umět řídit pozornost uživatele na pixelové úrovni.
+Co přesně projít:
+- Hierarchie, rytmus, kontrast, přechody pozornosti, vizuální tok.
+- Úkol: Zrychlit čitelnost vizuálu pod 2 sekundy (time-to-signal).
+- Návaznost: navazuje na strategický kontext z kroku 6.
+Jak poznám, že mám krok splněný:
+- 4 z 5 lidí pochopí sdělení z vizuálu do dvou sekund.
+<inner-block-7>
+Bonus / laterální rozšíření:
+- Změň jeden design 10× s drobnými úpravami a sleduj, která verze má nejlepší „attention path“.
+<end-inner-block-7>
+>>>
+
+Parametry uživatele:
+
+obor: digitální marketing a grafika
+
+seniorita: nezadanáo
+
+hlavní cíl: nezadanáo
+
+Pokyny:
+
+Vytvoř přesně jeden krok s číslem n.
+
+Obsah přizpůsob oboru a senioritě uživatele.
+
+Předávej hluboké, praktické a expertní informace.
+
+Vysvětli, jak krok přímo zvyšuje šanci uspět u pohovoru v uvedeném oboru.
+
+Buď kreativní a dovol si zahrnout kód, diagramy, případovky, mini testy atd.
+
+Bonus musí přinést originální, interdisciplinární nebo laterální vhled.
+
+Nepoužívej jiné tagy než uvedené.

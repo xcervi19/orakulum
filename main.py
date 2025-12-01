@@ -72,78 +72,31 @@ clientinput = "Už dlouho se učím JS a chtěl bych být frontend dev."
 print(raw_input_json)
 filled = raw_input_json.format(rawinput=clientinput)
 
-def check_macos_permissions():
-    """Check if macOS accessibility permissions are granted for pyautogui"""
-    if platform.system() == "Darwin":
-        try:
-            # Try to move mouse to test permissions
-            pyautogui.moveTo(100, 100, duration=0.1)
-            return True
-        except pyautogui.FailSafeException:
-            print("⚠️  macOS Accessibility permissions required!")
-            print("Please go to: System Preferences > Security & Privacy > Privacy > Accessibility")
-            print("Add Terminal or your Python app to the list of allowed applications.")
-            return False
-    return True
 
-def send_text(text: str):
-    pyperclip.copy(text)
-    time.sleep(0.1)
-    mod = "command" if platform.system() == "Darwin" else "ctrl"
-    pyautogui.hotkey(mod, "v")
-
-
-def find_and_click(image_path, threshold=0.9, monitor=1):
-    t = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-    if t is None: return False
+def find_and_click(image_path, threshold=0.8, monitor=0):
+    template = cv2.imread(image_path, 0)
+    if template is None: return False
+    pyautogui.FAILSAFE = False
     with mss.mss() as sct:
-        scr = np.array(sct.grab(sct.monitors[monitor]))
-    g = cv2.cvtColor(scr, cv2.COLOR_BGRA2GRAY)
-    cv2.imshow('Screenshot Region', g)
-    cv2.waitKey(1000)
-    cv2.destroyAllWindows()
-    et = cv2.Canny(t, 50, 150)
-    eg = cv2.Canny(g, 50, 150)
-    res = cv2.matchTemplate(eg, et, cv2.TM_CCOEFF_NORMED)
-    _, mv, _, ml = cv2.minMaxLoc(res)
-    print(f"DEBUG: max_val: {mv}, max_loc: {ml}")
-    if mv < threshold: return False
-    h, w = t.shape[:2]
-    x, y = ml[0] + w // 2, ml[1] + h // 2
-    lw, lh = pyautogui.size()
-    sw, sh = eg.shape[1], eg.shape[0]
-    sx, sy = lw / sw, lh / sh
-    pyautogui.moveTo(int(x * sx), int(y * sy), duration=0.1)
+        full = sct.monitors[0]
+        mon = sct.monitors[monitor]
+        img = np.array(sct.grab(mon))
+    gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
+    res = cv2.matchTemplate(gray, template, cv2.TM_CCOEFF_NORMED)
+    _, max_val, _, max_loc = cv2.minMaxLoc(res)
+    if max_val < threshold: return False
+    h, w = template.shape[:2]
+    cx = max_loc[0] + w // 2
+    cy = max_loc[1] + h // 2
+    x = mon['left'] + cx
+    y = mon['top'] + cy
+    sw, sh = pyautogui.size()
+    sx = sw / full['width']
+    sy = sh / full['height']
+    pyautogui.moveTo(int(x * sx), int(y * sy), duration=0.05)
     pyautogui.click()
     return True
 
-# def find_and_click(image_path, threshold=0.6, monitor=0):
-#     print(f"DEBUG: Trying to find and click {image_path} with threshold {threshold} on monitor {monitor}")
-#     template = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-#     if template is None: return False
-#     pyautogui.FAILSAFE = False
-#     with mss.mss() as sct:
-#         img = np.array(sct.grab(sct.monitors[monitor]))
-#     gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
-#     edged_screen = cv2.Canny(gray, 50, 150)
-#     best = (-1, None, None, None)  # score, loc, (w,h), scale
-#     h0, w0 = template.shape[:2]
-#     for s in np.linspace(0.5, 2.0, 16):
-#         tw, th = int(w0*s), int(h0*s)
-#         if tw < 10 or th < 10: continue
-#         t = cv2.resize(template, (tw, th), interpolation=cv2.INTER_AREA if s<1 else cv2.INTER_CUBIC)
-#         edged_t = cv2.Canny(t, 50, 150)
-#         res = cv2.matchTemplate(edged_screen, edged_t, cv2.TM_CCOEFF_NORMED)
-#         min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
-#         print(f"DEBUG: min_val: {min_val}, max_val: {max_val}, min_loc: {min_loc}, max_loc: {max_loc}")
-#         if max_val > best[0]: best = (max_val, max_loc, (tw, th), s)
-#     max_val, max_loc, (tw, th), s = best
-#     if max_val is None or max_val < threshold: return False
-#     x = max_loc[0] + tw//2
-#     y = max_loc[1] + th//2
-#     pyautogui.moveTo(x, y, duration=0.1)
-#     pyautogui.click()
-#     return True
 
 
 
@@ -151,11 +104,6 @@ def find_and_click(image_path, threshold=0.9, monitor=1):
 if __name__=="__main__":
     time.sleep(2)
     print("🚀 Starting Orakulum automation script...")
-    
-    # Check macOS permissions first
-    if not check_macos_permissions():
-        print("❌ Cannot proceed without accessibility permissions.")
-        sys.exit(1)
     
     print("✅ Permissions OK, starting automation...")
     time.sleep(2)
@@ -168,18 +116,22 @@ if __name__=="__main__":
         #     print("❌ Could not find textarea")
         # time.sleep(3)
         print("🔥 Clicking fire button...")
-        find_and_click(str(firebutton))
-        time.sleep(10)
+        if find_and_click(str(firebutton)):
+            print("📝 Found textarea, sending text...")
+            send_text(filled)
+        else:
+            print("❌ Could not find textarea")
+        time.sleep(3)
         
-        print("📜 Scrolling...")
-        find_and_click(str(scroll))
-        time.sleep(1)
+        # print("📜 Scrolling...")
+        # find_and_click(str(scroll))
+        # time.sleep(1)
         
-        print("📋 Copying result...")
-        find_and_click(str(copybutton))
-        data = pyperclip.paste()
-        print("✅ Result copied to clipboard:")
-        print(data)
+        # print("📋 Copying result...")
+        # find_and_click(str(copybutton))
+        # data = pyperclip.paste()
+        # print("✅ Result copied to clipboard:")
+        # print(data)
         
     except Exception as e:
         print(f"❌ Error during automation: {e}")

@@ -1,0 +1,61 @@
+Vygeneruj kompletní obsah kariérního kroku s číslem [n] podle této přesné struktury:
+
+<blok-n>
+Název kroku: ...
+Hlavní záměr: ...
+Obsah kroku:
+- detailní vysvětlení tématu
+- příklady (mohou být technické, kódové, analogické, příběhové)
+- případové studie nebo modelové situace
+- typické pohovorové otázky a optimální odpovědi
+- mini úkoly nebo praktická cvičení
+- návaznost na krok n-1
+Praktická část:
+- může obsahovat kód, algoritmus, diagram, hádanku, live-coding postup nebo strukturovaný problém
+Ukazatele úspěchu:
+- měřitelné nebo jasně pozorovatelné indikátory
+<inner-block-n>
+Bonus / laterální rozšíření:
+- originální pohled, neobvyklý rámec, průnik jiných disciplín, meta-heuristika
+<end-inner-block-n>
+<end-blok-n>
+
+VSTUP:
+<<<
+Název kroku: Cross-functional mastery  
+Cíl kroku: Umět pracovat se specialisty — copywriter, video editor, marketér, PM.  
+Co přesně projít:  
+- Komunikační protokoly, předávání podkladů, omezení různých rolí.  
+- Úkol: vést mini-projekt se 2 fiktivními rolemi.  
+- Návaznost: staví na značkovém řízení z kroku 20.  
+Jak poznám, že mám krok splněný:  
+- Umím předávat práci tak, že se nesnižuje kvalita.  
+<inner-block-21>  
+Bonus / laterální rozšíření:  
+- Simuluj projekt s extrémně limitovaným deadlinem.  
+<end-inner-block-21>
+>>>
+
+Parametry uživatele:
+
+obor: digitální marketing a grafika
+
+seniorita: nezadanáo
+
+hlavní cíl: nezadanáo
+
+Pokyny:
+
+Vytvoř přesně jeden krok s číslem n.
+
+Obsah přizpůsob oboru a senioritě uživatele.
+
+Předávej hluboké, praktické a expertní informace.
+
+Vysvětli, jak krok přímo zvyšuje šanci uspět u pohovoru v uvedeném oboru.
+
+Buď kreativní a dovol si zahrnout kód, diagramy, případovky, mini testy atd.
+
+Bonus musí přinést originální, interdisciplinární nebo laterální vhled.
+
+Nepoužívej jiné tagy než uvedené.

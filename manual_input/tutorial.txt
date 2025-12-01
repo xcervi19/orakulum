@@ -1,0 +1,451 @@
+<blok-1>
+Název kroku: Mapování profesionálního jádra
+Cíl kroku: Získat krystalicky jasné pochopení vlastní hodnoty jako marketéra-grafika.
+Co přesně projít:
+- Identifikace 3 klíčových domén (např. kampaně, vizuální identita, obsahová strategie).
+- Analýza 5 dosavadních projektů: co přesně jsem vytvořil, jaký dopad to mělo.
+- Přiřazení dovedností a výsledků k pozicím v digitálním marketingu.
+- Návaznost: slouží jako základ pro další budování odbornosti ve 2. kroku.
+Jak poznám, že mám krok splněný:
+- Mám jednoslovné „core“ (např. „visual strategist“).
+- Vím, v čem jsem měřitelně dobrý a čím se liším.
+<inner-block-1>
+Bonus / laterální rozšíření:
+- Převeď svůj dosavadní profil do archetypu (např. „Story Crafter“, „Growth Designer“) a ověř ho u 3 lidí.
+<end-inner-block-1>
+<end-blok-1>
+
+<blok-2>
+Název kroku: Konstrukce fundamentálních kompetencí
+Cíl kroku: Postavit pevný balík dovedností, na kterém se dá škálovat specializace.
+Co přesně projít:
+- Základy growth marketingu, psychologii pozornosti, kompozici a barevné teorii.
+- Mikro-úkony: redesign jednoho starého vizuálu podle dnešních pravidel; přepsání textu pro CTA.
+- Návaznost: rozvíjí mapování jádra z kroku 1.
+Jak poznám, že mám krok splněný:
+- Dokážu samostatně vytvořit kompletní mini-kampaň (copy, vizuál, cílení).
+<inner-block-2>
+Bonus / laterální rozšíření:
+- Porovnej 3 top kampaně konkurence a vytvoř z nich vlastní „design-marketing vocabulary“.
+<end-inner-block-2>
+<end-blok-2>
+
+<blok-3>
+Název kroku: Mikro-specializace (1. úroveň)
+Cíl kroku: Zvolit směr, který rychle zvyšuje hodnotu na trhu.
+Co přesně projít:
+- Výběr subdomény: performance design, branding, social content, motion.
+- Praktikum: vytvořit 5 návrhů reklamního vizuálu pro různé cílovky.
+- Návaznost: prohlubuje základní kompetence z kroku 2.
+Jak poznám, že mám krok splněný:
+- Mám „micro-portfólio“ 10–15 prací v jednom stylu či oblasti.
+<inner-block-3>
+Bonus / laterální rozšíření:
+- Přidej experiment “design in constraints”: jedna kampaň pouze černobíle, jedna bez textu, jedna pouze s textem.
+<end-inner-block-3>
+<end-blok-3>
+
+<blok-4>
+Název kroku: Psychologie vnímání a nákupních rozhodnutí
+Cíl kroku: Tvořit vizuály a kampaně, které ovlivňují lidské chování.
+Co přesně projít:
+- Modelem AIDA, rozhodovací heuristiky, priming, kontrastní efekty, social proof.
+- Úkol: přetvořit banner tak, aby aktivoval jinou psychologickou motivaci.
+- Návaznost: prohlubuje marketingové základy z kroku 2 a 3.
+Jak poznám, že mám krok splněný:
+- Dokážu zdůvodnit každý designový prvek psychologií.
+<inner-block-4>
+Bonus / laterální rozšíření:
+- Vytvoř dva vizuály, které působí opačným psychologickým efektem (urgentní vs. klidný).
+<end-inner-block-4>
+<end-blok-4>
+
+<blok-5>
+Název kroku: Exekuce vysoké přesnosti
+Cíl kroku: Zvládat profesionální workflow od briefu po final delivery.
+Co přesně projít:
+- Briefing → skicování → moodboard → prototyp → finální export.
+- Úkol: vytvořit 3 moodboardy pro 3 různé značky.
+- Návaznost: staví na psychologickém rámování z kroku 4.
+Jak poznám, že mám krok splněný:
+- Vím přesně, kolik času zabere každý krok procesu a mám vlastní pipeline.
+<inner-block-5>
+Bonus / laterální rozšíření:
+- Použij „creative friction“: omez si počet nástrojů a sleduj zrychlení workflow.
+<end-inner-block-5>
+<end-blok-5>
+
+<blok-6>
+Název kroku: Strategické myšlení (1. úroveň)
+Cíl kroku: Nejen vytvářet vizuály, ale navrhovat jejich roli v rámci celku.
+Co přesně projít:
+- Funnel frameworky (TOFU, MOFU, BOFU), journey mapping, message hierarchy.
+- Úkol: Zmapuj cestu zákazníka pro jeden produkt a navrhni 3 klíčové vizuály.
+- Návaznost: propojení workflow z kroku 5 s kontextem kampaní.
+Jak poznám, že mám krok splněný:
+- Dokážu určit správný typ kreativy podle fáze nákupního cyklu.
+<inner-block-6>
+Bonus / laterální rozšíření:
+- Nakresli vlastní „strategy canvas“ s klíčovými parametry své cílové skupiny.
+<end-inner-block-6>
+<end-blok-6>
+
+<blok-7>
+Název kroku: Pokročilá vizuální komunikace
+Cíl kroku: Umět řídit pozornost uživatele na pixelové úrovni.
+Co přesně projít:
+- Hierarchie, rytmus, kontrast, přechody pozornosti, vizuální tok.
+- Úkol: Zrychlit čitelnost vizuálu pod 2 sekundy (time-to-signal).
+- Návaznost: navazuje na strategický kontext z kroku 6.
+Jak poznám, že mám krok splněný:
+- 4 z 5 lidí pochopí sdělení z vizuálu do dvou sekund.
+<inner-block-7>
+Bonus / laterální rozšíření:
+- Změň jeden design 10× s drobnými úpravami a sleduj, která verze má nejlepší „attention path“.
+<end-inner-block-7>
+<end-blok-7>
+
+<blok-8>
+Název kroku: Copywriting pro grafiky a marketéry
+Cíl kroku: Tvořit vizuály, které mají textovou přesnost a prodejní sílu.
+Co přesně projít:
+- CTA logika, microcopy, value statements.
+- Úkol: napsat 20 variant jednoho claimu.
+- Návaznost: doplňuje vizuální komunikaci z kroku 7.
+Jak poznám, že mám krok splněný:
+- Umím vytvořit text, který mění výkon kampaně o 10–30 %.
+<inner-block-8>
+Bonus / laterální rozšíření:
+- Vytvoř si vlastní „copy swipe-file“ 100 inspirací, které budeš rozebírat podle struktur.
+<end-inner-block-8>
+<end-blok-8>
+
+<blok-9>
+Název kroku: Cross-channel mastery
+Cíl kroku: Naučit se tvořit pro různé platformy bez ztráty kvality.
+Co přesně projít:
+- Meta Ads, TikTok Ads, Google Display, YouTube, email, landing page.
+- Úkol: vytvoř cross-platform kit z jedné kampaně.
+- Návaznost: pokračuje v adaptaci textu a vizuálu z kroku 8.
+Jak poznám, že mám krok splněný:
+- Mám 5 výstupů jedné kampaně pro různé kanály.
+<inner-block-9>
+Bonus / laterální rozšíření:
+- Sestav cross-channel mapu a identifikuj slabá místa zákaznické cesty.
+<end-inner-block-9>
+<end-blok-9>
+
+<blok-10>
+Název kroku: Analytická přesnost
+Cíl kroku: Rozumět tomu, co funguje a proč.
+Co přesně projít:
+- CTR vs. CPC, konverze, scroll-stop rate, watch-time, retention grafy.
+- Úkol: analyzuj 10 reklamních vizuálů a identifikuj společné patterny.
+- Návaznost: navazuje na cross-channel adaptaci z kroku 9.
+Jak poznám, že mám krok splněný:
+- Umím předvídat výkon nové kreativy s rozumnou přesností.
+<inner-block-10>
+Bonus / laterální rozšíření:
+- Vytvoř predikční model kreativy – manuálně definuj faktory úspěchu.
+<end-inner-block-10>
+<end-blok-10>
+
+<blok-11>  
+Název kroku: Pokročilé kompoziční systémy  
+Cíl kroku: Vytvářet vizuály s vysokou estetickou i funkční přesností.  
+Co přesně projít:  
+- Kompoziční sítě: rule of thirds, golden ratio, dynamic symmetry, typografická mřížka.  
+- Praktikum: redesign dvou stávajících vizuálů pomocí odlišných kompozičních systémů.  
+- Návaznost: staví na analytické přesnosti z kroku 10.  
+Jak poznám, že mám krok splněný:  
+- Umím vědomě volit kompoziční princip podle typu sdělení.  
+<inner-block-11>  
+Bonus / laterální rozšíření:  
+- Aplikuj hudební rytmus (crescendo, kontrapunkt, pauzy) na vizuální layout.  
+<end-inner-block-11>  
+<end-blok-11>
+
+<blok-12>  
+Název kroku: Mastery typografie  
+Cíl kroku: Převést typografii z dekorace na nástroj řízení pozornosti.  
+Co přesně projít:  
+- Kerning, tracking, baseline grid, kontrast vah textu, variable fonts.  
+- Úkol: vytvořit 3 typografické systémy pro 3 různé značky.  
+- Návaznost: rozvíjí kompoziční přesnost z kroku 11.  
+Jak poznám, že mám krok splněný:  
+- Typografie sama o sobě vytvoří jasné sdělení bez obrázků.  
+<inner-block-12>  
+Bonus / laterální rozšíření:  
+- Zkus 24hodinový experiment „typography-only ads“.  
+<end-inner-block-12>  
+<end-blok-12>
+
+<blok-13>  
+Název kroku: Pokročilé barvové systémy  
+Cíl kroku: Schopnost modelovat atmosféru, emoce a výkon kampaně skrze barvu.  
+Co přesně projít:  
+- Barevné harmonie, teplotní kontrast, psychologické účinky barev.  
+- Úkol: připrav 4 barevné varianty jedné kampaně a otestuj reakce.  
+- Návaznost: staví na typografické a kompoziční dovednosti z kroku 12.  
+Jak poznám, že mám krok splněný:  
+- Vím přesně, proč používám konkrétní barvu a jak ovlivní sdělení.  
+<inner-block-13>  
+Bonus / laterální rozšíření:  
+- Analýza barevných schémat v top filmech a adaptace do marketingu.  
+<end-inner-block-13>  
+<end-blok-13>
+
+<blok-14>  
+Název kroku: Motion & Micro-animations  
+Cíl kroku: Přidat vizuálům kinetickou sílu a zvýšit engagement.  
+Co přesně projít:  
+- Principy animace (anticipation, squash&stretch, timing).  
+- Úkol: vytvoř 3 micro-animace pro jednu kampaň.  
+- Návaznost: využívá barvu a typografii z kroku 13.  
+Jak poznám, že mám krok splněný:  
+- Micro-animace podporuje sdělení, neodvádí pozornost.  
+<inner-block-14>  
+Bonus / laterální rozšíření:  
+- Rekonstruuj jednu známou reklamu v minimalistickém motion stylu.  
+<end-inner-block-14>  
+<end-blok-14>
+
+<blok-15>  
+Název kroku: Story design & narativ v reklamě  
+Cíl kroku: Umět vytvořit mikropříběh o 3–7 sekundách, který prodává.  
+Co přesně projít:  
+- Story beats, tension builder, payoff, symbolika.  
+- Úkol: navrhni 3 narativní varianty jednoho vizuálu.  
+- Návaznost: kombinuje pohyb z kroku 14 a psychologii z kroku 4.  
+Jak poznám, že mám krok splněný:  
+- Reklama má jasný příběhový oblouk, i když trvá 4 sekundy.  
+<inner-block-15>  
+Bonus / laterální rozšíření:  
+- Vytvoř jeden komunikační koncept založený pouze na metaforách.  
+<end-inner-block-15>  
+<end-blok-15>
+
+<blok-16>  
+Název kroku: Systematické portfolio 2.0  
+Cíl kroku: Postavit portfolio, které cíleně aktivuje hiring manažera.  
+Co přesně projít:  
+- Case studies s dopadem, rozklad problému, ukázky cest k řešení.  
+- Úkol: vytvoř 3 detailní case studies s metrikami.  
+- Návaznost: navazuje na story design z kroku 15.  
+Jak poznám, že mám krok splněný:  
+- Portfolio vysvětluje způsob přemýšlení, ne „jen obrázky“.  
+<inner-block-16>  
+Bonus / laterální rozšíření:  
+- Přidej 1 projekt, který je extrémně experimentální, ale vysvětlený.  
+<end-inner-block-16>  
+<end-blok-16>
+
+<blok-17>  
+Název kroku: Psychologie pohovoru a positioning  
+Cíl kroku: Naučit se prezentovat své dovednosti přesně tak, jak čekají seniorní tazatelé.  
+Co přesně projít:  
+- Strukturace odpovědí: problém → proces → rozhodnutí → dopad.  
+- Úkol: připrav 10 tříminutových příběhů o projektech.  
+- Návaznost: staví na case studies z kroku 16.  
+Jak poznám, že mám krok splněný:  
+- Umím přesně popsat *proč* jsem zvolil konkrétní řešení.  
+<inner-block-17>  
+Bonus / laterální rozšíření:  
+- Natoč si simulaci pohovoru a analyzuj řeč těla vs. obsah.  
+<end-inner-block-17>  
+<end-blok-17>
+
+<blok-18>  
+Název kroku: Pokročilé rámce pro řešení problémů  
+Cíl kroku: Mít systematický postup pro řešení komplexních marketingových a designových výzev.  
+Co přesně projít:  
+- RCA, Jobs-to-be-done, mental models, first-principles thinking.  
+- Úkol: vezmi 1 neúspěšnou kampaň a proveď hlubokou pitvu příčin.  
+- Návaznost: posiluje rozhodovací proces z kroku 17.  
+Jak poznám, že mám krok splněný:  
+- Dokážu rychle diagnostikovat slabé místo kampaně.  
+<inner-block-18>  
+Bonus / laterální rozšíření:  
+- Vytvoř vlastní toolbox 12 mentálních modelů pro marketing.  
+<end-inner-block-18>  
+<end-blok-18>
+
+<blok-19>  
+Název kroku: Kreativní diverzifikace (2. úroveň)  
+Cíl kroku: Schopnost generovat mnoho odlišných, ale funkčních variant řešení.  
+Co přesně projít:  
+- Divergentní a konvergentní myšlení, SCAMPER, synthesis mapping.  
+- Úkol: vytvoř 30 návrhů jedné reklamy během 60 minut.  
+- Návaznost: staví na analytických rámcích z kroku 18.  
+Jak poznám, že mám krok splněný:  
+- Variace jsou různé, ale pořád strategicky správné.  
+<inner-block-19>  
+Bonus / laterální rozšíření:  
+- Přidej „forced constraints“ — vytvoř návrhy jen pomocí geometrie.  
+<end-inner-block-19>  
+<end-blok-19>
+
+<blok-20>  
+Název kroku: Řízení značky v praxi  
+Cíl kroku: Porozumět, jak grafika a marketing tvoří dlouhodobý brand.  
+Co přesně projít:  
+- Brand voice, vizuální identita, consistency model, tone mapping.  
+- Úkol: vytvoř mini-brandbook jedné imaginární značky.  
+- Návaznost: navazuje na kreativu z kroku 19.  
+Jak poznám, že mám krok splněný:  
+- Dokážu udržet konzistentní identitu napříč mnoha výstupy.  
+<inner-block-20>  
+Bonus / laterální rozšíření:  
+- Přenes brand do situace, pro kterou není určen, a analyzuj reakci.  
+<end-inner-block-20>  
+<end-blok-20>
+
+<blok-21>  
+Název kroku: Cross-functional mastery  
+Cíl kroku: Umět pracovat se specialisty — copywriter, video editor, marketér, PM.  
+Co přesně projít:  
+- Komunikační protokoly, předávání podkladů, omezení různých rolí.  
+- Úkol: vést mini-projekt se 2 fiktivními rolemi.  
+- Návaznost: staví na značkovém řízení z kroku 20.  
+Jak poznám, že mám krok splněný:  
+- Umím předávat práci tak, že se nesnižuje kvalita.  
+<inner-block-21>  
+Bonus / laterální rozšíření:  
+- Simuluj projekt s extrémně limitovaným deadlinem.  
+<end-inner-block-21>  
+<end-blok-21>
+
+<blok-22>  
+Název kroku: Behaviorální marketing  
+Cíl kroku: Naučit se ovlivňovat chování uživatelů skrze vizuální signály.  
+Co přesně projít:  
+- Nudge theory, choice architecture, attention funnels.  
+- Úkol: redesign stránky tak, aby zvýšila konverzi o definované procento.  
+- Návaznost: prohlubuje cross-functional práci z kroku 21.  
+Jak poznám, že mám krok splněný:  
+- Dokážu vysvětlit, proč konkrétní změna zvýší konverzi.  
+<inner-block-22>  
+Bonus / laterální rozšíření:  
+- Udělej experiment: stejný obsah, dvě různé architektury volby.  
+<end-inner-block-22>  
+<end-blok-22>
+
+<blok-23>  
+Název kroku: Systematizace rychlostí  
+Cíl kroku: Zrychlit produkci bez ztráty kvality.  
+Co přesně projít:  
+- Design templates, creative libraries, AI-asistované generování variant.  
+- Úkol: vytvoř set 20 šablon podle brandu.  
+- Návaznost: navazuje na behaviorální redesign z kroku 22.  
+Jak poznám, že mám krok splněný:  
+- Můžu vytvořit kampaň < 3 hodiny v profesionální kvalitě.  
+<inner-block-23>  
+Bonus / laterální rozšíření:  
+- Vytvoř 3-minutové „production sprints“.  
+<end-inner-block-23>  
+<end-blok-23>
+
+<blok-24>  
+Název kroku: Seniorní rozhodování  
+Cíl kroku: Umět prioritizovat, řídit rizika a volit řešení s největším dopadem.  
+Co přesně projít:  
+- Impact vs. effort, risk mapping, decision trees.  
+- Úkol: ohodnoť 5 nápadů podle dopadu a úsilí.  
+- Návaznost: staví na systematizaci z kroku 23.  
+Jak poznám, že mám krok splněný:  
+- Dokážu obhájit své volby před seniorním manažerem.  
+<inner-block-24>  
+Bonus / laterální rozšíření:  
+- Proveď retrospektivu jedné kampaně a identifikuj chyby v rozhodování.  
+<end-inner-block-24>  
+<end-blok-24>
+
+<blok-25>  
+Název kroku: Profesionální etika & long-term trust  
+Cíl kroku: Budovat reputaci, která přitahuje příležitosti.  
+Co přesně projít:  
+- Transparentnost, realistické odhady, komunikace rizik.  
+- Úkol: vytvoř manifest profesionálních zásad.  
+- Návaznost: doplňuje seniorní rozhodování z kroku 24.  
+Jak poznám, že mám krok splněný:  
+- Jednání je konzistentní, předvídatelné a důvěryhodné.  
+<inner-block-25>  
+Bonus / laterální rozšíření:  
+- Identifikuj jeden etický princip, který tě odlišuje na trhu.  
+<end-inner-block-25>  
+<end-blok-25>
+
+<blok-26>  
+Název kroku: Profesionalizace osobní značky  
+Cíl kroku: Budovat vlastní ekosystém viditelnosti.  
+Co přesně projít:  
+- Content system, value-based branding, repetitivní signály.  
+- Úkol: vytvořit 30denní obsahový plán.  
+- Návaznost: navazuje na etiku a reputaci z kroku 25.  
+Jak poznám, že mám krok splněný:  
+- Tvé jméno vyvolává konkrétní asociaci (např. „člověk na výkonné vizuály“).  
+<inner-block-26>  
+Bonus / laterální rozšíření:  
+- Vytvoř “signature series” – obsah s rozpoznatelným stylem.  
+<end-inner-block-26>  
+<end-blok-26>
+
+<blok-27>  
+Název kroku: Systém práce se zpětnou vazbou  
+Cíl kroku: Získat mechanismus, který zaručuje nekonečný růst.  
+Co přesně projít:  
+- Model ASK → APPLY → IMPROVE, kritické review designů.  
+- Úkol: provést 5 kol kritické revize jedné kreativy.  
+- Návaznost: opírá se o osobní značku z kroku 26.  
+Jak poznám, že mám krok splněný:  
+- Kritika automaticky zlepšuje výkon, ne snižuje motivaci.  
+<inner-block-27>  
+Bonus / laterální rozšíření:  
+- Založ „feedback guild“ tří lidí s různými profesemi.  
+<end-inner-block-27>  
+<end-blok-27>
+
+<blok-28>  
+Název kroku: High-impact projekty  
+Cíl kroku: Zařadit do portfolia projekty, které zásadně zvyšují hodnotu.  
+Co přesně projít:  
+- Výběr komplikované výzvy, redesign velké kampaně, vlastní iniciativy.  
+- Úkol: vytvoř jeden velký projekt s detailními metrikami dopadu.  
+- Návaznost: staví na cyklu zpětné vazby z kroku 27.  
+Jak poznám, že mám krok splněný:  
+- Mám projekt, který by zaujal i seniorního kreativního ředitele.  
+<inner-block-28>  
+Bonus / laterální rozšíření:  
+- Proveď „reverse-engineering“ ikonické světové kampaně.  
+<end-inner-block-28>  
+<end-blok-28>
+
+<blok-29>  
+Název kroku: Profesionální standardy seniorů  
+Cíl kroku: Přijetí návyků, které odlišují seniora od midu.  
+Co přesně projít:  
+- Dokumentace procesu, důsledné testy, ownerská mentalita.  
+- Úkol: vytvoř pattern library pro vlastní styl.  
+- Návaznost: pokračuje ve zvyšování dopadu krokem 28.  
+Jak poznám, že mám krok splněný:  
+- Tvá práce je replikovatelná, předvídatelná a škálovatelná.  
+<inner-block-29>  
+Bonus / laterální rozšíření:  
+- Vytvoř si vlastní manuál práce — vše, co tě činí efektivním.  
+<end-inner-block-29>  
+<end-blok-29>
+
+<blok-30>  
+Název kroku: Expanze na expertní úroveň  
+Cíl kroku: Získat dovednosti, díky kterým ovlivňuješ strategii, ne jen exekuci.  
+Co přesně projít:  
+- Strategické architektury, vedení kreativních týmů, growth frameworks.  
+- Úkol: navrhni strategii značky od nuly včetně rozpočtu a roadmapy.  
+- Návaznost: završuje standardy seniorů z kroku 29.  
+Jak poznám, že mám krok splněný:  
+- Dokážeš převzít odpovědnost za kompletní směr kampaně.  
+<inner-block-30>  
+Bonus / laterální rozšíření:  
+- Zvol si jedno téma (např. color psychology, short-form ads) a staň se světovou špičkou.  
+<end-inner-block-30>  
+<end-blok-30>
