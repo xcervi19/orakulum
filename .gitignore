@@ -4,3 +4,11 @@
 .env
 
 __pycache__
+
+# Generated content folders
+parsed_parts/
+stage_2_generated_parts/
+stage_2_prepared_html/
+stage_3_generated_html/
+generated_parts_html/
+transformed/
