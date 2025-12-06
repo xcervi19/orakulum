@@ -1,0 +1,78 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-2>
+Název kroku: Konstrukce fundamentálních kompetencí  
+Hlavní záměr: Vytvořit profesionální základ, na kterém lze stavět škálovatelnou specializaci v digitálním marketingu a grafice.  
+
+Obsah kroku:
+
+* detailní vysvětlení tématu
+  Základní kompetence v digitálním marketingu dnes stojí na pochopení psychologických principů pozornosti (salience, kognitivní fluence, priming), vizuální kompozice (gestalt, kontrast, rytmus), barevné teorie (harmonie, teploty, kontrastní páry) a principů growth marketingu (cykly testování, retence, experimentální roadmapy). Tyto dovednosti umožňují produkovat obsah, který nejen vypadá dobře, ale systematicky podporuje růst.
+* příklady
+
+  * Psychologický priming v reklamě: minimalistická grafika s jediným výrazným CTA posune orientaci uživatele na akci místo čtení detailů.
+  * Technický příklad (mikro-CTA přepis):
+
+    ```
+    Původní: "Získejte více informací"  
+    Nové: "Odemkněte přesný postup – hned teď"
+    ```
+  * Redesign vizuálu: přeuspořádat prvky tak, aby čtení probíhalo v přirozeném F-patternu, doplnit diagonální vodiče pohledu a barevně oddělit CTA.
+* případové studie nebo modelové situace
+
+  * E-shop s módou zaznamenal 23% zvýšení CTR po zavedení protichůdných barevných párů mezi produktovou fotografií a CTA. Základ byl správně pochopený kontrast teplota/studenost.
+  * SaaS startup nahradil popisné bannery krátkými akčními claimy a výsledkem bylo +41 % sign-ups.
+* typické pohovorové otázky a optimální odpovědi
+
+  * *Jak přistupujete k návrhu vizuálu pro výkonnostní kampaň?*
+    „Začnu definicí hlavního vjemu (co má zůstat v hlavě po 1 vteřině). Pak strukturuji kompozici kolem dominanty, volím kontrastní barvy, zjednodušuji text a připravím 3 varianty s jasnou hypotézou pro A/B test.“
+  * *Jak aplikujete barevnou teorii v praxi?*
+    „Používám komplementární páry pro zvýšení akčnosti, analogické škály pro profesionální look a modulaci saturace podle úrovně ‘arousal’, kterou chci v uživateli vyvolat.“
+* mini úkoly nebo praktická cvičení
+
+  * Redesignujte jeden starý firemní vizuál podle principu dominanty, kontrastu a vizuální hierarchie.
+  * Přepište 3 verze CTA, u každé změňte framing (bezpečí, ztráta, příležitost).
+  * Vytvořte barevnou paletu pro „high-trust brand“ a „impulzní nákup“.
+* návaznost na krok n-1
+  Rozvíjí definované jádro profesionální identity (krok 1) a převádí ho do exekvovatelných dovedností – od identity → k rukopisu → ke kampaním.
+
+Praktická část:
+
+* Strukturovaný problém: Navrhněte mini-kampaň pro produkt „Produktivní plánovač 2025“.
+
+  1. vytvořte claim (max 5 slov)
+  2. navrhněte layout (ASCII diagram):
+
+     ```
+     [HERO FOTO]  
+     [KRÁTKÝ BENEFIT]  
+     [CTA BUTTON]  
+     ```
+  3. zadefinujte barevnou triádu (primární, akční, neutrální)
+  4. definujte hypotézu pro A/B test (např. vyšší kontrast CTA → vyšší CTR)
+
+Ukazatele úspěchu:
+
+* samostatně vytvořená mini-kampaň (copy, vizuál, cílení)
+* konzistentní vizuální hierarchie při redesignu
+* schopnost vysvětlit u pohovoru *proč* něco funguje, nikoli jen *jak*
+
+<inner-block-2>
+Bonus / laterální rozšíření:
+- Vytvoř vlastní „design-marketing vocabulary“: porovnej 3 top kampaně konkurence, extrahuj pojmy (např. "frictionless CTA", "dominant framing line", "micro-contrast triggers") a sestav si osobní slovník, který zrychlí tvoji kreativní produkci a zvýší přesvědčivost při obhajobě návrhů na pohovoru.  
+<end-inner-block-2>
+<end-blok-2>

@@ -1,0 +1,78 @@
+<blok-3>
+Název kroku: Mikro-specializace (1. úroveň)  
+Hlavní záměr: Vybrat úzkou subdoménu, ve které lze rychle růst, získat jasnou identitu a produkovat konzistentní hodnotu pro trh i zaměstnavatele.  
+
+Obsah kroku:
+
+* detailní vysvětlení tématu
+  Mikro-specializace určuje, jaký typ problémů řešíte nejlépe: performance design, branding, social content nebo motion. Cílem je vytvořit profesionální fokus, který zrychlí učení, zvýší kvalitu výstupů a především vás jasně odliší u pohovoru. Recruiter vidí: *„Tento člověk je expert na X a má 15 konzistentních prací.“*
+* příklady
+
+  * Performance designer se zaměřuje na strukturu vizuálu, čitelnost CTA, rychlost pochopení sdělení.
+  * Branding designer řeší systém, konzistenci, gridy, logiku vizuální identity.
+  * Social content specialista pracuje s variabilitou, mikro-storytellingem a rytmem.
+  * Motion specialista tvoří animace, přechody, krátké dynamické spoty.
+* případové studie nebo modelové situace
+
+  * Freelancer vytvořil mikro-portfólio 12 výkonnostních bannerů pro 3 segmenty (fitness, SaaS, fashion). Za 6 týdnů získal stabilní kontrakt, protože klient jasně viděl, že *umí řešit specifický problém*, ne „všechno trochu“.
+  * Junior motion designer vytvořil 10 micro-animací pro hypotetickou značku. V pohovoru se stal top uchazečem díky tomu, že jeho styl byl konzistentní a použitelný v reálné produkci.
+* typické pohovorové otázky a optimální odpovědi
+
+  * *Jakou oblast designu chcete rozvíjet a proč?*
+    „Soustředím se na performance design, protože mě baví kombinovat psychologii pozornosti, jasnou výzvu k akci a rychlé testování. Tvořím vizuály, které mají měřitelný dopad.“
+  * *Jak přistupujete k tvorbě obsahu pro různé cílové skupiny?*
+    „Začnu mikro-personou → definice motivace → volba stylu → test 3 verzí. Mám systém, ne náhodný výběr.“
+  * *Jak vnášíte konzistenci do vizuálů?*
+    „Používám pevně definovaný stylový rámec: kontrastní páry, typografickou hierarchii, opakující se motivy a grid.“
+* mini úkoly nebo praktická cvičení
+
+  * Vytvořte 5 reklamních vizuálů pro 5 různých cílovek (mladé mámy, early adopters, studenti, profesionálové 30+, fanoušci luxusu).
+  * Vyberte jeden styl, kterému dáte jasná pravidla: barvy, rytmus, typografie, kompozice, tón CTA.
+  * Ověřte, zda jsou vizuály „scanovatelné“ do 2 sekund — quick test: zakryjte 70 % vizuálu a sledujte, co zůstane zapamatovatelné.
+* návaznost na krok n-1
+  Navazuje na fundamentální kompetence z kroku 2 — nyní se nejedná jen o pochopení principů, ale o jejich cílené uplatnění v jedné subdoméně. „Základní dovednosti → ostřený fokus → portfolio.“
+
+Praktická část:
+
+* Strukturovaný problém: Navrhněte 3 vizuály pro stejný produkt, ale odlišné subdomény.
+
+  1. Performance varianta (ASCII wireframe):
+
+     ```
+     [PRODUKT FOTO]  
+     [BOLD BENEFIT]  
+     [CTA]  
+     ```
+  2. Branding varianta (grid):
+
+     ```
+     |LOGO|---TAGLINE---|  
+     |COLOR BLOCK|IMAGE|  
+     |CTA|  
+     ```
+  3. Social content varianta (krátký koncept):
+     “3-sekundový mikro-příběh → punchline → CTA”
+* Mini-algoritmus výběru specializace:
+
+  ```
+  score = (radost_z_tvorby * 0.5) + (rychlost učení * 0.3) + (poptávka_na_trhu * 0.2)
+  vyber_subdomenu(score.max())
+  ```
+* Mini-test: Dokážeš vytvořit 5 vizuálů, z nichž je na první pohled jasné, že patří do jedné stylistické rodiny?
+
+Ukazatele úspěchu:
+
+* vzniká micro-portfólio 10–15 prací v jednom konkrétním stylu
+* konzistentní vizuální jazyk napříč projekty
+* připravené ukázky, které lze u pohovoru prezentovat jako „micro-expertise package“
+* samostatné argumentování: *proč jsem si vybral tuto subdoménu a jak v ní rostu*
+
+<inner-block-3>
+Bonus / laterální rozšíření:
+- Experiment „design in constraints“: vytvoř 3 kampaně pod extrémními omezeními.  
+  - pouze černobílá paleta (disciplína kontrastu)  
+  - bez textu (čistá vizuální srozumitelnost)  
+  - pouze text (typografická síla, rytmus, tón)  
+  Tento typ cvičení rozvíjí laterální kreativitu, odstraňuje závislost na „bezpečných“ řešeních a výrazně vylepšuje schopnost improvizace — což je jedna z nejvíce oceňovaných kompetencí u kreativních pohovorů.  
+<end-inner-block-3>
+<end-blok-3>

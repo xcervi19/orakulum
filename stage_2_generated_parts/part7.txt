@@ -1,0 +1,45 @@
+<blok-7>
+Název kroku: Pokročilá vizuální komunikace  
+Hlavní záměr: Umět řídit pozornost uživatele na pixelové úrovni.  
+Obsah kroku:
+- Hierarchie, rytmus, kontrast, přechody a vizuální tok určují, kde se uživatel zastaví, co ignoruje a co si odnese. Seniorní designer dokáže manipulovat těmito principy stejně přesně jako kodér staví logiku programu. V marketingu rozhoduje milisekundové „time-to-signal“, které ovlivňuje výkon kampaní, bannery, landing pages i krátká videa.  
+- Příklad kontrastu: CTA tlačítko se stejnou saturací jako celek se ztratí. Pokud zvýšíš hodnotu L* o 15–20 bodů (CIELAB), vznikne okamžitá fixace.  
+- Příklad rytmu: Rotace tří prvků (velký–střední–malý) vytváří prediktivní sekvenci, ve které oko ví, kde má pokračovat. Funguje to stejně jako „leading tone“ v hudbě – každý tón navádí další krok.  
+- Modelová situace: Klient chce banner, který vysvětlí benefit do 2 s. Původní návrh má příliš mnoho hladin vizuální konkurence. Optimalizace: odstranění dvou sekundárních ikon, zvýšení kontrastního poměru mezi headline a pozadím na 4.5:1, posun CTA o 32px doprava mimo oblast vysoké hustoty detailu.  
+- Typické pohovorové otázky a optimální odpovědi:  
+  • „Jak měříte vizuální tok?“ → „Používám kombinaci heatmap predikce (AI/ML modely jako DeepGaze), pravidel kompoziční psychologie a vlastního testu ‘2-second comprehension’. Výslovně kontroluji micro-kontrast v oblasti primárního sdělení.“  
+  • „Jak zrychlíte čitelnost vizuálu?“ → „Minimalizuji konkurenční prvky, posílím text–background kontrast, zjednoduším rytmus a upravím polygonální tvary tak, aby vedly oko směrem k CTA.“  
+  • „Jak poznáte, že design funguje?“ → „U 4 z 5 lidí proběhne správný attention path během 2 s. Sleduji eye-tracking simulace i real-life dotazování.“  
+- Mini úkoly:  
+  • Vezmi libovolný vizuál, odmasakruj jej na 3 úrovně hierarchie (1 = core signal, 2 = support, 3 = ambience). Znovu jej sestav tak, aby úroveň 1 byla viditelná do 500 ms.  
+  • Vytvoř micro-test: zobraz vizuál někomu na 1,5 s a nech ho říct, co je message.  
+- Návaznost na krok 6: Tam ses naučil strategický kontext. Zde ho komprimuješ do nejmenší možné vizuální jednotky — pixelových priorit, které určují rychlost pochopení.
+
+Praktická část:
+
+```
+# Pseudokód pro predikci vizuálního kontrastu v CTA oblasti
+input_image = load("visual.png")
+cta_region = select_region(input_image, x1, y1, x2, y2)
+contrast = luminance_difference(cta_region.text, cta_region.background)
+
+if contrast < 0.35:
+    increase_brightness(cta_region.text, 0.15)
+    reduce_noise(cta_region.background)
+save("optimized_visual.png")
+```
+
+Diagram vizuálního toku:
+[HEADLINE] → [SUBHEAD – slabší kontrast] → (prázdná zóna pro vizuální dech) → [CTA – nejvyšší kontrast + tvarová kotva]
+
+Ukazatele úspěchu:
+
+* 4 z 5 lidí pochopí sdělení během 2 s.
+* CTR u vizuálu se zvýší min. o 10–25 %.
+* V testu attention-path se oči většiny lidí zastaví nejdříve na hlavním sdělení.
+
+<inner-block-7>
+Bonus / laterální rozšíření:
+- Změň jeden design 10× s mikro-úpravami (2 px posun, +3 % saturace, mírné zkosení tvaru) a měř attention-path. Tento postup vychází z neuroergonomie: malé změny mění predikční model mozku podobně jako „dropout“ v neuronových sítích, čímž odhalíš optimální konfiguraci.  
+<end-inner-block-7>
+<end-blok-7>

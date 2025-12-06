@@ -1,0 +1,90 @@
+<blok-5>
+Název kroku: Exekuce vysoké přesnosti  
+Hlavní záměr: Ovládnout profesionální produkční workflow, ve kterém každý krok – od prvního briefu po finální export – probíhá rychle, přesně a predikovatelně.  
+
+Obsah kroku:
+
+* detailní vysvětlení tématu
+  Exekuce je fáze, kde se rozhoduje o kvalitě výstupu i o důvěře klienta. Profesionální workflow zajišťuje, že žádný krok není náhodný, nic se neztrácí, rozhodnutí vycházejí z psychologických principů (krok 4) a výsledný vizuál je konzistentní s cílem kampaně.
+  Standardní pipeline:
+  **Briefing → Analýza → Skicování → Moodboard → Prototyp → Iterace → Final Delivery.**
+  Každá část má jinou funkci: briefing nastavuje realitu, skicování generuje varianty, moodboard definuje tón, prototyp ověřuje funkčnost, final delivery ověřuje technickou kvalitu (rozlišení, formát, export).
+
+* příklady
+
+  * Briefing: nastavení cílů kampaně, definice emocí, které má vizuál vyvolat (např. „urgentní“ vs. „klidný“ – viz krok 4).
+  * Skicování: rychlý nízkonákladový proces, který zabrání slepým uličkám v pozdější fázi.
+  * Moodboard: referenční materiál ukazující barvy, rytmus, světlo, tonalitu, typografii.
+  * Prototyp: jednoduchá testovací verze vizuálu, ve které se hodnotí čitelnost, tok pozornosti, CTA viditelnost.
+  * Final export: více verzí pro různé kanály (1080×1080, 1080×1920, 1200×628).
+
+* případové studie nebo modelové situace
+
+  * Agenturní workflow: junior designer, který pečlivě připravuje moodboardy, obvykle zkracuje iterace art directorovi o 30–40 %. Moodboardy chrání před mylnými interpretacemi a urychlují schvalování.
+  * Freelancer pro e-commerce brand: díky pevné pipeline (brief → 2 skici → moodboard → prototyp) snížil počet revizí z 6 na 2, protože klient přesně věděl, co dostane.
+  * Performance kampaně: prototyp s rychlou A/B validací (změna CTA kontrastu, přesun hlavního claimu) zvýšil CTR o 18 %.
+
+* typické pohovorové otázky a optimální odpovědi
+
+  * *Jak probíhá váš workflow od briefu po finální vizuál?*
+    „Používám strukturu briefing → skicování → moodboardy → prototyp → final export. Každý krok má definovaný časový limit a vlastní cíle. Díky tomu vím, kdy přestat iterovat a kdy přejít do produkce.“
+  * *Jak kontrolujete kvalitu výstupů?*
+    „Používám checklist: kontrast CTA, čitelnost do 2 sekund, konzistence stylu, správná typografie, exportní profily, správné barevné prostory.“
+  * *Co uděláte, když klient není spokojen s první verzí?*
+    „Vrátím se do fáze moodboardů nebo skic – tedy k fázi, kde se rozcházejí očekávání. Tím minimalizuji zbytečné přepracování finalizovaných vizuálů.“
+
+* mini úkoly nebo praktická cvičení
+
+  * Vytvoř 3 moodboardy pro 3 různé značky:
+
+    1. technologická SaaS značka (moderní, čistá, přesná)
+    2. fashion značka (emocionální, stylizovaná, trendová)
+    3. eco-friendly značka (organická, teplá, klidná)
+  * Změř si čas jednotlivých kroků (např. skicování = 20 min, moodboard = 45 min).
+  * Udělej 2 prototypy téhož vizuálu a otestuj, který má lepší vizuální hierarchii (překryj 70 % designu a sleduj, co „zůstává“).
+
+* návaznost na krok n-1
+  Krok 4 ti dal psychologii. Tento krok ji přetavuje do řízeného procesu. Nyní už netvoříš na pocit – tvoříš s přesným workflow, které dokážeš u pohovoru jasně demonstrovat. To recruiterům signalizuje *profesionalitu, spolehlivost a schopnost škálovat výkon*.
+
+Praktická část:
+
+* Strukturovaný problém – vytvoření prototypového workflow
+
+  1. Vezmi hypotetický brief:
+
+     * Produkt: mobilní aplikace na správu financí
+     * Cíl: zvýšit počet registrací
+     * Emoce: klid, kontrola, jistota
+  2. ASCII diagram workflow:
+
+     ```
+     [BRIEF] → [SKICY] → [MOODBOARD] → [PROTO] → [REVIZE] → [FINÁL]
+                      ↘ psychologické rámování ↗
+     ```
+  3. Mini-algoritmus kontroly výstupu:
+
+     ```
+     if CTA_kontrast > 4.5 and text_čitelnost < 2s:
+         kvalita += 1
+     if moodboard == styl_finalu:
+         konzistence += 1
+     exporty = ["1080x1080", "1080x1920", "1200x628"]
+     for e in exporty:
+         otestuj_format(e)
+     ```
+  4. Mikro-hádanka na workflow:
+     Pokud klient změní barevnost až ve fázi final exportu, v kterém kroku pipeline nastala chyba?
+     → odpověď: moodboard (nesladěné očekávání).
+
+Ukazatele úspěchu:
+
+* přesně víš, kolik času zabere každý krok procesu
+* máš vlastní pipeline, kterou dokážeš obhájit i demonstrovat
+* počet revizí výrazně klesá (měřitelný ukazatel pro práci s klienty)
+* dokážeš vytvořit profesionální moodboardy pro různé brandy
+
+<inner-block-5>
+Bonus / laterální rozšíření:
+- Creative friction: omez si počet nástrojů (např. jen Figma + 1 plugin + 1 zdroj obrázků). Sleduj, jak se zrychlí rozhodování a jak se zkrátí iterace. Méně nástrojů = méně možností → méně mentálního šumu. Tento princip pochází z behaviorální ekonomie: snížení volby zvyšuje rychlost i kvalitu rozhodování.  
+<end-inner-block-5>
+<end-blok-5>

@@ -1,0 +1,230 @@
+<section data-ui="section">
+  <p data-ui="block">&lt;blok-6&gt;</p>
+
+  <h2 data-ui="heading">Název kroku: Strategické myšlení (1. úroveň)</h2>
+  <p data-ui="paragraph">Hlavní záměr: Dokázat navrhovat vizuály jako součást většího systému – ne jen jako jednotlivé obrázky, ale jako navazující prvky ovlivňující chování v různých fázích nákupního cyklu.</p>
+
+  <h3 data-ui="heading">Obsah kroku:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">detailní vysvětlení tématu</p>
+      <p data-ui="paragraph">Strategické myšlení spojuje design s marketingovým kontextem. Vizuály v kampani nejsou izolované – každý má jinou funkci podle toho, zda cílíme na studené publikum (TOFU), přemýšlející publikum (MOFU), nebo rozhodující publikum (BOFU).</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">TOFU vizuál přitahuje pozornost a vyvolává emoci.</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">MOFU vizuál buduje důvěru a konkretizuje přínosy.</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">BOFU vizuál redukuje riziko a vede k okamžité akci.</p>
+        </li>
+      </ul>
+      <p data-ui="paragraph">Journey mapping pak ukazuje, jak uživatel putuje mezi těmito fázemi a jaká sdělení dává smysl použít. Message hierarchy slouží jako řídicí osa – hlavní benefit, pod-benefit, podpůrné důkazy, CTA.</p>
+    </li>
+
+````
+<li data-ui="list-item">
+  <p data-ui="label">příklady</p>
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Analogický příklad: vizuály v kampani fungují jako scény ve filmu. Každá scéna má svou roli: úvod naláká, střed vysvětluje, závěr uzavírá. Bez strategického řazení by film nedával smysl. Stejně tak kampaně bez strategie přicházejí o výsledky.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Technický příklad – message hierarchy pro fitness app:</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>```
+````
+
+Hlavní benefit: Získej kontrolu nad svým tréninkem
+Pod-benefit 1: Přehledné statistiky
+Pod-benefit 2: Individuální plán
+Důkaz: 120 000 aktivních uživatelů
+CTA: Začni zdarma
+
+````</code></pre>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Praktický příklad designu dle funnelu:</p>
+          <ul data-ui="bullet-list">
+            <li data-ui="list-item">
+              <p data-ui="paragraph">TOFU: výrazný vizuál se silnou emocí („Cítíš se přetíženě? Zjednoduš svůj den“)</p>
+            </li>
+            <li data-ui="list-item">
+              <p data-ui="paragraph">MOFU: graf se zlepšením výsledků + konkrétní čísla</p>
+            </li>
+            <li data-ui="list-item">
+              <p data-ui="paragraph">BOFU: CTA se slevou a social proof</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="label">případové studie nebo modelové situace</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">SaaS platforma: redesign kampaně podle funnel frameworku snížil cenu za registraci o 32 %. Největší dopad měl posun BOFU kreativy – z obecné grafiky na důkazní vizuál (review + CTA).</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Fashion značka: journey mapping ukázal, že většina interakcí probíhá na Instagramu, ale konverze až na webu. Vizuály byly proto rozděleny na „attention hooks“ (TOFU) a „detailní lifestyle fotografie“ (MOFU).</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Mobilní hra: nejvyšší CTR měla TOFU kreativita založená na emočním kontrastu, zatímco nejvyšší ROAS měl BOFU vizuál s ukázkou gameplay + krátkým benefitem.</p>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <div data-ui="qa-block">
+            <p data-ui="question">*Jak určujete, jaký typ kreativy má být použit v kampani?*</p>
+            <p data-ui="answer">„Začnu analýzou funnelu a toho, zda cílovka řeší ‘všimli si mě?’, ‘zajímá je to?’, nebo ‘jsou připraveni konvertovat?’. Podle toho volím emocionální, vzdělávací nebo akční vizuál.“</p>
+          </div>
+        </li>
+        <li data-ui="list-item">
+          <div data-ui="qa-block">
+            <p data-ui="question">*Co je to message hierarchy a jak ji používáte?*</p>
+            <p data-ui="answer">„Je to struktura, která určuje, co musí divák pochopit jako první, druhé a třetí. Pomáhá udržet vizuální hierarchii čistou a vede oči od dominanty až ke CTA.“</p>
+          </div>
+        </li>
+        <li data-ui="list-item">
+          <div data-ui="qa-block">
+            <p data-ui="question">*Jak zajistíte, že vizuály podporují cíle kampaně?*</p>
+            <p data-ui="answer">„Vyvázám je z kontextu izolovaného designu a přiřadím ke konkrétní fázi funnelu. Každý vizuál má definovaný ‘job to be done’.“</p>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="label">mini úkoly nebo praktická cvičení</p>
+      <ul data-ui="tasks">
+        <li data-ui="task">
+          <p data-ui="paragraph">Vyber jeden produkt a vytvoř kompletní customer journey mapu:</p>
+          <ul data-ui="bullet-list">
+            <li data-ui="list-item">
+              <p data-ui="paragraph">* awareness → consideration → conversion → retention</p>
+            </li>
+          </ul>
+        </li>
+        <li data-ui="task">
+          <p data-ui="paragraph">Navrhni 3 klíčové vizuály:</p>
+          <ol data-ui="numbered-list">
+            <li data-ui="list-item">
+              <p data-ui="paragraph">1. TOFU – emoční „hook“</p>
+            </li>
+            <li data-ui="list-item">
+              <p data-ui="paragraph">2. MOFU – vizuál s konkrétním benefitem</p>
+            </li>
+            <li data-ui="list-item">
+              <p data-ui="paragraph">3. BOFU – důkaz + CTA</p>
+            </li>
+          </ol>
+        </li>
+        <li data-ui="task">
+          <p data-ui="paragraph">Napiš message hierarchy pro každý z těchto vizuálů.</p>
+        </li>
+        <li data-ui="task">
+          <p data-ui="paragraph">Mini-test: dokážeš u každého vizuálu vysvětlit *proč by měl fungovat*? Pokud ne, vrať se ke kroku 4 nebo 5.</p>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="label">návaznost na krok n-1</p>
+      <p data-ui="paragraph">Krok 5 tě naučil precizní workflow. Tento krok přidává “proč” a “kde v systému”. Už není důležité jen *jak* vyrobit vizuál, ale *kam patří* a *jak ovlivňuje zákaznické rozhodnutí*. To je zásadní kompetence při pohovoru: kandidát, který chápe kampaně systémově, působí jako někdo, kdo může ovlivňovat výsledky – ne jen vytvářet pěkné obrázky.</p>
+    </li>
+  </ul>
+
+  <h3 data-ui="heading">Praktická část:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">Strukturovaný problém – návrh 3 vizuálů podle funnelu</p>
+      <p data-ui="paragraph">Produkt: digitální kurz time-managementu</p>
+      <ol data-ui="numbered-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">TOFU vizuál – ASCII wireframe:</p>
+          <pre data-ui="code-block" data-language="algorithm"><code>```
+[EMOČNÍ FOTKA PŘETÍŽENÉ OSOBY]
+[KRÁTKÝ VÝKŘIK: "Ztrácíš čas?"]
+[ŽÁDNÉ CTA – jen přitáhnout pozornost]
+```</code></pre>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">MOFU vizuál – prototyp:</p>
+          <pre data-ui="code-block" data-language="algorithm"><code>```
+[PŘEHLEDNÝ GRAF]
+[HLAVNÍ BENEFIT: "Ušetři 5 hodin týdně"]
+[SECONDARY TEXT: stručné vysvětlení]
+[CTA: "Podívat se na lekce"]
+```</code></pre>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">BOFU vizuál – výkonnostní layout:</p>
+          <pre data-ui="code-block" data-language="algorithm"><code>```
+[REVIEW ★★★★★]
+[KRÁTKÝ TEXT: "140 000 studentů už prošlo kurzem"]
+[CTA BUTTON: "Začít dnes"]
+```</code></pre>
+        </li>
+      </ol>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="label">Jednoduchý algoritmus pro určení vhodné kreativy:</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>```
+if audience == "cold":
+    typ_kreativy = "emoční / attention-based"
+elif audience == "warm":
+    typ_kreativy = "educational / benefit-based"
+elif audience == "hot":
+    typ_kreativy = "proof-driven / direct CTA"
+```</code></pre>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="label">Mini-hádanka:</p>
+      <p data-ui="paragraph">  Pokud máš vizuál, který skvěle funguje na Instagramu, ale mizerně konvertuje na webu, ve které části funnelu pravděpodobně vzniká problém?</p>
+      <p data-ui="paragraph">  → Awareness je v pořádku, ale chybí MOFU prvek – člověk neví *proč právě tento produkt*.</p>
+    </li>
+  </ul>
+
+  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+
+  <ul data-ui="metric-list">
+    <li data-ui="metric">
+      <p data-ui="paragraph">umíš jasně určit, který typ vizuálu se hodí pro TOFU/MOFU/BOFU</p>
+    </li>
+    <li data-ui="metric">
+      <p data-ui="paragraph">dokážeš vytvořit 3 navazující vizuály pro celý nákupní cyklus</p>
+    </li>
+    <li data-ui="metric">
+      <p data-ui="paragraph">umíš vysvětlit message hierarchy pro každý výstup</p>
+    </li>
+    <li data-ui="metric">
+      <p data-ui="paragraph">portfolio začíná působit ne jako sada vizuálů, ale jako funkční systém</p>
+    </li>
+  </ul>
+
+  <p data-ui="block">&lt;inner-block-6&gt;</p>
+
+  <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">- Nakresli vlastní „strategy canvas“:</p>
+      <p data-ui="paragraph">  Na osu X dej klíčové parametry cílové skupiny (např. rychlost rozhodování, citlivost na cenu, potřeba sociální validace, vizuální preference).</p>
+      <p data-ui="paragraph">  Na osu Y dej intenzitu, jak silně na ně chceš designem působit.</p>
+      <p data-ui="paragraph">  Vznikne ti mapa, která jasně ukáže, jak má tvoje komunikace “hrát”.</p>
+      <p data-ui="paragraph">  Strategy canvas původně pochází z business inovací (Blue Ocean Strategy), ale v designu vytváří neocenitelný rámec: vizuál není náhodný – je to rozhodnutí o tom, *kam přesně zasáhneš v hlavě zákazníka*.</p>
+    </li>
+  </ul>
+
+  <p data-ui="block">&lt;end-inner-block-6&gt;</p>
+  <p data-ui="block">&lt;end-blok-6&gt;</p>
+</section>
+````

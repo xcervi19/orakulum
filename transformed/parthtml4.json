@@ -1,0 +1,1023 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "section",
+    "children": [
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<blok-5>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h2",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Název kroku: Exekuce vysoké přesnosti"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Ovládnout profesionální produkční workflow, ve kterém každý krok – od prvního briefu po finální export – probíhá rychle, přesně a predikovatelně."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Obsah kroku:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "bullet-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "detailní vysvětlení tématu"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Exekuce je fáze, kde se rozhoduje o kvalitě výstupu i o důvěře klienta. Profesionální workflow zajišťuje, že žádný krok není náhodný, nic se neztrácí, rozhodnutí vycházejí z psychologických principů (krok 4) a výsledný vizuál je konzistentní s cílem kampaně."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Standardní pipeline:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "  Briefing → Analýza → Skicování → Moodboard → Prototyp → Iterace → Final Delivery."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "  Každá část má jinou funkci: briefing nastavuje realitu, skicování generuje varianty, moodboard definuje tón, prototyp ověřuje funkčnost, final delivery ověřuje technickou kvalitu (rozlišení, formát, export)."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ""
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "příklady"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Briefing: nastavení cílů kampaně, definice emocí, které má vizuál vyvolat (např. „urgentní“ vs. „klidný“ – viz krok 4)."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Skicování: rychlý nízkonákladový proces, který zabrání slepým uličkám v pozdější fázi."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Moodboard: referenční materiál ukazující barvy, rytmus, světlo, tonalitu, typografii."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Prototyp: jednoduchá testovací verze vizuálu, ve které se hodnotí čitelnost, tok pozornosti, CTA viditelnost."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Final export: více verzí pro různé kanály (1080×1080, 1080×1920, 1200×628)."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "případové studie nebo modelové situace"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Agenturní workflow: junior designer, který pečlivě připravuje moodboardy, obvykle zkracuje iterace art directorovi o 30–40 %. Moodboardy chrání před mylnými interpretacemi a urychlují schvalování."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Freelancer pro e-commerce brand: díky pevné pipeline (brief → 2 skici → moodboard → prototyp) snížil počet revizí z 6 na 2, protože klient přesně věděl, co dostane."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Performance kampaně: prototyp s rychlou A/B validací (změna CTA kontrastu, přesun hlavního claimu) zvýšil CTR o 18 %."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "typické pohovorové otázky a optimální odpovědi"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Jak probíhá váš workflow od briefu po finální vizuál?"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "„Používám strukturu briefing → skicování → moodboardy → prototyp → final export. Každý krok má definovaný časový limit a vlastní cíle. Díky tomu vím, kdy přestat iterovat a kdy přejít do produkce.“"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Jak kontrolujete kvalitu výstupů?"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "„Používám checklist: kontrast CTA, čitelnost do 2 sekund, konzistence stylu, správná typografie, exportní profily, správné barevné prostory.“"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Co uděláte, když klient není spokojen s první verzí?"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "„Vrátím se do fáze moodboardů nebo skic – tedy k fázi, kde se rozcházejí očekávání. Tím minimalizuji zbytečné přepracování finalizovaných vizuálů.“"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "mini úkoly nebo praktická cvičení"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "tasks",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "task",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vytvoř 3 moodboardy pro 3 různé značky:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ol",
+                        "ui": "numbered-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "1. technologická SaaS značka (moderní, čistá, přesná)"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "2. fashion značka (emocionální, stylizovaná, trendová)"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "3. eco-friendly značka (organická, teplá, klidná)"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "task",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Změř si čas jednotlivých kroků (např. skicování = 20 min, moodboard = 45 min)."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "task",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Udělej 2 prototypy téhož vizuálu a otestuj, který má lepší vizuální hierarchii (překryj 70 % designu a sleduj, co „zůstává“)."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "návaznost na krok n-1"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Krok 4 ti dal psychologii. Tento krok ji přetavuje do řízeného procesu. Nyní už netvoříš na pocit – tvoříš s přesným workflow, které dokážeš u pohovoru jasně demonstrovat. To recruiterům signalizuje profesionalitu, spolehlivost a schopnost škálovat výkon."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Praktická část:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "bullet-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Strukturovaný problém – vytvoření prototypového workflow"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ol",
+                "ui": "numbered-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vezmi hypotetický brief:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ul",
+                        "ui": "bullet-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Produkt: mobilní aplikace na správu financí"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Cíl: zvýšit počet registrací"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Emoce: klid, kontrola, jistota"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "ASCII diagram workflow:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "pre",
+                        "ui": "code-block",
+                        "attrs": {
+                          "data-language": "algorithm"
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "code",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "\n[BRIEF] → [SKICY] → [MOODBOARD] → [PROTO] → [REVIZE] → [FINÁL]\n                     ↘ psychologické rámování ↗\n"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Mini-algoritmus kontroly výstupu:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "pre",
+                        "ui": "code-block",
+                        "attrs": {
+                          "data-language": "algorithm"
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "code",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "\nif CTA_kontrast > 4.5 and text_čitelnost < 2s:\n    kvalita += 1\nif moodboard == styl_finalu:\n    konzistence += 1\nexporty = [\"1080x1080\", \"1080x1920\", \"1200x628\"]\nfor e in exporty:\n    otestuj_format(e)\n"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Mikro-hádanka na workflow:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "     Pokud klient změní barevnost až ve fázi final exportu, v kterém kroku pipeline nastala chyba?"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "     → odpověď: moodboard (nesladěné očekávání)."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Ukazatele úspěchu:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "metric-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "přesně víš, kolik času zabere každý krok procesu"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "máš vlastní pipeline, kterou dokážeš obhájit i demonstrovat"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "počet revizí výrazně klesá (měřitelný ukazatel pro práci s klienty)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "dokážeš vytvořit profesionální moodboardy pro různé brandy"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<inner-block-5>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Bonus / laterální rozšíření:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "bullet-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "- Creative friction: omez si počet nástrojů (např. jen Figma + 1 plugin + 1 zdroj obrázků). Sleduj, jak se zrychlí rozhodování a jak se zkrátí iterace. Méně nástrojů = méně možností → méně mentálního šumu. Tento princip pochází z behaviorální ekonomie: snížení volby zvyšuje rychlost i kvalitu rozhodování."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<end-inner-block-5>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<end-blok-5>"
+          }
+        ]
+      }
+    ]
+  }
+]

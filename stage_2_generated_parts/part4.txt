@@ -1,0 +1,135 @@
+<blok-4>
+Název kroku: Psychologie vnímání a nákupních rozhodnutí  
+Hlavní záměr: Tvořit vizuály a kampaně, které systematicky ovlivňují lidské chování – od prvního mikro-vjemu až po kliknutí a nákup.  
+
+Obsah kroku:
+
+* detailní vysvětlení tématu
+  Psychologie vnímání a rozhodování je “backend” každého vizuálu. Neřeší jen estetiku, ale ovlivňuje, kam se divák podívá jako první, co si zapamatuje, jaký pocit v něm vizuál vyvolá a jaké chování následuje.
+  Základní bloky:
+
+  * AIDA model: Attention → Interest → Desire → Action. Každý prvek vizuálu by měl mít jasnou roli v jednom z těchto kroků.
+  * Rozhodovací heuristiky: zkratky, podle kterých lidé rozhodují bez plné racionální úvahy (např. „co dělají ostatní“, „co se zdá být omezené“, „co je nejjednodušší volba“).
+  * Priming: před-nastavení mysli konkrétním podnětem (barvou, slovem, motivem), aby byl mozek citlivější na určitou interpretaci.
+  * Kontrastní efekty: to, jak vnímáme objekt ve vztahu k něčemu jinému (cena, barevnost, velikost, rychlost).
+  * Social proof: používání důkazů, že “ostatní už to udělali” → zmírnění rizika, zvýšení důvěry.
+
+* příklady (technické, analogické, příběhové)
+
+  * AIDA v banneru pro SaaS nástroj:
+
+    * Attention: výrazná, jednoduchá vizuální metafora (např. přeplněná “to-do list” zeď vs. čistý dashboard).
+    * Interest: 1 konkrétní benefit: „Ušetříte 4 hodiny týdně“.
+    * Desire: minipříběh: „Týmy jako X, Y už běží klidně.“
+    * Action: CTA s jasným důvodem: „Vyzkoušet na 14 dní zdarma“.
+  * Kontrastní efekt v cenotvorbě:
+    Prezentace tří plánů (Basic – Pro – Enterprise), kde Pro je uprostřed a lehce zvýrazněný. Mozek většiny lidí vyhodnotí „střední volbu“ jako bezpečnou – ukotvení a relativní kontrast.
+  * Priming barvami:
+
+    * teplé, živé barvy + ostré kontrasty → urgency, akce, pocit „teď nebo nikdy“
+    * jemné, tlumené tóny + hodně prostoru → klid, důvěra, „dobře promyšlené rozhodnutí“
+
+* případové studie nebo modelové situace
+
+  * E-shop s elektronikou:
+    Původní banner: „Sleva 20 % na notebooky“ + generická fotka produktu.
+    Nový banner:
+
+    * headline: „Pouze dnes: 20 % dolů na výkon, který vydrží“
+    * countdown prvek (vizuální timer) → aktivace heuristiky „scarcity“
+    * micro-copy: „Kampaň využilo už 427 zákazníků“ → social proof
+      Výsledek: nárůst CTR o X % (modelová situace, ale typický vzorec).
+  * Mobilní aplikace pro meditaci:
+    Test A: výrazná oranžová CTA „Začněte hned“ + dynamické pozadí → vysoká míra kliknutí, ale nízká míra dokončení registrace (příliš „ostrá“ energie).
+    Test B: měkké modré pozadí, klidný vizuál, CTA „Začněte s klidnou hlavou“ → méně kliknutí, ale vyšší kvalita uživatelů (vyšší retence).
+
+* typické pohovorové otázky a optimální odpovědi
+
+  * *Jak používáte AIDA model v praxi?*
+    „Každý vizuál navrhuju tak, aby měl jasně definovanou roli pro Attention (dominantní prvek, kontrast), Interest (konkrétní benefit), Desire (emocionální nebo sociální motivace) a Action (viditelné CTA s důvodem ke kliknutí). Dokážu ukázat konkrétní příklady, kde změna těchto prvků posunula metriky.“
+  * *Jak zapojujete psychologii při designu CTA?*
+    „Řeším kontrast, micro-copy a umístění podle vzorce:
+
+    * CTA musí být nejkontrastnější prvek v rámci své zóny,
+    * text CTA používá aktivní sloveso + benefit (‘Stáhnout plán’, ‘Odemknout přístup’),
+    * umísťuji ho tam, kde přirozeně končí čtenářův vizuální tok (např. na konci F-patternu).“
+  * *Jak byste vysvětlil/a priming non-design kolegovi?*
+    „Priming je jako nastavit scénu předtím, než zazní hlavní věta. Jediným obrázkem, barvou nebo větou připravím mozek, aby zbytek sdělení vnímal určitým směrem – například ‘klid’, ‘rychlost’ nebo ‘exkluzivita’.“
+
+* mini úkoly nebo praktická cvičení
+
+  * Vezmi existující banner (klidně svůj starší) a přepiš ho ve 3 verzích:
+
+    1. motivace: úspora času
+    2. motivace: strach ze ztráty
+    3. motivace: společenský status
+  * Vybarvi 2 jednoduché layouty: jeden pro urgentní kampaň („poslední šance“), druhý pro prémiový, klidný produkt. Zkus pouze změnou barev, spacingu a typografie navodit jiný psychologický pocit.
+  * Vytvoř malý “psychologický checklist” ke svým vizuálům:
+
+    * Co přitahuje první pohled?
+    * Jaká je hlavní emoce?
+    * Která heuristika je aktivovaná (scarcity, social proof, authority, jednoduchost…)?
+
+* návaznost na krok n-1
+  Krok 2 tě naučil fundamentální kompetence (kompozice, barvy, growth mindset) a krok 3 tě zaměřil na mikro-specializaci. Tento krok tyto dovednosti “oživuje” psychologií. Už netvoříš jen hezké nebo konzistentní věci – tvoříš vizuály, u kterých umíš obhájit, jak ovlivňují mysl a chování cílovky. To je přesně to, co u pohovoru odlišuje juniorní estetický design od strategického marketingového designu.
+
+Praktická část:
+
+* Strukturovaný problém – přetvoř banner s jinou motivací
+  Vstupní banner (modelový):
+
+  * Produkt: online kurz produktivity
+  * Původní text: „Zvyšte svou produktivitu. Přihlaste se.“
+  * Obraz: žena u laptopu, generická stock fotka
+    Úkol:
+
+  1. Varianta „strach ze ztráty“ (loss aversion):
+
+     * přepiš headline tak, aby zdůraznil, co člověk ztratí, když kurz neabsolvuje
+     * přidej prvek „poslední šance“ (časové omezení)
+  2. Varianta „status a sebeobraz“:
+
+     * přepiš headline tak, aby aktivoval ambici („patřím mezi…“)
+     * vizuál zaměř na výsledek (klidný, organizovaný člověk, ne chaos)
+  3. ASCII náčrt priming layoutu:
+
+     ```
+     [EMOČNÍ OBRAZ]  -> priming (pocit klidu / napětí)
+     [HLAVNÍ CLAIM]  -> A / I
+     [MICRO-PROOF]   -> social proof (počet studentů, hodnocení)
+     [CTA BUTTON]    -> jasná akce
+     ```
+* “Pseudo-kód” psychologického rozhodovacího toku:
+
+  ```
+  if vizuál_upoutá_pozornost():
+      if sdělení_je_srozumitelné_do_2s():
+          emoce = vyvolaná_emoce()
+          heuristika = aktivovaná_heuristika()
+          if emoce podporuje cílové chování and heuristika snižuje bariéru:
+              pravděpodobnost_akce +=
+  ```
+* Mini test: vezmi 3 své vizuály a pro každý napiš:
+
+  * kterou heuristiku používá
+  * jakou emoci má vyvolat
+  * co bys změnil, aby byla emoce ještě čistější
+
+Ukazatele úspěchu:
+
+* dokážeš u svých vizuálů vysvětlit, jaký psychologický princip stojí za každým klíčovým prvkem
+* umíš vytvořit minimálně 3 varianty stejného vizuálu podle různých motivací (čas, bezpečí, status, pohodlí)
+* při simulovaném pohovoru dokážeš projít své portfolio a u každého designu říct: „Tady jsem použil/a {AIDA, priming, social proof} a výsledkem bylo {vyšší čitelnost, vyšší CTR, delší time-on-page}“
+
+<inner-block-4>
+Bonus / laterální rozšíření:
+- Vytvoř dva vizuály, které působí opačným psychologickým efektem:  
+  1) urgentní vizuál  
+     - ostré kontrastní barvy, diagonální linie, countdown, slova jako „teď“, „poslední šance“, „zbývá X míst“  
+     - cílem je jemně zvýšit napětí a vyvolat pocit, že odklad = ztráta  
+  2) klidný vizuál  
+     - tlumené barvy, hodně prázdného prostoru, horizontální linie, slova jako „v klidu“, „bez stresu“, „kdykoli začnete“  
+     - cílem je snížit obranné mechanismy, zvýšit důvěru  
+  Pak si udělej mini-interdisciplinární cvičení: popiš oba vizuály jazykem psychologie (emoce, arousal, kognitivní zátěž) a jazykem UX (frikce, clarity, affordance). Vytvoříš tím vlastní mentální “překladač” mezi designem, marketingem a psychologií – přesně ten typ myšlení, který u pohovorů odlišuje kreativce od strategického tvůrce kampaní.  
+<end-inner-block-4>
+<end-blok-4>

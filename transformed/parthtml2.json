@@ -1,0 +1,931 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "section",
+    "children": [
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<blok-3>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h2",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Název kroku: Mikro-specializace (1. úroveň)"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Vybrat úzkou subdoménu, ve které lze rychle růst, získat jasnou identitu a produkovat konzistentní hodnotu pro trh i zaměstnavatele."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Obsah kroku:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "bullet-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "detailní vysvětlení tématu"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mikro-specializace určuje, jaký typ problémů řešíte nejlépe: performance design, branding, social content nebo motion. Cílem je vytvořit profesionální fokus, který zrychlí učení, zvýší kvalitu výstupů a především vás jasně odliší u pohovoru. Recruiter vidí: „Tento člověk je expert na X a má 15 konzistentních prací.“"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ""
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "příklady"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Performance designer se zaměřuje na strukturu vizuálu, čitelnost CTA, rychlost pochopení sdělení."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Branding designer řeší systém, konzistenci, gridy, logiku vizuální identity."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Social content specialista pracuje s variabilitou, mikro-storytellingem a rytmem."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Motion specialista tvoří animace, přechody, krátké dynamické spoty."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "případové studie nebo modelové situace"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Freelancer vytvořil mikro-portfólio 12 výkonnostních bannerů pro 3 segmenty (fitness, SaaS, fashion). Za 6 týdnů získal stabilní kontrakt, protože klient jasně viděl, že umí řešit specifický problém, ne „všechno trochu“."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Junior motion designer vytvořil 10 micro-animací pro hypotetickou značku. V pohovoru se stal top uchazečem díky tomu, že jeho styl byl konzistentní a použitelný v reálné produkci."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "typické pohovorové otázky a optimální odpovědi"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Jakou oblast designu chcete rozvíjet a proč?"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "„Soustředím se na performance design, protože mě baví kombinovat psychologii pozornosti, jasnou výzvu k akci a rychlé testování. Tvořím vizuály, které mají měřitelný dopad.“"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Jak přistupujete k tvorbě obsahu pro různé cílové skupiny?"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "„Začnu mikro-personou → definice motivace → volba stylu → test 3 verzí. Mám systém, ne náhodný výběr.“"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Jak vnášíte konzistenci do vizuálů?"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "„Používám pevně definovaný stylový rámec: kontrastní páry, typografickou hierarchii, opakující se motivy a grid.“"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "mini úkoly nebo praktická cvičení"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "tasks",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "task",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vytvořte 5 reklamních vizuálů pro 5 různých cílovek (mladé mámy, early adopters, studenti, profesionálové 30+, fanoušci luxusu)."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "task",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vyberte jeden styl, kterému dáte jasná pravidla: barvy, rytmus, typografie, kompozice, tón CTA."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "task",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Ověřte, zda jsou vizuály „scanovatelné“ do 2 sekund — quick test: zakryjte 70 % vizuálu a sledujte, co zůstane zapamatovatelné."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "návaznost na krok n-1"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Navazuje na fundamentální kompetence z kroku 2 — nyní se nejedná jen o pochopení principů, ale o jejich cílené uplatnění v jedné subdoméně. „Základní dovednosti → ostřený fokus → portfolio.“"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Praktická část:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "bullet-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Strukturovaný problém: Navrhněte 3 vizuály pro stejný produkt, ale odlišné subdomény."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ol",
+                "ui": "numbered-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Performance varianta (ASCII wireframe):"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "pre",
+                        "ui": "code-block",
+                        "attrs": {
+                          "data-language": "algorithm"
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "code",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "\n[PRODUKT FOTO]  \n[BOLD BENEFIT]  \n[CTA]  \n"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Branding varianta (grid):"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "pre",
+                        "ui": "code-block",
+                        "attrs": {
+                          "data-language": "algorithm"
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "code",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "\n|LOGO|---TAGLINE---|  \n|COLOR BLOCK|IMAGE|  \n|CTA|  \n"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Social content varianta (krátký koncept):"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "“3-sekundový mikro-příběh → punchline → CTA”"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini-algoritmus výběru specializace:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "pre",
+                "ui": "code-block",
+                "attrs": {
+                  "data-language": "algorithm"
+                },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "code",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "\nscore = (radost_z_tvorby  0.5) + (rychlost učení  0.3) + (poptávka_na_trhu * 0.2)\nvyber_subdomenu(score.max())\n"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini-test: Dokážeš vytvořit 5 vizuálů, z nichž je na první pohled jasné, že patří do jedné stylistické rodiny?"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Ukazatele úspěchu:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "metric-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "vzniká micro-portfólio 10–15 prací v jednom konkrétním stylu"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "konzistentní vizuální jazyk napříč projekty"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "připravené ukázky, které lze u pohovoru prezentovat jako „micro-expertise package“"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "metric",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "samostatné argumentování: proč jsem si vybral tuto subdoménu a jak v ní rostu"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<inner-block-3>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Bonus / laterální rozšíření:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "ui": "bullet-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "- Experiment „design in constraints“: vytvoř 3 kampaně pod extrémními omezeními."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "- pouze černobílá paleta (disciplína kontrastu)"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "- bez textu (čistá vizuální srozumitelnost)"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "- pouze text (typografická síla, rytmus, tón)"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "  Tento typ cvičení rozvíjí laterální kreativitu, odstraňuje závislost na „bezpečných“ řešeních a výrazně vylepšuje schopnost improvizace — což je jedna z nejvíce oceňovaných kompetencí u kreativních pohovorů."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<end-inner-block-3>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "block",
+        "children": [
+          {
+            "type": "text",
+            "text": "<end-blok-3>"
+          }
+        ]
+      }
+    ]
+  }
+]
