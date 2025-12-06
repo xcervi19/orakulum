@@ -112,7 +112,7 @@ Technologie a dovednosti:
 – dovednost 2
 
 text klienta :
-{rawinput}
+[[rawinput]]
 """
 
 raw_input_json = """
@@ -148,9 +148,9 @@ Zásady:
 * Pokud nenajdeš 10 nabídek, vrať všechny dostupné.
 
 text klienta :
-{rawinput}
+[[rawinput]]
 """
-
+ 
 llmcontext_init = """
 Inicializační krok. 
 Zahaj kariérní plán. Vytvoř úvodní Screen, který otevře téma růstu kariéry pro uvedenou v ČR. Cíl: inspirovat, nastavit směr a definovat první akční kroky.

@@ -1,0 +1,815 @@
+{
+  "pages": [
+    [
+      {
+        "type": "title",
+        "content": "Portfolio teardown a case builder pro grafika a digital marketing specialistu"
+      },
+      {
+        "type": "summary",
+        "content": "Navazujeme na úvodní mini plán a jdeme do důkazního case. Cílem je rozebrat jednu kampaň na měřitelné kroky, převést design na výkon a připravit materiál, který v rozhovoru obstojí před byznysem i techniky."
+      },
+      {
+        "type": "table",
+        "content": "Checklist důkazních materiálů pro case",
+        "columns": [
+          "Oblast",
+          "Co dodat",
+          "Jak hodnotit",
+          "Aha moment"
+        ],
+        "rows": [
+          [
+            "Brief a cíl",
+            "Jednovětá definice cíle a publika",
+            "Shoda s metrikami a funnel fází",
+            "Cíl bez metrik je jen přání"
+          ],
+          [
+            "Vizualita",
+            "3 varianty vizuálu pro TOFU MOFU BOFU",
+            "Čitelnost kontrast hierarchie",
+            "Estetika roste s jasem záměru"
+          ],
+          [
+            "Copy",
+            "Headline subheadline CTA",
+            "Hodnota důkaz akce",
+            "Text prodává obraz vtahuje"
+          ],
+          [
+            "Struktura kampaní",
+            "Naming a segmentace sad",
+            "Smysl podle úmyslu vyhledávání",
+            "Chaos zabíjí učení"
+          ],
+          [
+            "Měření",
+            "GA4 exploration s creative_id",
+            "Atribuce a path rozpad",
+            "Bez identifikátoru není učení"
+          ],
+          [
+            "Výkon",
+            "CTR CVR CPA ROAS",
+            "Srovnání baseline a po změně",
+            "Malá změna velký dopad"
+          ],
+          [
+            "Iterace",
+            "Decision log scale iterate pause",
+            "Hypotéza metrika rozhodnutí",
+            "Proces je produkt"
+          ]
+        ]
+      },
+      {
+        "type": "framework",
+        "content": "Struktura case pro interview",
+        "items": [
+          "Situace a cíl zadání publikum omezení",
+          "Diagnóza nejrizikovější předpoklad",
+          "Varianty a trade off rychlost brand výkon riziko",
+          "Řešení systém komponent naming a exporty",
+          "Výkon čísla baseline vs po zásahu",
+          "Reflexe co nevyšlo a co příště změnit",
+          "Dopad na byznys a co by mělo smysl dál škálovat"
+        ]
+      },
+      {
+        "type": "metrics",
+        "content": "Modelový výsledek case",
+        "items": [
+          "Baseline Impressions 500000 Clicks 15000 CTR 3.0 Spend CZK 150000 Conversions 450 CVR 3.0 AOV CZK 1200 Revenue CZK 540000 ROAS 3.60 CPA CZK 333",
+          "Po změně Impressions 480000 Clicks 17280 CTR 3.6 Spend CZK 150000 Conversions 691 CVR 4.0 AOV CZK 1200 Revenue CZK 829200 ROAS 5.53 CPA CZK 217",
+          "Uplift ROAS plus 53.6 CPA minus 34.9 Revenue plus CZK 289200 Conversions plus 241"
+        ]
+      },
+      {
+        "type": "code",
+        "content": "Výpočet KPI pro rychlou validaci case",
+        "language": "python",
+        "content_raw": "ZGVmIGtwaShpbXByLCBjbGlja3MsIHNwZW5kLCBjb252LCBhb3YpOgogICAgY3RyID0gY2xpY2tzIC8gaW1wcgogICAgY3ZyID0gY29udiAvIGNsaWNrcyBpZiBjbGlja3MgZWxzZSAwCiAgICBjcGMgPSBzcGVuZCAvIChjbGlja3Mgb3IgMSkKICAgIGNwYSA9IHNwZW5kIC8gKGNvbnYgb3IgMSkKICAgIHJldmVudWUgPSBjb252ICogYW92CiAgICByb2FzID0gcmV2ZW51ZSAvIChzcGVuZCBvciAxKQogICAgcmV0dXJuIHsiaW1wciI6IGltcHIsICJjbGlja3MiOiBjbGlja3MsICJjdHIiOiBjdHIsICJzcGVuZCI6IHNwZW5kLCAiY29udiI6IGNvbnYsICJjdnIiOiBjdnIsICJjcGMiOiBjcGMsICJjcGEiOiBjcGEsICJhb3YiOiBhb3YsICJyZXZlbnVlIjogcmV2ZW51ZSwgInJvYXMiOiByb2FzfQoKYmFzZWxpbmUgPSBrcGkoNTAwMDAwLCAxNTAwMCwgMTUwMDAwLCA0NTAsIDEyMDApCmFmdGVyID0ga3BpKDQ4MDAwMCwgMTcyODAsIDE1MDAwMCwgNjkxLCAxMjAwKQoKcHJpbnQoYmFzZWxpbmUpCnByaW50KGFmdGVyKQ=="
+      },
+      {
+        "type": "worksheet",
+        "content": "Pracovní list krok za krokem",
+        "items": [
+          "Vyber jednu kampaň a sepiš cíl publikum omezení",
+          "Zaveď creative_id do exportů a dashboardu",
+          "Vytvoř 3 varianty vizuálu a k nim 3x headline a 1x video",
+          "Připrav GA4 exploration funnel a path s filtrem na creative_id",
+          "Vyplň decision log hypotéza metrika výsledek rozhodnutí",
+          "Sestav jednověté shrnutí dopadu v jazyce byznysu"
+        ]
+      },
+      {
+        "type": "framework",
+        "content": "Interview mikroscénář STAR plus plus pro case",
+        "items": [
+          "Situace klient cíl omezení",
+          "Úkol očekávaný dopad a rizika",
+          "Akce volba variant trade off a proč",
+          "Výsledek čísla a srovnání",
+          "Reflexe co nevyšlo a co příště",
+          "Dopad na byznys a návrh škálování"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Seber data vizuály a čísla a slož z nich krátký case podle této struktury přidej decision log a jednověté byznys shrnutí"
+      }
+    ],
+    [
+      {
+        "type": "title",
+        "content": "Case storytelling trénink Q a A a obchodní překlad design rozhodnutí"
+      },
+      {
+        "type": "summary",
+        "content": "Navázali jsme na portfolio teardown a case builder. Teď cvičíme vedení rozhovoru v režimu Q a A s důrazem na trade offy, metriky a byznys dopad. Cíl je umět převést vizuální rozhodnutí do řeči výkonu a jistě řídit dynamiku interview."
+      },
+      {
+        "type": "framework",
+        "content": "Mini skript pro řízení rozhovoru",
+        "items": [
+          "Otevření hodnotou jedna věta dopad pro firmu",
+          "Mapování úmyslu tři rychlé otázky na cíl rizika metriky",
+          "STAR plus plus s dokreslením čísel a alternativ",
+          "Obchodní překlad co to udělalo s CTR CVR CPA ROAS",
+          "Ukončení návrhem experimentu a metriky úspěchu"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Business překlad design rozhodnutí",
+        "columns": [
+          "Rozhodnutí",
+          "Důvod",
+          "Trade off",
+          "Metrika",
+          "Věta do interview"
+        ],
+        "rows": [
+          [
+            "Zvýšení kontrastu textu",
+            "Čitelnost na mobilech",
+            "Možná ztráta jemnosti brandu",
+            "CTR plus 0.6 p. b.",
+            "Zvýšil jsem kontrast pro mobilní čitelnost a CTR vzrostlo o 0.6 p. b."
+          ],
+          [
+            "Zkrácení headline",
+            "Rychlejší pochopení nabídky",
+            "Méně nuancí",
+            "CVR plus 0.8 p. b.",
+            "Zkrátil jsem headline a CVR šla nahoru o 0.8 p. b."
+          ],
+          [
+            "Omezení animace",
+            "Rychlejší první render",
+            "Méně vizuální show",
+            "CPA minus 18 pct",
+            "Zjednodušil jsem animaci a CPA klesla o 18 procent"
+          ],
+          [
+            "Segmentace sad podle záměru",
+            "Lepší relevance sdělení",
+            "Více variant na správu",
+            "ROAS plus 41 pct",
+            "Rozdělil jsem sady dle úmyslu a ROAS vzrostl o 41 procent"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "content": "Otázky které převrátí dynamiku",
+        "items": [
+          "Jaké riziko vás dnes trápí víc výkon nebo konzistence brandu",
+          "Která metrika má prioritu kdybych měl zvednout jen jednu",
+          "Co je nejhorší scénář když to neuděláme",
+          "Jak poznáme za krátký čas že jdeme správně"
+        ]
+      },
+      {
+        "type": "code",
+        "content": "Scoring engine pro odpovědi STAR plus plus",
+        "language": "python",
+        "content_raw": "CmRlZiBzdGFycHBfc2NvcmUoY2xhcml0eSwgdHJhZGVvZmZzLCBtZXRyaWNzLCByZWZsZWN0aW9uLCBidXNpbmVzcywgcHJlc2VuY2UpOgogICAgd2VpZ2h0cyA9IHsiY2xhcml0eSI6IDAuMiwgInRyYWRlb2ZmcyI6IDAuMiwgIm1ldHJpY3MiOiAwLjIsICJyZWZsZWN0aW9uIjogMC4xNSwgImJ1c2luZXNzIjogMC4xNSwgInByZXNlbmNlIjogMC4xfQogICAgdG90YWwgPSAwLjAKICAgIGZvciBrLCB3IGluIHdlaWdodHMuaXRlbXMoKToKICAgICAgICB2ID0gbG9jYWxzKClbawogICAgICAgIHYgPSBtYXgoMCwgbWluKDEwLCB2KSkKICAgICAgICB0b3RhbCArPSB2ICogdwogICAgdmVyZGljdCA9ICJoaXJlIiBpZiB0b3RhbCA+PSA4IGVsc2UgKCJtYXliZSIgaWYgdG90YWwgPj0gNiBlbHNlICJuby1oaXJlIikKICAgIHJldHVybiB7InNjb3JlIjogcm91bmQodG90YWwsIDIyKSwgInZlcmRpY3QiOiB2ZXJkaWN0fQoKcHJpbnQoc3RhcnBwX3Njb3JlKDgsIDgsIDksIDcsIDgsIDcpKSkK"
+      },
+      {
+        "type": "metrics",
+        "content": "Modelová simulace rozhovoru",
+        "items": [
+          "Před tréninkem jasnost 6 trade offy 5 metriky 6 reflexe 5 business 5 presence 6 výsledné skóre 5.85 verdict maybe",
+          "Po tréninku jasnost 8 trade offy 8 metriky 9 reflexe 7 business 8 presence 7 výsledné skóre 8.05 verdict hire"
+        ]
+      },
+      {
+        "type": "worksheet",
+        "content": "Tréninkový dril",
+        "items": [
+          "Napiš tři jednověté byznys shrnutí stejné kampaně zaměřená na různé publikum",
+          "Připrav dvě alternativy řešení a popiš kritéria rozhodnutí výkon rychlost brand riziko",
+          "Spočítej dopad z variant na CTR CVR CPA ROAS a napiš větu do interview",
+          "Nacvič tři protiotázky které tě vrátí k cíli a metrikám"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Vem svůj poslední case přepiš jej podle tabulky a mini skriptu a vyzkoušej scoring na svých odpovědích"
+      }
+    ],
+    [
+      {
+        "type": "title",
+        "content": "Executive presence a pressure handling pro grafika"
+      },
+      {
+        "type": "summary",
+        "content": "Po Q a A tréninku přecházíme k jistotě a vlivu pod tlakem. Cílem je zvládnout curveball otázky, držet strukturu a převádět kreativní volby do dopadu na byznys bez ztráty klidu."
+      },
+      {
+        "type": "framework",
+        "content": "Presence triáda",
+        "items": [
+          "Tělo držení ramen tempo dechu mikro pauzy",
+          "Obsah rámování cíle trade off metriky a rozhodnutí",
+          "Vliv práce s tichem kontrola rytmu jasné zakončení"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Curveball otázky a odpovědi",
+        "columns": [
+          "Otázka",
+          "Cíl tazatele",
+          "Struktura odpovědi",
+          "Věta do praxe"
+        ],
+        "rows": [
+          [
+            "Proč vaše kampaň ztratila výkon",
+            "Ověřit vlastnictví chyb a učení",
+            "Fakt baseline hypotéza zásah výsledek další krok",
+            "Když spadl ROAS pod 3.0 omezil jsem animaci a segmentoval záměr vyrostli jsme na 5.2"
+          ],
+          [
+            "Náš brand je přísný jak zajistíte výkon",
+            "Test vyvážení brandu a výkonu",
+            "Kritéria brand pravidla výkon limit riziko a mitigace",
+            "Držel jsem kontrast a velikost loga ale testoval kratší headline CVR plus 0.8 p b"
+          ],
+          [
+            "Nemáme čas ani rozpočet co uděláte",
+            "Prioritizace a technické úsudky",
+            "Cíl minimální viable zásah metrika zastavovací podmínky",
+            "Zavedl jsem creative id a vyměnil první frame videa CTR plus 0.6 p b"
+          ],
+          [
+            "Co když se mýlíte",
+            "Hledají pokoru i plán",
+            "Riziko signál stop kritérium plán obratu",
+            "Pokud CTR neklesne pod 2.5 pokračujeme jinak vrátím baseline vizuál"
+          ]
+        ]
+      },
+      {
+        "type": "metrics",
+        "content": "Somatická diagnostika a dopad",
+        "items": [
+          "Klid dechu 6 cyklů za minutu stabilizace hlasu a tempa",
+          "Mikro pauza 1.0 až 1.5 sek po otázce přesnost odpovědi plus",
+          "Tempo řeči 130 až 160 slov za minutu srozumitelnost plus",
+          "Kontakt očí 60 až 70 procent v čase vnímání jistoty plus"
+        ]
+      },
+      {
+        "type": "code",
+        "content": "Mikro skórování presence 0 až 10",
+        "language": "python",
+        "content_raw": "ZGVmIHByZXNlbmNlX3Njb3JlKHZvaWNlLCBwYWNlLCBwYXVzZXMsIGV5ZSwgcG9zdHVyZSwgYnJlYXRoLCBhbnN3ZXJzLCByZWRpcmVjdHMpOgogICAgd2VpZ2h0cyA9IHsidm9pY2UiOjAuMTUsInBhY2UiOjAuMSwicGF1c2VzIjowLjEsImV5ZSI6MC4xNSwicG9zdHVyZSI6MC4xNSwiYnJlYXRoIjowLjEsImFuc3dlcnMiOjAuMTUsInJlZGlyZWN0cyI6MC4xfQogICAgdG90YWwgPSAwCiAgICBmb3IgaywgdwogaW4gd2VpZ2h0cy5pdGVtcygpOgogICAgICAgIHYgPSBsb2NhbHMoKVtrXQogICAgICAgIGlmIHYgPCAwOiB2ID0gMAogICAgICAgIGlmIHYgPiAxMDogdiA9IDEwCiAgICAgICAgdG90YWwgKz0gdiAqIHcKICAgIHZlcmRpY3QgPSAiaGlyZSIgaWYgdG90YWwgPj0gOCBlbHNlICgibWF5YmUiIGlmIHRvdGFsID49IDYgZWxzZSAibm8taGlyZSIpCiAgICByZXR1cm4geyJzY29yZSI6IHJvdW5kKHRvdGFsLCAyKSwgInZlcmRpY3QiOiB2ZXJkaWN0fQoKcHJpbnQocHJlc2VuY2Vfc2NvcmUoOCw3LDgsOCw4LDcsOCw3KSk="
+      },
+      {
+        "type": "list",
+        "content": "Mini hacky pod tlakem",
+        "items": [
+          "Dech 4 2 4 nádech pauza výdech udrží nízké tempo a jistotu hlasu",
+          "Ticho je nástroj po odpovědi nechej 1 sek pro váhu sdělení",
+          "Backpressure věta pokud odpovím přímo mineme cíl dovolte rámovat cíl a metriky",
+          "Reset rukama polož propisku na stůl a začni větu jasným závěrem"
+        ]
+      },
+      {
+        "type": "worksheet",
+        "content": "Dril pod tlakem",
+        "items": [
+          "Napiš tři věty které shrnou dopad tvé poslední kampaně jazyk byznysu",
+          "Připrav dvě alternativy s jasnými kritérii výkon rychlost brand riziko",
+          "Urči stop kritéria pro experiment CTR CVR CPA a kdy vrátit baseline",
+          "Natrénuj tichou pauzu před odpovědí a zakončení návrhem dalšího kroku"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Vyzkoušej skórování presence na vlastním case a přepiš odpovědi tak aby prošly na verdict hire"
+      }
+    ],
+    [
+      {
+        "type": "title",
+        "content": "Decision making a technický úsudek pro kreativní roadmapu"
+      },
+      {
+        "type": "summary",
+        "content": "Navazujeme na executive presence a zvládání tlaku. Teď zavádíme rozhodovací rámce pro prioritizaci kreativ, řízení rizik a byznysový dopad. Cíl je umět obhájit volby čísly a vést roadmapu tak aby maximalizovala výkon a respektovala brand."
+      },
+      {
+        "type": "framework",
+        "content": "CREATIVE RICE skóre pro prioritizaci",
+        "items": [
+          "Parametry dopad impact, jistota confidence, náročnost effort, riziko risk, souladu s brandem brand_fit, rychlost speed",
+          "Vzorce Score rovná se 2x impact plus 1.5x confidence plus 1.2x brand_fit plus 1x speed minus 1x effort minus 1.3x risk",
+          "ICE metrika ICE rovná se impact krát confidence lomeno effort",
+          "Interpretace priorita primárně podle Score a při shodě podle ICE"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Váhy pro Score",
+        "columns": [
+          "Kritérium",
+          "Váha"
+        ],
+        "rows": [
+          [
+            "impact",
+            "2.0"
+          ],
+          [
+            "confidence",
+            "1.5"
+          ],
+          [
+            "brand_fit",
+            "1.2"
+          ],
+          [
+            "speed",
+            "1.0"
+          ],
+          [
+            "effort",
+            "-1.0"
+          ],
+          [
+            "risk",
+            "-1.3"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Rozhodovací matice variant",
+        "columns": [
+          "Varianta",
+          "impact",
+          "confidence",
+          "effort",
+          "risk",
+          "brand_fit",
+          "speed",
+          "ICE",
+          "Score",
+          "Pořadí"
+        ],
+        "rows": [
+          [
+            "Hero_contrast",
+            "8",
+            "8",
+            "3",
+            "2",
+            "7",
+            "8",
+            "21.33",
+            "38.8",
+            "2"
+          ],
+          [
+            "Shorter_headline",
+            "7",
+            "7",
+            "2",
+            "2",
+            "8",
+            "9",
+            "24.5",
+            "38.5",
+            "3"
+          ],
+          [
+            "Reduce_animation",
+            "6",
+            "8",
+            "1",
+            "1",
+            "9",
+            "9",
+            "48.0",
+            "41.5",
+            "1"
+          ],
+          [
+            "Intent_segmentation",
+            "9",
+            "6",
+            "5",
+            "3",
+            "8",
+            "6",
+            "10.8",
+            "33.7",
+            "4"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "content": "Mini pravidla technického úsudku",
+        "items": [
+          "Nejprve eliminuj riziko nečitelnosti a pomalého prvního dojmu",
+          "Preferuj zásahy s vysokým brand_fit a nízkým effort",
+          "Vysoké risk jen s explicitními stop kritérii a bezpečnou návratovou cestou",
+          "Pokud Score podobné rozhoduj podle ICE a rychlosti učení"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Risk register pro kreativní změny",
+        "columns": [
+          "Riziko",
+          "Signál",
+          "Mitigace",
+          "Stop kritérium"
+        ],
+        "rows": [
+          [
+            "Zhoršení čitelnosti",
+            "CTR klesá pod 2.5",
+            "Navýšit kontrast a velikost písma",
+            "Rollback vizuálu"
+          ],
+          [
+            "Rozpad brandu",
+            "Brand complaints stoupají",
+            "Zámky na barvy a logo v šablonách",
+            "Zastavit rollout"
+          ],
+          [
+            "Pomalý render",
+            "First frame nad 1.0 s",
+            "Zjednodušit animaci a počet vrstev",
+            "Zákaz animací v hero"
+          ],
+          [
+            "Mimo záměr publika",
+            "ROAS klesá i při stabilním CPC",
+            "Segmentace podle úmyslu",
+            "Zastavit nonintent sady"
+          ]
+        ]
+      },
+      {
+        "type": "metrics",
+        "content": "Modelový dopad roadmapy po prioritizaci",
+        "items": [
+          "Baseline Impressions 500000 Clicks 15000 CTR 3.0 Spend CZK 150000 Conversions 450 CVR 3.0 AOV CZK 1200 Revenue CZK 540000 ROAS 3.60 CPA CZK 333",
+          "Po Reduce_animation a Hero_contrast Impressions 490000 Clicks 17640 CTR 3.6 Spend CZK 150000 Conversions 705 CVR 4.0 AOV CZK 1200 Revenue CZK 846000 ROAS 5.64 CPA CZK 213",
+          "Uplift ROAS plus 56.7 CPA minus 36.1 Revenue plus CZK 306000 Conversions plus 255"
+        ]
+      },
+      {
+        "type": "worksheet",
+        "content": "Decision log šablona",
+        "items": [
+          "Hypotéza a očekávaný dopad na CTR CVR CPA ROAS",
+          "Hodnoty impact confidence effort risk brand_fit speed",
+          "Výpočet ICE a Score a pořadí v roadmapě",
+          "Stop kritéria a rollback plán",
+          "Výsledek a rozhodnutí scale iterate pause"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Seřaď své nápady podle Score a ICE vyplň risk register a rozhodni první dvě akce k okamžitému testu"
+      }
+    ],
+    [
+      {
+        "type": "title",
+        "content": "Narrative building a personal brand equity pro grafika"
+      },
+      {
+        "type": "summary",
+        "content": "Navazujeme na rozhodovací rámce a risk management. Teď převádíme roadmapu do přesvědčivého příběhu hodnoty pro firmu a tvoříme jasný positioning který obstojí v rozhovoru i v portfoliu."
+      },
+      {
+        "type": "framework",
+        "content": "Narrative canvas mini",
+        "items": [
+          "Záměr pro koho jsem největší výhra segment problém cíl",
+          "Diferenciace T shape nebo pi shape základ a vertikála která zvedá výkon",
+          "Důkazy čísla a před i po metriky CTR CVR CPA ROAS",
+          "Story beats situace diagnóza trade off řešení dopad reflexe",
+          "One liner jádro kdo pro koho co dodává na základě čeho jaký dopad"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Story beats a vzor jednověté zkratky",
+        "columns": [
+          "Beat",
+          "Obsah",
+          "Příklad"
+        ],
+        "rows": [
+          [
+            "Situace",
+            "Kam nefungoval výkon nebo čitelnost",
+            "ROAS stagnoval pod 3.0 a first frame byl pomalý"
+          ],
+          [
+            "Diagnóza",
+            "Nejrizikovější předpoklad",
+            "Kontrast textu a přílišná animace snižovaly CTR"
+          ],
+          [
+            "Trade off",
+            "Co jsem obětoval a proč",
+            "Méně animace větší důraz na hierarchii a rychlost"
+          ],
+          [
+            "Řešení",
+            "Systém prvků a varianty",
+            "Hero kontrast kratší headline segmentace podle úmyslu"
+          ],
+          [
+            "Dopad",
+            "Měřitelné výsledky",
+            "CTR plus 0.6 p b CVR plus 1.0 p b CPA minus 36 pct ROAS 5.6"
+          ],
+          [
+            "Reflexe",
+            "Co bych změnil příště",
+            "Zámky na brand barvy a test delšího claimu v MOFU"
+          ],
+          [
+            "One liner",
+            "Role segment hodnota důkaz dopad",
+            "Výkonnostní grafik pro e commerce fashion dodává konverzní vizuály s jasnou hierarchií podložené A B testy a GA4 ROAS 5.6 a CPA minus 36 pct"
+          ]
+        ]
+      },
+      {
+        "type": "metrics",
+        "content": "Personal brand equity signály",
+        "items": [
+          "Konzistence vizuálního systému skóre 8 z 10 stabilní grid a typografie",
+          "Klarita sdělení skóre 9 z 10 jednoznačné value prop a CTA",
+          "Důkaz výkonnosti skóre 8 z 10 metriky před a po a path v GA4",
+          "Zapamatovatelnost skóre 7 z 10 jednoduchý signature prvek v hero",
+          "Celkové skóre 8.1 verdict hire"
+        ]
+      },
+      {
+        "type": "code",
+        "content": "Generátor one liner a skóre brand equity",
+        "language": "python",
+        "content_raw": "ZGVmIG9sKHJvbGUsc2VnbWVudCx2YWx1ZSxwcm9vZixtZXRyaWMsb3V0Y29tZSk6CiAgICByZXR1cm4gZiJ7cm9sZX0gcHJvIHtzZWdtZW50fSBkb2TDoXbDoSB7dmFsdWV9IHBvZGxvxb5lbsOpIHtwcm9vZn0sIHttZXRyaWN9LCB7b3V0Y29tZX0iCgpkZWYgYmVzKHQsdixtLHAscik6CiAgICBzPTAuMip0KzAuMjUqdiswLjI1Km0rMC4yKnArMC4xKnIKICAgIHJldHVybiB7InNjb3JlIjpyb3VuZChzLDIpLCJ2ZXJkaWN0IjoiaGlyZSIgaWYgcz49OCBlbHNlICgibWF5YmUiIGlmIHM+PTYgZWxzZSAibm8taGlyZSIpfQoKcHJpbnQob2woIlbDvWtvbm5vc3Ruw60gZ3JhZmlrIiwiZS1jb21tZXJjZSBmYXNoaW9uIiwia29udmVyem7DrSB2aXp1w6FseSBzIGphc25vdSBoaWVyYXJjaGnDrSIsIkEgQiB0ZXN0eSBhIEdBNCIsIlJPQVMgNS42IGEgQ1BBIC0zNiBwY3QiLCJuw6Fyxa9zdCB0csW+ZWIgbyAzMDYgdGlzLiBDWksiKSkKcHJpbnQoYmVzKDgsOCw5LDgsNykp"
+      },
+      {
+        "type": "list",
+        "content": "Positioning mini pravidla",
+        "items": [
+          "Vyber jednu vertikálu kde tvá práce mění metriky nejvíc",
+          "Důkazy vždy po párech číslo a konkrétní vizuál",
+          "One liner drž pod 20 slov bez cizích termínů",
+          "V každém case ukaž trade off a stop kritérium"
+        ]
+      },
+      {
+        "type": "worksheet",
+        "content": "Tvorba osobního one pageru",
+        "items": [
+          "Nadpis role a segment výkonnostní grafik pro segment",
+          "One liner podle tabulky výše",
+          "Tři důkazy čísla a vizuál baseline vs po zásahu",
+          "Krátká roadmapa další dvě akce s očekávaným dopadem metrik"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Sepiš one liner a tři důkazy vlož do portfolio case a připrav větu na závěr rozhovoru která spojí hodnotu tvoje kroky a další experiment"
+      }
+    ],
+    [
+      {
+        "type": "title",
+        "content": "Strategická komunikace a thought leadership v rozhovoru"
+      },
+      {
+        "type": "summary",
+        "content": "Po narrative a brand equity převádíme výsledky do jazyka vedení. Cílem je umět okamžitě přeložit design rozhodnutí na byznys dopad a řídit rytmus rozhovoru pomocí jasné strukturace sdělení."
+      },
+      {
+        "type": "framework",
+        "content": "Message architecture mini",
+        "items": [
+          "Kontekst__DQ__ proč to řešíme teď a co je cíl byznysu",
+          "Insight__DQ__ co jsme zjistili o publiku nebo chování",
+          "Volba__DQ__ jaké trade offy přijímáme a proč",
+          "Dopad__DQ__ čísla CTR CVR CPA ROAS před a po",
+          "Další krok__DQ__ nejmenší experiment který posune jistotu"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Obchodní překlad design rozhodnutí",
+        "columns": [
+          "Rozhodnutí",
+          "Byznys kontext",
+          "Trade off",
+          "Metrika a výsledek",
+          "One-liner"
+        ],
+        "rows": [
+          [
+            "Hero kontrast",
+            "Mobilní čitelnost",
+            "Méně jemné nuance",
+            "CTR plus 0.6 p. b.",
+            "Zvýšil jsem kontrast kvůli mobilní čitelnosti CTR šla nahoru o 0.6 p. b."
+          ],
+          [
+            "Kratší headline",
+            "Rychlost pochopení nabídky",
+            "Méně nuance",
+            "CVR plus 1.0 p. b.",
+            "Zkrátil jsem headline a CVR se zvýšila o 1.0 p. b."
+          ],
+          [
+            "Méně animace",
+            "Rychlejší first frame",
+            "Méně vizuální show",
+            "CPA minus 36 pct",
+            "Zjednodušil jsem animaci a CPA klesla o 36 procent"
+          ],
+          [
+            "Segmentace podle úmyslu",
+            "Relevance sdělení",
+            "Více variant na správu",
+            "ROAS 5.6",
+            "Rozdělil jsem sady dle úmyslu a dosáhli jsme ROAS 5.6"
+          ]
+        ]
+      },
+      {
+        "type": "list",
+        "content": "Thought leadership playbook",
+        "items": [
+          "Přejmenuj problém na byznys jazyk__DQ__ nízká čitelnost rovná se nevyužité impresní náklady",
+          "Ukaž mapu rozhodnutí__DQ__ dvě alternativy kritéria výkon rychlost brand riziko",
+          "Navrhni nejmenší experiment__DQ__ první frame a kontrast bez zásahu do brand manuálu",
+          "Zakonči dopadem__DQ__ co udělá změna s ROAS v rámci rozpočtu"
+        ]
+      },
+      {
+        "type": "metrics",
+        "content": "Modelový dopad komunikačního překladu",
+        "items": [
+          "Před strukturací sdělení win-rate odpovědí v rozhovoru 54 skóre jasnosti 6.2 skóre business relevance 6.0",
+          "Po zavedení message architecture win-rate 76 skóre jasnosti 8.4 skóre business relevance 8.3",
+          "Uplift win-rate plus 22 p. b. jasnost plus 2.2 business relevance plus 2.3"
+        ]
+      },
+      {
+        "type": "code",
+        "content": "Generátor one-lineru a skóre sdělení",
+        "language": "python",
+        "content_raw": "ZGVmIG1lc3NhZ2Vfc2NvcmUoY2xhcml0eSwgY29udGV4dCwgdHJhZGVvZmZzLCBtZXRyaWNzLCBhY3Rpb24sIGJyZXZpdHkpOgogICAgd2VpZ2h0cyA9IHsiY2xhcml0eSI6MC4yNSwiY29udGV4dCI6MC4yLCJ0cmFkZW9mZnMiOjAuMTUsIm1ldHJpY3MiOjAuMiwiYWN0aW9uIjowLjEsImJyZXZpdHkiOjAuMX0KICAgIHRvdGFsID0gMAogICAgZm9yIGssdSBpbiB3ZWlnaHRzLml0ZW1zKCk6CiAgICAgICAgdiA9IGxvY2FscygpW2tdCiAgICAgICAgaWYgdiA8IDA6IHYgPSAwCiAgICAgICAgaWYgdiA+IDEwOiB2ID0gMTAKICAgICAgICB0b3RhbCArPSB2KnUKICAgIHZlcmRpY3QgPSAiaGlyZSIgaWYgdG90YWwgPj0gOCBlbHNlICgibWF5YmUiIGlmIHRvdGFsID49IDYgZWxzZSAibm8taGlyZSIpCiAgICByZXR1cm4geyJzY29yZSI6IHJvdW5kKHRvdGFsLDIpLCAidmVyZGljdCI6IHZlcmRpY3R9CgpkZWYgbWVzc2FnZV9tYXAoYXVkaWVuY2UsIHByb2JsZW0sIGluc2lnaHQsIHNvbHV0aW9uLCBwcm9vZiwgbmV4dF9zdGVwKToKICAgIG9uZV9saW5lciA9IGYie3NvbHV0aW9ufSBwcm8ge2F1ZGllbmNlfToge3Byb2JsZW19IC0tIHtpbnNpZ2h0fS4gRMO6a8O9azoge3Byb29mfS4gRGFsc2jDqToge25leHRfc3RlcH0uIgogICAgaWYgbGVuKG9uZV9saW5lcikgPiAxODA6CiAgICAgICAgb25lX2xpbmVyID0gb25lX2xpbmVyWzE3NzpdICsgIi4uLiIKICAgIHJldHVybiBvbmVfbGluZXIKCnByaW50KG1lc3NhZ2VfbWFwKCJlLWNvbW1lcmNlIGZhc2hpb24iLCAibsOta8W8ZSBDVFIgbmEgbW9iaWxlY2giLCAia29udHJhc3QgKyBrcmF0xa8gYWhlYWRsaW5lIiwgInbDrWtvbm5vc3TDoSB2aXp1w6FseSIsICJDVFIgKzAuNiBwLmIuLCBST0FTIDUuNiIsICJ0ZXN0IE1PRlUgY2xhaW11IikpCnByaW50KG1lc3NhZ2Vfc2NvcmUoOSw4LDgsOSw4LDcpKQ=="
+      },
+      {
+        "type": "worksheet",
+        "content": "Talk track jednoho case",
+        "items": [
+          "Kontekst__DQ__ jednou větou obchodní cíl a okno příležitosti",
+          "Insight__DQ__ nejrizikovější předpoklad ověřený daty",
+          "Volba__DQ__ dvě alternativy kritéria výkon rychlost brand riziko",
+          "Dopad__DQ__ metriky před a po s jednou větou",
+          "Další krok__DQ__ nejmenší experiment a stop kritérium"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Napiš svůj one-liner pro poslední kampaň a projdi talk track podle architektury sdělení použij čísla a explicitní trade off"
+      }
+    ],
+    [
+      {
+        "type": "title",
+        "content": "Interview game theory a meta dovednosti"
+      },
+      {
+        "type": "summary",
+        "content": "Po strategické komunikaci trénujeme řízení dynamiky rozhovoru jako hru s informacemi a cíli. Cíl je umět číst záměr tazatele, volit správnou strategii odpovědi a udržet kontrolu nad tempem bez ztráty byznys kontextu."
+      },
+      {
+        "type": "framework",
+        "content": "Meta rámec čti a veď",
+        "items": [
+          "Signál úmyslu tazatele výkon riziko brand rozpočet čas",
+          "Volba strategie lead probe reframe deflect",
+          "Pravidlo rytmu mluv krátce pak otázka směr metriky",
+          "Ukotvení byznys dopadu CTR CVR CPA ROAS před a po",
+          "Stop kritéria když není jasné zadání vrať se k cíli a metrice"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Signál a optimální odpověď",
+        "columns": [
+          "Signál",
+          "Co tím sleduje",
+          "Strategie",
+          "Vzor věty"
+        ],
+        "rows": [
+          [
+            "Detailní dotaz na metriky",
+            "Validace rozhodování čísly",
+            "Lead",
+            "Cíl byl zvednout CVR bez růstu CPA změnil jsem first frame a CTR šla o 0.6 p b nahoru"
+          ],
+          [
+            "Pochybnost o brand konzistenci",
+            "Hranice a rizika",
+            "Reframe",
+            "Držel jsem brand pravidla a testoval kontrast v hero dopad na ROAS 5.6"
+          ],
+          [
+            "Tlak na čas a rozpočet",
+            "Prioritizace",
+            "Probe",
+            "Co je priorita výkon rychlost nebo riziko navrhnu nejmenší zásah s jasným stop kritériem"
+          ],
+          [
+            "Nesouhlas bez dat",
+            "Síla názoru",
+            "Deflect",
+            "Navrhuji krátký test se stop podmínkou pokud CTR neklesne pod 2.5 pokračujeme"
+          ]
+        ]
+      },
+      {
+        "type": "code",
+        "content": "Výběr strategie podle kontextu",
+        "language": "python",
+        "content_raw": "ZGVmIGNob29zZV9zdHJhdGVneShjbGFyaXR5LCByaXNrLCB0aW1lX3ByZXNzdXJlLCBhdXRob3JpdHksIG9wZW5uZXNzKToKICAgIHdlaWdodHMgPSB7ImNsYXJpdHkiOjAuMjUsInJpc2siOjAuMjUsInRpbWUiOjAuMTUsImF1dGhvcml0eSI6MC4yLCJvcGVubmVzcyI6MC4xNX0KICAgIHMgPSBjbGFyaXR5KndlaWdodHNbImNsYXJpdHkiXSArICgxMC1yaXNrKSp3ZWlnaHRzWyJyaXNrIl0gKyAoMTAtdGltZV9wcmVzc3VyZSkqd2VpZ2h0c1sidGltZSJdICsgYXV0aG9yaXR5KndlaWdodHNbImF1dGhvcml0eSJdICsgb3Blbm5lc3Mq d2VpZ2h0c1sib3Blbm5lc3MiXQogICAgaWYgcz49ODogcmV0dXJuICJMZWFkIgogICAgaWYgcz49NjogcmV0dXJuICJQcm9iZSIKICAgIGlmIHM+PTQ6IHJldHVybiAiUmVmcmFtZSIKICAgIHJldHVybiAiRGVmbGVjdCIKCmRlZiBuZXh0X21vdmUoc3RyYXRlZ3kpOgogICAgaWYgc3RyYXRlZ3k9PSAiTGVhZCI6IHJldHVybiAiU3RhdGUgZGVjaXNpb24gcGF0aCBhbmQgYXNrIGZvciBnby1uby1nbyIKICAgIGlmIHN0cmF0ZWd5PT0gIlByb2JlIjogcmV0dXJuICJBc2sgY29uc3RyYWludCBhbmQgbWV0cmljIHByaW9yaXR5IgogICAgaWYgc3RyYXRlZ3k9PSAiUmVmcmFtZSI6IHJldHVybiAiVHJhbnNsYXRlIHRvIGJ1c2luZXNzIG1ldHJpYyBhbmQgcHJvcG9zZSBzbWFsbCB0ZXN0IgogICAgcmV0dXJuICJSZXF1ZXN0IHRvIHBhcmsgYW5kIHJldHVybiB3aXRoIGRhdGEiCgpwcmludChjaG9vc2Vfc3RyYXRlZ3koOCwzLDQsNyw2KSkKcHJpbnQobmV4dF9tb3ZlKCJQcm9iZSIpKQ=="
+      },
+      {
+        "type": "metrics",
+        "content": "Modelový dopad meta strategií",
+        "items": [
+          "Před tréninkem míra udržení směru odpovědi 58 přerušení za 10 min 7 průměrná délka odpovědi 95 s nabídka po rozhovoru 22",
+          "Po zavedení strategií míra udržení směru 81 přerušení 3 průměrná délka odpovědi 55 s nabídka po rozhovoru 38",
+          "Uplift udržení směru plus 23 p b přerušení minus 57 procent délka odpovědi minus 42 procent nabídka plus 16 p b"
+        ]
+      },
+      {
+        "type": "list",
+        "content": "Mikro taktiky řízení hry",
+        "items": [
+          "První věta musí nést cíl a metrický rámec",
+          "Po dvou větách vždy otázka na prioritu metrik",
+          "Odmítej hypotetické bez cíle vrať otázkou k byznys výsledku",
+          "Zakončuj návrhem nejmenšího testu a stop kritériem"
+        ]
+      },
+      {
+        "type": "worksheet",
+        "content": "Dril meta dovedností",
+        "items": [
+          "Sepiš tři nejčastější signály a k nim strategii lead probe reframe nebo deflect",
+          "Napiš dvě věty pro každou strategii jedna věta dopad jedna věta otázka",
+          "Definuj stop kritéria pro test CTR CVR CPA a rollback plán",
+          "Změř počet přerušení a délku odpovědí a uprav rytmus"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Vyber jeden case nacvič čtení signálu a přepínání mezi lead a probe zapiš dopady do decision logu"
+      }
+    ]
+  ]
+}

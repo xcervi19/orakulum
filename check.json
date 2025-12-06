@@ -1,112 +1,258 @@
 {
-    "elements": [
-    {
-    "type": "title",
-    "content": "Junior Frontend Developer Next.js mini plán pro okamzity posun"
-    },
-    {
-    "type": "paragraph",
-    "content": "Cíl je technologická dominance a jistota v rozhovoru. Dostaneš rámce, mikro hacky a krátké ukázky, které se dají ihned použít. Žádná teorie navíc."
-    },
-    {
-    "type": "list",
-    "title": "Aha momenty",
-    "items": [
-    "Senior signály nevznikají množstvím knihoven, ale kvalitou kompromisů a bezpečným defaultem",
-    "Přístupnost a testy jsou nejrychlejší způsob jak působit nad očekávání",
-    "Jasný positioning T shape nebo π shape otevírá dveře i s menším portfoliem",
-    "STAR plus plus rámec mění historky na hodnotu pro byznys"
-    ]
-    },
-    {
-    "type": "table",
-    "title": "Strategická mapa dovedností",
-    "headers": ["Oblast", "Co firmy chtějí", "Silné signály", "Mikro hack"],
-    "rows": [
-    ["JavaScript a TypeScript", "Bezpečný a čitelný kód", "Disciplinované typy a kontrola chyb", "Používej narrow typy a never v návratových větvích"],
-    ["React a Next.js", "Porozumění render pipeline a data fetchingu", "Stabilní UI a prediktivní data flow", "Minimalizuj re render přes memo a derivuj stav místo ukládání"],
-    ["CSS a Tailwind", "Konzistentní design a rychlá iterace", "Tokeny a systém pojmenování", "Vytvoř si 12 utility tříd a drž se jich"],
-    ["Přístupnost", "Použitelnost bez myši a čtečky", "Správné role a aria", "Pro každý interaktivní prvek ověř klávesnici Tab Enter Space Escape"],
-    ["Testování", "Spolehlivé UI", "RTL zaměřeno na uživatele", "Testuj chování ne implementaci"],
-    ["Komunikace", "Trade offy a dopad", "Strukturované rozhodnutí", "Vysvětli proč ne a co později"]
-    ]
-    },
-    {
-    "type": "framework",
-    "title": "Interview dekonstrukce",
-    "content": "Vedení pohovoru přes 3 kroky. 1 orientace kontext cíl a omezení. 2 návrh variant baseline lepší ideál a kritéria. 3 rozhodnutí trade offy rizika mitigace a měření dopadu."
-    },
-    {
-    "type": "framework",
-    "title": "STAR plus plus",
-    "content": "S situace a kontext. T úkol včetně metrik. A akce rozdělené na technické rozhodnutí a komunikaci. R výsledek s čísly. Plus1 selhání rizika a co bys změnil. Plus2 přenositelnost a jak to u vás zlepší onboarding výkon a kvalitu."
-    },
-    {
-    "type": "table",
-    "title": "Decision making a technical judgment",
-    "headers": ["Rozhodnutí", "Varianta", "Plus", "Mínus", "Kdy zvolit"],
-    "rows": [
-    ["Data fetching", "Server komponenty", "Méně bundle, lepší bezpečnost", "Složitější hranice klient server", "Data pouze pro render"],
-    ["Data fetching", "Client fetch s SWR", "Optimistické UI a revalidace", "Větší bundle", "Interakce po načtení"],
-    ["Styly", "Tailwind", "Rychlá iterace a konzistence", "Abstrakce v třídách", "Design systém s tokeny"],
-    ["Testy", "RTL", "Testuje uživatele", "Pomalejší než jednotky", "Kritické user flow"]
-    ]
-    },
-    {
-    "type": "code",
-    "title": "MiniForm React plus zod validace",
-    "language": "tsx",
-    "content_raw": "aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCcKaW1wb3J0ICogYXMgeiBmcm9tICd6b2QnCgpjb25zdCBzY2hlbWEgPSB6Lm9iamVjdCh7IGVtYWlsOiB6LnN0cmluZygpLmVtYWlsKCkgfSkKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIE1pbmlGb3JtKCkgewogIGNvbnN0IFt2YWx1ZSwgc2V0VmFsdWVdID0gdXNlU3RhdGUoJycpCiAgY29uc3QgcGFyc2VkID0gc2NoZW1hLnNhZmVQYXJzZSh7IGVtYWlsOiB2YWx1ZSB9KQogIGNvbnN0IHZhbGlkID0gcGFyc2VkLnN1Y2Nlc3MKICByZXR1cm4gKAogICAgPGZvcm0gYXJpYS1sYWJlbD0nc3Vic2NyaWJlJz4KICAgICAgPGlucHV0CiAgICAgICAgYXJpYS1pbnZhbGlkPXshdmFsaWR9CiAgICAgICAgdmFsdWU9e3ZhbHVlfQogICAgICAgIG9uQ2hhbmdlPXsoZSk9PnNldFZhbHVlKGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICBjbGFzczBuYW1lPSdib3JkZXIgcC0yIHJvdW5kZWQnCiAgICAgICAgcGxhY2Vob2xkZXI9J2VtYWlsJwogICAgICAvPgogICAgICA8YnV0dG9uIGRpc2FibGVkPXshdmFsaWR9IGNsYXNzTmFtZT0nbWwtMiBweC0zIHB5LTIgcm91bmRlZCBiZy1ibGFjayB0ZXh0LXdoaXRlJz5HbzwvYnV0dG9uPgogICAgPC9mb3JtPgogICkKfQo="
-    },
-    {
-    "type": "metrics",
-    "title": "Self review metriky",
-    "items": [
-    {"name": "Přístupnost klávesnicí", "target": "100 procent interaktivních prvků obslouženo Tab Enter Space Escape"},
-    {"name": "Čitelnost kódu", "target": "Funkce do 30 řádků a jeden záměr"},
-    {"name": "Pokrytí testy kritických cest", "target": "Happy path a jeden fail path na každý klíčový flow"},
-    {"name": "Bundle rozumnost", "target": "Žádná velká knihovna bez jasného důvodu a měření"}
-    ]
-    },
-    {
-    "type": "list",
-    "title": "Strategická komunikace v rozhovoru",
-    "items": [
-    "Zarámuj problém přes cíl omezení a rizika",
-    "Navrhni baseline lepší a ideál",
-    "Ukaž metriky a jak budeš měřit dopad",
-    "Přiznej trade off a plán mitigace"
-    ]
-    },
-    {
-    "type": "list",
-    "title": "Mindset upgrade a confidence hacking",
-    "items": [
-    "Připrav si vlastní rozhodovací log sleduj proč a jaké byly alternativy",
-    "Tvůj příběh je směr ne seznam technologií",
-    "Respekt budí klidné tempo a jasné pauzy"
-    ]
-    },
-    {
-    "type": "code",
-    "title": "React Testing Library quick proof",
-    "language": "ts",
-    "content_raw": "aW1wb3J0IHsgcmVuZGVyLCBzY3JlZW4sIGZpcmVFdmVudCB9IGZyb20gJ0B0ZXN0aW5nLWxpYnJhcnkvcmVhY3QnCmltcG9ydCBNaW5pRm9ybSBmcm9tICcuL01pbmlGb3JtJwoKdGVzdCgnZGlzYWJsZXMgc3VibWl0IHdoZW4gaW52YWxpZCcsICgpID0+IHsKICByZW5kZXIoPE1pbmlGb3JtIC8+KQogIGNvbnN0IGlucHV0ID0gc2NyZWVuLmdldEJ5UGxhY2Vob2xkZXJUZXh0KCdlbWFpbCcpCiAgY29uc3QgYnV0dG9uID0gc2NyZWVuLmdldEJ5Um9sZSgnYnV0dG9uJywgeyBuYW1lOiAvZ28vaSB9KQogIGV4cGVjdChidXR0b24pLnRvQmVEaXNhYmxlZCgpCiAgZmlyZUV2ZW50LmNoYW5nZShpbnB1dCwgeyB0YXJnZXQ6IHsgdmFsdWU6ICdhQGIuY3onIH0gfSkKICBleHBlY3QoYnV0dG9uKS5ub3QudG9CZURpc2FibGVkKCkKfSkK"
-    },
-    {
-    "type": "exercise",
-    "title": "Mini úkoly pro okamžitý posun",
-    "items": [
-    "Uprav jeden vlastní komponent tak aby byl plně ovladatelný klávesnicí",
-    "Napiš jeden test na fail path a zadefinuj očekávanou chybovou hlášku",
-    "Vytvoř krátký decision log pro dvě nedávná rozhodnutí co alternativa a proč ne"
-    ]
-    },
-    {
-    "type": "paragraph",
-    "content": "Positioning T shape vyber si osu frontend platforma a doplněk. Příklad osu React plus přístupnost plus datové napojení. V rozhovoru ukaž jak tvé rozhodování snižuje riziko a zvyšuje rychlost týmu."
-    }
-    ],
-    "suggestion": "Pokračuj praktickým live coding kusem Next.js data fetching a řízení stavu se zaměřením na přístupnost loading error a metriky kvality"
-    }
-    
+"elements": [
+{
+"type": "title",
+"content": "Frontend Developer Mini Plan — Interview Mastery"
+},
+{
+"type": "paragraph",
+"content": "Osobní mentorský rozcestník. Krátké tahy, které okamžitě zlepší výkon v rozhovoru i v práci."
+},
+{
+"type": "bulleted_list",
+"content": [
+"Technologická dominance — uvažuj v trade offech a udržitelných rozhodnutích",
+"Interview dekonstrukce — přebírej vedení strukturovanými odpověďmi",
+"Strategická mapa dovedností — co skutečně kupují firmy a jak to prokázat",
+"Mindset upgrade — sebevědomí z důkazů a metrik místo pocitů",
+"Positioning — krátký příběh tvé technologické identity"
+]
+},
+{
+"type": "list",
+"title": "Mini frameworky pro řízení rozhovoru",
+"content": [
+{
+"name": "TCF — Tech Context Fit",
+"steps": [
+"Technika — jak řešíš problém a proč",
+"Kontext — omezení, rizika, náklady",
+"Fit — jak to sedí na produkt a tým"
+]
+},
+{
+"name": "TRIAD — Performance Accessibility DX",
+"steps": [
+"Performance — co měříš a čím optimalizuješ",
+"Accessibility — pravidla a testy",
+"DX — ergonomie pro vývojáře a stabilita dodávky"
+]
+},
+{
+"name": "STAR plus plus — pro behaviorálky",
+"steps": [
+"Situation",
+"Task",
+"Action",
+"Result",
+"Reflection — co bys změnil",
+"Replication — jak to aplikovat znovu"
+]
+}
+]
+},
+{
+"type": "table",
+"title": "Strategická mapa dovedností — Frontend Developer",
+"headers": [
+"Oblast",
+"Signál v rozhovoru",
+"Důkaz v praxi",
+"Váha"
+],
+"rows": [
+[
+"JavaScript TypeScript",
+"Čisté API návrhy, generika, narrow typy",
+"Malý util balíček s testy",
+"0.20"
+],
+[
+"React",
+"Render model, memoizace, řízení re renderů",
+"Komponenta s kontrolovanou latencí interakce",
+"0.15"
+],
+[
+"Next.js",
+"Volba mezi SSR SSG ISR a cache model",
+"Krátká architekturní volba s metrikami",
+"0.15"
+],
+[
+"HTML CSS Tailwind SCSS",
+"Semantika, tok fokusu, layout bez anti patternů",
+"Responzivní modul bez media query houpačky",
+"0.10"
+],
+[
+"Testování",
+"Testy chování místo implementace",
+"RTL scénáře s pokrytím kritických cest",
+"0.10"
+],
+[
+"UX UI",
+"Mikrointerakce a latence vnímaná uživatelem",
+"Design tokeny a konzistence stavů",
+"0.10"
+],
+[
+"API integrace",
+"Idempotence, retry, cache, chybové stavy",
+"Tenčí klient s abort kontrolou",
+"0.10"
+],
+[
+"Git spolupráce",
+"Strukturované commity a malé PR",
+"Konvence a CI kontrola",
+"0.10"
+]
+]
+},
+{
+"type": "paragraph",
+"content": "Technologická diferenciace a positioning — příběh v jedné větě"
+},
+{
+"type": "paragraph",
+"content": "Jsem integrátor pro React a Next.js se zaměřením na rychlost vnímanou uživatelem a accessibility. Stavím frontendy s měřitelným dopadem na konverzi a náklady na údržbu."
+},
+{
+"type": "paragraph",
+"content": "Interview game plan — kontrola rytmu"
+},
+{
+"type": "checklist",
+"content": [
+"Na začátku vyžádej problémové omezení — cílový uživatel, objemy, tolerance chyb",
+"Nastav metriky — LCP TTI INP a a11y klávesnice jako default",
+"Navrhni varianty — levná cesta, robustní, škálovatelná",
+"Vyber variantu přes trade offy — cena složitost riziko",
+"Zakonči plánem ověření — telemetry, experiment, rollback"
+]
+},
+{
+"type": "metric_block",
+"title": "Technické metriky které prodávají",
+"content": [
+{
+"name": "LCP",
+"target": "do 2.0 s na 75. percentilu",
+"method": "preload kritických assetů a image optim"
+},
+{
+"name": "INP",
+"target": "pod 200 ms",
+"method": "prioritizace práce a concurrency"
+},
+{
+"name": "CLS",
+"target": "pod 0.1",
+"method": "rezervace prostoru a stabilní fonty"
+},
+{
+"name": "A11y score",
+"target": "WCAG základní úroveň bez blokérů",
+"method": "role, labely, focus management"
+}
+]
+},
+{
+"type": "paragraph",
+"content": "Decision making — mikro kostra odpovědi"
+},
+{
+"type": "bulleted_list",
+"content": [
+"Cíl — co má uživatel rychleji lépe levněji",
+"Omezení — zařízení, data, bezpečnost, tým",
+"Varianty — CSR SSR SSG ISR a proč",
+"Rizika — závody revalidací, cold starty, cache nesoulad",
+"Měření — jak poznám že jsem zvolil správně"
+]
+},
+{
+"type": "code",
+"language": "tsx",
+"filename": "DecisionMatrix.tsx",
+"content_raw": "aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7Cgp0eXBlIENob2ljZSA9IHsgb3B0aW9uOiBzdHJpbmc7IHByb3M6IHN0cmluZ1tdOyBjb25zOiBzdHJpbmdbXTsgfTsKCmNvbnN0IE1hdHJpeCA9ICh7IGNob2ljZXMgfTogeyBjaG9pY2VzOiBDaG9pY2VbXSB9KSA9PiB7CiAgY29uc3QgW2ksIHNldEldID0gdXNlU3RhdGUoMCk7CiAgY29uc3QgYyA9IGNob2ljZXNlc1tpXTsKICByZXR1cm4gKAogICAgPGRpdj4KICAgICAgPGgyPntjLm9wdGlvbn08L2gyPgogICAgICA8aDM+UHJvczwvaDM+CiAgICAgIDx1bD57Yy5wcm9zLm1hcCgoZCwgaykgPT4gPGxpIGtleT0neyducysna30nPntkfTwvbGk+KX08L3VsPgogICAgICA8aDM+Q29uczwvaDM+CiAgICAgIDx1bD57Yy5jb25zLm1hcCgoZCwgaykgPT4gPGxpIGtleT0neydjcytrfSc+e2R9PC9saT4pfTwvdWw+CiAgICAgIDxuYXY+e2Nob2ljZXMubWFwKChfLCBrKSA9PiA8YnV0dG9uIGtleT17a30gb25DbGljaz17KCkgPT4gc2V0SShrKX0+e2srMX08L2J1dHRvbj4pfTwvbmF2PgogICAgPC9kaXY+CiAgKTsKfTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIERlbW8oKSB7CiAgY29uc3QgY2hvaWNlczogQ2hvaWNlW10gPSBbCiAgICB7IG9wdGlvbjogJ0NTUicsIHByb3M6IFsnRmFzdCBpbnRlcmFjdGlvbnMnLCAnU2ltcGxlIGRlcGxveSddLCBjb25zOiBbJ1dlYWsgU0VPJywgJ0xvbmcgVFRJIG9uIHNsb3cgZGV2aWNlcyddIH0sCiAgICB7IG9wdGlvbjogJ1NTUicsIHByb3M6IFsnU0VPIEZyaWVuZGx5JywgJ1N0YWJsZSBUVEldLCBjb25zOiBbJ1NlcnZlciBjb3N0JywgJ0NhY2hlIGNvbXBsZXhpdHknXSB9LAogICAgeyBvcHRpb246ICdTU0cnLCBwcm9zOiBbJ0NETiBzcGVlZCcsICdMb3cgY29zdCddLCBjb25zOiBbJ1N0YWxlIGNvbnRlbnQnLCAnQnVpbGQgdGltZSddIH0sCiAgICB7IG9wdGlvbjogJ0lTUicsIHByb3M6IFsnRnJlc2ggcGFnZXMnLCAnQ0ROIGNhY2hlJ10sIGNvbnM6IFsnUmV2YWxpZGF0aW9uIHJhY2UnLCAnQ29tcGxleCBtZXRyaWNzJ10gfQogIF07CiAgcmV0dXJuIDxNYXRyaXggY2hvaWNlcz17Y2hvaWNlc30gLz47Cn0K"
+},
+{
+"type": "paragraph",
+"content": "Numerický signál dopadu — jednoduchá funkce pro prioritizaci"
+},
+{
+"type": "code",
+"language": "ts",
+"filename": "score.ts",
+"content_raw": "ZXhwb3J0IGZ1bmN0aW9uIHNjb3JlU2lnbmFsKHA6IG51bWJlciwgdjogbnVtYmVyLCByOiBudW1iZXIpIHsKICByZXR1cm4gTWF0aC5yb3VuZCgocCAqIDAuNSArIHYgKiAwLjMgKyByICogMC4yKSAqIDEwMCkgLyAxMDA7Cn0KCmlmIChyZXF1aXJlLm1haW4gPT09IG1vZHVsZSkgewogIGNvbnN0IGRlbW8gPSBbCiAgICB7IHA6IDAuOSwgdjogMC42LCByOiAwLjcgfSwKICAgIHsgcDogMC43LCB2OiAwLjgsIHI6IDAuNCB9LAogICAgeyBwOiAwLjQsIHY6IDAuOSwgcjogMC45IH0KICBdOwogIGNvbnNvbGUubG9nKGRlbW8ubWFwKGQgPT4gc2NvcmVTaWduYWwoZC5wLCBkLnYsIGQucikpKTsKfQo="
+},
+{
+"type": "code",
+"language": "ts",
+"filename": "score.test.ts",
+"content_raw": "aW1wb3J0IHsgc2NvcmVTaWduYWwgfSBmcm9tICcuL3Njb3JlJzsKCnRlc3QoJ3Njb3JlU2lnbmFsIG1peGVzIHAsdixyIHN2IFdlaWdodHMgMC41LzAuMy8wLjInLCAoKSA9PiB7CiAgZXhwZWN0KHNjb3JlU2lnbmFsKDEsIDAsIDApKS50b0JlKDAuNSk7CiAgZXhwZWN0KHNjb3JlU2lnbmFsKDAsIDEsIDApKS50b0JlKDAuMyk7CiAgZXhwZWN0KHNjb3JlU2lnbmFsKDAsIDAsIDEpKS50b0JlKDAuMik7CiAgZXhwZWN0KHNjb3JlU2lnbmFsKDAuOSwgMC42LCAwLjcpKS50b0JlKDAuNzkpOwp9KTsK"
+},
+{
+"type": "table",
+"title": "Behavioral STAR plus plus — rychlá šablona",
+"headers": [
+"Pole",
+"Příklad"
+],
+"rows": [
+[
+"Situation",
+"Eshop měl vysoký bounce na mobilu a pomalý first input"
+],
+[
+"Task",
+"Snížit čas do interakce a odstranit layout shift"
+],
+[
+"Action",
+"Zavedl jsem lazy hydraci kritických komponent, zafixoval výšku hero obrázku, přidal klávesové zkratky"
+],
+[
+"Result",
+"INP klesl z 320 ms na 160 ms, CLS z 0.18 na 0.04, konverze plus 6.3 procenta"
+],
+[
+"Reflection",
+"Příště bych dřív zavedl profilování interakcí"
+],
+[
+"Replication",
+"Stejný postup pro košík a checkout"
+]
+]
+},
+{
+"type": "checklist",
+"title": "Influence a executive presence — mikronávyky",
+"content": [
+"Mluv v rámcích a číslech — žádné nekonečné detaily",
+"Vždy navrhni dvě varianty a explicitní rizika",
+"Zakončuj doporučením a plánem ověření",
+"Zpomal tempo při klíčové větě — nech pauzu pro dopad",
+"Používej ukaž neříkej — krátký demo artefakt"
+]
+},
+{
+"type": "exercise",
+"title": "Hands on trénink",
+"content": [
+"Napiš 2 větami svůj technologický příběh s jasným dopadem",
+"Rozlož poslední projekt přes TCF a TRIAD",
+"Vytvoř mini PR s testem na util funkci a popiš trade off"
+]
+},
+{
+"type": "paragraph",
+"content": "Osobní akviziční krok — napiš mi svůj příběh a tři klíčové metriky které chceš zlepšit. Připravím ti konkrétní drill."
+}
+],
+"suggestion": "Pokračuj deep dive — live coding úloha s přístupností a performance budgetem v Next.js a následná simulace behaviorálních otázek přes STAR plus plus."
+}

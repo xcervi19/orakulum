@@ -1,133 +1,114 @@
 {
-  "elements": [
-  {
-  "type": "heading",
-  "content": "Junior Frontend Developer: Mini-plán pro technologickou dominanci a interview mastery"
-  },
-  {
-  "type": "paragraph",
-  "content": "Získáš praktický rámec pro React/Next.js, jak vést pohovor, jak ukázat technické myšlení a jak působit jako výjimečný kandidát. Bez termínů, jen jasné tahy."
-  },
-  {
-  "type": "list",
-  "content": [
-  "Technologická dominance: umíš vysvětlit trade-offy a navrhnout zlepšení",
-  "Interview dekonstrukce: přebíráš iniciativu, strukturuješ odpovědi",
-  "Positioning: jasná technologická identita a T/π-shape mapa",
-  "Decision-making: konzistentní argumentace dopadu na byznys a tým"
-  ]
-  },
-  {
-  "type": "table",
-  "title": "Strategická mapa dovedností",
-  "columns": ["Dovednost", "Důkaz v portfoliu/pohovoru", "Metrika"],
-  "rows": [
-  ["React/Next.js", "SSR/ISR, routing, server actions", "TTFB < 200 ms lokálně, lighthouse PWA 90+"],
-  ["TypeScript", "striktní typy, znovupoužitelné typy", "% any = 0, TS errors = 0"],
-  ["UI přístupnost", "role, aria-*, klávesová navigace", "Axe: 0 vysokých problémů"],
-  ["Stav a data", "cache, SWR strategie, optimistic UI", "API chybovost < 1 %, retriable flow"],
-  ["Testy", "Jest/RTL scénáře, edge cases", "Coverage kritických cest ≥ 80 %"],
-  ["Komunikace", "STAR++ příběhy, trade-offy", "Konkrétní dopad v číslech"]
-  ]
-  },
-  {
-  "type": "code",
-  "language": "tsx",
-  "title": "Next.js 14 server action: validace, optimistic flow, A11y-ready UI",
-  "content": "import { z } from "zod";\nimport { revalidatePath } from "next/cache";\nconst TodoSchema = z.object({ title: z.string().min(1), priority: z.enum(["low","med","high"]) });\nexport async function createTodo(prevState: any, formData: FormData) {\n  "use server";\n  const data = Object.fromEntries(formData);\n  const parsed = TodoSchema.safeParse(data);\n  if (!parsed.success) return { ok: false, errors: parsed.error.flatten().fieldErrors };\n  await fetch(process.env.API_URL + "/todos", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(parsed.data) });\n  revalidatePath("/todos");\n  return { ok: true };\n}\nexport default function NewTodo() {\n  return (\n    <form action={createTodo} aria-labelledby="todo-heading">\n      <h2 id="todo-heading">Nový úkol</h2>\n      <label htmlFor="title">Název</label>\n      <input id="title" name="title" required />\n      <label htmlFor="priority">Priorita</label>\n      <select id="priority" name="priority" defaultValue="med">\n        <option value="low">low</option>\n        <option value="med">med</option>\n        <option value="high">high</option>\n      </select>\n      <button type="submit">Vytvořit</button>\n    </form>\n  );\n}"
-  },
-  {
-  "type": "code",
-  "language": "tsx",
-  "title": "React: debounced vyhledávání + klávesová navigace",
-  "content": "import { useEffect, useMemo, useRef, useState } from "react";\nexport function SearchBox({ source }: { source: (q: string) => Promise<string[]> }) {\n  const [q,setQ]=useState("");\n  const [items,setItems]=useState<string[]>([]);\n  const [i,setI]=useState(-1);\n  const t=useRef<NodeJS.Timeout|null>(null);\n  const run = useMemo(()=>async(v:string)=>{const r=await source(v);setItems(r);setI(-1);},[source]);\n  useEffect(()=>{if(t.current) clearTimeout(t.current); t.current=setTimeout(()=>run(q),250);},[q,run]);\n  return (\n    <div role="combobox" aria-expanded={items.length>0} aria-owns="r" aria-haspopup="listbox">\n      <input aria-autocomplete="list" value={q} onChange={e=>setQ(e.target.value)} onKeyDown={e=>{if(e.key==="ArrowDown") setI(p=>Math.min(p+1,items.length-1)); if(e.key==="ArrowUp") setI(p=>Math.max(p-1,-1)); if(e.key==="Enter"&&i>=0) setQ(items[i]);}} />\n      <ul id="r" role="listbox">\n        {items.map((x,idx)=>(<li key={x} role="option" aria-selected={i===idx}>{x}</li>))}\n      </ul>\n    </div>\n  );\n}"
-  },
-  {
-  "type": "code",
-  "language": "ts",
-  "title": "REST a GraphQL fetch s typy",
-  "content": "type Post={id:number;title:string;body:string};\nexport async function fetchPosts():Promise<Post[]>{\n  const r=await fetch("/api/posts",{cache:"no-store"});\n  if(!r.ok) throw new Error("HTTP"+r.status);\n  return r.json();\n}\nexport type GUser={id:string;name:string};\nexport async function fetchUserGQL(id:string):Promise<GUser>{\n  const q=`query($id:ID!){user(id:$id){id name}}`;\n  const r=await fetch("/graphql",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({query:q,variables:{id}})});\n  const j=await r.json();\n  return j.data.user as GUser;\n}"
-  },
-  {
-  "type": "code",
-  "language": "tsx",
-  "title": "Jest + RTL: kritická cesta",
-  "content": "import { render, screen, fireEvent } from "@testing-library/react";\nimport NewTodo from "./NewTodo";\nimport { createTodo } from "./NewTodo";\njest.mock("./NewTodo",()=>({__esModule:true,default:jest.fn(()=><div />),createTodo:jest.fn()}));\ntest("odesílá validní formulář", async()=>{\n  render(<form action={createTodo as any}><input name="title" defaultValue="A" /><select name="priority" defaultValue="med"><option value="med">med</option></select><button type="submit">ok</button></form>);\n  fireEvent.submit(screen.getByText("ok"));\n  expect(createTodo).toHaveBeenCalled();\n});"
-  },
-  {
-  "type": "framework",
-  "title": "Mini-frameworky",
-  "content": [
-  "STAR++: Situation, Task, Action, Result, Reflection, Risk",
-  "DECIDE: Define, Explore options, Compare trade-offy, Impact, Decide, Explain",
-  "UX-Signal 5: Jasnost, Rychlost, Přístupnost, Konzistence, Odezva",
-  "Trade-off Triáda: výkon, složitost, DX",
-  "Positioning π-shape: hluboký React/Next.js, širší web platforma"
-  ]
-  },
-  {
-  "type": "list",
-  "title": "Interview dekonstrukce: jak vést pohovor",
-  "content": [
-  "Zarámuj problém DECIDE a navrhni 2 varianty",
-  "Propoj dopad s byznysem a metrikou",
-  "Ukaž riziko a mitigaci",
-  "Zeptej se na kontext a omezení"
-  ]
-  },
-  {
-  "type": "table",
-  "title": "Behavioral & situational mastery (STAR++)",
-  "columns": ["Téma", "Stručný příběh", "Dopad"],
-  "rows": [
-  ["Refaktor stavu", "Převedení prop-drillingu na context + reducer", "Snížení kódu o 18 %, rychlejší onboard"],
-  ["A11y upgrade", "Audit a role/aria u komponent", "0 kritických nálezů, vyšší konverze"],
-  ["API spolehlivost", "Retry/backoff a idempotence", "Chybovost 500→0.3 %"]
-  ]
-  },
-  {
-  "type": "metrics",
-  "title": "Signal scoreboard",
-  "content": [
-  { "name": "Perf", "value": 88 },
-  { "name": "A11y", "value": 92 },
-  { "name": "Stabilita", "value": 85 },
-  { "name": "DX", "value": 80 },
-  { "name": "Komunikace", "value": 90 }
-  ]
-  },
-  {
-  "type": "exercise",
-  "title": "Decision-making drill",
-  "content": "Navrhni ISR vs SSR pro katalog s filtrováním. Uveď varianty, trade-offy, metriky TTFB/recency/náklady a finální rozhodnutí podle DECIDE."
-  },
-  {
-  "type": "checklist",
-  "title": "Pre-interview checklist",
-  "content": [
-  "Umím jasně popsat 2 architektury pro stejný problém",
-  "Mám 1 příklad dopadu s čísly",
-  "Mám příběh selhání s reflexí",
-  "Mám ukázku testu kritické cesty",
-  "Mám otázky na kontext a omezení"
-  ]
-  },
-  {
-  "type": "cta",
-  "title": "Osobní mini-plán",
-  "content": [
-  "Sestav π-shape pro svou identitu",
-  "Vyber 1 kritickou cestu a napiš test",
-  "Navrhni 2 řešení stejného UI a obhaj jedno",
-  "Připrav 1 STAR++ příběh s čísly",
-  "Nacvič DECIDE na 2 otázky z performance a DX"
-  ]
-  },
-  {
-  "type": "summary",
-  "content": "Založili jsme pevný základ: mapu dovedností, mini-frameworky, kódové důkazy, způsob vedení pohovoru a osobní mini-plán. Téma lze dále prohloubit na technický judgment a storytelling portfolia."
-  }
-  ],
-  "suggestion": "Pojď vytvořit ukázkový mikro-projekt v Next.js, kde aplikuješ DECIDE na SSR/ISR, změříš metriky a připravíš STAR++ case s čísly."
-  }
-  
+"elements": [
+{
+"type": "title",
+"content": "Frontend Interview Mini-Plan: Dominance a klid"
+},
+{
+"type": "text",
+"content": "Cíl: rychle signalizovat výjimečnost, vést pohovor, ukázat technické úsudky a business dopad. Přístup: mikro-hacky, mini-frameworky, mini-důkazy."
+},
+{
+"type": "list",
+"content": "Technologická dominance: 5 okamžitých signálů",
+"items": [
+"Proof-first: krátká ukázka řešení hned po zadání, pak vysvětlení",
+"Quality gates: typy, testy, přístupnost, výkon, DX jako výchozí",
+"Výkon triage: LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1; měřitelné cíle",
+"A11y Top5: klávesnice, role, focus ring, kontrast, živé regiony",
+"Reliability: idempotentní efekty, retry/backoff, feature flags"
+]
+},
+{
+"type": "table",
+"content": "Strategická mapa dovedností",
+"columns": [
+"Dovednost",
+"Silný signál",
+"Firemní dopad",
+"Důkaz v rozhovoru"
+],
+"rows": [
+["TypeScript", "narrow types, zajištěné hranice API", "méně produkčních chyb", "rychlá definice Zod schématu a validace"],
+["React/Next.js", "kompozice, server komponenty, cache", "rychlejší FE i TTFB", "popis datového toku a kde cache invalidovat"],
+["UI systém", "tokeny, varianty, přístupnost", "konzistence a rychlost dodávky", "navrh komponenty s ARIA a sloty"],
+["Výkon", "profilace, lazy, streaming", "lepší konverze", "plán rozkladu bundle a měření LCP"],
+["Testy", "kritické cesty, RTL, MSW", "menší regresní riziko", "minitest user flow s MSW"],
+["DX", "lint-staged, pre-commit, CI matrice", "rychlejší tým", "návrh jednoduché CI matrice"],
+["Komunikace", "trade-offy, rizika, rozhodnutí", "menší rework", "strukturované shrnutí s volbou a riziky"]
+]
+},
+{
+"type": "list",
+"content": "Interview dekonstrukce: řízení hry",
+"items": [
+"Otevírák: potvrdím cíl, vstupy, omezení, kritéria úspěchu",
+"Specifikace: přepíšu zadání do akčních kroků a ověřím",
+"Think-aloud: architektura → hrany → nástroj → důkaz",
+"Boundary testy: co když latence, offline, race, partial data",
+"Závěr: volba řešení, trade-offy, rizika, mitigace"
+]
+},
+{
+"type": "code",
+"content": "Typed data-flow s validací a minikomponentou",
+"language": "typescriptreact",
+"content_raw": "aW1wb3J0IHsgeiB9IGZyb20gInpvZCI7CmltcG9ydCB7IHVzZVF1ZXJ5IH0gZnJvbSAiQHRhbnN0YWNrL3JlYWN0LXF1ZXJ5IjsKCmNvbnN0IFVzZXIgPSB6Lm9iamVjdCh7CiAgaWQ6IHouc3RyaW5nKCksCiAgbmFtZTogei5zdHJpbmcoKSwKICBhdmF0YXI6IHouc3RyaW5nKCkudXJsKCkub3B0aW9uYWwoKQp9KTsKdHlwZSBVc2VyID0gei5pbmZlciZsdDstdHlwZW9mIFVzZXImZ3Q7Cgpjb25zdCBmZXRjaEpTT04gPSBhc3luYyA8VD4odXJsOiBzdHJpbmcsIGluaXQ/OiBSZXF1ZXN0SW5pdCk6IFByb21pc2U8VD4gPT4gewogIGNvbnN0IHIgPSBhd2FpdCBmZXRjaCh1cmwsIGluaXQpOwogIGlmICghci5vaykgewogICAgY29uc3QgbSA9IGF3YWl0IHIudGV4dCgpOwogICAgdGhyb3cgbmV3IEVycm9yKGAke3Iuc3RhdHVzfToke20uc2xpY2UoMCwxNDApfWApOwogIH0KICBjb25zdCBqID0gYXdhaXQgci5qc29uKCk7CiAgcmV0dXJuIGogYXMgVDsKfTsKCmNvbnN0IGdldFVzZXJzID0gYXN5bmMgKCk6IFByb21pc2U8VXNlcltdPiA9PiB7CiAgY29uc3QgZGF0YSA9IGF3YWl0IGZldGNoSlNPTjx1bmtub3duPiggIi9hcGkvdXNlcnMiKTsKICByZXR1cm4gei5hcnJheShVc2VyKS5wYXJzZShkYXRhKTsKfTsKCmV4cG9ydCBjb25zdCB1c2VVc2VycyA9ICgpID0+IHsKICByZXR1cm4gdXNlUXVlcnkoeyBxdWVyeUtleTogWyJ1c2VycyJdLCBxdWVyeUZuOiBnZXRVc2Vycywgc3RhbGVUaW1lOiAxMDAwICogNjAgfSk7Cn07CgovLyBQSUwKZXhwb3J0IGNvbnN0IFBpbGwgPSAoeyBsYWJlbCB9OiB7bGFiZWw6c3RyaW5nfSkgPT4gKAogIDxzcGFuIGNsYXNzTmFtZT0iaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGdhcC0xIHB4LTIgcHktMC41IHJvdW5kZWQtZnVsbCB0ZXh0LXhzIGZvbnQtbWVkaXVtIGJvcmRlciI+e2xhYmVsfTwvc3Bhbj4KKTsKCmV4cG9ydCBjb25zdCBVc2Vyc0NhcmQgPSAoKSA9PiB7CiAgY29uc3QgeyBkYXRhLCBpc0xvYWRpbmcsIGlzRXJyb3IgfSA9IHVzZVVzZXJzKCk7CiAgaWYgKGlzTG9hZGluZykgcmV0dXJuIDxkaXY+TmEycC43aXRhbsOtLi4uPC9kaXY+OwogIGlmIChpc0Vycm9yKSByZXR1cm4gPGRpdj5DaHliYS48L2Rpdj47CiAgcmV0dXJuICgKICAgIDxkaXY+CiAgICAgIDxoMz5Vxb5pdmF0ZWzDrTwvaDM+CiAgICAgIDx1bD4KICAgICAgICB7ZGF0YSEubWFwKHU9PigoCiAgICAgICAgICA8bGkga2V5PXt1LmlkfT4KICAgICAgICAgICAgPHNwYW4+e3UubmFtZX08L3NwYW4+CiAgICAgICAgICAgIHt1LmF2YXRhciAmJiA8UGlsbCBsYWJlbD0iYXZhdGFyIi8+fQogICAgICAgICAgPC9saT4KICAgICAgICApKX0KICAgICAgPC91bD4KICAgIDwvZGl2PgogICk7Cn07"
+},
+{
+"type": "list",
+"content": "Decision-making mini-framework 3C-TRD",
+"items": [
+"Context: FE aplikace s růstem stavu, tým mid seniorů",
+"Constraints: čas na onboarding, jednoduchý DX, prediktelnost",
+"Candidates: Redux Toolkit, Zustand, Signals, čisté Server Actions",
+"Trade-offy: prediktelnost vs. ergonomie vs. výkon vs. učení",
+"Risks: nekonzistence store, neřízené efekty, lock-in",
+"Decision: Redux Toolkit pro kritický stav, Zustand pro lokální UI, asynchronní efekty přes RTK Query"
+]
+},
+{
+"type": "list",
+"content": "STAR++ rychlý rámec",
+"items": [
+"S: situace a metriky",
+"T: cíl a omezení",
+"A: řešení, architektura, hrany",
+"R: výsledek s čísly",
+"++Failure: co nevyšlo a jak se to změnilo",
+"++Influence: komu to pomohlo a jaký byl dopad"
+]
+},
+{
+"type": "metrics",
+"content": "Scorecard připravenosti",
+"metrics": [
+{"name": "Architektura a trade-offy", "weight": 0.25, "how_to_win": "jasné hranice, datové toky, rozhodnutí s riziky"},
+{"name": "Výkon a a11y", "weight": 0.2, "how_to_win": "cíle LCP/INP/CLS, 5 a11y zásad na ukázce"},
+{"name": "Typy a testy", "weight": 0.2, "how_to_win": "schémata, inferované typy, 1 kritický test"},
+{"name": "Komunikace", "weight": 0.2, "how_to_win": "krátké shrnutí, otázky na omezení, vedení rytmu"},
+{"name": "Portfolio důkazu", "weight": 0.15, "how_to_win": "2 malé, měřitelné case studies"}
+]
+},
+{
+"type": "list",
+"content": "Influence a executive presence: řečové šablony",
+"items": [
+"Volba: Navrhuji X, protože optimalizujeme pro Y, riziko je Z, mitigace je W",
+"Námitka: Souhlas s cílem, nesoulad v omezeních, alternativa s dopadem",
+"Shrnutí: Co jsme rozhodli, proč to dává smysl, co bude důkaz"
+]
+},
+{
+"type": "list",
+"content": "Osobní mini-plán",
+"items": [
+"Připrav 1 komponentu s a11y a typy a vysvětli trade-offy",
+"Ukaž mini-měření výkonu a plán zlepšení",
+"Vytvoř 1 příběh STAR++ s čísly a selháním",
+"Zakonči shrnutím 3C-TRD a navržením dalšího kroku"
+]
+}
+],
+"suggestion": "Pokračuj živou mini-kátou: modální okno s focus trap, klávesnicí a testy; zároveň připrav behaviorální STAR++ deep-dive na kritický incident dostupnosti."
+}

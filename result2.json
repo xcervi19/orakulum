@@ -1,0 +1,752 @@
+{
+  "pages": [
+    [
+      {
+        "type": "title",
+        "content": "Frontend mini plan dominator"
+      },
+      {
+        "type": "text",
+        "content": "Osobni mentor pro roli Frontend Developer. Cilem je silna technologicka identita, presvedciva interview strategie a mikro systemy pro vyrazne vyssi sanci na nabidku."
+      },
+      {
+        "type": "bullets",
+        "content": [
+          "Technologicka dominance mikro hacky",
+          "Prubezne vedeni interview a dekonstrukce otazek",
+          "Mapa dovednosti ktera mluvi jazykem byznysu",
+          "Mindset upgrade a confidence hacking pro klid pod tlakem"
+        ]
+      },
+      {
+        "type": "framework",
+        "content": "Positioning T shape",
+        "data": {
+          "core_edge": [
+            {
+              "label": "Core hloubka",
+              "value": "React a Nextjs architektury, TypeScript jistota, vykonnostni rozpocty, pristupnost"
+            },
+            {
+              "label": "Edge sirka",
+              "value": "State machines Xstate, data vizualizace, server actions, monitoring UX telemetry"
+            }
+          ],
+          "identity_story": "Jsem vyvojar ktery premenuje produktove cile na rychle a stabilni UI. Specializuji se na predvidatelny rendering a mereni dopadu na metriky konverzi."
+        }
+      },
+      {
+        "type": "table",
+        "content": "Strategicka mapa dovednosti",
+        "headers": [
+          "Dovednost",
+          "Seniorita",
+          "Hodnota pro firmu",
+          "Meritelny dukaz"
+        ],
+        "rows": [
+          [
+            "React render a state model",
+            "Silna",
+            "Mene regrese, jednodussi refaktoring",
+            "Pokles chybovosti o 28 procent pri releasu"
+          ],
+          [
+            "Nextjs data fetching",
+            "Silna",
+            "Rychlejsi TTFB a stabilni SEO",
+            "TTFB snizeno z 380 ms na 210 ms"
+          ],
+          [
+            "TypeScript design",
+            "Silna",
+            "Mene runtime chyb, vyssi rychlost vyvoje",
+            "Build errors zachytily 47 defektu pred QA"
+          ],
+          [
+            "UX mikro interakce",
+            "Stredni",
+            "Vyssi konverze a retence",
+            "Zlepseni klik through z 3,2 na 4,1 procenta"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Interview dekonstrukce miniramy"
+      },
+      {
+        "type": "bullets",
+        "content": [
+          "Otazka proc tato architektura odpovidejte pres kontext cile rizika trade off a dopad",
+          "Otazka slozita chyba odpovidejte pres detekce izolace oprava prevence",
+          "Otazka priorita odpovidejte pres hodnotu riziko naklad a jistotu"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "STAR plus plus builder",
+        "headers": [
+          "Cast",
+          "Guideline",
+          "Priklad"
+        ],
+        "rows": [
+          [
+            "Situation",
+            "Kontext a limit",
+            "Replatformovani landingu s cilem rychlost a SEO"
+          ],
+          [
+            "Task",
+            "Ocekavany vysledek",
+            "TTFB pod 250 ms a CLS pod 0,1"
+          ],
+          [
+            "Action",
+            "Kroky a trade offy",
+            "Server components, obrazky optimalizace, lazy hydration"
+          ],
+          [
+            "Result",
+            "Cisla a dopad",
+            "TTFB 210 ms, CLS 0,04, konverze plus 0,9 procenta"
+          ],
+          [
+            "Reflection",
+            "Poucenie",
+            "Vznikl decision playbook pro podobne landingy"
+          ],
+          [
+            "Reuse",
+            "Prenositelnost",
+            "Sablona pro dalsi tri mikrosajty"
+          ]
+        ]
+      },
+      {
+        "type": "metric",
+        "content": "Vykonnostni rozpocet",
+        "data": {
+          "TTFB_ms": 220,
+          "LCP_ms": 1600,
+          "CLS": 0.05,
+          "INP_ms": 180,
+          "JS_kB_budget": 180,
+          "IMG_kB_budget": 400
+        }
+      },
+      {
+        "type": "chart",
+        "content": "Metriky pred a po optimalizaci",
+        "series": [
+          {
+            "name": "Pred",
+            "points": [
+              {
+                "label": "TTFB",
+                "value": 380
+              },
+              {
+                "label": "LCP",
+                "value": 2400
+              },
+              {
+                "label": "INP",
+                "value": 320
+              }
+            ]
+          },
+          {
+            "name": "Po",
+            "points": [
+              {
+                "label": "TTFB",
+                "value": 210
+              },
+              {
+                "label": "LCP",
+                "value": 1600
+              },
+              {
+                "label": "INP",
+                "value": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "typescript",
+        "filename": "decision_ranker.ts",
+        "content_raw": "ZXhwb3J0IHR5cGUgVHJhZGVvZmYgPSB7IG9wdGlvbjogc3RyaW5nOyBpbXBhY3Q6IG51bWJlcjsgcmlzazogbnVtYmVyOyBjb3N0OiBudW1iZXI7IGNvbmZpZGVuY2U6IG51bWJlciB9OwpmdW5jdGlvbiBjbGFtcDAxKHg6bnVtYmVyKXtyZXR1cm4gTWF4KDAsIE1pbigxLCB4KSk7fQpleHBvcnQgZnVuY3Rpb24gcmFua1RyYWRlb2Zmc0l0ZW1zOyhpdGVtczogVHJhZGVvZmZbXSk6IHsgb3B0aW9uOiBzdHJpbmc7IHNjb3JlOiBudW1iZXIgfVtdIHsKICByZXR1cm4gaXRlbXMubWFwKGk9PnsKICAgIGNvbnN0IGltcGFjdCA9IGNsYW1wMDEoaS5pbXBhY3QpOwogICAgY29uc3QgcmlzayA9IGNsYW1wMDEoaS5yaXNrKTsKICAgIGNvbnN0IGNvc3QgPSBjbGFtcDAxKGkuY29zdCk7CiAgICBjb25zdCBjb25mID0gY2xhbXAwMShpLmNvbmZpZGVuY2UpOwogICAgY29uc3Qgc2NvcmUgPSAwLjUqY3VzdG9tKGltcGFjdCkgKyAwLjIqY3VzdG9tKGNvbmYpICsgMC4yKigxLXJpc2spICsgMC4xKigxLWNvc3QpOwogICAgcmV0dXJuIHsgb3B0aW9uOiBpLm9wdGlvbiwgc2NvcmU6IE51bWJlcihzY29yZS50b0ZpeGVkKDMpKSB9OwogIH0pLnNvcnQoKGEsYik9PmIuc2NvcmUgLSBhLnNjb3JlKTsKfQo="
+      },
+      {
+        "type": "code",
+        "language": "tsx",
+        "filename": "ImpactBadge.tsx",
+        "content_raw": "aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKdHlwZSBQcm9wcyA9IHsgdmFsdWU6IG51bWJlciB9OwpleHBvcnQgZnVuY3Rpb24gSW1wYWN0QmFkZ2UoeyB2YWx1ZSB9OiBQcm9wcykgewogIGNvbnN0IGxldmVsID0gdmFsdWUgPj0gMC44ID8gJ0hpZ2gnIDogdmFsdWUgPj0gMC41ID8gJ01lZGl1bScgOiAnTG93JzsKICBjb25zdCBjb2xvciA9IHZhbHVlID49IDAuOCA/ICcjMTU4MDNkJyA6IHZhbHVlID49IDAuNSA/ICcjY2E4YTA0JyA6ICcjOTkxYjFiJzsKICByZXR1cm4gKAogICAgPHNwYW4gc3R5bGU9e3tiYWNrZ3JvdW5kQ29sb3I6IGNvbG9yLCBjb2xvcjogJyNmZmYnLCBwYWRkaW5nOiAnNHB4IDhweCcsIGJvcmRlclJhZGl1czogJzhweCcgfX0+CiAgICAgIEltcGFjdCB7bGV2ZWx9IHtNYXRoLnJvdW5kKHZhbHVlKjEwMCl9JQogICAgPC9zcGFuPgogICk7Cn0K"
+      },
+      {
+        "type": "checklist",
+        "content": "Executive presence v technickem prostredi",
+        "items": [
+          "Mluv kratce strukturovane tri body a mereny dopad",
+          "Pomenovat riziko a vlastnit mitigaci",
+          "Navrhnout varianty a rict preferenci s duvody",
+          "Uzavrit dohodu dalsi krok a metrika"
+        ]
+      },
+      {
+        "type": "exercise",
+        "content": "Interview deconstruction drill",
+        "steps": [
+          "Vezmi vlastni projekt a popis tri klicove trade offy",
+          "Spocitej vliv pomoci decision rankeru a udelej kratky pitch",
+          "Zapis verzi pro technickeho i produktoveho posluchace",
+          "Nacvic otazku co kdyz selze a jak to zjistis drive"
+        ]
+      },
+      {
+        "type": "cta",
+        "content": "Osobni mini plan",
+        "bullets": [
+          "Vyber tri metriky dopadu a zarad do rozpoctu",
+          "Napis tri STAR plus plus story s cisly",
+          "Vytvor kratky positioning odstavec a jeden demo use case",
+          "Priprav tri otazky na vedeni rozhovoru ktere odhali priority firmy"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "page",
+        "content": {
+          "title": "Frontend Interview Masterplan",
+          "subtitle": "Osobni mini plan pro roli Frontend Developer",
+          "sections": [
+            {
+              "heading": "Technologicka dominance",
+              "bullets": [
+                "Ukazuj mereny dopad na UX a business metriky lezerni confident ton",
+                "Vysvetluj proc jsi volil konkretni pattern a jak jsi si hlidal trade offy",
+                "Preved schopnosti do opakovatelnych rozhodovacich pravidel"
+              ],
+              "micro_framework": {
+                "name": "3E Evaluator",
+                "steps": [
+                  "Effect uzitnost pro uzivatele napr snizeni CLS o 0.05 a zkraceni TTI o 300 ms",
+                  "Efficiency cena implementace a udrzby napr effort 3 body",
+                  "Evidence mereni a experiment tabulka pred a po"
+                ]
+              }
+            },
+            {
+              "heading": "Strategicka mapa dovednosti",
+              "table": {
+                "columns": [
+                  "Dovednost",
+                  "Vaha",
+                  "Signal seniority",
+                  "Diagnosticka otazka"
+                ],
+                "rows": [
+                  [
+                    "TypeScript",
+                    9,
+                    "stabilni kontrakty a ergonomie typu",
+                    "Jak modelujes nehomogenni API odpoved"
+                  ],
+                  [
+                    "React",
+                    9,
+                    "sprava stavu a izolace vedlejsich efektu",
+                    "Kdy kompozice kdy kontext kdy knihovna"
+                  ],
+                  [
+                    "Next.js",
+                    8,
+                    "spravna volba renderingu a cache",
+                    "Kdy RSC a kdy CSR pro interaktivni widget"
+                  ],
+                  [
+                    "UX a dostupnost",
+                    8,
+                    "task success rate a a11y",
+                    "Jak merenim overis ze komponenta je ovladatelna klavesnici"
+                  ],
+                  [
+                    "HTTP a API",
+                    7,
+                    "idempotence a retry logika",
+                    "Jak osetris 429 a 503 bez duplikace efektu"
+                  ],
+                  [
+                    "CSS system",
+                    7,
+                    "predikovatelna kaskada",
+                    "Jak zabraniš driftu utilit a kolizim"
+                  ]
+                ]
+              }
+            },
+            {
+              "heading": "Interview dekonstrukce",
+              "bullets": [
+                "Oteviraci ramovani Kontekst Cil Kriterium aby ses stal partnerem tazatele",
+                "Odpovidej ve strukture Hypoteza Postup Rizika Mereni",
+                "Uzaviraj mikrocommitmentem a kontrolou porozumeni"
+              ],
+              "templates": [
+                "Open kontext moje odpoved zacne u problemu uzivatele",
+                "Commit navrhnu postup a overim jestli sedime na cil",
+                "Close potvrdim dopad a navrhnu dalsi krok"
+              ]
+            },
+            {
+              "heading": "Behavioral mastery STAR plus plus",
+              "starpp": {
+                "structure": [
+                  "Situation kontext",
+                  "Task ukol a ocekavani",
+                  "Action 3 klove tahy a trade off jeden minus priznej",
+                  "Result cisla pred a po",
+                  "Reflection co bych priste zlepsil",
+                  "Replication jak to zopakovat jinde"
+                ],
+                "example_metrics": {
+                  "metric": "TTFB ms",
+                  "before": 800,
+                  "after": 420,
+                  "delta_pct": -47
+                }
+              }
+            },
+            {
+              "heading": "Decision making a technical judgment",
+              "mini_framework": {
+                "name": "AIM TRIAD",
+                "items": [
+                  "Aim definuj vyherni metriky pro uzivatele a system",
+                  "Trade off mapuj naklady slozitost riziko",
+                  "Evidence experiment a metriky"
+                ]
+              },
+              "numeric_example": {
+                "options": [
+                  {
+                    "name": "SSR cache",
+                    "impact": 7,
+                    "effort": 3,
+                    "risk": 2,
+                    "score": 2
+                  },
+                  {
+                    "name": "Client fetch",
+                    "impact": 3,
+                    "effort": 1,
+                    "risk": 1,
+                    "score": 1
+                  }
+                ],
+                "choice": "SSR cache"
+              }
+            },
+            {
+              "heading": "Positioning a diferenciace",
+              "models": [
+                "T shape hluboka React a TS sirka systemove UX HTTP",
+                "Pi shape pridana osa data vizualizace nebo performance",
+                "Storyline identita problem ktery resis komu a jakym pristupem"
+              ],
+              "one_liner": "Stavim rychle a dostupne rozhrani kde cas k interakci a chybovost jsou hlidane prvni tridy"
+            },
+            {
+              "heading": "Strategicka komunikace",
+              "checklist": [
+                "Explicitni trade off a jejich cena",
+                "Kontext ci u za 1 vetu a 1 cislo",
+                "Business dopad navaz na konretnu metriku naprim TTI konverze servisni naklady"
+              ]
+            },
+            {
+              "heading": "Recovery a tlak",
+              "playbook": [
+                "Zastav rikalizuj problem pojmenuj omezeni",
+                "Navrhni minimalni bezpecny dalsi krok",
+                "Transparentne vyhodnot merenim"
+              ],
+              "curveball_drill": [
+                "Co kdyz offline a limit 50 KB odpovez cache as you go a streaming",
+                "Co kdyz latence API kolisa odpovez adaptive retry s jitterem a idempotence"
+              ]
+            },
+            {
+              "heading": "Mini plan",
+              "steps": [
+                "Vytvor si vlastni impact metriku pro posledni projekt a preseknuti bottlenecku",
+                "Priprav 2 STAR plus plus pribehy a jeden fail s reflexi",
+                "Napis 1 strucny trade off memo a rozhodni mezi dvema implementacemi",
+                "Sestav 1 vetny positioning a 3 signaly ktere ho dokazuji"
+              ]
+            },
+            {
+              "heading": "Metriky a graf",
+              "chart": {
+                "type": "line",
+                "series": [
+                  {
+                    "name": "TTI ms",
+                    "data": [
+                      2100,
+                      1950,
+                      1500,
+                      1320
+                    ]
+                  },
+                  {
+                    "name": "CLS",
+                    "data": [
+                      0.22,
+                      0.18,
+                      0.12,
+                      0.09
+                    ]
+                  }
+                ],
+                "labels": [
+                  "Baseline",
+                  "Code split",
+                  "RSC",
+                  "Cache"
+                ]
+              }
+            },
+            {
+              "heading": "Kod ukazka dopadovy widget",
+              "files": [
+                {
+                  "filename": "ImpactCard.tsx",
+                  "language": "typescript",
+                  "content_raw": "ZXhwb3J0IHR5cGUgSW1wYWN0ID0geyBtZXRyaWM6IHN0cmluZzsgYmVmb3JlOiBudW1iZXI7IGFmdGVyOiBudW1iZXI7IHdoeTogc3RyaW5nIH07CmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEltcGFjdENhcmQoeyBtZXRyaWMsIGJlZm9yZSwgYWZ0ZXIsIHdoeSB9OiBJbXBhY3QpIHsKICBjb25zdCBkZWx0YSA9IGFmdGVyIC0gYmVmb3JlOwogIGNvbnN0IHBjdCA9IGJlZm9yZSA9PT0gMCA/IDAgOiBNYXRoLnJvdW5kKChkZWx0YSAvIGJlZm9yZSkgKiAxMDApKTsKICByZXR1cm4gKAogICAgPHNlY3Rpb24+CiAgICAgIDxoZWFkZXI+e21ldHJpY30lM0MvaGVhZGVyPgogICAgICA8ZGl2PmZyb20ge2JlZm9yZX0gdG8ge2FmdGVyfSAoe3BjdH0lKSUzQy9kaXY+CiAgICAgIDxwPnt3aHl9PC9wPgogICAgPC9zZWN0aW9uPgogICk7Cn0K"
+                },
+                {
+                  "filename": "decisionNote.ts",
+                  "language": "typescript",
+                  "content_raw": "dHlwZSBEZWNpc2lvbiA9IHsgb3B0aW9uOiBzdHJpbmc7IHByb3M6IHN0cmluZ1tdOyBjb25zOiBzdHJpbmdbXTsgcmlzazogbnVtYmVyOyBlZmZvcnQ6IG51bWJlcjogaW1wYWN0OiBudW1iZXIgfTsKZXhwb3J0IGNvbnN0IHBpY2sgPSAoYTogRGVjaXNpb24sIGI6IERlY2lzaW9uKSA9PiB7CiAgY29uc3Qgc2NvcmUgPSAoZDogRGVjaXNpb24pID0+IGQuaW1wYWN0IC0gZC5lZmZvcnQgLSBkLnJpc2s7CiAgcmV0dXJuIHNjb3JlKGEpID49IHNjb3JlKGIpID8gYSA6IGI7Cn07Cgpjb25zdCBBOiBEZWNpc2lvbiA9IHsgb3B0aW9uOiBTU1IgY2FjaGUsIHByb3M6IFtmYXN0ZXIgVFRGQl0sIGNvbnM6IFtjb21wbGV4aXR5XSwgcmlzazogMiwgZWZmb3J0OiAzLCBpbXBhY3Q6IDcgfTsKY29uc3QgQjogRGVjaXNpb24gPSB7IG9wdGlvbjogQ2xpZW50IGZldGNoLCBwcm9zOiBbc2ltcGxlXSwgY29uczogW3Nsb3dlcl0sIHJpc2s6IDEsIGVmZm9ydDogMSwgaW1wYWN0OiAzIH07CnBpY2soQSxCKTsK"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type": "screen",
+        "content": "Frontend Interview Mini–Plán: dominance, strategie, vliv\n\nÚvodní záměr\nTento modul tě připraví na roli Frontend Developer skrze propojené okruhy: technologická dominance, interview dekonstrukce, strategická mapa dovedností, mindset a komunikace s business dopadem. Vše je akční, ověřitelné a přenosné do reálného rozhovoru.\n\n1) Technologická dominance – signály, které rekruteři poznají\n– Deterministické UI: předvídatelné stavy, jasná asynchronní pravidla, minimální magické side–effects.\n– Stabilní výkon: kontrola LCP/INP/CLS, lazy–hydration, kritický CSS, předvídatelný caching.\n– Bezpečná práce s daty: idempotentní požadavky, retry s backoff, ochota selhat řízeně.\n– Čitelnost: navigovatelná složková architektura, explicitní kontrakty, malý povrch komponent.\n– Verifikace: unit + příběhy stavů, kontraktové testy API, měřitelné akceptační scénáře.\n\nMikro–checklist Dominance\n– Stav: oddělené UI/Server boundaries, čisté props, žádný skrytý global mutable state.\n– Data: serializovatelná payload, validační schéma na hraně systému.\n– Výkon: měř a vysvětli trade–offy; ukaž limity před optimalizací.\n– Chyby: navrhni fallbacky, retry, timeouts a záměrně vyvolej edge case.\n– Údržba: pojmenuj konvence, ukaž Degeneration–proof refaktorovací kroky.\n\n2) Interview dekonstrukce – rámec RACER\nRACER = Request – Assumptions – Constraints – Examples – Risks.\nPoužití: Přeformuluj zadání, vylož předpoklady, stanov omezení, nabídni min. dva konkrétní příklady řešení a explicitně pojmenuj rizika a mitigaci. Převálcuješ chaos strukturou, ne rychlými sliby.\n\n3) Strategická mapa dovedností – co firmy chtějí\n– Core FE: JS/TS kompetence, rendering a data flow, accessibility jako default.\n– Produktové myšlení: metriky dopadu, kontext používání, orientace na outcome.\n– Provozuschopnost: pozorování, logování, feature–flags, rollout plány.\n– Komunikace: rozhodovací deník, trade–off ledger, schopnost vyjednat jednoduchost.\n– Škálování: modulární systém, design tokens, pravidla pro performance regresi.\n\n4) Mindset upgrade & confidence hacking\n– Default na real–world constraints: zařízení, síť, jazyk, latence, práva.\n– Vyslovuj nejistoty jako rizika s plánem ověření.\n– Vedení rozhovoru otázkami s hodnotou: __DQ__Co je pro vás úspěch? Kdy víme, že to funguje?**DQ**\n– Přehraj tlak na doménu: __DQ__Chcete optimalizovat prvních 100ms nebo redukovat JS o 30%?**DQ**\n– Pamatuj: sebevědomí = jasné mantinely + jasný plán.\n\n5) Positioning – T–shape a storytelling technické identity\n– Vertikála: tvůj hluboký směr (např. výkonnost renderingu pro velké feedy).\n– Horizontála: integrace s produktovým vývojem, experimenty, observabilita.\nStory jednou větou: **DQ__Jsem FE, který zjednodušuje složité UI tak, aby bylo rychlé, měřitelné a snadno nasaditelné v týmu.**DQ**\n\n6) Strategická komunikace & business dopad\n– Převod techniky na účinek: **DQ**-120kB JS = -180ms FCP = +2.3% konverze na mobilu__DQ**\n– Trade–offy: fazetuj rozhodnutí podle rizika, ceny a revizovatelnosti.\n– Kontext: mluv o uživatelském příběhu, ne o knihovně.\n\n7) Behavioral & situational mastery – STAR++\n– Situation, Task, Action, Result, Reflection, Risk.\n– Vzor: __DQ__S: klesající výkon na listu. T: zlepšit interaktivitu. A: rozdělení bundlu, deferred hydratace, memo selektory. R: -28% INP, -18% JS. Reflection: zavedli jsme metriku budgetů. Risk: rollback guard s feature–flagem.**DQ**\n\n8) Influence & executive presence\n– Říkej málo, strukturovaně, s výstupem.\n– Navrhuj volby A/B s jasnou metrikou.\n– Dodržuj klidné tempo a pauzy, ověřuj porozumění.\n\n9) Decision–making & technical judgment\n– Performance triáda: cíluj LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1.\n– Náklad vs. přínos: každé rozhodnutí rámuj do **DQ__dopad/údržba/riziko__DQ**.\n– Malé reverzibilní kroky > velké jednorázové změny.\n\n10) Interview game theory & meta skills\n– Identifikuj roli tazatele: validátor, průzkumník, architekt.\n– Řiď rytmus: shrnutí po blocích, mikro–demonstrace, rozvahy nahlas.\n– Přepínej módy: obhajoba vs. explorace.\n\n11) Narrative & personal brand equity\n– Vzor **DQ__tří největších dopadů__DQ**: problém → rozhodnutí → měřitelný výsledek → co se změnilo pro tým/uživatele.\n– Udržuj konzistenci: stejné metriky, stejný slovník.\n\n12) Recovery & pressure handling\n– Pojmenuj limit: __DQ__Tady bych validoval hypotézu malým experimentem.**DQ**\n– Přesměruj: __DQ__Vyberme kritérium, ať eliminujeme varianty s malým dopadem.**DQ**\n– Přijmi chybu a ukaž mechaniku učení: postmortem, akční bod, prevence.\n\nMetriky a modelový dopad (ilustrační výpočet)\n– Optimalizace bundlu -110kB: očekávané -160ms FCP na 4G, +1.8% dokončené registrace.\n– Redukce INP z 260ms na 180ms: +3–5% engagement na interaktivních prvcích.\n– CLS z 0.18 na 0.08: -22% misclicků, -12% rage–clicků.\n\nTabulka – mapa dovedností (CSV)\nKategorie,Kompetence,Signál seniority,Business dopad\nJazyk,TypeScript,Disciplinované typy a utility,Nižší chybovost a rychlejší refaktor\nRendering,React/Next.js,Kontrola hydration a datových hranic,Stabilní výkon a nižší náklady\nStyly,CSS/Tailwind,Systém tokenů a konzistence,Menší údržba a rychlejší doručování\nAPI,REST,Idempotence a retry strategie,Méně incidentů a stabilní UX\nUX,A11y/Responsivita,Výchozí přístupnost a layout bez skoků,Vyšší použitelnost a SEO\nSpolehlivost,Testy/Observabilita,Kontraktové testy a metriky,Snížení rizika releasů\n\nMini–úkoly k okázání seniority v rozhovoru\n– Předveď RACER na libovolném API požadavku.\n– Popiš trade–off ledger pro loading strategie obrazů.\n– Vyprávěj jeden STAR++ příběh s metrikami.\n– Navrhni performance budget a zpětně z něj odvoď technické kroky.\n",
+        "code_ts_raw": "ZXhwb3J0IGNvbnN0IHJldHJ5RmV0Y2ggPSBhc3luYyAodXJsOiBzdHJpbmcsIG9wdHM6IFJlcXVlc3RJbml0ID0ge30sIHJldHJpZXMgPSAzLCBiYWNrb2ZmID0gMzAwKSA9PiB7CiAgbGV0IGxhc3RFcnI6IHVua25vd247CiAgZm9yIChsZXQgaSA9IDA7IGkgPCByZXRyaWVzOyBpKyspIHsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKHVybCwgb3B0cyk7CiAgICAgIGlmICghcmVzLm9rKSB0aHJvdyBuZXcgRXJyb3IoYEhUVFAgJHtyZXMuc3RhdHVzfWApOwogICAgICByZXR1cm4gcmVzOwogICAgfSBjYXRjaCAoZXJyKSB7CiAgICAgIGxhc3RFcnIgPSBlcnI7CiAgICAgIGF3YWl0IG5ldyBQcm9taXNlKHIgPT4gc2V0VGltZW91dChyLCBiYWNrb2ZmICogKGkgKyAxKSkpOwogICAgfQogIH0KICB0aHJvdyBsYXN0RXJyOwp9Ow==",
+        "code_css_raw": "OnJvb3QgeyAtLXNwYWNlOiBjbGFtcCgxMnB4LCAydncsIDI0cHgpOyB9Ci5jb250YWluZXIgeyBwYWRkaW5nOiB2YXIoLS1zcGFjZSk7IG1heC13aWR0aDogbWluKDkwY2gsIDEwMCUgLSAyKnZhcigtLXNwYWNlKSk7IH0KLmJ1dHRvbiB7IHBhZGRpbmc6IGNhbGModmFyKC0tc3BhY2UpIC8gMikgdmFyKC0tc3BhY2UpOyBib3JkZXItcmFkaXVzOiA4cHg7IH0="
+      }
+    ],
+    [
+      {
+        "type": "page",
+        "content": "Frontend interview mini plan pro dominanci v roli Frontend Developer\n\nTechnologicka dominance\nRamec POC TLD problem options choice tradeoffs lessons defaults aplikuj na kazdy technicky pribeh\nPerf budget na jednu obrazovku 150 kB CSS 150 kB JS 50 kB fonty TTFB pod 200 ms LCP pod 2.5 s CLS pod 0.05 interaktivita do 100 ms\nModel mereni rychlosti score 0 az 100 vypocet 40 procent LCP 25 procent INP 20 procent TTFB 15 procent CLS cil 85 plus\n\nInterview dekonstrukce\nLoop Probe Frame Pitch Check otazka dopln kontext navrhni reseni potvrd porozumeni a nastav dalsi krok\nTradeoff pitch latence versus cache bezpecnost versus DX dostupnost versus cena ukaz rozhodnuti a dopad na uzivatele\n\nStrategicka mapa dovednosti\nOsa mastery a osa impact top temata React rendering a concurrency Next.js routing server actions data fetching error boundaries accessibly a semantika UX mikrointeraction a formulare performance a profilace TypeScript typove kontrakty architektura slozitych UI stav a data management testing udrzitelnost a refactoring security a threat modeling\n\nMindset a confidence hacking\nPrepnuti z rezimu prosim o praci do rezimu prinasim hodnotu 3W karta co je cil proc na tom zalezi co dorucuji jako diferenciator\nMentální reset pred otazkou dychani box 3 3 3 ear hearing empathy alignment respond\n\nDiferenciace a positioning\nT shape hluboka React a Next kompetence presahy do UX performance a produktove analytiky storytelling identita jsem integrator co umi propojovat UX signaly s renderingovymi strategiemi a metrikami byznys dopad kratsi time to value\n\nStrategicka komunikace a thought leadership\nModel TRADE trigger requirements assumptions data effects pri kazde odpovedi explicitne pojmenuj predpoklady a rizika\n\nBehavioral a situational mastery\nSTAR plus plus situation task action result reflection next bet kazde tvrzeni s cisly narust konverze o 12 procent snizeni bundle o 38 procent pokles INP na 120 ms\n\nInfluence a executive presence\n3 sekundy postoj a klid 30 sekund oblouk problem kontext reseni dopad 3 minuty deep dive architektura datove toky failure modes experimenty a fallbacky\n\nDecision making a technical judgment\nRamec ICE R risk impact confidence effort rozhodni priority v backlogu u ukazkovych ticketu preferuj low effort high impact fixy pred komplexnimi refaktory kdyz jde o rychly zisk\n\nInterview game theory a meta skills\nCteni signalizace zapisuj skryte kriterium kvalita kodu rychlost doruceni teamwork rizeni tempa navrhni demoverzi na tabuli a ukaz jak bys testoval hranicni stavy\n\nNarrative building a personal brand\nOs prijbehu smer dopad rust highlight tri ukazky projektu kde jsi menil pravidla hry jedna s metrikami vykonu jedna s UX praktikami jedna s riziky a recovery\n\nRecovery a pressure handling\nRESET recognize empathize simplify execute track kdyz selze demo prepinac na offline data logika obsluhy chyb hlasky pro uzivatele a retrospektiva\n\nNumericky priklad rychla kalkulace dopadu\nSnizeni JS o 120 kB pri 4G setri 0.9 s stredni LCP klesa z 3.1 s na 2.2 s predpokladane zvyseni CR o 4 az 6 procent podle elasticity 0.05 na 100 ms zrychleni\n\nMini checklist pred live coding\nDefinuj vstupy a kontrakty typy testuj hrany prazdna data chybove stavy latence loguj casy a kroky oddel UI stav a side effects pis male funkce a vyber baseline znovupouzitelny hook\n\nMaly skill audit skore 0 az 5\nReact rendering a memo a suspense\nNext.js data fetching a server actions\nTypeScript typy pro API a zod kontrakty\nUX formulare a pristupnost\nPerformance profilace a metriky\nSecurity sanitace a CSP\nTesting unit integrační e2e\nVyber tri nejmensi skore a priprav 2 demonstrace pro kazde jednu algoritmickou a jednu UX\n\nCo prineses do tymu\nRychly prototyp s metrikami do hodiny meritelny dopad do release nezavisle na backendu zlepseni spolehlivosti chovani UI v edge pripadech a kultura rozhodnuti na datech\n\nKody v content_raw obsahuji hook debounced value server action s retry a minimalisticky responsive CSS set pro okamzite pouziti",
+        "content_raw": "IyMjIGZpbGU6IHVzZURlYm91bmNlZFZhbHVlLnRzCmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CgpleHBvcnQgZnVuY3Rpb24gdXNlRGVib3VuY2VkVmFsdWU8VD4odmFsdWU6IFQsIGRlbGF5ID0gMjUwKSB7CiAgY29uc3QgW2RlYm91bmNlZCwgc2V0RGVib3VuY2VkXSA9IHVzZVN0YXRlKHZhbHVlKTsKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgaWQgPSBzZXRUaW1lb3V0KCgpID0+IHNldERlYm91bmNlZCh2YWx1ZSksIGRlbGF5KTsKICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQoaWQpOwogIH0sIFt2YWx1ZSwgZGVsYXldKTsKICByZXR1cm4gZGVib3VuY2VkOwp9CgojIyMgZmlsZTogYXBwL2FjdGlvbnMvZmV0Y2hXaXRoUmV0cnkudHMKJ3VzZSBzZXJ2ZXInOwoKdHlwZSBGZXRjaE9wdHMgPSB7CiAgdXJsOiBzdHJpbmc7CiAgaW5pdD86IFJlcXVlc3RJbml0OwogIHJldHJpZXM/OiBudW1iZXI7CiAgdGltZW91dE1zPzogbnVtYmVyOwp9OwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGZldGNoV2l0aFJldHJ5KHsgdXJsLCBpbml0LCByZXRyaWVzID0gMiwgdGltZW91dE1zID0gNTAwMCB9OiBGZXRjaE9wdHMpIHsKICBsYXN0IEVycjogdW5rbm93biA9IG51bGw7CiAgZm9yIChsZXQgYXR0ZW1wdCA9IDA7IGF0dGVtcHQgPD0gcmV0cmllczsgYXR0ZW1wdCsrKSB7CiAgICB0cnkgewogICAgICBjb25zdCBjb250cm9sbGVyID0gbmV3IEFib3J0Q29udHJvbGxlcigpOwogICAgICBjb25zdCB0ID0gc2V0VGltZW91dCgoKSA9PiBjb250cm9sbGVyLmFib3J0KCksIHRpbWVvdXRNcyk7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKHVybCwgeyAuLi4oaW5pdCB8fCB7fSksIHNpZ25hbDogY29udHJvbGxlci5zaWduYWwsIGNhY2hlOiAnbm8tc3RvcmUnIH0pOwogICAgICBjbGVhclRpbWUodCk7CiAgICAgIGlmICghcmVzLm9rKSB0aHJvdyBuZXcgRXJyb3IoYEhUVFAgJHtyZXMuc3RhdHVzfWApOwogICAgICByZXR1cm4gYXdhaXQgcmVzLmpzb24oKTsKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgbGFzdEVyciA9IGU7CiAgICAgIGlmIChhdHRlbXB0ID09PSByZXRyaWVzKSB0aHJvdyBlOwogICAgfQogIH0KICB0aHJvdyBsYXN0RXJyOwp9CgojIyMgZmlsZTogcmVzcG9uc2l2ZS5jc3MKOi1yb290IHsgLS1zOiAxcmVtOyB9Ci5oMSB7IGZvbnQtc2l6ZTogY2xhbXAoMS41cmVtLCAxLjJyZW0gKyAydncsIDNyZW0pOyB9Ci5jb250YWluZXIgeyBtYXgtd2lkdGg6IG1pbig5MGNoLCAxMDAlIC0gMnJlbSk7IH0KaW1nIHsgaGVpZ2h0OiBhdXRvOyBtYXgtd2lkdGg6IDEwMCU7IH0K"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "content": "Kontekst pro LLM: Zadani vytvorit samostatny magneticky material pro Frontend Developer bez zminovani AI s roli osobni mentor mikro hacky mini frameworky kratke ukazky kodu a prime tipy bez casovych ramcu. Cile vyvolat aha momenty a dodat osobni mini plan pro pripravu na pohovory a karierni zmenu. Povinne propojovana temata technologicka dominance interview dekonstrukce strategicka mapa dovednosti mindset upgrade a confidence hacking technologicka diferenciace a positioning T shape a PI shape expert vs integrator storytelling technologicke identity strategicka komunikace a thought leadership trade offy kontext business dopad behavioral a situational mastery STAR plus plus vliv a executive presence rozhodovani a technical judgment prioritizace risk management interview game theory a meta skills cteni a rizeni dynamiky rozhovoru narrative building a personal brand equity a recovery a pressure handling prace se stresem a curveball otazkami. Uzivatelsky vstup pozice Frontend Developer technologie a dovednosti JavaScript ES6 plus TypeScript React Next dot js HTML5 CSS3 Tailwind Sass Git REST API responsivni design zaklady UX a UI principu. Kontraint obsah ma byt uplne generovany bez odkazu a placeholderu pri potrebe vytvaret tabulky grafy nebo numericke priklady s konkretnimi hodnotami kod pouze kdyz je vyzadovan a v systemu pro web vkladany do content underscore raw jako Base64 hloubka maximalne 2 uvozovky uvnitr hodnot nahradit tokenem **DQ**. Stav generovani toto je pocatecni krok bez predchoziho SUMMARY a NEXT underscore SUGGESTION ucelem je zalozit akvizicni funnel a jasne vytvorit kontekst pro dalsi navazujici obsah ktery bude krokove rozvijet mini plan pro frontend kandidata vcetne technickych a behaviornich prvku a vedeni pohovoru."
+      }
+    ],
+    [
+      {
+        "type": "context",
+        "content": "Kontekst: vytvareni postupneho retezce stranek pro Frontend Developer material bez odkazu a bez casovych ramcu. Cilem je akvizicni funnel s osobnim mini-planem, propojeni temat technologicka dominance, interview dekonstrukce, mapa dovednosti, mindset a confidence, diferenciace a positioning, strategicka komunikace, behavioral mastery se STAR plus plus, executive presence, decision making, interview game theory a meta skills, narrative building a personal brand, recovery a pressure handling. Styl osobni mentor, mikro hacky, mini frameworky, kratke ukazky a prime tipy. Uzivatelsky vstup zahrnuje JS ES6 plus, TypeScript, React, Next.js, HTML5, CSS3 s Tailwind a Sass, Git, REST API, responsivni design, zaklady UX a UI. Tento krok zaklada kontext a spousti mini plan pro maximalni dopad na pohovorech i v praxi."
+      },
+      {
+        "type": "heading",
+        "content": "Frontend Interview Launcher mini plan"
+      },
+      {
+        "type": "list",
+        "content": "Mikro hacky",
+        "items": [
+          "Signal first mindset: pri kazde odpovedi odvod co presne signalujes o schopnostech a jak to meri biznes",
+          "Trade off matici drz v hlave: kvalita, rychlost, naklad na udrzbu, riziko; vysvetli proc jsi zvolil konkretni kompromis",
+          "Konkrétnost nad abstrakcí: metriky, cisla, pred a po, procenta, latence, CLS, FID, TTI",
+          "Lead pohovor: navrhni ohraniceni zadani, potvrzuj domnenky, vyjednavej scope",
+          "Story tiles: buduj kratke kachle ze zkusenosti, ktere skladas do STAR plus plus"
+        ]
+      },
+      {
+        "type": "table",
+        "content": "Strategicka mapa dovednosti a vahy signalu",
+        "headers": [
+          "Oblast",
+          "Konkretní signal",
+          "Vaha",
+          "Ukazatel"
+        ],
+        "rows": [
+          [
+            "React a architektura",
+            "Kontrolovane datove toky, memoizace, lazy bundling",
+            "0.22",
+            "redukcni rerendery o 35 procent"
+          ],
+          [
+            "Next.js",
+            "Rozliseni server komponent, ISR, cache strategie",
+            "0.18",
+            "TTFB minus 120 ms na stranku"
+          ],
+          [
+            "TypeScript",
+            "Uroven strict, utility typy, ny nocna regrese",
+            "0.16",
+            "typove chyby na master nula za 90 dnu"
+          ],
+          [
+            "Performace a UX",
+            "Web vitals, prace s animacemi a vstupy",
+            "0.17",
+            "LCP 1.8 s, CLS 0.02"
+          ],
+          [
+            "CSS system",
+            "Design tokens, Tailwind konvence, BEM discipliny",
+            "0.12",
+            "reusable komponenty 80 procent pokryti"
+          ],
+          [
+            "API a integrace",
+            "Idempotentni REST, chybove stavy, retry backoff",
+            "0.15",
+            "chybovost volani minus 60 procent"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Mini framework: Interview controller"
+      },
+      {
+        "type": "list",
+        "content": "Kroky",
+        "items": [
+          "Zaramuj problem: ujasni cil, uzivatele, mereni uspechu",
+          "Navrhni 2 az 3 varianty reseni s kratkou scoring matici",
+          "Vyber verzi MVP a definuj hranice a rizika",
+          "Popis plan mericich bodu a rollbacku",
+          "Predved maly test na datech nebo odhadu"
+        ]
+      },
+      {
+        "type": "data",
+        "content": "Decision matrix priklad",
+        "series": [
+          {
+            "name": "Tailwind UI system",
+            "values": {
+              "ux": 8.8,
+              "perf": 9.0,
+              "dx": 9.1,
+              "risk": 2.1,
+              "score": 7.5
+            }
+          },
+          {
+            "name": "Sass BEM",
+            "values": {
+              "ux": 7.4,
+              "perf": 8.2,
+              "dx": 7.3,
+              "risk": 3.2,
+              "score": 6.1
+            }
+          },
+          {
+            "name": "CSS in JS",
+            "values": {
+              "ux": 9.0,
+              "perf": 7.1,
+              "dx": 8.4,
+              "risk": 4.0,
+              "score": 6.2
+            }
+          }
+        ],
+        "note": "Skore vypocet: 0.35 ux plus 0.35 perf plus 0.2 dx minus 0.2 risk"
+      },
+      {
+        "type": "text",
+        "content": "STAR plus plus sablona pro behaviorals"
+      },
+      {
+        "type": "checklist",
+        "content": "Prompty",
+        "items": [
+          "Situace: kontext a cil v jedne vet e",
+          "Ukol: zodpovednost a omezeni",
+          "Akce: 3 kroky s duvody a trade offy",
+          "Vysledek: cisla pred a po",
+          "Reflexe: co bych dnes zmenil a proc",
+          "Scale out: dopad na tym a biznes"
+        ]
+      },
+      {
+        "type": "list",
+        "content": "Technologicka diferenciace a positioning",
+        "items": [
+          "T shape: hluboky React a Next, sirka v mereni UX a API",
+          "Pi shape: druhy hloubkovy sloup v TypeScript type designu",
+          "Identita: architekt rychlych a stabilnich rozhrani pro byznys kriticke frontendy"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Mindset a executive presence mikro skripty"
+      },
+      {
+        "type": "list",
+        "content": "Repliky",
+        "items": [
+          "Navrhuji nejdrive definovat metriky uspechu a hranice skopu",
+          "Ukazu dve varianty a porovnam dopad na udrzbu a latenci",
+          "Zvolim cestu s nejlepsim pomerem riziko versus zisk a pridam plan rollbacku"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "page",
+        "content": {
+          "title": "Frontend mini plán pro pohovor a kariérní skok",
+          "subtitle": "Osobní mentor pro moderního frontend vývojáře",
+          "sections": [
+            {
+              "heading": "Osobní mini plán",
+              "items": [
+                "Vytvoř signál seniority přes T shape profil hluboký React a Next plus širší produktové vnímání",
+                "Ukazuj technické úsudky na reálných trade off volbách výkon DX bezpečnost přístupnost",
+                "V rozhovoru veď tok témat definuj cíl rámuj kontext ukaž rozhodnutí a dopad na byznys",
+                "Doruč krátké wins demem kódu a metrikou render time CLS a error budget"
+              ]
+            },
+            {
+              "heading": "Strategická mapa dovedností",
+              "table": {
+                "headers": [
+                  "Oblast",
+                  "Senior signál",
+                  "Mikro praxe",
+                  "Metrika"
+                ],
+                "rows": [
+                  [
+                    "React",
+                    "Kontrolované stavy architektura a hranice komponent",
+                    "Odděl logiku a prezentaci hooks a pure komponenty",
+                    "Re render pod 5 ms průměrná aktualizace"
+                  ],
+                  [
+                    "Next",
+                    "Kdy RSC kdy client a kdy edge",
+                    "Data fetching vzor loader a cache invalidace",
+                    "TTFB pod 100 ms na edge"
+                  ],
+                  [
+                    "TypeScript",
+                    "Typová smlouva přes hranice modulů",
+                    "Zaved strict režim a utilitní typy",
+                    "0 implicit any 0 any leak"
+                  ],
+                  [
+                    "Styly",
+                    "Design tokeny a systém",
+                    "Tailwind s tokeny a varianty",
+                    "Konzistence 100 procent bez duplikátů"
+                  ],
+                  [
+                    "API",
+                    "Stabilní kontrakty a chybové kódy",
+                    "Schéma a validace na vstupu i výstupu",
+                    "Error rate pod 1 procento"
+                  ],
+                  [
+                    "UX",
+                    "Předvídatelné proudy a přístupnost",
+                    "Fokus stavy klávesnice ARIA",
+                    "Lighthouse a11y nad 95"
+                  ],
+                  [
+                    "Testy",
+                    "Kritické cesty pokryté",
+                    "Test pyramid unit integration e2e",
+                    "Defekt únik pod 2 procenta"
+                  ],
+                  [
+                    "Git",
+                    "Čitelné změny malé dávky",
+                    "Konvence zpráv a feature flag",
+                    "Lead time z mergnutí do produkce pod jeden den"
+                  ]
+                ]
+              }
+            },
+            {
+              "heading": "Interview dekonstrukce",
+              "items": [
+                "Zarámuj problém co víme co nevíme jak otestujeme úspěch",
+                "Navrhni jednoduchý první průřez a plán iterací",
+                "Vysvětli trade off volby proti alternativám a rizika",
+                "Zakonči měřitelným dopadem a co bys dále zlepšil"
+              ]
+            },
+            {
+              "heading": "STAR plus plus framework",
+              "items": [
+                "Situace kontext role dopad na uživatele",
+                "Úkol jasné kritérium úspěchu a omezení",
+                "Akce klíčová rozhodnutí a proč právě tak",
+                "Výsledek metriky a co se naučilo",
+                "Reflexe co bych příště změnil a kde jsou hranice řešení"
+              ]
+            },
+            {
+              "heading": "Decision hacking mini framework",
+              "items": [
+                "Definuj hodnotu proti nákladu výkon DX složitost",
+                "Spočítej jednoduché skóre a vyslov verdikt",
+                "Zapiš poznámku proč a jak ověříš dopad"
+              ]
+            },
+            {
+              "heading": "Behaviorální mastery",
+              "items": [
+                "Vlastni chyby ukaž recovery postup incident postmortem",
+                "Komunikuj trade off v jazyce byznysu varianta dopad náklad riziko",
+                "Buduj executive presence klidné tempo krátké věty jasná struktura"
+              ]
+            },
+            {
+              "heading": "Thought leadership v rozhovoru",
+              "items": [
+                "Krátké modely vysvětlení mentální mapy a hranice",
+                "Ukaž jak rozhoduješ dnes a co by změnilo tvé rozhodnutí",
+                "Dávej kontrast baseline versus zlepšení"
+              ]
+            }
+          ],
+          "code_title": "Trade off rozhodovač TypeScript",
+          "content_raw": "ZXhwb3J0IHR5cGUgVHJhZGUgPSB7IHBlcmY6IG51bWJlcjsgZHg6IG51bWJlcjsgY29tcGxleGl0eTogbnVtYmVyIH07CmV4cG9ydCBmdW5jdGlvbiBkZWNpZGUodDogVHJhZGUpOiB7IHNjb3JlOiBudW1iZXI7IHZlcmRpY3Q6ICdzaGlwJyB8ICdyZXRoaW5rJzsgbm90ZTogc3RyaW5nIH0gewogIGNvbnN0IHNjb3JlID0gdC5wZXJmKjAuNSArIHQuZHgqMC4zIC0gdC5jb21wbGV4aXR5KjAuMjsKICBjb25zdCB2ZXJkaWN0ID0gc2NvcmUgPj0gMCA/ICdzaGlwJyA6ICdyZXRoaW5rJzsKICBjb25zdCBub3RlID0gdmVyZGljdCA9PT0gJ3NoaXAnID8gJ3ZhbHVlIG91dHdlaWdocyBjb3N0JyA6ICdjb3N0IHRvbyBoaWdoLCBzaW1wbGlmeSBvciBwaGFzZSc7CiAgcmV0dXJuIHsgc2NvcmU6IE1hdGgucm91bmQoc2NvcmUqMTAwKS8xMDAsIHZlcmRpY3QsIG5vdGUgfTsKfQo="
+        }
+      }
+    ]
+  ]
+}

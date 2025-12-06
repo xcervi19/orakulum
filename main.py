@@ -106,8 +106,8 @@ def process(root, max_depth=5):
     return {"pages": pages}
 
 
-with open('data.json') as f:
-    data_adhoc_json = json.load(f)
+# with open('data.json') as f:
+#     data_adhoc_json = json.load(f)
 
 with open('data.txt') as f:
     position_description = f.read()
@@ -193,68 +193,56 @@ def is_loading(threshold=0.90,monitor=0):
         time.sleep(1)
 
 if __name__=="__main__":
-    # if find_and_click(str(textarea)):
-    #     send_text(raw_input_filled)
-    # pyautogui.press('enter')
-    # print("fired")
-    # while is_loading():
-    #     print("loading")
-    # if find_and_click(str(scroll)):
-    #     print("scrolled")
-    # time.sleep(3)
-    # if find_and_click(str(copybutton)):
-    #     print("copied")
-    # position_description = pyperclip.paste()
-    # print(position_description)
+ 
     
-    # pyautogui.hotkey('ctrl', 'shift', 'o')
-    # time.sleep(2)
-    # if find_and_click(str(textarea)):
-    #     send_text(raw_input_json_filled)
-    # pyautogui.press('enter')
-    # while is_loading():
-    #     print("loading")
-    # if find_and_click(str(scroll)):
-    #     print("scrolled")
-    # time.sleep(3)
-    # if find_and_click(str(copybutton)):
-    #     print("copied")
-    # position_data = pyperclip.paste()
-    # print(position_data)
-    # db.create_conversation_root(conversation_id, "system", "initialization", json_data=position_data, text_data=position_description)
+    pyautogui.hotkey('ctrl', 'shift', 'o')
+    time.sleep(2)
+    if find_and_click(str(textarea)):
+        send_text(raw_input_json_filled)
+    pyautogui.press('enter')
+    while is_loading():
+        print("loading")
+    if find_and_click(str(scroll)):
+        print("scrolled")
+    time.sleep(3)
+    if find_and_click(str(copybutton)):
+        print("copied")
+    position_data = pyperclip.paste()
+    print(position_data)
+    db.create_conversation_root(conversation_id, "system", "initialization", json_data=position_data, text_data=position_description)
     
     
-    # time.sleep(1)
-    # pyautogui.hotkey('ctrl', 'shift', 'o')
-    # time.sleep(1)
-    # if find_and_click(str(textarea)):
-    #     position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
-    #     send_text(collect_starting_prompt(position_description, position_name, llmcontext_init, llmsuggestion_init))
-    # time.sleep(1)
-    # pyautogui.press('enter')
-    # while is_loading():
-    #     print("loading")
-    # if find_and_click(str(scroll)):
-    #     print("scrolled")
-    # time.sleep(3)
-    # if find_and_click(str(copybutton)):
-    #     print("copied")
-    # response = pyperclip.paste()
+    time.sleep(1)
+    pyautogui.hotkey('ctrl', 'shift', 'o')
+    time.sleep(1)
+    if find_and_click(str(textarea)):
+        position_name = data_adhoc_json['vysnena_pozice']['nazev_pozice']
+        send_text(collect_starting_prompt(position_description, position_name, llmcontext_init, llmsuggestion_init))
+    time.sleep(1)
+    pyautogui.press('enter')
+    while is_loading():
+        print("loading")
+    if find_and_click(str(scroll)):
+        print("scrolled")
+    time.sleep(3)
+    if find_and_click(str(copybutton)):
+        print("copied")
+    response = pyperclip.paste()
 
     # with open('check.json', 'w') as f:
     #     json.dump(response, f)
     # time.sleep(1)
 
-    with open('check.json', encoding='utf-8') as f:
-        initial_screen = json.load(f)
-    time.sleep(1)
-    print(initial_screen)
+    # with open('check.json', encoding='utf-8') as f:
+    #     initial_screen = json.load(f)
+    # time.sleep(1)
+    # print(initial_screen)
 
-    pages = process(initial_screen)
+    # pages = process(initial_screen)
 
-    os.makedirs('results', exist_ok=True)
-    with open('results/pages.json', 'w', encoding='utf-8') as f:
-        json.dump(pages, f)
+    # os.makedirs('results', exist_ok=True)
+    # with open('results/pages.json', 'w', encoding='utf-8') as f:
+    #     json.dump(pages, f)
     # db.disconnect()
 
 
