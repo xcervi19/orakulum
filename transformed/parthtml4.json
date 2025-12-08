@@ -2,16 +2,16 @@
   {
     "type": "element",
     "tag": "section",
-    "ui": "section",
+    "ui": "block",
     "children": [
       {
         "type": "element",
         "tag": "p",
-        "ui": "block",
+        "ui": "label",
         "children": [
           {
             "type": "text",
-            "text": "<blok-5>"
+            "text": "<blok-4>"
           }
         ]
       },
@@ -22,7 +22,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Název kroku: Exekuce vysoké přesnosti"
+            "text": "Název kroku: Psychologie vnímání a nákupních rozhodnutí"
           }
         ]
       },
@@ -33,7 +33,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Hlavní záměr: Ovládnout profesionální produkční workflow, ve kterém každý krok – od prvního briefu po finální export – probíhá rychle, přesně a predikovatelně."
+            "text": "Hlavní záměr: Tvořit vizuály a kampaně, které systematicky ovlivňují lidské chování – od prvního mikro-vjemu až po kliknutí a nákup."
           }
         ]
       },
@@ -76,7 +76,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Exekuce je fáze, kde se rozhoduje o kvalitě výstupu i o důvěře klienta. Profesionální workflow zajišťuje, že žádný krok není náhodný, nic se neztrácí, rozhodnutí vycházejí z psychologických principů (krok 4) a výsledný vizuál je konzistentní s cílem kampaně."
+                    "text": "Psychologie vnímání a rozhodování je “backend” každého vizuálu. Neřeší jen estetiku, ale ovlivňuje, kam se divák podívá jako první, co si zapamatuje, jaký pocit v něm vizuál vyvolá a jaké chování následuje."
                   }
                 ]
               },
@@ -87,37 +87,112 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Standardní pipeline:"
+                    "text": "Základní bloky:"
                   }
                 ]
               },
               {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "  Briefing → Analýza → Skicování → Moodboard → Prototyp → Iterace → Final Delivery."
-                  }
-                ]
+                "type": "text",
+                "text": ""
               },
               {
                 "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
+                "tag": "ul",
+                "ui": "bullet-list",
                 "children": [
                   {
-                    "type": "text",
-                    "text": "  Každá část má jinou funkci: briefing nastavuje realitu, skicování generuje varianty, moodboard definuje tón, prototyp ověřuje funkčnost, final delivery ověřuje technickou kvalitu (rozlišení, formát, export)."
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "AIDA model: Attention → Interest → Desire → Action. Každý prvek vizuálu by měl mít jasnou roli v jednom z těchto kroků."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Rozhodovací heuristiky: zkratky, podle kterých lidé rozhodují bez plné racionální úvahy (např. „co dělají ostatní“, „co se zdá být omezené“, „co je nejjednodušší volba“)."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Priming: před-nastavení mysli konkrétním podnětem (barvou, slovem, motivem), aby byl mozek citlivější na určitou interpretaci."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Kontrastní efekty: to, jak vnímáme objekt ve vztahu k něčemu jinému (cena, barevnost, velikost, rychlost)."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Social proof: používání důkazů, že “ostatní už to udělali” → zmírnění rizika, zvýšení důvěry."
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          },
-          {
-            "type": "text",
-            "text": ""
           },
           {
             "type": "element",
@@ -131,7 +206,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "příklady"
+                    "text": "příklady (technické, analogické, příběhové)"
                   }
                 ]
               },
@@ -152,7 +227,86 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Briefing: nastavení cílů kampaně, definice emocí, které má vizuál vyvolat (např. „urgentní“ vs. „klidný“ – viz krok 4)."
+                            "text": "AIDA v banneru pro SaaS nástroj:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ul",
+                        "ui": "bullet-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Attention: výrazná, jednoduchá vizuální metafora (např. přeplněná “to-do list” zeď vs. čistý dashboard)."
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Interest: 1 konkrétní benefit: „Ušetříte 4 hodiny týdně“."
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Desire: minipříběh: „Týmy jako X, Y už běží klidně.“"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Action: CTA s jasným důvodem: „Vyzkoušet na 14 dní zdarma“."
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       }
@@ -170,7 +324,18 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Skicování: rychlý nízkonákladový proces, který zabrání slepým uličkám v pozdější fázi."
+                            "text": "Kontrastní efekt v cenotvorbě:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Prezentace tří plánů (Basic – Pro – Enterprise), kde Pro je uprostřed a lehce zvýrazněný. Mozek většiny lidí vyhodnotí „střední volbu“ jako bezpečnou – ukotvení a relativní kontrast."
                           }
                         ]
                       }
@@ -188,43 +353,50 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Moodboard: referenční materiál ukazující barvy, rytmus, světlo, tonalitu, typografii."
+                            "text": "Priming barvami:"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
+                      },
                       {
                         "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
+                        "tag": "ul",
+                        "ui": "bullet-list",
                         "children": [
                           {
-                            "type": "text",
-                            "text": "Prototyp: jednoduchá testovací verze vizuálu, ve které se hodnotí čitelnost, tok pozornosti, CTA viditelnost."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "teplé, živé barvy + ostré kontrasty → urgency, akce, pocit „teď nebo nikdy“"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
                           {
-                            "type": "text",
-                            "text": "Final export: více verzí pro různé kanály (1080×1080, 1080×1920, 1200×628)."
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "jemné, tlumené tóny + hodně prostoru → klid, důvěra, „dobře promyšlené rozhodnutí“"
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       }
@@ -267,7 +439,101 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Agenturní workflow: junior designer, který pečlivě připravuje moodboardy, obvykle zkracuje iterace art directorovi o 30–40 %. Moodboardy chrání před mylnými interpretacemi a urychlují schvalování."
+                            "text": "E-shop s elektronikou:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Původní banner: „Sleva 20 % na notebooky“ + generická fotka produktu."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Nový banner:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ul",
+                        "ui": "bullet-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "headline: „Pouze dnes: 20 % dolů na výkon, který vydrží“"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "countdown prvek (vizuální timer) → aktivace heuristiky „scarcity“"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "micro-copy: „Kampaň využilo už 427 zákazníků“ → social proof"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Výsledek: nárůst CTR o X % (modelová situace, ale typický vzorec)."
                           }
                         ]
                       }
@@ -285,17 +551,10 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Freelancer pro e-commerce brand: díky pevné pipeline (brief → 2 skici → moodboard → prototyp) snížil počet revizí z 6 na 2, protože klient přesně věděl, co dostane."
+                            "text": "Mobilní aplikace pro meditaci:"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
+                      },
                       {
                         "type": "element",
                         "tag": "p",
@@ -303,7 +562,18 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Performance kampaně: prototyp s rychlou A/B validací (změna CTA kontrastu, přesun hlavního claimu) zvýšil CTR o 18 %."
+                            "text": "Test A: výrazná oranžová CTA „Začněte hned“ + dynamické pozadí → vysoká míra kliknutí, ale nízká míra dokončení registrace (příliš „ostrá“ energie)."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Test B: měkké modré pozadí, klidný vizuál, CTA „Začněte s klidnou hlavou“ → méně kliknutí, ale vyšší kvalita uživatelů (vyšší retence)."
                           }
                         ]
                       }
@@ -341,28 +611,123 @@
                     "children": [
                       {
                         "type": "element",
-                        "tag": "div",
-                        "ui": "qa-block",
+                        "tag": "p",
+                        "ui": "question",
                         "children": [
                           {
                             "type": "element",
-                            "tag": "p",
-                            "ui": "question",
+                            "tag": "em",
                             "children": [
                               {
                                 "type": "text",
-                                "text": "Jak probíhá váš workflow od briefu po finální vizuál?"
+                                "text": "Jak používáte AIDA model v praxi?"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "„Každý vizuál navrhuju tak, aby měl jasně definovanou roli pro Attention (dominantní prvek, kontrast), Interest (konkrétní benefit), Desire (emocionální nebo sociální motivace) a Action (viditelné CTA s důvodem ke kliknutí). Dokážu ukázat konkrétní příklady, kde změna těchto prvků posunula metriky.“"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "em",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Jak zapojujete psychologii při designu CTA?"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "„Řeším kontrast, micro-copy a umístění podle vzorce:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ul",
+                        "ui": "bullet-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "CTA musí být nejkontrastnější prvek v rámci své zóny,"
+                                  }
+                                ]
                               }
                             ]
                           },
                           {
                             "type": "element",
-                            "tag": "p",
-                            "ui": "answer",
+                            "tag": "li",
+                            "ui": "list-item",
                             "children": [
                               {
-                                "type": "text",
-                                "text": "„Používám strukturu briefing → skicování → moodboardy → prototyp → final export. Každý krok má definovaný časový limit a vlastní cíle. Díky tomu vím, kdy přestat iterovat a kdy přejít do produkce.“"
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "text CTA používá aktivní sloveso + benefit (‘Stáhnout plán’, ‘Odemknout přístup’),"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "paragraph",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "umísťuji ho tam, kde přirozeně končí čtenářův vizuální tok (např. na konci F-patternu).“"
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -377,66 +742,29 @@
                     "children": [
                       {
                         "type": "element",
-                        "tag": "div",
-                        "ui": "qa-block",
+                        "tag": "p",
+                        "ui": "question",
                         "children": [
                           {
                             "type": "element",
-                            "tag": "p",
-                            "ui": "question",
+                            "tag": "em",
                             "children": [
                               {
                                 "type": "text",
-                                "text": "Jak kontrolujete kvalitu výstupů?"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "element",
-                            "tag": "p",
-                            "ui": "answer",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "„Používám checklist: kontrast CTA, čitelnost do 2 sekund, konzistence stylu, správná typografie, exportní profily, správné barevné prostory.“"
+                                "text": "Jak byste vysvětlil/a priming non-design kolegovi?"
                               }
                             ]
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
+                      },
                       {
                         "type": "element",
-                        "tag": "div",
-                        "ui": "qa-block",
+                        "tag": "p",
+                        "ui": "answer",
                         "children": [
                           {
-                            "type": "element",
-                            "tag": "p",
-                            "ui": "question",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Co uděláte, když klient není spokojen s první verzí?"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "element",
-                            "tag": "p",
-                            "ui": "answer",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "„Vrátím se do fáze moodboardů nebo skic – tedy k fázi, kde se rozcházejí očekávání. Tím minimalizuji zbytečné přepracování finalizovaných vizuálů.“"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "„Priming je jako nastavit scénu předtím, než zazní hlavní věta. Jediným obrázkem, barvou nebo větou připravím mozek, aby zbytek sdělení vnímal určitým směrem – například ‘klid’, ‘rychlost’ nebo ‘exkluzivita’.“"
                           }
                         ]
                       }
@@ -465,21 +793,21 @@
               {
                 "type": "element",
                 "tag": "ul",
-                "ui": "tasks",
+                "ui": "bullet-list",
                 "children": [
                   {
                     "type": "element",
                     "tag": "li",
-                    "ui": "task",
+                    "ui": "list-item",
                     "children": [
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
-                            "text": "Vytvoř 3 moodboardy pro 3 různé značky:"
+                            "text": "Vezmi existující banner (klidně svůj starší) a přepiš ho ve 3 verzích:"
                           }
                         ]
                       },
@@ -496,11 +824,108 @@
                               {
                                 "type": "element",
                                 "tag": "p",
+                                "ui": "task",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "motivace: úspora času"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "task",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "motivace: strach ze ztráty"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "task",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "motivace: společenský status"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vybarvi 2 jednoduché layouty: jeden pro urgentní kampaň („poslední šance“), druhý pro prémiový, klidný produkt. Zkus pouze změnou barev, spacingu a typografie navodit jiný psychologický pocit."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vytvoř malý “psychologický checklist” ke svým vizuálům:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ul",
+                        "ui": "bullet-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
                                 "ui": "paragraph",
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "1. technologická SaaS značka (moderní, čistá, přesná)"
+                                    "text": "Co přitahuje první pohled?"
                                   }
                                 ]
                               }
@@ -518,7 +943,7 @@
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "2. fashion značka (emocionální, stylizovaná, trendová)"
+                                    "text": "Jaká je hlavní emoce?"
                                   }
                                 ]
                               }
@@ -536,47 +961,11 @@
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "3. eco-friendly značka (organická, teplá, klidná)"
+                                    "text": "Která heuristika je aktivovaná (scarcity, social proof, authority, jednoduchost…)?"
                                   }
                                 ]
                               }
                             ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "task",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Změř si čas jednotlivých kroků (např. skicování = 20 min, moodboard = 45 min)."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "task",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Udělej 2 prototypy téhož vizuálu a otestuj, který má lepší vizuální hierarchii (překryj 70 % designu a sleduj, co „zůstává“)."
                           }
                         ]
                       }
@@ -609,7 +998,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Krok 4 ti dal psychologii. Tento krok ji přetavuje do řízeného procesu. Nyní už netvoříš na pocit – tvoříš s přesným workflow, které dokážeš u pohovoru jasně demonstrovat. To recruiterům signalizuje profesionalitu, spolehlivost a schopnost škálovat výkon."
+                    "text": "Krok 2 tě naučil fundamentální kompetence (kompozice, barvy, growth mindset) a krok 3 tě zaměřil na mikro-specializaci. Tento krok tyto dovednosti “oživuje” psychologií. Už netvoříš jen hezké nebo konzistentní věci – tvoříš vizuály, u kterých umíš obhájit, jak ovlivňují mysl a chování cílovky. To je přesně to, co u pohovoru odlišuje juniorní estetický design od strategického marketingového designu."
                   }
                 ]
               }
@@ -649,7 +1038,94 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Strukturovaný problém – vytvoření prototypového workflow"
+                    "text": "Strukturovaný problém – přetvoř banner s jinou motivací"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Vstupní banner (modelový):"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ""
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Produkt: online kurz produktivity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Původní text: „Zvyšte svou produktivitu. Přihlaste se.“"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Obraz: žena u laptopu, generická stock fotka"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Úkol:"
                   }
                 ]
               },
@@ -666,11 +1142,11 @@
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
-                            "text": "Vezmi hypotetický brief:"
+                            "text": "Varianta „strach ze ztráty“ (loss aversion):"
                           }
                         ]
                       },
@@ -687,11 +1163,11 @@
                               {
                                 "type": "element",
                                 "tag": "p",
-                                "ui": "paragraph",
+                                "ui": "task",
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "Produkt: mobilní aplikace na správu financí"
+                                    "text": "přepiš headline tak, aby zdůraznil, co člověk ztratí, když kurz neabsolvuje"
                                   }
                                 ]
                               }
@@ -705,29 +1181,11 @@
                               {
                                 "type": "element",
                                 "tag": "p",
-                                "ui": "paragraph",
+                                "ui": "task",
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "Cíl: zvýšit počet registrací"
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "type": "element",
-                            "tag": "li",
-                            "ui": "list-item",
-                            "children": [
-                              {
-                                "type": "element",
-                                "tag": "p",
-                                "ui": "paragraph",
-                                "children": [
-                                  {
-                                    "type": "text",
-                                    "text": "Emoce: klid, kontrola, jistota"
+                                    "text": "přidej prvek „poslední šance“ (časové omezení)"
                                   }
                                 ]
                               }
@@ -745,11 +1203,72 @@
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
-                            "text": "ASCII diagram workflow:"
+                            "text": "Varianta „status a sebeobraz“:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ul",
+                        "ui": "bullet-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "task",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "přepiš headline tak, aby aktivoval ambici („patřím mezi…“)"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "task",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "vizuál zaměř na výsledek (klidný, organizovaný člověk, ne chaos)"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "ASCII náčrt priming layoutu:"
                           }
                         ]
                       },
@@ -767,87 +1286,9 @@
                             "children": [
                               {
                                 "type": "text",
-                                "text": "\n[BRIEF] → [SKICY] → [MOODBOARD] → [PROTO] → [REVIZE] → [FINÁL]\n                     ↘ psychologické rámování ↗\n"
+                                "text": "[EMOČNÍ OBRAZ]  -> priming (pocit klidu / napětí)\n\n[HLAVNÍ CLAIM]  -> A / I\n\n[MICRO-PROOF]   -> social proof (počet studentů, hodnocení)\n\n[CTA BUTTON]    -> jasná akce"
                               }
                             ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Mini-algoritmus kontroly výstupu:"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "\nif CTA_kontrast > 4.5 and text_čitelnost < 2s:\n    kvalita += 1\nif moodboard == styl_finalu:\n    konzistence += 1\nexporty = [\"1080x1080\", \"1080x1920\", \"1200x628\"]\nfor e in exporty:\n    otestuj_format(e)\n"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Mikro-hádanka na workflow:"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "     Pokud klient změní barevnost až ve fázi final exportu, v kterém kroku pipeline nastala chyba?"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "     → odpověď: moodboard (nesladěné očekávání)."
                           }
                         ]
                       }
@@ -856,6 +1297,131 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "text",
+            "text": ""
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "“Pseudo-kód” psychologického rozhodovacího toku:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "pre",
+                "ui": "code-block",
+                "attrs": {
+                  "data-language": "algorithm"
+                },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "code",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "if vizuál_upoutá_pozornost():\n\nif sdělení_je_srozumitelné_do_2s():\n\n    emoce = vyvolaná_emoce()\n\n    heuristika = aktivovaná_heuristika()\n\n    if emoce podporuje cílové chování and heuristika snižuje bariéru:\n\n        pravděpodobnost_akce +="
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini test: vezmi 3 své vizuály a pro každý napiš:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "kterou heuristiku používá"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "jakou emoci má vyvolat"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "co bys změnil, aby byla emoce ještě čistější"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ""
           }
         ]
       },
@@ -878,104 +1444,21 @@
           {
             "type": "element",
             "tag": "li",
-            "ui": "metric",
+            "ui": "list-item",
             "children": [
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "paragraph",
+                "ui": "metric",
                 "children": [
                   {
                     "type": "text",
-                    "text": "přesně víš, kolik času zabere každý krok procesu"
+                    "text": "dokážeš u svých vizuálů vysvětlit, jaký psychologický princip stojí za každým klíčovým prvkem"
                   }
                 ]
               }
             ]
           },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "metric",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "máš vlastní pipeline, kterou dokážeš obhájit i demonstrovat"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "metric",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "počet revizí výrazně klesá (měřitelný ukazatel pro práci s klienty)"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "metric",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "dokážeš vytvořit profesionální moodboardy pro různé brandy"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "ui": "block",
-        "children": [
-          {
-            "type": "text",
-            "text": "<inner-block-5>"
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "h3",
-        "ui": "heading",
-        "children": [
-          {
-            "type": "text",
-            "text": "Bonus / laterální rozšíření:"
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "ul",
-        "ui": "bullet-list",
-        "children": [
           {
             "type": "element",
             "tag": "li",
@@ -984,11 +1467,29 @@
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "paragraph",
+                "ui": "metric",
                 "children": [
                   {
                     "type": "text",
-                    "text": "- Creative friction: omez si počet nástrojů (např. jen Figma + 1 plugin + 1 zdroj obrázků). Sleduj, jak se zrychlí rozhodování a jak se zkrátí iterace. Méně nástrojů = méně možností → méně mentálního šumu. Tento princip pochází z behaviorální ekonomie: snížení volby zvyšuje rychlost i kvalitu rozhodování."
+                    "text": "umíš vytvořit minimálně 3 varianty stejného vizuálu podle různých motivací (čas, bezpečí, status, pohodlí)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "při simulovaném pohovoru dokážeš projít své portfolio a u každého designu říct: „Tady jsem použil/a {AIDA, priming, social proof} a výsledkem bylo {vyšší čitelnost, vyšší CTR, delší time-on-page}“"
                   }
                 ]
               }
@@ -999,22 +1500,195 @@
       {
         "type": "element",
         "tag": "p",
-        "ui": "block",
+        "ui": "label",
         "children": [
           {
             "type": "text",
-            "text": "<end-inner-block-5>"
+            "text": "<inner-block-4>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "- Vytvoř dva vizuály, které působí opačným psychologickým efektem:"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "1) urgentní vizuál"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ul",
+                    "ui": "bullet-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "- ostré kontrastní barvy, diagonální linie, countdown, slova jako „teď“, „poslední šance“, „zbývá X míst“"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "- cílem je jemně zvýšit napětí a vyvolat pocit, že odklad = ztráta"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "2) klidný vizuál"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ul",
+                    "ui": "bullet-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "- tlumené barvy, hodně prázdného prostoru, horizontální linie, slova jako „v klidu“, „bez stresu“, „kdykoli začnete“"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "paragraph",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "- cílem je snížit obranné mechanismy, zvýšit důvěru"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Pak si udělej mini-interdisciplinární cvičení: popiš oba vizuály jazykem psychologie (emoce, arousal, kognitivní zátěž) a jazykem UX (frikce, clarity, affordance). Vytvoříš tím vlastní mentální “překladač” mezi designem, marketingem a psychologií – přesně ten typ myšlení, který u pohovorů odlišuje kreativce od strategického tvůrce kampaní."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
       {
         "type": "element",
         "tag": "p",
-        "ui": "block",
+        "ui": "label",
         "children": [
           {
             "type": "text",
-            "text": "<end-blok-5>"
+            "text": "<end-inner-block-4>"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "label",
+        "children": [
+          {
+            "type": "text",
+            "text": "<end-blok-4>"
           }
         ]
       }

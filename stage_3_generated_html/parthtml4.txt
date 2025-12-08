@@ -1,189 +1,327 @@
-<section data-ui="section">
-  <p data-ui="block">&lt;blok-5&gt;</p>
-
-  <h2 data-ui="heading">Název kroku: Exekuce vysoké přesnosti</h2>
-  <p data-ui="paragraph">Hlavní záměr: Ovládnout profesionální produkční workflow, ve kterém každý krok – od prvního briefu po finální export – probíhá rychle, přesně a predikovatelně.</p>
-
-  <h3 data-ui="heading">Obsah kroku:</h3>
-
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="label">detailní vysvětlení tématu</p>
-      <p data-ui="paragraph">Exekuce je fáze, kde se rozhoduje o kvalitě výstupu i o důvěře klienta. Profesionální workflow zajišťuje, že žádný krok není náhodný, nic se neztrácí, rozhodnutí vycházejí z psychologických principů (krok 4) a výsledný vizuál je konzistentní s cílem kampaně.</p>
-      <p data-ui="paragraph">Standardní pipeline:</p>
-      <p data-ui="paragraph">  **Briefing → Analýza → Skicování → Moodboard → Prototyp → Iterace → Final Delivery.**</p>
-      <p data-ui="paragraph">  Každá část má jinou funkci: briefing nastavuje realitu, skicování generuje varianty, moodboard definuje tón, prototyp ověřuje funkčnost, final delivery ověřuje technickou kvalitu (rozlišení, formát, export).</p>
-    </li>
-
-```
-<li data-ui="list-item">
-  <p data-ui="label">příklady</p>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Briefing: nastavení cílů kampaně, definice emocí, které má vizuál vyvolat (např. „urgentní“ vs. „klidný“ – viz krok 4).</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Skicování: rychlý nízkonákladový proces, který zabrání slepým uličkám v pozdější fázi.</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Moodboard: referenční materiál ukazující barvy, rytmus, světlo, tonalitu, typografii.</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Prototyp: jednoduchá testovací verze vizuálu, ve které se hodnotí čitelnost, tok pozornosti, CTA viditelnost.</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Final export: více verzí pro různé kanály (1080×1080, 1080×1920, 1200×628).</p>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">případové studie nebo modelové situace</p>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Agenturní workflow: junior designer, který pečlivě připravuje moodboardy, obvykle zkracuje iterace art directorovi o 30–40 %. Moodboardy chrání před mylnými interpretacemi a urychlují schvalování.</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Freelancer pro e-commerce brand: díky pevné pipeline (brief → 2 skici → moodboard → prototyp) snížil počet revizí z 6 na 2, protože klient přesně věděl, co dostane.</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Performance kampaně: prototyp s rychlou A/B validací (změna CTA kontrastu, přesun hlavního claimu) zvýšil CTR o 18 %.</p>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <div data-ui="qa-block">
-        <p data-ui="question">*Jak probíhá váš workflow od briefu po finální vizuál?*</p>
-        <p data-ui="answer">„Používám strukturu briefing → skicování → moodboardy → prototyp → final export. Každý krok má definovaný časový limit a vlastní cíle. Díky tomu vím, kdy přestat iterovat a kdy přejít do produkce.“</p>
-      </div>
-    </li>
-    <li data-ui="list-item">
-      <div data-ui="qa-block">
-        <p data-ui="question">*Jak kontrolujete kvalitu výstupů?*</p>
-        <p data-ui="answer">„Používám checklist: kontrast CTA, čitelnost do 2 sekund, konzistence stylu, správná typografie, exportní profily, správné barevné prostory.“</p>
-      </div>
-    </li>
-    <li data-ui="list-item">
-      <div data-ui="qa-block">
-        <p data-ui="question">*Co uděláte, když klient není spokojen s první verzí?*</p>
-        <p data-ui="answer">„Vrátím se do fáze moodboardů nebo skic – tedy k fázi, kde se rozcházejí očekávání. Tím minimalizuji zbytečné přepracování finalizovaných vizuálů.“</p>
-      </div>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">mini úkoly nebo praktická cvičení</p>
-  <ul data-ui="tasks">
-    <li data-ui="task">
-      <p data-ui="paragraph">Vytvoř 3 moodboardy pro 3 různé značky:</p>
-      <ol data-ui="numbered-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">1. technologická SaaS značka (moderní, čistá, přesná)</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">2. fashion značka (emocionální, stylizovaná, trendová)</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">3. eco-friendly značka (organická, teplá, klidná)</p>
-        </li>
-      </ol>
-    </li>
-    <li data-ui="task">
-      <p data-ui="paragraph">Změř si čas jednotlivých kroků (např. skicování = 20 min, moodboard = 45 min).</p>
-    </li>
-    <li data-ui="task">
-      <p data-ui="paragraph">Udělej 2 prototypy téhož vizuálu a otestuj, který má lepší vizuální hierarchii (překryj 70 % designu a sleduj, co „zůstává“).</p>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">návaznost na krok n-1</p>
-  <p data-ui="paragraph">Krok 4 ti dal psychologii. Tento krok ji přetavuje do řízeného procesu. Nyní už netvoříš na pocit – tvoříš s přesným workflow, které dokážeš u pohovoru jasně demonstrovat. To recruiterům signalizuje *profesionalitu, spolehlivost a schopnost škálovat výkon*.</p>
-</li>
-```
-
-  </ul>
-
-  <h3 data-ui="heading">Praktická část:</h3>
-
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="label">Strukturovaný problém – vytvoření prototypového workflow</p>
-      <ol data-ui="numbered-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Vezmi hypotetický brief:</p>
-          <ul data-ui="bullet-list">
-            <li data-ui="list-item">
-              <p data-ui="paragraph">* Produkt: mobilní aplikace na správu financí</p>
-            </li>
-            <li data-ui="list-item">
-              <p data-ui="paragraph">* Cíl: zvýšit počet registrací</p>
-            </li>
-            <li data-ui="list-item">
-              <p data-ui="paragraph">* Emoce: klid, kontrola, jistota</p>
-            </li>
-          </ul>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">ASCII diagram workflow:</p>
-          <pre data-ui="code-block" data-language="algorithm"><code>```
-[BRIEF] → [SKICY] → [MOODBOARD] → [PROTO] → [REVIZE] → [FINÁL]
-                     ↘ psychologické rámování ↗
-```</code></pre>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Mini-algoritmus kontroly výstupu:</p>
-          <pre data-ui="code-block" data-language="algorithm"><code>```
-if CTA_kontrast &gt; 4.5 and text_čitelnost &lt; 2s:
-    kvalita += 1
-if moodboard == styl_finalu:
-    konzistence += 1
-exporty = ["1080x1080", "1080x1920", "1200x628"]
-for e in exporty:
-    otestuj_format(e)
-```</code></pre>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Mikro-hádanka na workflow:</p>
-          <p data-ui="paragraph">     Pokud klient změní barevnost až ve fázi final exportu, v kterém kroku pipeline nastala chyba?</p>
-          <p data-ui="paragraph">     → odpověď: moodboard (nesladěné očekávání).</p>
-        </li>
-      </ol>
-    </li>
-  </ul>
-
-  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
-
-  <ul data-ui="metric-list">
-    <li data-ui="metric">
-      <p data-ui="paragraph">přesně víš, kolik času zabere každý krok procesu</p>
-    </li>
-    <li data-ui="metric">
-      <p data-ui="paragraph">máš vlastní pipeline, kterou dokážeš obhájit i demonstrovat</p>
-    </li>
-    <li data-ui="metric">
-      <p data-ui="paragraph">počet revizí výrazně klesá (měřitelný ukazatel pro práci s klienty)</p>
-    </li>
-    <li data-ui="metric">
-      <p data-ui="paragraph">dokážeš vytvořit profesionální moodboardy pro různé brandy</p>
-    </li>
-  </ul>
-
-  <p data-ui="block">&lt;inner-block-5&gt;</p>
-
-  <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">- Creative friction: omez si počet nástrojů (např. jen Figma + 1 plugin + 1 zdroj obrázků). Sleduj, jak se zrychlí rozhodování a jak se zkrátí iterace. Méně nástrojů = méně možností → méně mentálního šumu. Tento princip pochází z behaviorální ekonomie: snížení volby zvyšuje rychlost i kvalitu rozhodování.</p>
-    </li>
-  </ul>
-
-  <p data-ui="block">&lt;end-inner-block-5&gt;</p>
-  <p data-ui="block">&lt;end-blok-5&gt;</p>
-</section>
+<section data-ui="block">
+  <p data-ui="label">&lt;blok-4&gt;</p>
+
+  <h2 data-ui="heading">Název kroku: Psychologie vnímání a nákupních rozhodnutí</h2>
+  <p data-ui="paragraph">Hlavní záměr: Tvořit vizuály a kampaně, které systematicky ovlivňují lidské chování – od prvního mikro-vjemu až po kliknutí a nákup.</p>
+
+  <h3 data-ui="heading">Obsah kroku:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">detailní vysvětlení tématu</p>
+      <p data-ui="paragraph">Psychologie vnímání a rozhodování je “backend” každého vizuálu. Neřeší jen estetiku, ale ovlivňuje, kam se divák podívá jako první, co si zapamatuje, jaký pocit v něm vizuál vyvolá a jaké chování následuje.</p>
+      <p data-ui="paragraph">Základní bloky:</p>
+
+```
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">AIDA model: Attention → Interest → Desire → Action. Každý prvek vizuálu by měl mít jasnou roli v jednom z těchto kroků.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Rozhodovací heuristiky: zkratky, podle kterých lidé rozhodují bez plné racionální úvahy (např. „co dělají ostatní“, „co se zdá být omezené“, „co je nejjednodušší volba“).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Priming: před-nastavení mysli konkrétním podnětem (barvou, slovem, motivem), aby byl mozek citlivější na určitou interpretaci.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Kontrastní efekty: to, jak vnímáme objekt ve vztahu k něčemu jinému (cena, barevnost, velikost, rychlost).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Social proof: používání důkazů, že “ostatní už to udělali” → zmírnění rizika, zvýšení důvěry.</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">příklady (technické, analogické, příběhové)</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">AIDA v banneru pro SaaS nástroj:</p>
+
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Attention: výrazná, jednoduchá vizuální metafora (např. přeplněná “to-do list” zeď vs. čistý dashboard).</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Interest: 1 konkrétní benefit: „Ušetříte 4 hodiny týdně“.</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Desire: minipříběh: „Týmy jako X, Y už běží klidně.“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Action: CTA s jasným důvodem: „Vyzkoušet na 14 dní zdarma“.</p>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Kontrastní efekt v cenotvorbě:</p>
+      <p data-ui="paragraph">Prezentace tří plánů (Basic – Pro – Enterprise), kde Pro je uprostřed a lehce zvýrazněný. Mozek většiny lidí vyhodnotí „střední volbu“ jako bezpečnou – ukotvení a relativní kontrast.</p>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Priming barvami:</p>
+
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">teplé, živé barvy + ostré kontrasty → urgency, akce, pocit „teď nebo nikdy“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">jemné, tlumené tóny + hodně prostoru → klid, důvěra, „dobře promyšlené rozhodnutí“</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">případové studie nebo modelové situace</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">E-shop s elektronikou:</p>
+      <p data-ui="paragraph">Původní banner: „Sleva 20 % na notebooky“ + generická fotka produktu.</p>
+      <p data-ui="paragraph">Nový banner:</p>
+
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">headline: „Pouze dnes: 20 % dolů na výkon, který vydrží“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">countdown prvek (vizuální timer) → aktivace heuristiky „scarcity“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">micro-copy: „Kampaň využilo už 427 zákazníků“ → social proof</p>
+        </li>
+      </ul>
+
+      <p data-ui="paragraph">Výsledek: nárůst CTR o X % (modelová situace, ale typický vzorec).</p>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Mobilní aplikace pro meditaci:</p>
+      <p data-ui="paragraph">Test A: výrazná oranžová CTA „Začněte hned“ + dynamické pozadí → vysoká míra kliknutí, ale nízká míra dokončení registrace (příliš „ostrá“ energie).</p>
+      <p data-ui="paragraph">Test B: měkké modré pozadí, klidný vizuál, CTA „Začněte s klidnou hlavou“ → méně kliknutí, ale vyšší kvalita uživatelů (vyšší retence).</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak používáte AIDA model v praxi?</em></p>
+      <p data-ui="answer">„Každý vizuál navrhuju tak, aby měl jasně definovanou roli pro Attention (dominantní prvek, kontrast), Interest (konkrétní benefit), Desire (emocionální nebo sociální motivace) a Action (viditelné CTA s důvodem ke kliknutí). Dokážu ukázat konkrétní příklady, kde změna těchto prvků posunula metriky.“</p>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak zapojujete psychologii při designu CTA?</em></p>
+      <p data-ui="answer">„Řeším kontrast, micro-copy a umístění podle vzorce:</p>
+
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">CTA musí být nejkontrastnější prvek v rámci své zóny,</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">text CTA používá aktivní sloveso + benefit (‘Stáhnout plán’, ‘Odemknout přístup’),</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">umísťuji ho tam, kde přirozeně končí čtenářův vizuální tok (např. na konci F-patternu).“</p>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak byste vysvětlil/a priming non-design kolegovi?</em></p>
+      <p data-ui="answer">„Priming je jako nastavit scénu předtím, než zazní hlavní věta. Jediným obrázkem, barvou nebo větou připravím mozek, aby zbytek sdělení vnímal určitým směrem – například ‘klid’, ‘rychlost’ nebo ‘exkluzivita’.“</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">mini úkoly nebo praktická cvičení</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Vezmi existující banner (klidně svůj starší) a přepiš ho ve 3 verzích:</p>
+
+      <ol data-ui="numbered-list">
+        <li data-ui="list-item">
+          <p data-ui="task">motivace: úspora času</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">motivace: strach ze ztráty</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">motivace: společenský status</p>
+        </li>
+      </ol>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="task">Vybarvi 2 jednoduché layouty: jeden pro urgentní kampaň („poslední šance“), druhý pro prémiový, klidný produkt. Zkus pouze změnou barev, spacingu a typografie navodit jiný psychologický pocit.</p>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="task">Vytvoř malý “psychologický checklist” ke svým vizuálům:</p>
+
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Co přitahuje první pohled?</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Jaká je hlavní emoce?</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Která heuristika je aktivovaná (scarcity, social proof, authority, jednoduchost…)?</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">návaznost na krok n-1</p>
+  <p data-ui="paragraph">Krok 2 tě naučil fundamentální kompetence (kompozice, barvy, growth mindset) a krok 3 tě zaměřil na mikro-specializaci. Tento krok tyto dovednosti “oživuje” psychologií. Už netvoříš jen hezké nebo konzistentní věci – tvoříš vizuály, u kterých umíš obhájit, jak ovlivňují mysl a chování cílovky. To je přesně to, co u pohovoru odlišuje juniorní estetický design od strategického marketingového designu.</p>
+</li>
+```
+
+  </ul>
+
+  <h3 data-ui="heading">Praktická část:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">Strukturovaný problém – přetvoř banner s jinou motivací</p>
+      <p data-ui="paragraph">Vstupní banner (modelový):</p>
+
+```
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Produkt: online kurz produktivity</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Původní text: „Zvyšte svou produktivitu. Přihlaste se.“</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Obraz: žena u laptopu, generická stock fotka</p>
+    </li>
+  </ul>
+
+  <p data-ui="paragraph">Úkol:</p>
+
+  <ol data-ui="numbered-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Varianta „strach ze ztráty“ (loss aversion):</p>
+
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="task">přepiš headline tak, aby zdůraznil, co člověk ztratí, když kurz neabsolvuje</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">přidej prvek „poslední šance“ (časové omezení)</p>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="task">Varianta „status a sebeobraz“:</p>
+
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="task">přepiš headline tak, aby aktivoval ambici („patřím mezi…“)</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">vizuál zaměř na výsledek (klidný, organizovaný člověk, ne chaos)</p>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="task">ASCII náčrt priming layoutu:</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>[EMOČNÍ OBRAZ]  -&gt; priming (pocit klidu / napětí)
+```
+
+[HLAVNÍ CLAIM]  -> A / I
+[MICRO-PROOF]   -> social proof (počet studentů, hodnocení)
+[CTA BUTTON]    -> jasná akce</code></pre> </li> </ol> </li>
+
+```
+<li data-ui="list-item">
+  <p data-ui="label">“Pseudo-kód” psychologického rozhodovacího toku:</p>
+  <pre data-ui="code-block" data-language="algorithm"><code>if vizuál_upoutá_pozornost():
+if sdělení_je_srozumitelné_do_2s():
+    emoce = vyvolaná_emoce()
+    heuristika = aktivovaná_heuristika()
+    if emoce podporuje cílové chování and heuristika snižuje bariéru:
+        pravděpodobnost_akce +=</code></pre>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">Mini test: vezmi 3 své vizuály a pro každý napiš:</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="task">kterou heuristiku používá</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">jakou emoci má vyvolat</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">co bys změnil, aby byla emoce ještě čistější</p>
+    </li>
+  </ul>
+</li>
+```
+
+  </ul>
+
+  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+
+  <ul data-ui="metric-list">
+    <li data-ui="list-item">
+      <p data-ui="metric">dokážeš u svých vizuálů vysvětlit, jaký psychologický princip stojí za každým klíčovým prvkem</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">umíš vytvořit minimálně 3 varianty stejného vizuálu podle různých motivací (čas, bezpečí, status, pohodlí)</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">při simulovaném pohovoru dokážeš projít své portfolio a u každého designu říct: „Tady jsem použil/a {AIDA, priming, social proof} a výsledkem bylo {vyšší čitelnost, vyšší CTR, delší time-on-page}“</p>
+    </li>
+  </ul>
+
+  <p data-ui="label">&lt;inner-block-4&gt;</p>
+
+  <section data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">- Vytvoř dva vizuály, které působí opačným psychologickým efektem:</p>
+        <p data-ui="paragraph">1) urgentní vizuál</p>
+        <ul data-ui="bullet-list">
+          <li data-ui="list-item">
+            <p data-ui="paragraph">- ostré kontrastní barvy, diagonální linie, countdown, slova jako „teď“, „poslední šance“, „zbývá X míst“</p>
+          </li>
+          <li data-ui="list-item">
+            <p data-ui="paragraph">- cílem je jemně zvýšit napětí a vyvolat pocit, že odklad = ztráta</p>
+          </li>
+        </ul>
+        <p data-ui="paragraph">2) klidný vizuál</p>
+        <ul data-ui="bullet-list">
+          <li data-ui="list-item">
+            <p data-ui="paragraph">- tlumené barvy, hodně prázdného prostoru, horizontální linie, slova jako „v klidu“, „bez stresu“, „kdykoli začnete“</p>
+          </li>
+          <li data-ui="list-item">
+            <p data-ui="paragraph">- cílem je snížit obranné mechanismy, zvýšit důvěru</p>
+          </li>
+        </ul>
+        <p data-ui="paragraph">Pak si udělej mini-interdisciplinární cvičení: popiš oba vizuály jazykem psychologie (emoce, arousal, kognitivní zátěž) a jazykem UX (frikce, clarity, affordance). Vytvoříš tím vlastní mentální “překladač” mezi designem, marketingem a psychologií – přesně ten typ myšlení, který u pohovorů odlišuje kreativce od strategického tvůrce kampaní.</p>
+      </li>
+    </ul>
+  </section>
+
+  <p data-ui="label">&lt;end-inner-block-4&gt;</p>
+  <p data-ui="label">&lt;end-blok-4&gt;</p>
+</section>

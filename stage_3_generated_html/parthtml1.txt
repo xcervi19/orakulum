@@ -1,142 +1,144 @@
-<section data-ui="section">
-  <p data-ui="block">&lt;blok-2&gt;</p>
-
-  <h2 data-ui="heading">Název kroku: Konstrukce fundamentálních kompetencí</h2>
-  <p data-ui="paragraph">Hlavní záměr: Vytvořit profesionální základ, na kterém lze stavět škálovatelnou specializaci v digitálním marketingu a grafice.</p>
-
-  <h3 data-ui="heading">Obsah kroku:</h3>
-
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="label">detailní vysvětlení tématu</p>
-      <p data-ui="paragraph">Základní kompetence v digitálním marketingu dnes stojí na pochopení psychologických principů pozornosti (salience, kognitivní fluence, priming), vizuální kompozice (gestalt, kontrast, rytmus), barevné teorie (harmonie, teploty, kontrastní páry) a principů growth marketingu (cykly testování, retence, experimentální roadmapy). Tyto dovednosti umožňují produkovat obsah, který nejen vypadá dobře, ale systematicky podporuje růst.</p>
-    </li>
-
-````
-<li data-ui="list-item">
-  <p data-ui="label">příklady</p>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Psychologický priming v reklamě: minimalistická grafika s jediným výrazným CTA posune orientaci uživatele na akci místo čtení detailů.</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Technický příklad (mikro-CTA přepis):</p>
-      <pre data-ui="code-block" data-language="algorithm"><code>```
-````
-
-Původní: "Získejte více informací"
-Nové: "Odemkněte přesný postup – hned teď"
-
-````</code></pre>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Redesign vizuálu: přeuspořádat prvky tak, aby čtení probíhalo v přirozeném F-patternu, doplnit diagonální vodiče pohledu a barevně oddělit CTA.</p>
-        </li>
-      </ul>
-    </li>
-
-    <li data-ui="list-item">
-      <p data-ui="label">případové studie nebo modelové situace</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">E-shop s módou zaznamenal 23% zvýšení CTR po zavedení protichůdných barevných párů mezi produktovou fotografií a CTA. Základ byl správně pochopený kontrast teplota/studenost.</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">SaaS startup nahradil popisné bannery krátkými akčními claimy a výsledkem bylo +41 % sign-ups.</p>
-        </li>
-      </ul>
-    </li>
-
-    <li data-ui="list-item">
-      <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <div data-ui="qa-block">
-            <p data-ui="question">*Jak přistupujete k návrhu vizuálu pro výkonnostní kampaň?*</p>
-            <p data-ui="answer">„Začnu definicí hlavního vjemu (co má zůstat v hlavě po 1 vteřině). Pak strukturuji kompozici kolem dominanty, volím kontrastní barvy, zjednodušuji text a připravím 3 varianty s jasnou hypotézou pro A/B test.“</p>
-          </div>
-        </li>
-        <li data-ui="list-item">
-          <div data-ui="qa-block">
-            <p data-ui="question">*Jak aplikujete barevnou teorii v praxi?*</p>
-            <p data-ui="answer">„Používám komplementární páry pro zvýšení akčnosti, analogické škály pro profesionální look a modulaci saturace podle úrovně ‘arousal’, kterou chci v uživateli vyvolat.“</p>
-          </div>
-        </li>
-      </ul>
-    </li>
-
-    <li data-ui="list-item">
-      <p data-ui="label">mini úkoly nebo praktická cvičení</p>
-      <ul data-ui="tasks">
-        <li data-ui="task">
-          <p data-ui="paragraph">Redesignujte jeden starý firemní vizuál podle principu dominanty, kontrastu a vizuální hierarchie.</p>
-        </li>
-        <li data-ui="task">
-          <p data-ui="paragraph">Přepište 3 verze CTA, u každé změňte framing (bezpečí, ztráta, příležitost).</p>
-        </li>
-        <li data-ui="task">
-          <p data-ui="paragraph">Vytvořte barevnou paletu pro „high-trust brand“ a „impulzní nákup“.</p>
-        </li>
-      </ul>
-    </li>
-
-    <li data-ui="list-item">
-      <p data-ui="label">návaznost na krok n-1</p>
-      <p data-ui="paragraph">Rozvíjí definované jádro profesionální identity (krok 1) a převádí ho do exekvovatelných dovedností – od identity → k rukopisu → ke kampaním.</p>
-    </li>
-  </ul>
-
-  <h3 data-ui="heading">Praktická část:</h3>
-
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="label">Strukturovaný problém: Navrhněte mini-kampaň pro produkt „Produktivní plánovač 2025“.</p>
-      <ol data-ui="numbered-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">vytvořte claim (max 5 slov)</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">navrhněte layout (ASCII diagram):</p>
-          <pre data-ui="code-block" data-language="algorithm"><code>```
-[HERO FOTO]  
-[KRÁTKÝ BENEFIT]  
-[CTA BUTTON]  
-```</code></pre>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">zadefinujte barevnou triádu (primární, akční, neutrální)</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">definujte hypotézu pro A/B test (např. vyšší kontrast CTA → vyšší CTR)</p>
-        </li>
-      </ol>
-    </li>
-  </ul>
-
-  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
-
-  <ul data-ui="metric-list">
-    <li data-ui="metric">
-      <p data-ui="paragraph">samostatně vytvořená mini-kampaň (copy, vizuál, cílení)</p>
-    </li>
-    <li data-ui="metric">
-      <p data-ui="paragraph">konzistentní vizuální hierarchie při redesignu</p>
-    </li>
-    <li data-ui="metric">
-      <p data-ui="paragraph">schopnost vysvětlit u pohovoru *proč* něco funguje, nikoli jen *jak*</p>
-    </li>
-  </ul>
-
-  <p data-ui="block">&lt;inner-block-2&gt;</p>
-
-  <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">- Vytvoř vlastní „design-marketing vocabulary“: porovnej 3 top kampaně konkurence, extrahuj pojmy (např. "frictionless CTA", "dominant framing line", "micro-contrast triggers") a sestav si osobní slovník, který zrychlí tvoji kreativní produkci a zvýší přesvědčivost při obhajobě návrhů na pohovoru.</p>
-    </li>
-  </ul>
-
-  <p data-ui="block">&lt;end-inner-block-2&gt;</p>
-  <p data-ui="block">&lt;end-blok-2&gt;</p>
-</section>
-````
+<section data-ui="block">
+  <p data-ui="label">&lt;blok-2&gt;</p>
+
+  <h2 data-ui="heading">Název kroku: Konstrukce fundamentálních kompetencí</h2>
+  <p data-ui="paragraph">Hlavní záměr: Vytvořit profesionální základ, na kterém lze stavět škálovatelnou specializaci v digitálním marketingu a grafice.</p>
+
+  <h3 data-ui="heading">Obsah kroku:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">detailní vysvětlení tématu</p>
+      <p data-ui="paragraph">
+        Základní kompetence v digitálním marketingu dnes stojí na pochopení psychologických principů pozornosti (salience, kognitivní fluence, priming), vizuální kompozice (gestalt, kontrast, rytmus), barevné teorie (harmonie, teploty, kontrastní páry) a principů growth marketingu (cykly testování, retence, experimentální roadmapy). Tyto dovednosti umožňují produkovat obsah, který nejen vypadá dobře, ale systematicky podporuje růst.
+      </p>
+    </li>
+
+```
+<li data-ui="list-item">
+  <p data-ui="label">příklady</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">
+        Psychologický priming v reklamě: minimalistická grafika s jediným výrazným CTA posune orientaci uživatele na akci místo čtení detailů.
+      </p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Technický příklad (mikro-CTA přepis):</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>Původní: "Získejte více informací"  
+```
+
+Nové: "Odemkněte přesný postup – hned teď"</code></pre> </li> <li data-ui="list-item"> <p data-ui="paragraph">
+Redesign vizuálu: přeuspořádat prvky tak, aby čtení probíhalo v přirozeném F-patternu, doplnit diagonální vodiče pohledu a barevně oddělit CTA. </p> </li> </ul> </li>
+
+```
+<li data-ui="list-item">
+  <p data-ui="label">případové studie nebo modelové situace</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">
+        E-shop s módou zaznamenal 23% zvýšení CTR po zavedení protichůdných barevných párů mezi produktovou fotografií a CTA. Základ byl správně pochopený kontrast teplota/studenost.
+      </p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">
+        SaaS startup nahradil popisné bannery krátkými akčními claimy a výsledkem bylo +41 % sign-ups.
+      </p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak přistupujete k návrhu vizuálu pro výkonnostní kampaň?</em></p>
+      <p data-ui="answer">„Začnu definicí hlavního vjemu (co má zůstat v hlavě po 1 vteřině). Pak strukturuji kompozici kolem dominanty, volím kontrastní barvy, zjednodušuji text a připravím 3 varianty s jasnou hypotézou pro A/B test.“</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak aplikujete barevnou teorii v praxi?</em></p>
+      <p data-ui="answer">„Používám komplementární páry pro zvýšení akčnosti, analogické škály pro profesionální look a modulaci saturace podle úrovně ‘arousal’, kterou chci v uživateli vyvolat.“</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">mini úkoly nebo praktická cvičení</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Redesignujte jeden starý firemní vizuál podle principu dominanty, kontrastu a vizuální hierarchie.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Přepište 3 verze CTA, u každé změňte framing (bezpečí, ztráta, příležitost).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Vytvořte barevnou paletu pro „high-trust brand“ a „impulzní nákup“.</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">návaznost na krok n-1</p>
+  <p data-ui="paragraph">
+    Rozvíjí definované jádro profesionální identity (krok 1) a převádí ho do exekvovatelných dovedností – od identity → k rukopisu → ke kampaním.
+  </p>
+</li>
+```
+
+  </ul>
+
+  <h3 data-ui="heading">Praktická část:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">Strukturovaný problém: Navrhněte mini-kampaň pro produkt „Produktivní plánovač 2025“.</p>
+
+```
+  <ol data-ui="numbered-list">
+    <li data-ui="list-item">
+      <p data-ui="task">vytvořte claim (max 5 slov)</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">navrhněte layout (ASCII diagram):</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>[HERO FOTO]  
+```
+
+[KRÁTKÝ BENEFIT]
+[CTA BUTTON]</code></pre> </li> <li data-ui="list-item"> <p data-ui="task">zadefinujte barevnou triádu (primární, akční, neutrální)</p> </li> <li data-ui="list-item"> <p data-ui="task">definujte hypotézu pro A/B test (např. vyšší kontrast CTA → vyšší CTR)</p> </li> </ol> </li>
+
+  </ul>
+
+  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="metric">samostatně vytvořená mini-kampaň (copy, vizuál, cílení)</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">konzistentní vizuální hierarchie při redesignu</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">schopnost vysvětlit u pohovoru <em>proč</em> něco funguje, nikoli jen <em>jak</em></p>
+    </li>
+  </ul>
+
+  <p data-ui="label">&lt;inner-block-2&gt;</p>
+
+  <section data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">
+          Vytvoř vlastní „design-marketing vocabulary“: porovnej 3 top kampaně konkurence, extrahuj pojmy (např. "frictionless CTA", "dominant framing line", "micro-contrast triggers") a sestav si osobní slovník, který zrychlí tvoji kreativní produkci a zvýší přesvědčivost při obhajobě návrhů na pohovoru.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <p data-ui="label">&lt;end-inner-block-2&gt;</p>
+  <p data-ui="label">&lt;end-blok-2&gt;</p>
+</section>

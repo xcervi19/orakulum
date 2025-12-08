@@ -1,0 +1,190 @@
+<section data-ui="block">
+  <p data-ui="label">&lt;blok-5&gt;</p>
+
+  <h2 data-ui="heading">Název kroku: Exekuce vysoké přesnosti</h2>
+  <p data-ui="paragraph">Hlavní záměr: Ovládnout profesionální produkční workflow, ve kterém každý krok – od prvního briefu po finální export – probíhá rychle, přesně a predikovatelně.</p>
+
+  <h3 data-ui="heading">Obsah kroku:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">detailní vysvětlení tématu</p>
+      <p data-ui="paragraph">Exekuce je fáze, kde se rozhoduje o kvalitě výstupu i o důvěře klienta. Profesionální workflow zajišťuje, že žádný krok není náhodný, nic se neztrácí, rozhodnutí vycházejí z psychologických principů (krok 4) a výsledný vizuál je konzistentní s cílem kampaně.</p>
+      <p data-ui="paragraph">Standardní pipeline:</p>
+      <p data-ui="paragraph"><strong>Briefing → Analýza → Skicování → Moodboard → Prototyp → Iterace → Final Delivery.</strong></p>
+      <p data-ui="paragraph">Každá část má jinou funkci: briefing nastavuje realitu, skicování generuje varianty, moodboard definuje tón, prototyp ověřuje funkčnost, final delivery ověřuje technickou kvaltu (rozlišení, formát, export).</p>
+    </li>
+
+```
+<li data-ui="list-item">
+  <p data-ui="label">příklady</p>
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Briefing: nastavení cílů kampaně, definice emocí, které má vizuál vyvolat (např. „urgentní“ vs. „klidný“ – viz krok 4).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Skicování: rychlý nízkonákladový proces, který zabrání slepým uličkám v pozdější fázi.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Moodboard: referenční materiál ukazující barvy, rytmus, světlo, tonalitu, typografii.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Prototyp: jednoduchá testovací verze vizuálu, ve které se hodnotí čitelnost, tok pozornosti, CTA viditelnost.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Final export: více verzí pro různé kanály (1080×1080, 1080×1920, 1200×628).</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">případové studie nebo modelové situace</p>
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Agenturní workflow: junior designer, který pečlivě připravuje moodboardy, obvykle zkracuje iterace art directorovi o 30–40 %. Moodboardy chrání před mylnými interpretacemi a urychlují schvalování.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Freelancer pro e-commerce brand: díky pevné pipeline (brief → 2 skici → moodboard → prototyp) snížil počet revizí z 6 na 2, protože klient přesně věděl, co dostane.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Performance kampaně: prototyp s rychlou A/B validací (změna CTA kontrastu, přesun hlavního claimu) zvýšil CTR o 18 %.</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak probíhá váš workflow od briefu po finální vizuál?</em></p>
+      <p data-ui="answer">„Používám strukturu briefing → skicování → moodboardy → prototyp → final export. Každý krok má definovaný časový limit a vlastní cíle. Díky tomu vím, kdy přestat iterovat a kdy přejít do produkce.“</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak kontrolujete kvalitu výstupů?</em></p>
+      <p data-ui="answer">„Používám checklist: kontrast CTA, čitelnost do 2 sekund, konzistence stylu, správná typografie, exportní profily, správné barevné prostory.“</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Co uděláte, když klient není spokojen s první verzí?</em></p>
+      <p data-ui="answer">„Vrátím se do fáze moodboardů nebo skic – tedy k fázi, kde se rozcházejí očekávání. Tím minimalizuji zbytečné přepracování finalizovaných vizuálů.“</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">mini úkoly nebo praktická cvičení</p>
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Vytvoř 3 moodboardy pro 3 různé značky:</p>
+      <ol data-ui="numbered-list">
+        <li data-ui="list-item">
+          <p data-ui="task">technologická SaaS značka (moderní, čistá, přesná)</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">fashion značka (emocionální, stylizovaná, trendová)</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">eco-friendly značka (organická, teplá, klidná)</p>
+        </li>
+      </ol>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Změř si čas jednotlivých kroků (např. skicování = 20 min, moodboard = 45 min).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Udělej 2 prototypy téhož vizuálu a otestuj, který má lepší vizuální hierarchii (překryj 70 % designu a sleduj, co „zůstává“).</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">návaznost na krok n-1</p>
+  <p data-ui="paragraph">Krok 4 ti dal psychologii. Tento krok ji přetavuje do řízeného procesu. Nyní už netvoříš na pocit – tvoříš s přesným workflow, které dokážeš u pohovoru jasně demonstrovat. To recruiterům signalizuje <em>profesionalitu, spolehlivost a schopnost škálovat výkon</em>.</p>
+</li>
+```
+
+  </ul>
+
+  <h3 data-ui="heading">Praktická část:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">Strukturovaný problém – vytvoření prototypového workflow</p>
+
+```
+  <ol data-ui="numbered-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Vezmi hypotetický brief:</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Produkt: mobilní aplikace na správu financí</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Cíl: zvýšit počet registrací</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">Emoce: klid, kontrola, jistota</p>
+        </li>
+      </ul>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="task">ASCII diagram workflow:</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>[BRIEF] → [SKICY] → [MOODBOARD] → [PROTO] → [REVIZE] → [FINÁL]
+                 ↘ psychologické rámování ↗</code></pre>
+    </li>
+
+    <li data-ui="list-item">
+      <p data-ui="task">Mini-algoritmus kontroly výstupu:</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>if CTA_kontrast &gt; 4.5 and text_čitelnost &lt; 2s:
+kvalita += 1
+```
+
+if moodboard == styl_finalu:
+konzistence += 1
+exporty = ["1080x1080", "1080x1920", "1200x628"]
+for e in exporty:
+otestuj_format(e)</code></pre> </li>
+
+```
+    <li data-ui="list-item">
+      <p data-ui="task">Mikro-hádanka na workflow:</p>
+      <p data-ui="paragraph">Pokud klient změní barevnost až ve fázi final exportu, v kterém kroku pipeline nastala chyba?</p>
+      <p data-ui="paragraph">→ odpověď: moodboard (nesladěné očekávání).</p>
+    </li>
+  </ol>
+</li>
+```
+
+  </ul>
+
+  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+
+  <ul data-ui="metric-list">
+    <li data-ui="list-item">
+      <p data-ui="metric">přesně víš, kolik času zabere každý krok procesu</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">máš vlastní pipeline, kterou dokážeš obhájit i demonstrovat</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">počet revizí výrazně klesá (měřitelný ukazatel pro práci s klienty)</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">dokážeš vytvořit profesionální moodboardy pro různé brandy</p>
+    </li>
+  </ul>
+
+  <p data-ui="label">&lt;inner-block-5&gt;</p>
+
+  <section data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">- Creative friction: omez si počet nástrojů (např. jen Figma + 1 plugin + 1 zdroj obrázků). Sleduj, jak se zrychlí rozhodování a jak se zkrátí iterace. Méně nástrojů = méně možností → méně mentálního šumu. Tento princip pochází z behaviorální ekonomie: snížení volby zvyšuje rychlost i kvalitu rozhodování.</p>
+      </li>
+    </ul>
+  </section>
+
+  <p data-ui="label">&lt;end-inner-block-5&gt;</p>
+  <p data-ui="label">&lt;end-blok-5&gt;</p>
+</section>

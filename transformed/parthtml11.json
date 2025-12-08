@@ -11,7 +11,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<blok-2>"
+            "text": "<blok-11>"
           }
         ]
       },
@@ -22,7 +22,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Název kroku: Konstrukce fundamentálních kompetencí"
+            "text": "Název kroku: Pokročilé kompoziční systémy"
           }
         ]
       },
@@ -33,7 +33,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Hlavní záměr: Vytvořit profesionální základ, na kterém lze stavět škálovatelnou specializaci v digitálním marketingu a grafice."
+            "text": "Hlavní záměr: Vytvářet vizuály s vysokou estetickou i funkční přesností."
           }
         ]
       },
@@ -61,22 +61,11 @@
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "detailní vysvětlení tématu"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "p",
                 "ui": "paragraph",
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n        Základní kompetence v digitálním marketingu dnes stojí na pochopení psychologických principů pozornosti (salience, kognitivní fluence, priming), vizuální kompozice (gestalt, kontrast, rytmus), barevné teorie (harmonie, teploty, kontrastní páry) a principů growth marketingu (cykly testování, retence, experimentální roadmapy). Tyto dovednosti umožňují produkovat obsah, který nejen vypadá dobře, ale systematicky podporuje růst.\n\n      "
+                    "text": "Kompozice je architektura pozornosti. Zatímco nováčci „skládají prvky“, profesionálové používají kompoziční sítě jako matematické rozhraní mezi estetikou a výkonem. Rule of thirds, golden ratio, dynamic symmetry a typografická mřížka nejsou pravidla, ale instrukční systémy, které určují, kde vzniká napětí, rovnováha nebo dominance."
                   }
                 ]
               }
@@ -98,7 +87,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "příklady"
+                    "text": "Příklady:"
                   }
                 ]
               },
@@ -119,7 +108,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "\n\n        Psychologický priming v reklamě: minimalistická grafika s jediným výrazným CTA posune orientaci uživatele na akci místo čtení detailů.\n\n      "
+                            "text": "• Rule of thirds: ideální pro rychle čitelné reklamní vizuály – CTA lze umístit na průsečík, aby přitahoval oko."
                           }
                         ]
                       }
@@ -137,27 +126,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Technický příklad (mikro-CTA přepis):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Původní: \"Získejte více informací\"  \n\nNové: \"Odemkněte přesný postup – hned teď\""
-                              }
-                            ]
+                            "text": "• Golden ratio: funguje u prémiových značek; spirála vede oko přes příběh produktu."
                           }
                         ]
                       }
@@ -175,54 +144,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "\n\nRedesign vizuálu: přeuspořádat prvky tak, aby čtení probíhalo v přirozeném F-patternu, doplnit diagonální vodiče pohledu a barevně oddělit CTA. "
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ""
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "případové studie nebo modelové situace"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        E-shop s módou zaznamenal 23% zvýšení CTR po zavedení protichůdných barevných párů mezi produktovou fotografií a CTA. Základ byl správně pochopený kontrast teplota/studenost.\n\n      "
+                            "text": "• Dynamic symmetry (root rectangles): vhodné pro motion vizuály nebo TikTok hooky, kde je třeba dynamika místo statické rovnováhy."
                           }
                         ]
                       }
@@ -240,7 +162,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "\n\n        SaaS startup nahradil popisné bannery krátkými akčními claimy a výsledkem bylo +41 % sign-ups.\n\n      "
+                            "text": "• Typografická mřížka: klíčová pro emaily, landing pages a karusely – čitelnost roste s pevnou hierarchií."
                           }
                         ]
                       }
@@ -262,181 +184,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "typické pohovorové otázky a optimální odpovědi"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "question",
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak přistupujete k návrhu vizuálu pro výkonnostní kampaň?"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "answer",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "„Začnu definicí hlavního vjemu (co má zůstat v hlavě po 1 vteřině). Pak strukturuji kompozici kolem dominanty, volím kontrastní barvy, zjednodušuji text a připravím 3 varianty s jasnou hypotézou pro A/B test.“"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "question",
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak aplikujete barevnou teorii v praxi?"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "answer",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "„Používám komplementární páry pro zvýšení akčnosti, analogické škály pro profesionální look a modulaci saturace podle úrovně ‘arousal’, kterou chci v uživateli vyvolat.“"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "mini úkoly nebo praktická cvičení"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Redesignujte jeden starý firemní vizuál podle principu dominanty, kontrastu a vizuální hierarchie."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Přepište 3 verze CTA, u každé změňte framing (bezpečí, ztráta, příležitost)."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Vytvořte barevnou paletu pro „high-trust brand“ a „impulzní nákup“."
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "návaznost na krok n-1"
+                    "text": "Případová studie:"
                   }
                 ]
               },
@@ -447,7 +195,237 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n    Rozvíjí definované jádro profesionální identity (krok 1) a převádí ho do exekvovatelných dovedností – od identity → k rukopisu → ke kampaním.\n\n  "
+                    "text": "Firma měla problém s nízkým scroll-stop rate. Původní vizuál byl kompozičně těžký vlevo. Redesign pomocí dynamic symmetry přesunul produkt do diagonálního tahu a CTA na harmonický bod root-3 obdélníku. Výsledek: +22 % scroll-stop rate."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Typické pohovorové otázky a optimální odpovědi:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Jak volíte kompoziční systém?“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "→ „Podle povahy sdělení: brand = golden ratio, performance = thirds, dynamický obsah = dynamic symmetry, textové layouty = grid.“"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Jak kompozice ovlivňuje výkon kampaně?”"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "→ „Ovlivňuje čtecí rytmus, prioritu informací a rychlost pochopení. Správná kompozice zkrátí kognitivní load a zvedá engagement.“"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Jak pracujete s typografickou mřížkou?“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "→ „Definuji baseline grid, modulární systém a kontroluji aligny pro konzistenci a rychlou čitelnost.“"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini úkoly:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Vezmi dva stávající vizuály a přepracuj je: jeden pomocí golden ratio, druhý pomocí typografické mřížky."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Pro každý redesign napiš 3 věty vysvětlující, proč zvolený systém zlepšuje performance metriky."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Návaznost na krok 10:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Analytická přesnost ti ukázala, "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "em",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "co funguje"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": ". Kompoziční systémy ti dávají kontrolu nad tím, "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "em",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "proč"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " to funguje — a jak to dělat opakovaně."
                   }
                 ]
               }
@@ -472,129 +450,76 @@
       },
       {
         "type": "element",
-        "tag": "ul",
-        "ui": "bullet-list",
+        "tag": "pre",
+        "ui": "code-block",
+        "attrs": {
+          "data-language": "algorithm"
+        },
         "children": [
           {
             "type": "element",
-            "tag": "li",
-            "ui": "list-item",
+            "tag": "code",
             "children": [
               {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "Strukturovaný problém: Navrhněte mini-kampaň pro produkt „Produktivní plánovač 2025“."
-                  }
-                ]
-              },
-              {
                 "type": "text",
-                "text": ""
-              },
-              {
-                "type": "element",
-                "tag": "ol",
-                "ui": "numbered-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "vytvořte claim (max 5 slov)"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "navrhněte layout (ASCII diagram):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "[HERO FOTO]  \n\n[KRÁTKÝ BENEFIT]\n\n[CTA BUTTON]"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "zadefinujte barevnou triádu (primární, akční, neutrální)"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "definujte hypotézu pro A/B test (např. vyšší kontrast CTA → vyšší CTR)"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "text": "# Algoritmus pro výpočet zlatého řezu (phi) a návrh spirály pro kompoziční vodítka\n\nphi = (1 + 5**0.5) / 2\n\ndef golden_rect(w):\n\n    h = w / phi\n\n    return (w, h)\n\ndef subdivide(w, h, steps=4):\n\n    rects = []\n\n    for _ in range(steps):\n\n        if w > h:\n\n            w = w - h\n\n            rects.append((w, h))\n\n        else:\n\n            h = h - w\n\n            rects.append((w, h))\n\n    return rects\n\nprint(subdivide(1000, 618))"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Diagram kompozičních systémů:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "THIRDS = stabilita"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "GOLDEN = elegance"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "DYNAMIC SYMMETRY = energie"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "GRID = racionalita"
           }
         ]
       },
@@ -626,7 +551,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "samostatně vytvořená mini-kampaň (copy, vizuál, cílení)"
+                    "text": "Umíš vědomě volit kompoziční princip podle typu sdělení."
                   }
                 ]
               }
@@ -644,7 +569,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "konzistentní vizuální hierarchie při redesignu"
+                    "text": "Redesign dvou vizuálů pomocí dvou různých systémů je jasně obhajitelný."
                   }
                 ]
               }
@@ -662,31 +587,25 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "schopnost vysvětlit u pohovoru "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "proč"
-                      }
-                    ]
-                  },
+                    "text": "Dokážeš vysvětlit kompoziční volby u pohovoru jako profesionální rozhodnutí, ne jako intuici."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "metric",
+                "children": [
                   {
                     "type": "text",
-                    "text": " něco funguje, nikoli jen "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "jak"
-                      }
-                    ]
+                    "text": "Tvé vizuály mají konzistentně vyšší čitelnost, rovnováhu a predikčně kvalitnější metriky."
                   }
                 ]
               }
@@ -701,7 +620,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<inner-block-2>"
+            "text": "<inner-block-11>"
           }
         ]
       },
@@ -738,7 +657,7 @@
                     "children": [
                       {
                         "type": "text",
-                        "text": "\n\n          Vytvoř vlastní „design-marketing vocabulary“: porovnej 3 top kampaně konkurence, extrahuj pojmy (např. \"frictionless CTA\", \"dominant framing line\", \"micro-contrast triggers\") a sestav si osobní slovník, který zrychlí tvoji kreativní produkci a zvýší přesvědčivost při obhajobě návrhů na pohovoru.\n\n        "
+                        "text": "- Aplikuj hudební rytmus na vizuální layout: crescendo = postupné navyšování velikosti prvků; kontrapunkt = paralelní, ale vyvážené linie textu vs. obrazu; pauza = negativní prostor. Hudební kompozice a vizuální kompozice sdílejí stejnou strukturu „napětí → uvolnění“. Přenes tuto logiku do layoutů a sleduj, jak se zlepší jejich narativní proud i emocionální rezonance."
                       }
                     ]
                   }
@@ -755,7 +674,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-inner-block-2>"
+            "text": "<end-inner-block-11>"
           }
         ]
       },
@@ -766,7 +685,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-blok-2>"
+            "text": "<end-blok-11>"
           }
         ]
       }

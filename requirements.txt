@@ -4,4 +4,5 @@ mss==9.0.2
 numpy
 pyperclip==1.8.2
 pydantic-settings
+requests
 supabase==2.10.0

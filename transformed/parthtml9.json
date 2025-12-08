@@ -11,7 +11,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<blok-2>"
+            "text": "<blok-9>"
           }
         ]
       },
@@ -22,7 +22,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Název kroku: Konstrukce fundamentálních kompetencí"
+            "text": "Název kroku: Cross-channel mastery"
           }
         ]
       },
@@ -33,7 +33,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Hlavní záměr: Vytvořit profesionální základ, na kterém lze stavět škálovatelnou specializaci v digitálním marketingu a grafice."
+            "text": "Hlavní záměr: Naučit se tvořit pro různé platformy bez ztráty kvality."
           }
         ]
       },
@@ -61,11 +61,162 @@
               {
                 "type": "element",
                 "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Cross-channel mastery znamená převést jednu myšlenku do pěti odlišných médií tak, aby neztratila sílu, konzistenci ani výkon. Každá platforma má jiný formát, jiný rytmus pozornosti, jinou toleranci pro text, jinou „mechaniku“ CTR. Úkolem marketéra-designera je zachovat jednotné jádro kampaně, ale přetvořit ho tak, aby kopírovalo způsob, jakým se uživatel chová na konkrétním kanálu."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
                 "ui": "label",
                 "children": [
                   {
                     "type": "text",
-                    "text": "detailní vysvětlení tématu"
+                    "text": "Příklady:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Meta Ads: vítězí silný hlavní vizuál, krátké horní copy, jasný CTA button; textová kapacita je větší než na TikToku, ale pozornost je fragmentovaná."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• TikTok Ads: prvních 0,3–0,8 s rozhoduje vše. Claim musí být buď vizuálně animovaný, nebo extrémně stručný. CTA se vkládá až po navázání mikro-příběhu."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Google Display: extrémně krátký text, často pouze claim + CTA. Nutný vysoký pixel-kontrast."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• YouTube Ads: first-frame hook (tvar, pohyb, nečekaná kompozice), 3–5 s definují retenci."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Email: zde vyhrává struktura, důvěryhodnost, pulsování micro-CTA a práce s whitespace."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Landing page: hlavní message + důkaz + CTA v prvních 600 px. Zbytek gently vede uživatele k rozhodnutí."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Modelová situace:"
                   }
                 ]
               },
@@ -76,175 +227,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n        Základní kompetence v digitálním marketingu dnes stojí na pochopení psychologických principů pozornosti (salience, kognitivní fluence, priming), vizuální kompozice (gestalt, kontrast, rytmus), barevné teorie (harmonie, teploty, kontrastní páry) a principů growth marketingu (cykly testování, retence, experimentální roadmapy). Tyto dovednosti umožňují produkovat obsah, který nejen vypadá dobře, ale systematicky podporuje růst.\n\n      "
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ""
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "příklady"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        Psychologický priming v reklamě: minimalistická grafika s jediným výrazným CTA posune orientaci uživatele na akci místo čtení detailů.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Technický příklad (mikro-CTA přepis):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Původní: \"Získejte více informací\"  \n\nNové: \"Odemkněte přesný postup – hned teď\""
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\nRedesign vizuálu: přeuspořádat prvky tak, aby čtení probíhalo v přirozeném F-patternu, doplnit diagonální vodiče pohledu a barevně oddělit CTA. "
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ""
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "případové studie nebo modelové situace"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        E-shop s módou zaznamenal 23% zvýšení CTR po zavedení protichůdných barevných párů mezi produktovou fotografií a CTA. Základ byl správně pochopený kontrast teplota/studenost.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        SaaS startup nahradil popisné bannery krátkými akčními claimy a výsledkem bylo +41 % sign-ups.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
+                    "text": "Firma spouští kampaň na nový online nástroj. Na Meta Ads funguje silný headline „Zkrať tvorbu vizuálů o 40 %“. Na TikToku však nefungoval. Optimalizace: vytvoření dynamického hooku „Udělej vizuál rychleji než kamarád mrkne“. Výsledek: 3× vyšší watch-through rate a 19% vyšší CTR."
                   }
                 ]
               }
@@ -262,7 +245,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "typické pohovorové otázky a optimální odpovědi"
+                    "text": "Typické pohovorové otázky a optimální odpovědi:"
                   }
                 ]
               },
@@ -282,14 +265,8 @@
                         "ui": "question",
                         "children": [
                           {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak přistupujete k návrhu vizuálu pro výkonnostní kampaň?"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "• „Jak upravujete kampaň, aby fungovala v různých kanálech?“"
                           }
                         ]
                       },
@@ -300,7 +277,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "„Začnu definicí hlavního vjemu (co má zůstat v hlavě po 1 vteřině). Pak strukturuji kompozici kolem dominanty, volím kontrastní barvy, zjednodušuji text a připravím 3 varianty s jasnou hypotézou pro A/B test.“"
+                            "text": "→ „Začnu jednotnou value propo a přepíšu ji do jazyků jednotlivých platforem. Každý výstup má vlastní strukturu pozornosti a podle ní přeuspořádám vizuály i copy.“"
                           }
                         ]
                       }
@@ -317,14 +294,8 @@
                         "ui": "question",
                         "children": [
                           {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak aplikujete barevnou teorii v praxi?"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "• „Co je největší chyba v cross-channel designu?“"
                           }
                         ]
                       },
@@ -335,7 +306,36 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "„Používám komplementární páry pro zvýšení akčnosti, analogické škály pro profesionální look a modulaci saturace podle úrovně ‘arousal’, kterou chci v uživateli vyvolat.“"
+                            "text": "→ „Recyklace stejného vizuálu bez ohledu na platformu. Preferuji princip ‘one core → multiple behaviors’.“"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Jak validujete konzistenci kampaně?“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "→ „Dělám overlay kontrolu: claimy a CTA musí mít stejný mentální model. Zbytek se přizpůsobuje kanálu.“"
                           }
                         ]
                       }
@@ -357,7 +357,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "mini úkoly nebo praktická cvičení"
+                    "text": "Mini úkoly:"
                   }
                 ]
               },
@@ -378,7 +378,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Redesignujte jeden starý firemní vizuál podle principu dominanty, kontrastu a vizuální hierarchie."
+                            "text": "• Vezmi claim z kroku 8 a vytvoř pro něj 5 verzí: Meta, TikTok, Google Display, Email, Landing page."
                           }
                         ]
                       }
@@ -396,25 +396,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Přepište 3 verze CTA, u každé změňte framing (bezpečí, ztráta, příležitost)."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Vytvořte barevnou paletu pro „high-trust brand“ a „impulzní nákup“."
+                            "text": "• Změř jejich účinnost v rychlém „3-second understanding testu“."
                           }
                         ]
                       }
@@ -436,7 +418,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "návaznost na krok n-1"
+                    "text": "Návaznost na krok 8:"
                   }
                 ]
               },
@@ -447,15 +429,11 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n    Rozvíjí definované jádro profesionální identity (krok 1) a převádí ho do exekvovatelných dovedností – od identity → k rukopisu → ke kampaním.\n\n  "
+                    "text": "V kroku 8 jsi vytvořil jazyk kampaně. Zde ho multiplikuješ, rozšiřuješ a překládáš do odlišných komunikačních ekosystémů."
                   }
                 ]
               }
             ]
-          },
-          {
-            "type": "text",
-            "text": ""
           }
         ]
       },
@@ -472,129 +450,43 @@
       },
       {
         "type": "element",
-        "tag": "ul",
-        "ui": "bullet-list",
+        "tag": "pre",
+        "ui": "code-block",
+        "attrs": {
+          "data-language": "algorithm"
+        },
         "children": [
           {
             "type": "element",
-            "tag": "li",
-            "ui": "list-item",
+            "tag": "code",
             "children": [
               {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "Strukturovaný problém: Navrhněte mini-kampaň pro produkt „Produktivní plánovač 2025“."
-                  }
-                ]
-              },
-              {
                 "type": "text",
-                "text": ""
-              },
-              {
-                "type": "element",
-                "tag": "ol",
-                "ui": "numbered-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "vytvořte claim (max 5 slov)"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "navrhněte layout (ASCII diagram):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "[HERO FOTO]  \n\n[KRÁTKÝ BENEFIT]\n\n[CTA BUTTON]"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "zadefinujte barevnou triádu (primární, akční, neutrální)"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "definujte hypotézu pro A/B test (např. vyšší kontrast CTA → vyšší CTR)"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "text": "# Generátor cross-platform kitu\n\ncore_claim = \"Zkrať tvorbu vizuálů o 40 %\"\n\ntemplates = {\n\n    \"Meta\": f\"{core_claim}. Vyzkoušej zdarma.\",\n\n    \"TikTok\": f\"{core_claim}! Sleduj, jak to funguje ↓\",\n\n    \"Google Display\": f\"{core_claim}\",\n\n    \"Email\": f\"{core_claim}\\nTady je návod, jak začít za 10 s.\",\n\n    \"Landing Page\": f\"{core_claim}\\nDůkaz: 12 000+ designerů potvrzuje úsporu času.\"\n\n}\n\nfor k, v in templates.items():\n\n    print(k, \"→\", v)"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Diagram cross-channel adaptace:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "CORE → (Meta = vizuální dominance) → (TikTok = dynamický hook) → (Google = ultra-komprimovaný claim) → (Email = vysvětlení + důkaz) → (LP = completition narrative)"
           }
         ]
       },
@@ -612,7 +504,7 @@
       {
         "type": "element",
         "tag": "ul",
-        "ui": "bullet-list",
+        "ui": "metric-list",
         "children": [
           {
             "type": "element",
@@ -626,7 +518,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "samostatně vytvořená mini-kampaň (copy, vizuál, cílení)"
+                    "text": "Existuje 5 kompletních výstupů jedné kampaně, každý plně přizpůsobený platformě."
                   }
                 ]
               }
@@ -644,7 +536,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "konzistentní vizuální hierarchie při redesignu"
+                    "text": "Každý výstup zachovává jednotnou value prop i značkový tón."
                   }
                 ]
               }
@@ -662,31 +554,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "schopnost vysvětlit u pohovoru "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "proč"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "text",
-                    "text": " něco funguje, nikoli jen "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "jak"
-                      }
-                    ]
+                    "text": "U minimálně 3 kanálů je „time-to-understand“ do 3 s."
                   }
                 ]
               }
@@ -701,7 +569,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<inner-block-2>"
+            "text": "<inner-block-9>"
           }
         ]
       },
@@ -738,7 +606,7 @@
                     "children": [
                       {
                         "type": "text",
-                        "text": "\n\n          Vytvoř vlastní „design-marketing vocabulary“: porovnej 3 top kampaně konkurence, extrahuj pojmy (např. \"frictionless CTA\", \"dominant framing line\", \"micro-contrast triggers\") a sestav si osobní slovník, který zrychlí tvoji kreativní produkci a zvýší přesvědčivost při obhajobě návrhů na pohovoru.\n\n        "
+                        "text": "- Sestav cross-channel mapu a identifikuj slabá místa zákaznické cesty. Využij techniku „entropie pozornosti“: každému kanálu přiřaď hodnotu, jak moc tříští nebo koncentruje pozornost. Divergence mezi kanály ti ukáže, kde lidé vypadávají z funnelu a kde musíš posílit message nebo vizuální rytmus."
                       }
                     ]
                   }
@@ -755,7 +623,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-inner-block-2>"
+            "text": "<end-inner-block-9>"
           }
         ]
       },
@@ -766,7 +634,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-blok-2>"
+            "text": "<end-blok-9>"
           }
         ]
       }

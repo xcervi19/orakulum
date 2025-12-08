@@ -2,12 +2,12 @@
   {
     "type": "element",
     "tag": "section",
-    "ui": "section",
+    "ui": "block",
     "children": [
       {
         "type": "element",
         "tag": "p",
-        "ui": "block",
+        "ui": "label",
         "children": [
           {
             "type": "text",
@@ -79,6 +79,10 @@
                     "text": "Strategické myšlení spojuje design s marketingovým kontextem. Vizuály v kampani nejsou izolované – každý má jinou funkci podle toho, zda cílíme na studené publikum (TOFU), přemýšlející publikum (MOFU), nebo rozhodující publikum (BOFU)."
                   }
                 ]
+              },
+              {
+                "type": "text",
+                "text": ""
               },
               {
                 "type": "element",
@@ -155,10 +159,6 @@
             ]
           },
           {
-            "type": "text",
-            "text": ""
-          },
-          {
             "type": "element",
             "tag": "li",
             "ui": "list-item",
@@ -227,7 +227,7 @@
                             "children": [
                               {
                                 "type": "text",
-                                "text": "\n\nHlavní benefit: Získej kontrolu nad svým tréninkem\nPod-benefit 1: Přehledné statistiky\nPod-benefit 2: Individuální plán\nDůkaz: 120 000 aktivních uživatelů\nCTA: Začni zdarma\n\n"
+                                "text": "Hlavní benefit: Získej kontrolu nad svým tréninkem  \n\nPod-benefit 1: Přehledné statistiky\n\nPod-benefit 2: Individuální plán\n\nDůkaz: 120 000 aktivních uživatelů\n\nCTA: Začni zdarma"
                               }
                             ]
                           }
@@ -250,6 +250,10 @@
                             "text": "Praktický příklad designu dle funnelu:"
                           }
                         ]
+                      },
+                      {
+                        "type": "text",
+                        "text": ""
                       },
                       {
                         "type": "element",
@@ -425,30 +429,29 @@
                     "children": [
                       {
                         "type": "element",
-                        "tag": "div",
-                        "ui": "qa-block",
+                        "tag": "p",
+                        "ui": "question",
                         "children": [
                           {
                             "type": "element",
-                            "tag": "p",
-                            "ui": "question",
+                            "tag": "em",
                             "children": [
                               {
                                 "type": "text",
                                 "text": "Jak určujete, jaký typ kreativy má být použit v kampani?"
                               }
                             ]
-                          },
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
                           {
-                            "type": "element",
-                            "tag": "p",
-                            "ui": "answer",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "„Začnu analýzou funnelu a toho, zda cílovka řeší ‘všimli si mě?’, ‘zajímá je to?’, nebo ‘jsou připraveni konvertovat?’. Podle toho volím emocionální, vzdělávací nebo akční vizuál.“"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "„Začnu analýzou funnelu a toho, zda cílovka řeší ‘všimli si mě?’, ‘zajímá je to?’, nebo ‘jsou připraveni konvertovat?’. Podle toho volím emocionální, vzdělávací nebo akční vizuál.“"
                           }
                         ]
                       }
@@ -461,30 +464,29 @@
                     "children": [
                       {
                         "type": "element",
-                        "tag": "div",
-                        "ui": "qa-block",
+                        "tag": "p",
+                        "ui": "question",
                         "children": [
                           {
                             "type": "element",
-                            "tag": "p",
-                            "ui": "question",
+                            "tag": "em",
                             "children": [
                               {
                                 "type": "text",
                                 "text": "Co je to message hierarchy a jak ji používáte?"
                               }
                             ]
-                          },
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
                           {
-                            "type": "element",
-                            "tag": "p",
-                            "ui": "answer",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "„Je to struktura, která určuje, co musí divák pochopit jako první, druhé a třetí. Pomáhá udržet vizuální hierarchii čistou a vede oči od dominanty až ke CTA.“"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "„Je to struktura, která určuje, co musí divák pochopit jako první, druhé a třetí. Pomáhá udržet vizuální hierarchii čistou a vede oči od dominanty až ke CTA.“"
                           }
                         ]
                       }
@@ -497,30 +499,29 @@
                     "children": [
                       {
                         "type": "element",
-                        "tag": "div",
-                        "ui": "qa-block",
+                        "tag": "p",
+                        "ui": "question",
                         "children": [
                           {
                             "type": "element",
-                            "tag": "p",
-                            "ui": "question",
+                            "tag": "em",
                             "children": [
                               {
                                 "type": "text",
                                 "text": "Jak zajistíte, že vizuály podporují cíle kampaně?"
                               }
                             ]
-                          },
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
                           {
-                            "type": "element",
-                            "tag": "p",
-                            "ui": "answer",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "„Vyvázám je z kontextu izolovaného designu a přiřadím ke konkrétní fázi funnelu. Každý vizuál má definovaný ‘job to be done’.“"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "„Vyvázám je z kontextu izolovaného designu a přiřadím ke konkrétní fázi funnelu. Každý vizuál má definovaný ‘job to be done’.“"
                           }
                         ]
                       }
@@ -549,17 +550,17 @@
               {
                 "type": "element",
                 "tag": "ul",
-                "ui": "tasks",
+                "ui": "bullet-list",
                 "children": [
                   {
                     "type": "element",
                     "tag": "li",
-                    "ui": "task",
+                    "ui": "list-item",
                     "children": [
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
@@ -580,7 +581,7 @@
                               {
                                 "type": "element",
                                 "tag": "p",
-                                "ui": "paragraph",
+                                "ui": "task",
                                 "children": [
                                   {
                                     "type": "text",
@@ -597,12 +598,12 @@
                   {
                     "type": "element",
                     "tag": "li",
-                    "ui": "task",
+                    "ui": "list-item",
                     "children": [
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
@@ -623,11 +624,11 @@
                               {
                                 "type": "element",
                                 "tag": "p",
-                                "ui": "paragraph",
+                                "ui": "task",
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "1. TOFU – emoční „hook“"
+                                    "text": "TOFU – emoční „hook“"
                                   }
                                 ]
                               }
@@ -641,11 +642,11 @@
                               {
                                 "type": "element",
                                 "tag": "p",
-                                "ui": "paragraph",
+                                "ui": "task",
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "2. MOFU – vizuál s konkrétním benefitem"
+                                    "text": "MOFU – vizuál s konkrétním benefitem"
                                   }
                                 ]
                               }
@@ -659,11 +660,11 @@
                               {
                                 "type": "element",
                                 "tag": "p",
-                                "ui": "paragraph",
+                                "ui": "task",
                                 "children": [
                                   {
                                     "type": "text",
-                                    "text": "3. BOFU – důkaz + CTA"
+                                    "text": "BOFU – důkaz + CTA"
                                   }
                                 ]
                               }
@@ -676,12 +677,12 @@
                   {
                     "type": "element",
                     "tag": "li",
-                    "ui": "task",
+                    "ui": "list-item",
                     "children": [
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
@@ -694,16 +695,30 @@
                   {
                     "type": "element",
                     "tag": "li",
-                    "ui": "task",
+                    "ui": "list-item",
                     "children": [
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
-                            "text": "Mini-test: dokážeš u každého vizuálu vysvětlit proč by měl fungovat? Pokud ne, vrať se ke kroku 4 nebo 5."
+                            "text": "Mini-test: dokážeš u každého vizuálu vysvětlit "
+                          },
+                          {
+                            "type": "element",
+                            "tag": "em",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "proč by měl fungovat"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": "? Pokud ne, vrať se ke kroku 4 nebo 5."
                           }
                         ]
                       }
@@ -736,11 +751,57 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Krok 5 tě naučil precizní workflow. Tento krok přidává “proč” a “kde v systému”. Už není důležité jen jak vyrobit vizuál, ale kam patří a jak ovlivňuje zákaznické rozhodnutí. To je zásadní kompetence při pohovoru: kandidát, který chápe kampaně systémově, působí jako někdo, kdo může ovlivňovat výsledky – ne jen vytvářet pěkné obrázky."
+                    "text": "Krok 5 tě naučil precizní workflow. Tento krok přidává “proč” a “kde v systému”. Už není důležité jen "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "em",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "jak"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " vyrobit vizuál, ale "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "em",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "kam patří"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " a "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "em",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "jak ovlivňuje zákaznické rozhodnutí"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": ". To je zásadní kompetence při pohovoru: kandidát, který chápe kampaně systémově, působí jako někdo, kdo může ovlivňovat výsledky – ne jen vytvářet pěkné obrázky."
                   }
                 ]
               }
             ]
+          },
+          {
+            "type": "text",
+            "text": ""
           }
         ]
       },
@@ -788,6 +849,10 @@
                 ]
               },
               {
+                "type": "text",
+                "text": ""
+              },
+              {
                 "type": "element",
                 "tag": "ol",
                 "ui": "numbered-list",
@@ -800,7 +865,7 @@
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
@@ -822,7 +887,7 @@
                             "children": [
                               {
                                 "type": "text",
-                                "text": "\n[EMOČNÍ FOTKA PŘETÍŽENÉ OSOBY]\n[KRÁTKÝ VÝKŘIK: \"Ztrácíš čas?\"]\n[ŽÁDNÉ CTA – jen přitáhnout pozornost]\n"
+                                "text": "[EMOČNÍ FOTKA PŘETÍŽENÉ OSOBY]\n\n[KRÁTKÝ VÝKŘIK: \"Ztrácíš čas?\"]\n\n[ŽÁDNÉ CTA – jen přitáhnout pozornost]"
                               }
                             ]
                           }
@@ -838,7 +903,7 @@
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
@@ -860,7 +925,7 @@
                             "children": [
                               {
                                 "type": "text",
-                                "text": "\n[PŘEHLEDNÝ GRAF]\n[HLAVNÍ BENEFIT: \"Ušetři 5 hodin týdně\"]\n[SECONDARY TEXT: stručné vysvětlení]\n[CTA: \"Podívat se na lekce\"]\n"
+                                "text": "[PŘEHLEDNÝ GRAF]\n\n[HLAVNÍ BENEFIT: \"Ušetři 5 hodin týdně\"]\n\n[SECONDARY TEXT: stručné vysvětlení]\n\n[CTA: \"Podívat se na lekce\"]"
                               }
                             ]
                           }
@@ -876,7 +941,7 @@
                       {
                         "type": "element",
                         "tag": "p",
-                        "ui": "paragraph",
+                        "ui": "task",
                         "children": [
                           {
                             "type": "text",
@@ -898,7 +963,7 @@
                             "children": [
                               {
                                 "type": "text",
-                                "text": "\n[REVIEW ★★★★★]\n[KRÁTKÝ TEXT: \"140 000 studentů už prošlo kurzem\"]\n[CTA BUTTON: \"Začít dnes\"]\n"
+                                "text": "[REVIEW ★★★★★]\n\n[KRÁTKÝ TEXT: \"140 000 studentů už prošlo kurzem\"]\n\n[CTA BUTTON: \"Začít dnes\"]"
                               }
                             ]
                           }
@@ -909,6 +974,10 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "text",
+            "text": ""
           },
           {
             "type": "element",
@@ -940,13 +1009,17 @@
                     "children": [
                       {
                         "type": "text",
-                        "text": "\nif audience == \"cold\":\n    typ_kreativy = \"emoční / attention-based\"\nelif audience == \"warm\":\n    typ_kreativy = \"educational / benefit-based\"\nelif audience == \"hot\":\n    typ_kreativy = \"proof-driven / direct CTA\"\n"
+                        "text": "if audience == \"cold\":\n\ntyp_kreativy = \"emoční / attention-based\"\n\nelif audience == \"warm\":\n\ntyp_kreativy = \"educational / benefit-based\"\n\nelif audience == \"hot\":\n\ntyp_kreativy = \"proof-driven / direct CTA\""
                       }
                     ]
                   }
                 ]
               }
             ]
+          },
+          {
+            "type": "text",
+            "text": ""
           },
           {
             "type": "element",
@@ -971,7 +1044,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "  Pokud máš vizuál, který skvěle funguje na Instagramu, ale mizerně konvertuje na webu, ve které části funnelu pravděpodobně vzniká problém?"
+                    "text": "Pokud máš vizuál, který skvěle funguje na Instagramu, ale mizerně konvertuje na webu, ve které části funnelu pravděpodobně vzniká problém?"
                   }
                 ]
               },
@@ -982,11 +1055,29 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "  → Awareness je v pořádku, ale chybí MOFU prvek – člověk neví proč právě tento produkt."
+                    "text": "→ Awareness je v pořádku, ale chybí MOFU prvek – člověk neví "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "em",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "proč právě tento produkt"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
                   }
                 ]
               }
             ]
+          },
+          {
+            "type": "text",
+            "text": ""
           }
         ]
       },
@@ -1009,12 +1100,12 @@
           {
             "type": "element",
             "tag": "li",
-            "ui": "metric",
+            "ui": "list-item",
             "children": [
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "paragraph",
+                "ui": "metric",
                 "children": [
                   {
                     "type": "text",
@@ -1027,12 +1118,12 @@
           {
             "type": "element",
             "tag": "li",
-            "ui": "metric",
+            "ui": "list-item",
             "children": [
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "paragraph",
+                "ui": "metric",
                 "children": [
                   {
                     "type": "text",
@@ -1045,12 +1136,12 @@
           {
             "type": "element",
             "tag": "li",
-            "ui": "metric",
+            "ui": "list-item",
             "children": [
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "paragraph",
+                "ui": "metric",
                 "children": [
                   {
                     "type": "text",
@@ -1063,12 +1154,12 @@
           {
             "type": "element",
             "tag": "li",
-            "ui": "metric",
+            "ui": "list-item",
             "children": [
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "paragraph",
+                "ui": "metric",
                 "children": [
                   {
                     "type": "text",
@@ -1083,7 +1174,7 @@
       {
         "type": "element",
         "tag": "p",
-        "ui": "block",
+        "ui": "label",
         "children": [
           {
             "type": "text",
@@ -1093,77 +1184,98 @@
       },
       {
         "type": "element",
-        "tag": "h3",
-        "ui": "heading",
-        "children": [
-          {
-            "type": "text",
-            "text": "Bonus / laterální rozšíření:"
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "ul",
-        "ui": "bullet-list",
+        "tag": "section",
+        "ui": "block",
         "children": [
           {
             "type": "element",
-            "tag": "li",
-            "ui": "list-item",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
             "children": [
               {
                 "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
+                "tag": "li",
+                "ui": "list-item",
                 "children": [
                   {
-                    "type": "text",
-                    "text": "- Nakresli vlastní „strategy canvas“:"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "- Nakresli vlastní „strategy canvas“:"
+                      }
+                    ]
+                  },
                   {
-                    "type": "text",
-                    "text": "  Na osu X dej klíčové parametry cílové skupiny (např. rychlost rozhodování, citlivost na cenu, potřeba sociální validace, vizuální preference)."
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Na osu X dej klíčové parametry cílové skupiny (např. rychlost rozhodování, citlivost na cenu, potřeba sociální validace, vizuální preference)."
+                      }
+                    ]
+                  },
                   {
-                    "type": "text",
-                    "text": "  Na osu Y dej intenzitu, jak silně na ně chceš designem působit."
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Na osu Y dej intenzitu, jak silně na ně chceš designem působit."
+                      }
+                    ]
+                  },
                   {
-                    "type": "text",
-                    "text": "  Vznikne ti mapa, která jasně ukáže, jak má tvoje komunikace “hrát”."
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "paragraph",
-                "children": [
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Vznikne ti mapa, která jasně ukáže, jak má tvoje komunikace “hrát”."
+                      }
+                    ]
+                  },
                   {
-                    "type": "text",
-                    "text": "  Strategy canvas původně pochází z business inovací (Blue Ocean Strategy), ale v designu vytváří neocenitelný rámec: vizuál není náhodný – je to rozhodnutí o tom, kam přesně zasáhneš v hlavě zákazníka."
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Strategy canvas původně pochází z business inovací (Blue Ocean Strategy), ale v designu vytváří neocenitelný rámec: vizuál není náhodný – je to rozhodnutí o tom, "
+                      },
+                      {
+                        "type": "element",
+                        "tag": "em",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "kam přesně zasáhneš v hlavě zákazníka"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
                   }
                 ]
               }
@@ -1174,7 +1286,7 @@
       {
         "type": "element",
         "tag": "p",
-        "ui": "block",
+        "ui": "label",
         "children": [
           {
             "type": "text",
@@ -1185,7 +1297,7 @@
       {
         "type": "element",
         "tag": "p",
-        "ui": "block",
+        "ui": "label",
         "children": [
           {
             "type": "text",
@@ -1194,9 +1306,5 @@
         ]
       }
     ]
-  },
-  {
-    "type": "text",
-    "text": ""
   }
 ]

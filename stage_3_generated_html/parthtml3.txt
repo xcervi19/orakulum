@@ -1,310 +1,167 @@
-<section data-ui="section">
-  <p data-ui="block">&lt;blok-4&gt;</p>
-
-  <h2 data-ui="heading">Název kroku: Psychologie vnímání a nákupních rozhodnutí</h2>
-  <p data-ui="paragraph">Hlavní záměr: Tvořit vizuály a kampaně, které systematicky ovlivňují lidské chování – od prvního mikro-vjemu až po kliknutí a nákup.</p>
-
-  <h3 data-ui="heading">Obsah kroku:</h3>
-
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="label">detailní vysvětlení tématu</p>
-      <p data-ui="paragraph">Psychologie vnímání a rozhodování je “backend” každého vizuálu. Neřeší jen estetiku, ale ovlivňuje, kam se divák podívá jako první, co si zapamatuje, jaký pocit v něm vizuál vyvolá a jaké chování následuje.</p>
-      <p data-ui="paragraph">Základní bloky:</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">AIDA model: Attention → Interest → Desire → Action. Každý prvek vizuálu by měl mít jasnou roli v jednom z těchto kroků.</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Rozhodovací heuristiky: zkratky, podle kterých lidé rozhodují bez plné racionální úvahy (např. „co dělají ostatní“, „co se zdá být omezené“, „co je nejjednodušší volba“).</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Priming: před-nastavení mysli konkrétním podnětem (barvou, slovem, motivem), aby byl mozek citlivější na určitou interpretaci.</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Kontrastní efekty: to, jak vnímáme objekt ve vztahu k něčemu jinému (cena, barevnost, velikost, rychlost).</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Social proof: používání důkazů, že “ostatní už to udělali” → zmírnění rizika, zvýšení důvěry.</p>
-        </li>
-      </ul>
-    </li>
-
-```
-<li data-ui="list-item">
-  <p data-ui="label">příklady (technické, analogické, příběhové)</p>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">AIDA v banneru pro SaaS nástroj:</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Attention: výrazná, jednoduchá vizuální metafora (např. přeplněná “to-do list” zeď vs. čistý dashboard).</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Interest: 1 konkrétní benefit: „Ušetříte 4 hodiny týdně“.</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Desire: minipříběh: „Týmy jako X, Y už běží klidně.“</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Action: CTA s jasným důvodem: „Vyzkoušet na 14 dní zdarma“.</p>
-        </li>
-      </ul>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Kontrastní efekt v cenotvorbě:</p>
-      <p data-ui="paragraph">Prezentace tří plánů (Basic – Pro – Enterprise), kde Pro je uprostřed a lehce zvýrazněný. Mozek většiny lidí vyhodnotí „střední volbu“ jako bezpečnou – ukotvení a relativní kontrast.</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Priming barvami:</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">teplé, živé barvy + ostré kontrasty → urgency, akce, pocit „teď nebo nikdy“</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">jemné, tlumené tóny + hodně prostoru → klid, důvěra, „dobře promyšlené rozhodnutí“</p>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">případové studie nebo modelové situace</p>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">E-shop s elektronikou:</p>
-      <p data-ui="paragraph">Původní banner: „Sleva 20 % na notebooky“ + generická fotka produktu.</p>
-      <p data-ui="paragraph">Nový banner:</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">headline: „Pouze dnes: 20 % dolů na výkon, který vydrží“</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">countdown prvek (vizuální timer) → aktivace heuristiky „scarcity“</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">micro-copy: „Kampaň využilo už 427 zákazníků“ → social proof</p>
-        </li>
-      </ul>
-      <p data-ui="paragraph">Výsledek: nárůst CTR o X % (modelová situace, ale typický vzorec).</p>
-    </li>
-    <li data-ui="list-item">
-      <p data-ui="paragraph">Mobilní aplikace pro meditaci:</p>
-      <p data-ui="paragraph">Test A: výrazná oranžová CTA „Začněte hned“ + dynamické pozadí → vysoká míra kliknutí, ale nízká míra dokončení registrace (příliš „ostrá“ energie).</p>
-      <p data-ui="paragraph">Test B: měkké modré pozadí, klidný vizuál, CTA „Začněte s klidnou hlavou“ → méně kliknutí, ale vyšší kvalita uživatelů (vyšší retence).</p>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <div data-ui="qa-block">
-        <p data-ui="question">*Jak používáte AIDA model v praxi?*</p>
-        <p data-ui="answer">„Každý vizuál navrhuju tak, aby měl jasně definovanou roli pro Attention (dominantní prvek, kontrast), Interest (konkrétní benefit), Desire (emocionální nebo sociální motivace) a Action (viditelné CTA s důvodem ke kliknutí). Dokážu ukázat konkrétní příklady, kde změna těchto prvků posunula metriky.“</p>
-      </div>
-    </li>
-    <li data-ui="list-item">
-      <div data-ui="qa-block">
-        <p data-ui="question">*Jak zapojujete psychologii při designu CTA?*</p>
-        <p data-ui="answer">„Řeším kontrast, micro-copy a umístění podle vzorce:</p>
-        <ul data-ui="bullet-list">
-          <li data-ui="list-item">
-            <p data-ui="paragraph">* CTA musí být nejkontrastnější prvek v rámci své zóny,</p>
-          </li>
-          <li data-ui="list-item">
-            <p data-ui="paragraph">* text CTA používá aktivní sloveso + benefit (‘Stáhnout plán’, ‘Odemknout přístup’),</p>
-          </li>
-          <li data-ui="list-item">
-            <p data-ui="paragraph">* umísťuji ho tam, kde přirozeně končí čtenářův vizuální tok (např. na konci F-patternu).“</p>
-          </li>
-        </ul>
-      </div>
-    </li>
-    <li data-ui="list-item">
-      <div data-ui="qa-block">
-        <p data-ui="question">*Jak byste vysvětlil/a priming non-design kolegovi?*</p>
-        <p data-ui="answer">„Priming je jako nastavit scénu předtím, než zazní hlavní věta. Jediným obrázkem, barvou nebo větou připravím mozek, aby zbytek sdělení vnímal určitým směrem – například ‘klid’, ‘rychlost’ nebo ‘exkluzivita’.“</p>
-      </div>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">mini úkoly nebo praktická cvičení</p>
-  <ul data-ui="tasks">
-    <li data-ui="task">
-      <p data-ui="paragraph">Vezmi existující banner (klidně svůj starší) a přepiš ho ve 3 verzích:</p>
-      <ol data-ui="numbered-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">motivace: úspora času</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">motivace: strach ze ztráty</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">motivace: společenský status</p>
-        </li>
-      </ol>
-    </li>
-    <li data-ui="task">
-      <p data-ui="paragraph">Vybarvi 2 jednoduché layouty: jeden pro urgentní kampaň („poslední šance“), druhý pro prémiový, klidný produkt. Zkus pouze změnou barev, spacingu a typografie navodit jiný psychologický pocit.</p>
-    </li>
-    <li data-ui="task">
-      <p data-ui="paragraph">Vytvoř malý “psychologický checklist” ke svým vizuálům:</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">* Co přitahuje první pohled?</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">* Jaká je hlavní emoce?</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">* Která heuristika je aktivovaná (scarcity, social proof, authority, jednoduchost…)?</p>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</li>
-
-<li data-ui="list-item">
-  <p data-ui="label">návaznost na krok n-1</p>
-  <p data-ui="paragraph">Krok 2 tě naučil fundamentální kompetence (kompozice, barvy, growth mindset) a krok 3 tě zaměřil na mikro-specializaci. Tento krok tyto dovednosti “oživuje” psychologií. Už netvoříš jen hezké nebo konzistentní věci – tvoříš vizuály, u kterých umíš obhájit, jak ovlivňují mysl a chování cílovky. To je přesně to, co u pohovoru odlišuje juniorní estetický design od strategického marketingového designu.</p>
-</li>
-```
-
-  </ul>
-
-  <h3 data-ui="heading">Praktická část:</h3>
-
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="label">Strukturovaný problém – přetvoř banner s jinou motivací</p>
-      <p data-ui="paragraph">Vstupní banner (modelový):</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Produkt: online kurz produktivity</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Původní text: „Zvyšte svou produktivitu. Přihlaste se.“</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Obraz: žena u laptopu, generická stock fotka</p>
-        </li>
-      </ul>
-      <p data-ui="paragraph">Úkol:</p>
-      <ol data-ui="numbered-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Varianta „strach ze ztráty“ (loss aversion):</p>
-          <ul data-ui="bullet-list">
-            <li data-ui="list-item">
-              <p data-ui="paragraph">* přepiš headline tak, aby zdůraznil, co člověk ztratí, když kurz neabsolvuje</p>
-            </li>
-            <li data-ui="list-item">
-              <p data-ui="paragraph">* přidej prvek „poslední šance“ (časové omezení)</p>
-            </li>
-          </ul>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">Varianta „status a sebeobraz“:</p>
-          <ul data-ui="bullet-list">
-            <li data-ui="list-item">
-              <p data-ui="paragraph">* přepiš headline tak, aby aktivoval ambici („patřím mezi…“)</p>
-            </li>
-            <li data-ui="list-item">
-              <p data-ui="paragraph">* vizuál zaměř na výsledek (klidný, organizovaný člověk, ne chaos)</p>
-            </li>
-          </ul>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">ASCII náčrt priming layoutu:</p>
-          <pre data-ui="code-block" data-language="algorithm"><code>```
-[EMOČNÍ OBRAZ]  -&gt; priming (pocit klidu / napětí)
-[HLAVNÍ CLAIM]  -&gt; A / I
-[MICRO-PROOF]   -&gt; social proof (počet studentů, hodnocení)
-[CTA BUTTON]    -&gt; jasná akce
-```</code></pre>
-        </li>
-      </ol>
-    </li>
-
-````
-<li data-ui="list-item">
-  <p data-ui="label">“Pseudo-kód” psychologického rozhodovacího toku:</p>
-  <pre data-ui="code-block" data-language="algorithm"><code>```
-````
-
-if vizuál_upoutá_pozornost():
-if sdělení_je_srozumitelné_do_2s():
-emoce = vyvolaná_emoce()
-heuristika = aktivovaná_heuristika()
-if emoce podporuje cílové chování and heuristika snižuje bariéru:
-pravděpodobnost_akce +=
-
-```</code></pre>
-    </li>
-
-    <li data-ui="list-item">
-      <p data-ui="label">Mini test: vezmi 3 své vizuály a pro každý napiš:</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">* kterou heuristiku používá</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">* jakou emoci má vyvolat</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">* co bys změnil, aby byla emoce ještě čistější</p>
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
-
-  <ul data-ui="metric-list">
-    <li data-ui="metric">
-      <p data-ui="paragraph">dokážeš u svých vizuálů vysvětlit, jaký psychologický princip stojí za každým klíčovým prvkem</p>
-    </li>
-    <li data-ui="metric">
-      <p data-ui="paragraph">umíš vytvořit minimálně 3 varianty stejného vizuálu podle různých motivací (čas, bezpečí, status, pohodlí)</p>
-    </li>
-    <li data-ui="metric">
-      <p data-ui="paragraph">při simulovaném pohovoru dokážeš projít své portfolio a u každého designu říct: „Tady jsem použil/a {AIDA, priming, social proof} a výsledkem bylo {vyšší čitelnost, vyšší CTR, delší time-on-page}“</p>
-    </li>
-  </ul>
-
-  <p data-ui="block">&lt;inner-block-4&gt;</p>
-
-  <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
-  <ul data-ui="bullet-list">
-    <li data-ui="list-item">
-      <p data-ui="paragraph">- Vytvoř dva vizuály, které působí opačným psychologickým efektem:</p>
-      <p data-ui="paragraph">  1) urgentní vizuál</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">     - ostré kontrastní barvy, diagonální linie, countdown, slova jako „teď“, „poslední šance“, „zbývá X míst“</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">     - cílem je jemně zvýšit napětí a vyvolat pocit, že odklad = ztráta</p>
-        </li>
-      </ul>
-      <p data-ui="paragraph">  2) klidný vizuál</p>
-      <ul data-ui="bullet-list">
-        <li data-ui="list-item">
-          <p data-ui="paragraph">     - tlumené barvy, hodně prázdného prostoru, horizontální linie, slova jako „v klidu“, „bez stresu“, „kdykoli začnete“</p>
-        </li>
-        <li data-ui="list-item">
-          <p data-ui="paragraph">     - cílem je snížit obranné mechanismy, zvýšit důvěru</p>
-        </li>
-      </ul>
-      <p data-ui="paragraph">  Pak si udělej mini-interdisciplinární cvičení: popiš oba vizuály jazykem psychologie (emoce, arousal, kognitivní zátěž) a jazykem UX (frikce, clarity, affordance). Vytvoříš tím vlastní mentální “překladač” mezi designem, marketingem a psychologií – přesně ten typ myšlení, který u pohovorů odlišuje kreativce od strategického tvůrce kampaní.</p>
-    </li>
-  </ul>
-
-  <p data-ui="block">&lt;end-inner-block-4&gt;</p>
-  <p data-ui="block">&lt;end-blok-4&gt;</p>
-</section>
-```
+<section data-ui="block">
+  <p data-ui="label">&lt;blok-3&gt;</p>
+
+  <h2 data-ui="heading">Název kroku: Mikro-specializace (1. úroveň)</h2>
+  <p data-ui="paragraph">Hlavní záměr: Vybrat úzkou subdoménu, ve které lze rychle růst, získat jasnou identitu a produkovat konzistentní hodnotu pro trh i zaměstnavatele.</p>
+
+  <h3 data-ui="heading">Obsah kroku:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">detailní vysvětlení tématu</p>
+      <p data-ui="paragraph">Mikro-specializace určuje, jaký typ problémů řešíte nejlépe: performance design, branding, social content nebo motion. Cílem je vytvořit profesionální fokus, který zrychlí učení, zvýší kvalitu výstupů a především vás jasně odliší u pohovoru. Recruiter vidí: <em>„Tento člověk je expert na X a má 15 konzistentních prací.“</em></p>
+    </li>
+
+```
+<li data-ui="list-item">
+  <p data-ui="label">příklady</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Performance designer se zaměřuje na strukturu vizuálu, čitelnost CTA, rychlost pochopení sdělení.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Branding designer řeší systém, konzistenci, gridy, logiku vizuální identity.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Social content specialista pracuje s variabilitou, mikro-storytellingem a rytmem.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Motion specialista tvoří animace, přechody, krátké dynamické spoty.</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">případové studie nebo modelové situace</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Freelancer vytvořil mikro-portfólio 12 výkonnostních bannerů pro 3 segmenty (fitness, SaaS, fashion). Za 6 týdnů získal stabilní kontrakt, protože klient jasně viděl, že <em>umí řešit specifický problém</em>, ne „všechno trochu“.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Junior motion designer vytvořil 10 micro-animací pro hypotetickou značku. V pohovoru se stal top uchazečem díky tomu, že jeho styl byl konzistentní a použitelný v reálné produkci.</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">typické pohovorové otázky a optimální odpovědi</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jakou oblast designu chcete rozvíjet a proč?</em></p>
+      <p data-ui="answer">„Soustředím se na performance design, protože mě baví kombinovat psychologii pozornosti, jasnou výzvu k akci a rychlé testování. Tvořím vizuály, které mají měřitelný dopad.“</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak přistupujete k tvorbě obsahu pro různé cílové skupiny?</em></p>
+      <p data-ui="answer">„Začnu mikro-personou → definice motivace → volba stylu → test 3 verzí. Mám systém, ne náhodný výběr.“</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="question"><em>Jak vnášíte konzistenci do vizuálů?</em></p>
+      <p data-ui="answer">„Používám pevně definovaný stylový rámec: kontrastní páry, typografickou hierarchii, opakující se motivy a grid.“</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">mini úkoly nebo praktická cvičení</p>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Vytvořte 5 reklamních vizuálů pro 5 různých cílovek (mladé mámy, early adopters, studenti, profesionálové 30+, fanoušci luxusu).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Vyberte jeden styl, kterému dáte jasná pravidla: barvy, rytmus, typografie, kompozice, tón CTA.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Ověřte, zda jsou vizuály „scanovatelné“ do 2 sekund — quick test: zakryjte 70 % vizuálu a sledujte, co zůstane zapamatovatelné.</p>
+    </li>
+  </ul>
+</li>
+
+<li data-ui="list-item">
+  <p data-ui="label">návaznost na krok n-1</p>
+  <p data-ui="paragraph">Navazuje na fundamentální kompetence z kroku 2 — nyní se nejedná jen o pochopení principů, ale o jejich cílené uplatnění v jedné subdoméně. „Základní dovednosti → ostřený fokus → portfolio.“</p>
+</li>
+```
+
+  </ul>
+
+  <h3 data-ui="heading">Praktická část:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="label">Strukturovaný problém: Navrhněte 3 vizuály pro stejný produkt, ale odlišné subdomény.</p>
+
+```
+  <ol data-ui="numbered-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Performance varianta (ASCII wireframe):</p>
+      <pre data-ui="code-block" data-language="algorithm"><code>[PRODUKT FOTO]  
+```
+
+[BOLD BENEFIT]
+[CTA]</code></pre> </li> <li data-ui="list-item"> <p data-ui="task">Branding varianta (grid):</p> <pre data-ui="code-block" data-language="algorithm"><code>|LOGO|---TAGLINE---|
+|COLOR BLOCK|IMAGE|
+|CTA|</code></pre> </li> <li data-ui="list-item"> <p data-ui="task">Social content varianta (krátký koncept):</p> <p data-ui="paragraph">“3-sekundový mikro-příběh → punchline → CTA”</p> </li> </ol> </li>
+
+```
+<li data-ui="list-item">
+  <p data-ui="label">Mini-algoritmus výběru specializace:</p>
+  <pre data-ui="code-block" data-language="algorithm"><code>score = (radost_z_tvorby * 0.5) + (rychlost učení * 0.3) + (poptávka_na_trhu * 0.2)
+```
+
+vyber_subdomenu(score.max())</code></pre> </li>
+
+```
+<li data-ui="list-item">
+  <p data-ui="label">Mini-test: Dokážeš vytvořit 5 vizuálů, z nichž je na první pohled jasné, že patří do jedné stylistické rodiny?</p>
+</li>
+```
+
+  </ul>
+
+  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+
+  <ul data-ui="bullet-list" data-ui-role="metric-list">
+    <li data-ui="list-item">
+      <p data-ui="metric">vzniká micro-portfólio 10–15 prací v jednom konkrétním stylu</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">konzistentní vizuální jazyk napříč projekty</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">připravené ukázky, které lze u pohovoru prezentovat jako „micro-expertise package“</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">samostatné argumentování: <em>proč jsem si vybral tuto subdoménu a jak v ní rostu</em></p>
+    </li>
+  </ul>
+
+  <p data-ui="label">&lt;inner-block-3&gt;</p>
+
+  <section data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">- Experiment „design in constraints“: vytvoř 3 kampaně pod extrémními omezeními.</p>
+        <ul data-ui="bullet-list">
+          <li data-ui="list-item">
+            <p data-ui="paragraph">- pouze černobílá paleta (disciplína kontrastu)</p>
+          </li>
+          <li data-ui="list-item">
+            <p data-ui="paragraph">- bez textu (čistá vizuální srozumitelnost)</p>
+          </li>
+          <li data-ui="list-item">
+            <p data-ui="paragraph">- pouze text (typografická síla, rytmus, tón)</p>
+          </li>
+        </ul>
+        <p data-ui="paragraph">Tento typ cvičení rozvíjí laterální kreativitu, odstraňuje závislost na „bezpečných“ řešeních a výrazně vylepšuje schopnost improvizace — což je jedna z nejvíce oceňovaných kompetencí u kreativních pohovorů.</p>
+      </li>
+    </ul>
+  </section>
+
+  <p data-ui="label">&lt;end-inner-block-3&gt;</p>
+  <p data-ui="label">&lt;end-blok-3&gt;</p>
+</section>

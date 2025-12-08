@@ -1,0 +1,98 @@
+<section data-ui="block">
+  <p data-ui="label">&lt;blok-7&gt;</p>
+
+  <h2 data-ui="heading">Název kroku: Pokročilá vizuální komunikace</h2>
+  <p data-ui="paragraph">Hlavní záměr: Umět řídit pozornost uživatele na pixelové úrovni.</p>
+
+  <h3 data-ui="heading">Obsah kroku:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Hierarchie, rytmus, kontrast, přechody a vizuální tok určují, kde se uživatel zastaví, co ignoruje a co si odnese. Seniorní designer dokáže manipulovat těmito principy stejně přesně jako kodér staví logiku programu. V marketingu rozhoduje milisekundové „time-to-signal“, které ovlivňuje výkon kampaní, bannery, landing pages i krátká videa.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Příklad kontrastu: CTA tlačítko se stejnou saturací jako celek se ztratí. Pokud zvýšíš hodnotu L* o 15–20 bodů (CIELAB), vznikne okamžitá fixace.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Příklad rytmu: Rotace tří prvků (velký–střední–malý) vytváří prediktivní sekvenci, ve které oko ví, kde má pokračovat. Funguje to stejně jako „leading tone“ v hudbě – každý tón navádí další krok.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Modelová situace: Klient chce banner, který vysvětlí benefit do 2 s. Původní návrh má příliš mnoho hladin vizuální konkurence. Optimalizace: odstranění dvou sekundárních ikon, zvýšení kontrastního poměru mezi headline a pozadím na 4.5:1, posun CTA o 32px doprava mimo oblast vysoké hustoty detailu.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Typické pohovorové otázky a optimální odpovědi:</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="question">• „Jak měříte vizuální tok?“</p>
+          <p data-ui="answer">→ „Používám kombinaci heatmap predikce (AI/ML modely jako DeepGaze), pravidel kompoziční psychologie a vlastního testu ‘2-second comprehension’. Výslovně kontroluji micro-kontrast v oblasti primárního sdělení.“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="question">• „Jak zrychlíte čitelnost vizuálu?“</p>
+          <p data-ui="answer">→ „Minimalizuji konkurenční prvky, posílím text–background kontrast, zjednoduším rytmus a upravím polygonální tvary tak, aby vedly oko směrem k CTA.“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="question">• „Jak poznáte, že design funguje?“</p>
+          <p data-ui="answer">→ „U 4 z 5 lidí proběhne správný attention path během 2 s. Sleduji eye-tracking simulace i real-life dotazování.“</p>
+        </li>
+      </ul>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Mini úkoly:</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="task">• Vezmi libovolný vizuál, odmasakruj jej na 3 úrovně hierarchie (1 = core signal, 2 = support, 3 = ambience). Znovu jej sestav tak, aby úroveň 1 byla viditelná do 500 ms.</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">• Vytvoř micro-test: zobraz vizuál někomu na 1,5 s a nech ho říct, co je message.</p>
+        </li>
+      </ul>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Návaznost na krok 6:</p>
+      <p data-ui="paragraph">Tam ses naučil strategický kontext. Zde ho komprimuješ do nejmenší možné vizuální jednotky — pixelových priorit, které určují rychlost pochopení.</p>
+    </li>
+  </ul>
+
+  <h3 data-ui="heading">Praktická část:</h3>
+
+  <pre data-ui="code-block" data-language="algorithm"><code># Pseudokód pro predikci vizuálního kontrastu v CTA oblasti
+input_image = load("visual.png")
+cta_region = select_region(input_image, x1, y1, x2, y2)
+contrast = luminance_difference(cta_region.text, cta_region.background)
+
+if contrast &lt; 0.35:
+    increase_brightness(cta_region.text, 0.15)
+    reduce_noise(cta_region.background)
+save("optimized_visual.png")</code></pre>
+
+  <h3 data-ui="heading">Diagram vizuálního toku:</h3>
+  <p data-ui="paragraph">[HEADLINE] → [SUBHEAD – slabší kontrast] → (prázdná zóna pro vizuální dech) → [CTA – nejvyšší kontrast + tvarová kotva]</p>
+
+  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+
+  <ul data-ui="metric-list">
+    <li data-ui="list-item">
+      <p data-ui="metric">4 z 5 lidí pochopí sdělení během 2 s.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">CTR u vizuálu se zvýší min. o 10–25 %.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">V testu attention-path se oči většiny lidí zastaví nejdříve na hlavním sdělení.</p>
+    </li>
+  </ul>
+
+  <p data-ui="label">&lt;inner-block-7&gt;</p>
+
+  <section data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">- Změň jeden design 10× s mikro-úpravami (2 px posun, +3 % saturace, mírné zkosení tvaru) a měř attention-path. Tento postup vychází z neuroergonomie: malé změny mění predikční model mozku podobně jako „dropout“ v neuronových sítích, čímž odhalíš optimální konfiguraci.</p>
+      </li>
+    </ul>
+  </section>
+
+  <p data-ui="label">&lt;end-inner-block-7&gt;</p>
+  <p data-ui="label">&lt;end-blok-7&gt;</p>
+</section>

@@ -11,7 +11,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<blok-2>"
+            "text": "<blok-13>"
           }
         ]
       },
@@ -22,7 +22,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Název kroku: Konstrukce fundamentálních kompetencí"
+            "text": "Název kroku: Pokročilé barvové systémy"
           }
         ]
       },
@@ -33,7 +33,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Hlavní záměr: Vytvořit profesionální základ, na kterém lze stavět škálovatelnou specializaci v digitálním marketingu a grafice."
+            "text": "Hlavní záměr: Schopnost modelovat atmosféru, emoce a výkon kampaně skrze barvu."
           }
         ]
       },
@@ -61,11 +61,126 @@
               {
                 "type": "element",
                 "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Barva je nejrychlejší vizuální signál. Působí dříve než tvar, text i kompozice. Ovlivňuje emoční stav, očekávání, pozornost i ochotu kliknout. Profesionál v digitálním marketingu musí chápat barvu jako systém, ne jako „pocitový výběr“. Barevné harmonie určují estetiku, teplotní kontrast reguluje energii vizuálu, psychologické účinky barev ovlivňují rozhodování uživatele."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
                 "ui": "label",
                 "children": [
                   {
                     "type": "text",
-                    "text": "detailní vysvětlení tématu"
+                    "text": "Příklady:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Teplotní kontrast: teplé vs. studené barvy — CTA v teplém odstínu se opticky přibližuje, zatímco studené pozadí ustupuje. Výsledek: lepší vizuální priorita."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Komplementární harmonie: modrá + oranžová vytváří maximální vibrační kontrast — vhodné pro výkonné kampaně, kde je cílem rychlé zachycení pozornosti."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Analogická harmonie: zelená → modrozelená → modrá, ideální pro klidné, prémiové nebo edukativní kampaně."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Psychologie barev: červená zvyšuje urgentnost, modrá podporuje důvěru, fialová navozuje kreativitu, žlutá podporuje energii a moment „pozor, něco se děje“."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případová studie:"
                   }
                 ]
               },
@@ -76,175 +191,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n        Základní kompetence v digitálním marketingu dnes stojí na pochopení psychologických principů pozornosti (salience, kognitivní fluence, priming), vizuální kompozice (gestalt, kontrast, rytmus), barevné teorie (harmonie, teploty, kontrastní páry) a principů growth marketingu (cykly testování, retence, experimentální roadmapy). Tyto dovednosti umožňují produkovat obsah, který nejen vypadá dobře, ale systematicky podporuje růst.\n\n      "
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ""
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "příklady"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        Psychologický priming v reklamě: minimalistická grafika s jediným výrazným CTA posune orientaci uživatele na akci místo čtení detailů.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Technický příklad (mikro-CTA přepis):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Původní: \"Získejte více informací\"  \n\nNové: \"Odemkněte přesný postup – hned teď\""
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\nRedesign vizuálu: přeuspořádat prvky tak, aby čtení probíhalo v přirozeném F-patternu, doplnit diagonální vodiče pohledu a barevně oddělit CTA. "
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ""
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "případové studie nebo modelové situace"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        E-shop s módou zaznamenal 23% zvýšení CTR po zavedení protichůdných barevných párů mezi produktovou fotografií a CTA. Základ byl správně pochopený kontrast teplota/studenost.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        SaaS startup nahradil popisné bannery krátkými akčními claimy a výsledkem bylo +41 % sign-ups.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
+                    "text": "Kampaň SaaS měla nízkou konverzi. Analýza ukázala příliš nízký kontrast mezi CTA (modrá 500) a pozadím (modrá 300). Po změně CTA na teplou oranžovou 600 a posílení teplotního kontrastu se CTR zvýšilo o 32 %. V emailové verzi kampaně se aplikovala analogická harmonie (modrá 500 → tyrkysová 400 → modrá 700) pro budování důvěry. Výsledek: +18 % open-to-click rate."
                   }
                 ]
               }
@@ -262,7 +209,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "typické pohovorové otázky a optimální odpovědi"
+                    "text": "Typické pohovorové otázky a optimální odpovědi:"
                   }
                 ]
               },
@@ -282,14 +229,8 @@
                         "ui": "question",
                         "children": [
                           {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak přistupujete k návrhu vizuálu pro výkonnostní kampaň?"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "• „Jak vybíráte barvy pro výkon vs. brand?“"
                           }
                         ]
                       },
@@ -300,7 +241,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "„Začnu definicí hlavního vjemu (co má zůstat v hlavě po 1 vteřině). Pak strukturuji kompozici kolem dominanty, volím kontrastní barvy, zjednodušuji text a připravím 3 varianty s jasnou hypotézou pro A/B test.“"
+                            "text": "→ „Výkon vyžaduje vysoký kontrast a jasnou prioritu. Brand často potřebuje konzistenci a emoční přesnost. Kombinuji obojí: brandové barvy jako základ, výkonové barvy pro CTA.“"
                           }
                         ]
                       }
@@ -317,14 +258,8 @@
                         "ui": "question",
                         "children": [
                           {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak aplikujete barevnou teorii v praxi?"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "• „Jak barva ovlivňuje pozornost?“"
                           }
                         ]
                       },
@@ -335,7 +270,36 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "„Používám komplementární páry pro zvýšení akčnosti, analogické škály pro profesionální look a modulaci saturace podle úrovně ‘arousal’, kterou chci v uživateli vyvolat.“"
+                            "text": "→ „Barva s vyšší teplotou a saturací se posouvá opticky dopředu a vytváří dominantní signál. Studené barvy ustupují a tvoří klidné pozadí.“"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Řiďte se psychologií barev?“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "→ „Ano, ale ne dogmaticky. Kontext a platforma ovlivňují význam barvy víc než obecné učebnice.“"
                           }
                         ]
                       }
@@ -357,7 +321,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "mini úkoly nebo praktická cvičení"
+                    "text": "Mini úkoly:"
                   }
                 ]
               },
@@ -378,7 +342,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Redesignujte jeden starý firemní vizuál podle principu dominanty, kontrastu a vizuální hierarchie."
+                            "text": "• Připrav 4 barevné varianty jedné kampaně: vysoký kontrast, nízký kontrast, teplé schéma, studené schéma."
                           }
                         ]
                       }
@@ -396,25 +360,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Přepište 3 verze CTA, u každé změňte framing (bezpečí, ztráta, příležitost)."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Vytvořte barevnou paletu pro „high-trust brand“ a „impulzní nákup“."
+                            "text": "• Otestuj reakce 3 lidí: co vnímají jako první a co považují za nejdůležitější prvek?"
                           }
                         ]
                       }
@@ -436,7 +382,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "návaznost na krok n-1"
+                    "text": "Návaznost na krok 12:"
                   }
                 ]
               },
@@ -447,15 +393,11 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n    Rozvíjí definované jádro profesionální identity (krok 1) a převádí ho do exekvovatelných dovedností – od identity → k rukopisu → ke kampaním.\n\n  "
+                    "text": "V kroku 12 jsi ovládl typografii jako mikrosystém řízení pozornosti. V kroku 13 propojuješ barvu s typografií i kompozicí — vzniká plně funkční vizuální jazyk."
                   }
                 ]
               }
             ]
-          },
-          {
-            "type": "text",
-            "text": ""
           }
         ]
       },
@@ -472,8 +414,94 @@
       },
       {
         "type": "element",
-        "tag": "ul",
-        "ui": "bullet-list",
+        "tag": "pre",
+        "ui": "code-block",
+        "attrs": {
+          "data-language": "algorithm"
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "children": [
+              {
+                "type": "text",
+                "text": "# Generátor 4 barevných schémat pro jednu kampaň\n\ncore = \"#1A73E8\"   # brand modrá\n\nschemes = {\n\n    \"high_contrast\": [\"#1A73E8\", \"#F97316\", \"#0F172A\"],\n\n    \"low_contrast\": [\"#1A73E8\", \"#2A7BE8\", \"#4A8BEA\"],\n\n    \"warm\": [\"#F97316\", \"#FDBA74\", \"#7C2D12\"],\n\n    \"cool\": [\"#0EA5E9\", \"#0284C7\", \"#1E3A8A\"]\n\n}\n\nfor s, colors in schemes.items():\n\n    print(s, \"→\", colors)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Diagram barvové logiky:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "SATURACE ↑ → ENERGIE"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "TEPLOTA ↑ → URGENCE"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "KONTRAST ↑ → ČITELNOST"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "KONZISTENCE ↑ → BRAND DŮVĚRYHODNOST"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Strukturovaný problém:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ol",
+        "ui": "numbered-list",
         "children": [
           {
             "type": "element",
@@ -483,114 +511,47 @@
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "label",
+                "ui": "task",
                 "children": [
                   {
                     "type": "text",
-                    "text": "Strukturovaný problém: Navrhněte mini-kampaň pro produkt „Produktivní plánovač 2025“."
+                    "text": "U jednoho claimu vytvoř 4 barevné verze."
                   }
                 ]
-              },
-              {
-                "type": "text",
-                "text": ""
-              },
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
               {
                 "type": "element",
-                "tag": "ol",
-                "ui": "numbered-list",
+                "tag": "p",
+                "ui": "task",
                 "children": [
                   {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "vytvořte claim (max 5 slov)"
-                          }
-                        ]
-                      }
-                    ]
-                  },
+                    "type": "text",
+                    "text": "U každé verze zhodnoť: prioritu CTA, emoční tón, čitelnost claimu, dynamiku pozadí."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "task",
+                "children": [
                   {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "navrhněte layout (ASCII diagram):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "[HERO FOTO]  \n\n[KRÁTKÝ BENEFIT]\n\n[CTA BUTTON]"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "zadefinujte barevnou triádu (primární, akční, neutrální)"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "definujte hypotézu pro A/B test (např. vyšší kontrast CTA → vyšší CTR)"
-                          }
-                        ]
-                      }
-                    ]
+                    "type": "text",
+                    "text": "Urči, která verze je „brandově přesná“ a která „výkonově přesná“."
                   }
                 ]
               }
@@ -626,7 +587,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "samostatně vytvořená mini-kampaň (copy, vizuál, cílení)"
+                    "text": "Víš přesně, proč používáš konkrétní barvu."
                   }
                 ]
               }
@@ -644,7 +605,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "konzistentní vizuální hierarchie při redesignu"
+                    "text": "Barvou dokážeš zvýšit CTA prioritu bez změny layoutu."
                   }
                 ]
               }
@@ -662,31 +623,25 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "schopnost vysvětlit u pohovoru "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "proč"
-                      }
-                    ]
-                  },
+                    "text": "Umíš vytvořit více barevných systémů jedné kampaně bez ztráty značkové identity."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "metric",
+                "children": [
                   {
                     "type": "text",
-                    "text": " něco funguje, nikoli jen "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "jak"
-                      }
-                    ]
+                    "text": "Dokážeš odborně obhájit barvová rozhodnutí u pohovoru."
                   }
                 ]
               }
@@ -701,7 +656,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<inner-block-2>"
+            "text": "<inner-block-13>"
           }
         ]
       },
@@ -738,7 +693,7 @@
                     "children": [
                       {
                         "type": "text",
-                        "text": "\n\n          Vytvoř vlastní „design-marketing vocabulary“: porovnej 3 top kampaně konkurence, extrahuj pojmy (např. \"frictionless CTA\", \"dominant framing line\", \"micro-contrast triggers\") a sestav si osobní slovník, který zrychlí tvoji kreativní produkci a zvýší přesvědčivost při obhajobě návrhů na pohovoru.\n\n        "
+                        "text": "- Analýza barevných schémat v top filmech a adaptace do marketingu: vezmi 5 úspěšných filmů (Duna, Blade Runner 2049, La La Land, Joker, Interstellar). U každého vytáhni dominantní a akcentové barvy, určuj jejich emoční funkci a přepiš je do reklamních vizuálů. Filmová barevná dramaturgie je nejpokročilejší disciplína práce s atmosférou — využij ji jako inspiraci pro kampaně."
                       }
                     ]
                   }
@@ -755,7 +710,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-inner-block-2>"
+            "text": "<end-inner-block-13>"
           }
         ]
       },
@@ -766,7 +721,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-blok-2>"
+            "text": "<end-blok-13>"
           }
         ]
       }

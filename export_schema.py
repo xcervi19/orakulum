@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 from typing import Dict, List
 import dotenv
+import requests
 from supabase import create_client, Client
 
 dotenv.load_dotenv()
@@ -27,6 +28,77 @@ def get_tables(supabase: Client) -> List[Dict]:
     """Get all tables in public schema."""
     result = supabase.rpc('get_tables_info', {}).execute()
     return result.data if result.data else []
+
+
+def discover_all_tables(supabase: Client) -> List[str]:
+    """
+    Automatically discover all tables in the public schema.
+    Uses HTTP requests to query information_schema via Supabase REST API.
+    """
+    if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
+        raise ValueError("Missing Supabase credentials")
+    
+    # Extract the project reference from URL
+    base_url = SUPABASE_URL.rstrip('/')
+    
+    # Query information_schema.tables via REST API
+    # Note: This requires the service key for admin access
+    headers = {
+        "apikey": SUPABASE_SERVICE_KEY,
+        "Authorization": f"Bearer {SUPABASE_SERVICE_KEY}",
+        "Content-Type": "application/json"
+    }
+    
+    # Try to query information_schema via PostgREST
+    # Format: https://xxxxx.supabase.co/rest/v1/information_schema.tables?table_schema=eq.public
+    try:
+        url = f"{base_url}/rest/v1/information_schema.tables"
+        params = {
+            "table_schema": "eq.public",
+            "table_type": "eq.BASE TABLE",
+            "select": "table_name"
+        }
+        
+        response = requests.get(url, headers=headers, params=params, timeout=10)
+        
+        if response.status_code == 200:
+            data = response.json()
+            if isinstance(data, list) and len(data) > 0:
+                tables = [row['table_name'] for row in data if 'table_name' in row]
+                return sorted(tables)
+        else:
+            print(f"⚠️  Could not query information_schema directly (status {response.status_code})")
+            print(f"   Response: {response.text[:200]}")
+            print(f"   Falling back to alternative method...")
+    except Exception as e:
+        print(f"⚠️  Error querying information_schema: {e}")
+        print(f"   Falling back to alternative method...")
+    
+    # Fallback: Try to use Supabase client's introspection capabilities
+    # or try common table patterns
+    print("⚠️  Using fallback method - trying to discover tables...")
+    discovered_tables = []
+    
+    # Try some common table names (you can extend this list)
+    # We'll try a few common patterns
+    common_names = ['client_learning_pages', 'junior_leads']
+    
+    for table_name in common_names:
+        try:
+            # Try to access the table - if it exists, this won't throw an error
+            result = supabase.table(table_name).select("*").limit(0).execute()
+            discovered_tables.append(table_name)
+        except Exception as e:
+            # Table doesn't exist or we can't access it
+            pass
+    
+    if discovered_tables:
+        return discovered_tables
+    
+    # Last resort: return empty list and let user know
+    print("❌ Could not automatically discover tables.")
+    print("   Please specify tables manually using --tables argument")
+    return []
 
 
 def export_schema_via_rpc(output_file: str = OUTPUT_FILE) -> str:
@@ -98,9 +170,10 @@ def export_schema_via_rpc(output_file: str = OUTPUT_FILE) -> str:
     return output_file
 
 
-def export_schema_simple(output_file: str = OUTPUT_FILE) -> str:
+def export_schema_simple(output_file: str = OUTPUT_FILE, tables: List[str] = None) -> str:
     """
     Export basic schema info by inspecting table structure.
+    Automatically discovers all tables if none are specified.
     Works without needing custom database functions.
     """
     supabase = get_client()
@@ -111,8 +184,16 @@ def export_schema_simple(output_file: str = OUTPUT_FILE) -> str:
     schema_lines.append(f"-- Supabase Project: {SUPABASE_URL}")
     schema_lines.append("")
     
-    # Known tables - add more as needed
-    tables = ['client_learning_pages']
+    # Auto-discover tables if not provided
+    if tables is None:
+        print("🔍 Discovering tables automatically...")
+        tables = discover_all_tables(supabase)
+        
+        if not tables:
+            print("❌ No tables discovered. Using fallback list.")
+            tables = ['client_learning_pages']  # Fallback
+        else:
+            print(f"✅ Found {len(tables)} table(s): {', '.join(tables)}")
     
     for table_name in tables:
         schema_lines.append("-- " + "=" * 60)
@@ -178,10 +259,11 @@ if __name__ == "__main__":
     parser.add_argument("--output", "-o", default=OUTPUT_FILE,
                         help=f"Output file (default: {OUTPUT_FILE})")
     parser.add_argument("--tables", "-t", nargs="+", 
-                        default=["client_learning_pages"],
-                        help="Tables to inspect")
+                        default=None,
+                        help="Specific tables to inspect (default: auto-discover all tables)")
     
     args = parser.parse_args()
     
-    export_schema_simple(args.output)
+    # Use specified tables or auto-discover
+    export_schema_simple(args.output, tables=args.tables if args.tables else None)
 

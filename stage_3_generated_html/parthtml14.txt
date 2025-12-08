@@ -1,0 +1,135 @@
+<section data-ui="block">
+  <p data-ui="label">&lt;blok-14&gt;</p>
+
+  <h2 data-ui="heading">Název kroku: Motion &amp; Micro-animations</h2>
+  <p data-ui="paragraph">Hlavní záměr: Přidat vizuálům kinetickou sílu a zvýšit engagement.</p>
+
+  <h3 data-ui="heading">Obsah kroku:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="paragraph">Motion není dekorace — je to řízení pozornosti v čase. Kde typografie a barva modelují statickou hierarchii, tam motion vytváří sekvenční prioritu: co uživatel uvidí jako první, co jako druhé a kde má vizuál vyvolat napětí. Základní animační principy (anticipation, squash &amp; stretch, timing, easing, follow-through) přenesené do marketingového prostředí zvyšují scroll-stop rate, watch-time i retenci.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Příklady:</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="paragraph">• Anticipation: nepatrné vychýlení CTA před animací (např. 2 px dolů) připraví oko na očekávaný pohyb.</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">• Timing: rychlost animace signálu (0.15–0.3 s) přímo ovlivňuje energii. Rychlý timing → výkon; pomalý timing → elegance.</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">• Easing: ease-out u CTA znamená přirozené „doznění“, méně agresivní než linear.</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="paragraph">• Squash &amp; stretch: u ikon funguje subtilně — opticky zvýší živost a lidskost vizuálu.</p>
+        </li>
+      </ul>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Případová studie:</p>
+      <p data-ui="paragraph">Landing page měla nízkou konverzi z videa. Po implementaci micro-animace headline (jemné fade-in + upward motion o 8 px), CTA bounce s minimální amplitudou (cca 3 px), a přechodu barvy pozadí z 900 → 800 došlo ke zvýšení watch-time o 17 % a kliknutí na CTA o 12 %.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Typické pohovorové otázky a optimální odpovědi:</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="question">• „Jak poznáte, že animace není rušivá?“</p>
+          <p data-ui="answer">→ „Animace musí podpořit sdělení a mít jasnou funkci. Kontroluji, zda nenarušuje čtecí rytmus a zda trvá maximálně 0.3–0.6 s.“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="question">• „Jak pracujete s motion timingem napříč platformami?“</p>
+          <p data-ui="answer">→ „Na TikToku volím agresivní timing (0.1–0.2 s), na YouTube 0.3–0.5 s a u bannerů subtilní animace pod 0.2 s.“</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="question">• „Proč micro-animace zvyšují engagement?“</p>
+          <p data-ui="answer">→ „Oko reaguje na predikční chyby. Malý pohyb vytvoří novou informaci, kterou mozek musí vyřešit — tím získá vizuál další pozornost.“</p>
+        </li>
+      </ul>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Mini úkoly:</p>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <p data-ui="task">• Vytvoř 3 micro-animace pro jednu kampaň: animace claimu (fade-in + slight scale), animace CTA (easing-out pulse), animace ikony (micro-jump).</p>
+        </li>
+        <li data-ui="list-item">
+          <p data-ui="task">• Otestuj, zda animace nezpožďuje čitelnost nebo nerozbíjí barevnou hierarchii z kroku 13.</p>
+        </li>
+      </ul>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="label">Návaznost na krok 13:</p>
+      <p data-ui="paragraph">Barva a typografie definují statickou logiku sdělení. Motion ji rozšiřuje o časovou dramaturgii — přidáváš další rozměr řízení pozornosti.</p>
+    </li>
+  </ul>
+
+  <h3 data-ui="heading">Praktická část:</h3>
+
+  <pre data-ui="code-block" data-language="algorithm"><code># Jednoduchý keyframe engine pro micro-animace (pseudokód)
+element = "cta_button"
+
+animation = {
+    "frames": [
+        {"t": 0.0, "scale": 1.00, "y": 0},
+        {"t": 0.15, "scale": 1.04, "y": -3},
+        {"t": 0.30, "scale": 1.00, "y": 0}
+    ],
+    "easing": "ease-out"
+}
+
+def play(anim):
+    for f in anim["frames"]:
+        print(f)
+        
+play(animation)</code></pre>
+
+  <h3 data-ui="heading">Strukturovaný problém:</h3>
+
+  <ol data-ui="numbered-list">
+    <li data-ui="list-item">
+      <p data-ui="task">Vyber claim.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Navrhni pro něj animaci: vstup (anticipation), hlavní pohyb (message reveal), doznění (ease-out).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Ověř, zda animace posiluje nebo ruší hierarchii vizuálu.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="task">Vyhodnoť změnu „čas do pochopení“ před a po animaci.</p>
+    </li>
+  </ol>
+
+  <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+
+  <ul data-ui="bullet-list">
+    <li data-ui="list-item">
+      <p data-ui="metric">Micro-animace podporuje sdělení, neodvádí pozornost.</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">Animace má jasné fáze (anticipation → action → settle).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">Engagement se měřitelně zvyšuje (scroll-stop rate, watch-time, CTR).</p>
+    </li>
+    <li data-ui="list-item">
+      <p data-ui="metric">Umíš u pohovoru popsat, proč konkrétní animace funguje z hlediska psychologie pozornosti.</p>
+    </li>
+  </ul>
+
+  <p data-ui="label">&lt;inner-block-14&gt;</p>
+
+  <section data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">- Rekonstruuj jednu známou reklamu v minimalistickém motion stylu. Použij pouze 3 objekty: text, barvu a jeden abstraktní tvar. Přenes principy filmové animace (motion arcs, timing curves, rytmus střihu) do krátkého marketingového mikrosystému. Tento trénink rozvíjí schopnost redukovat komplexní vizuální jazyk na čisté, účinné pohybové signály.</p>
+      </li>
+    </ul>
+  </section>
+
+  <p data-ui="label">&lt;end-inner-block-14&gt;</p>
+  <p data-ui="label">&lt;end-blok-14&gt;</p>
+</section>

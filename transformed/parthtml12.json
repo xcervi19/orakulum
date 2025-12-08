@@ -11,7 +11,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<blok-2>"
+            "text": "<blok-12>"
           }
         ]
       },
@@ -22,7 +22,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Název kroku: Konstrukce fundamentálních kompetencí"
+            "text": "Název kroku: Mastery typografie"
           }
         ]
       },
@@ -33,7 +33,7 @@
         "children": [
           {
             "type": "text",
-            "text": "Hlavní záměr: Vytvořit profesionální základ, na kterém lze stavět škálovatelnou specializaci v digitálním marketingu a grafice."
+            "text": "Hlavní záměr: Převést typografii z dekorace na nástroj řízení pozornosti."
           }
         ]
       },
@@ -61,11 +61,126 @@
               {
                 "type": "element",
                 "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Typografie je nejpřesnější forma vizuálního jazyka. Není to ozdoba, ale matematika čitelnosti, psychologie mikro-gest a nástroj, kterým určuješ kognitivní tok. Kerning a tracking ovlivňují tempo čtení, kontrast vah textu vede oko, baseline grid dává rytmus a variable fonts umožňují tvořit vlastní nuance, které odlišují značku."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
                 "ui": "label",
                 "children": [
                   {
                     "type": "text",
-                    "text": "detailní vysvětlení tématu"
+                    "text": "Příklady:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Kerning: Při špatném kerningu se zkracují „optické mezery“ a čtení zpomaluje. U CTA může rozdíl 10 jednotek kerningu ovlivnit pochopení do 200 ms."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Tracking: Zvýšení tracking o +5 % u long-form textů zlepšuje čitelnost, ale u claimů snižuje vizuální sílu."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Kontrast vah: Bold → přitáhne; Regular → stabilizuje; Light → vytváří vzdušnost. Hierarchie vah je rychlejší než barva."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "paragraph",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• Variable fonts: Umožňují doladit variantu mezi 450–520 weight, což je zóna ideální pro výkonné digital ads."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "label",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případová studie:"
                   }
                 ]
               },
@@ -76,175 +191,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n        Základní kompetence v digitálním marketingu dnes stojí na pochopení psychologických principů pozornosti (salience, kognitivní fluence, priming), vizuální kompozice (gestalt, kontrast, rytmus), barevné teorie (harmonie, teploty, kontrastní páry) a principů growth marketingu (cykly testování, retence, experimentální roadmapy). Tyto dovednosti umožňují produkovat obsah, který nejen vypadá dobře, ale systematicky podporuje růst.\n\n      "
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ""
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "příklady"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        Psychologický priming v reklamě: minimalistická grafika s jediným výrazným CTA posune orientaci uživatele na akci místo čtení detailů.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Technický příklad (mikro-CTA přepis):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Původní: \"Získejte více informací\"  \n\nNové: \"Odemkněte přesný postup – hned teď\""
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\nRedesign vizuálu: přeuspořádat prvky tak, aby čtení probíhalo v přirozeném F-patternu, doplnit diagonální vodiče pohledu a barevně oddělit CTA. "
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ""
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "ui": "list-item",
-            "children": [
-              {
-                "type": "element",
-                "tag": "p",
-                "ui": "label",
-                "children": [
-                  {
-                    "type": "text",
-                    "text": "případové studie nebo modelové situace"
-                  }
-                ]
-              },
-              {
-                "type": "element",
-                "tag": "ul",
-                "ui": "bullet-list",
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        E-shop s módou zaznamenal 23% zvýšení CTR po zavedení protichůdných barevných párů mezi produktovou fotografií a CTA. Základ byl správně pochopený kontrast teplota/studenost.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "paragraph",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "\n\n        SaaS startup nahradil popisné bannery krátkými akčními claimy a výsledkem bylo +41 % sign-ups.\n\n      "
-                          }
-                        ]
-                      }
-                    ]
+                    "text": "Výkonnost banneru stagnovala. Analýza ukázala, že headline má weight 300 a příliš jemný kontrast vůči pozadí. Změna na weight 520 (variable font), úprava kerningu -1 %, CTA zvýrazněno na semi-bold. Výsledek: CTR +14 %, time-to-read -0,4 s."
                   }
                 ]
               }
@@ -262,7 +209,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "typické pohovorové otázky a optimální odpovědi"
+                    "text": "Typické pohovorové otázky a optimální odpovědi:"
                   }
                 ]
               },
@@ -282,14 +229,8 @@
                         "ui": "question",
                         "children": [
                           {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak přistupujete k návrhu vizuálu pro výkonnostní kampaň?"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "• „Jak pracujete s baseline gridem?“"
                           }
                         ]
                       },
@@ -300,7 +241,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "„Začnu definicí hlavního vjemu (co má zůstat v hlavě po 1 vteřině). Pak strukturuji kompozici kolem dominanty, volím kontrastní barvy, zjednodušuji text a připravím 3 varianty s jasnou hypotézou pro A/B test.“"
+                            "text": "→ „Definuji vertikální rytmus a zarovnání všech textových prvků, aby vznikla předvídatelná struktura. Zlepšuje to čitelnost i vizuální autoritu značky.“"
                           }
                         ]
                       }
@@ -317,14 +258,8 @@
                         "ui": "question",
                         "children": [
                           {
-                            "type": "element",
-                            "tag": "em",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "Jak aplikujete barevnou teorii v praxi?"
-                              }
-                            ]
+                            "type": "text",
+                            "text": "• „Jak poznáte, že typografie je výkonově správně nastavena?“"
                           }
                         ]
                       },
@@ -335,7 +270,36 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "„Používám komplementární páry pro zvýšení akčnosti, analogické škály pro profesionální look a modulaci saturace podle úrovně ‘arousal’, kterou chci v uživateli vyvolat.“"
+                            "text": "→ „Claim čitelný do 1 s, CTA odlišitelné v periferním vidění, konzistentní vizuální váhy napříč formáty.“"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "• „Proč jsou variable fonts důležité?“"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "→ „Umožňují mikro-optimalizace pro různé kanály a zvyšují adaptabilitu brandu bez vizuální nekonzistence.“"
                           }
                         ]
                       }
@@ -357,7 +321,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "mini úkoly nebo praktická cvičení"
+                    "text": "Mini úkoly:"
                   }
                 ]
               },
@@ -378,7 +342,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Redesignujte jeden starý firemní vizuál podle principu dominanty, kontrastu a vizuální hierarchie."
+                            "text": "• Vytvoř 3 typografické systémy: (1) fintech – precizní, úřední, vysoký kontrast; (2) fashion – elegantní, vzdušný; (3) tech startup – moderní, vysoký rytmus, variabilní váhy."
                           }
                         ]
                       }
@@ -396,25 +360,7 @@
                         "children": [
                           {
                             "type": "text",
-                            "text": "Přepište 3 verze CTA, u každé změňte framing (bezpečí, ztráta, příležitost)."
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "Vytvořte barevnou paletu pro „high-trust brand“ a „impulzní nákup“."
+                            "text": "• Každému systému nastav: kerning pattern, tracking policy, váhovou hierarchii, baseline strategii."
                           }
                         ]
                       }
@@ -436,7 +382,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "návaznost na krok n-1"
+                    "text": "Návaznost na krok 11:"
                   }
                 ]
               },
@@ -447,15 +393,11 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "\n\n    Rozvíjí definované jádro profesionální identity (krok 1) a převádí ho do exekvovatelných dovedností – od identity → k rukopisu → ke kampaním.\n\n  "
+                    "text": "V kroku 11 ses naučil, jak pracovat s kompozičními sítěmi. Zde ovládáš jejich nejjemnější vrstvu — textové mikrosystémy, které určují přesnost vizuálního toku."
                   }
                 ]
               }
             ]
-          },
-          {
-            "type": "text",
-            "text": ""
           }
         ]
       },
@@ -472,8 +414,39 @@
       },
       {
         "type": "element",
-        "tag": "ul",
-        "ui": "bullet-list",
+        "tag": "pre",
+        "ui": "code-block",
+        "attrs": {
+          "data-language": "algorithm"
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "children": [
+              {
+                "type": "text",
+                "text": "# Generátor typografické hierarchie pomocí variable fontů\n\nbase_weight = 450\n\nhierarchy = {\n\n    \"headline\": base_weight + 70,\n\n    \"subhead\": base_weight + 20,\n\n    \"body\": base_weight,\n\n    \"cta\": base_weight + 90\n\n}\n\nfor level, weight in hierarchy.items():\n\n    print(level, weight)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Strukturovaný problém:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "ol",
+        "ui": "numbered-list",
         "children": [
           {
             "type": "element",
@@ -483,114 +456,79 @@
               {
                 "type": "element",
                 "tag": "p",
-                "ui": "label",
+                "ui": "task",
                 "children": [
                   {
                     "type": "text",
-                    "text": "Strukturovaný problém: Navrhněte mini-kampaň pro produkt „Produktivní plánovač 2025“."
+                    "text": "Vyber claim."
                   }
                 ]
-              },
-              {
-                "type": "text",
-                "text": ""
-              },
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
               {
                 "type": "element",
-                "tag": "ol",
-                "ui": "numbered-list",
+                "tag": "p",
+                "ui": "task",
                 "children": [
                   {
+                    "type": "text",
+                    "text": "Vytvoř 5 typografických variant – měň jen váhu, kerning a tracking."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "task",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Otestuj 1sekundové pochopení u 3 lidí."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "task",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Spočítej, která varianta měla nejvyšší "
+                  },
+                  {
                     "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
+                    "tag": "em",
                     "children": [
                       {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "vytvořte claim (max 5 slov)"
-                          }
-                        ]
+                        "type": "text",
+                        "text": "clarity index"
                       }
                     ]
                   },
                   {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "navrhněte layout (ASCII diagram):"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "element",
-                        "tag": "pre",
-                        "ui": "code-block",
-                        "attrs": {
-                          "data-language": "algorithm"
-                        },
-                        "children": [
-                          {
-                            "type": "element",
-                            "tag": "code",
-                            "children": [
-                              {
-                                "type": "text",
-                                "text": "[HERO FOTO]  \n\n[KRÁTKÝ BENEFIT]\n\n[CTA BUTTON]"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "zadefinujte barevnou triádu (primární, akční, neutrální)"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "li",
-                    "ui": "list-item",
-                    "children": [
-                      {
-                        "type": "element",
-                        "tag": "p",
-                        "ui": "task",
-                        "children": [
-                          {
-                            "type": "text",
-                            "text": "definujte hypotézu pro A/B test (např. vyšší kontrast CTA → vyšší CTR)"
-                          }
-                        ]
-                      }
-                    ]
+                    "type": "text",
+                    "text": " (subjektivně i měřitelně)."
                   }
                 ]
               }
@@ -626,7 +564,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "samostatně vytvořená mini-kampaň (copy, vizuál, cílení)"
+                    "text": "Typografie sama o sobě vytvoří jasné sdělení bez obrázků."
                   }
                 ]
               }
@@ -644,7 +582,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "konzistentní vizuální hierarchie při redesignu"
+                    "text": "Dokážeš obhájit volbu vah, kerningu i gridu jako výkonovou, ne estetickou."
                   }
                 ]
               }
@@ -662,31 +600,25 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "schopnost vysvětlit u pohovoru "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "proč"
-                      }
-                    ]
-                  },
+                    "text": "Tvé typografické systémy jsou konzistentní napříč kanály i formáty."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "ui": "list-item",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "metric",
+                "children": [
                   {
                     "type": "text",
-                    "text": " něco funguje, nikoli jen "
-                  },
-                  {
-                    "type": "element",
-                    "tag": "em",
-                    "children": [
-                      {
-                        "type": "text",
-                        "text": "jak"
-                      }
-                    ]
+                    "text": "Při pohovoru umíš vysvětlit, jak typografie zrychluje porozumění a zvyšuje konverze."
                   }
                 ]
               }
@@ -701,7 +633,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<inner-block-2>"
+            "text": "<inner-block-12>"
           }
         ]
       },
@@ -738,7 +670,7 @@
                     "children": [
                       {
                         "type": "text",
-                        "text": "\n\n          Vytvoř vlastní „design-marketing vocabulary“: porovnej 3 top kampaně konkurence, extrahuj pojmy (např. \"frictionless CTA\", \"dominant framing line\", \"micro-contrast triggers\") a sestav si osobní slovník, který zrychlí tvoji kreativní produkci a zvýší přesvědčivost při obhajobě návrhů na pohovoru.\n\n        "
+                        "text": "- Zkus 24hodinový experiment „typography-only ads“: vytvářej reklamní vizuály bez obrázků, jen pomocí vah, rytmu a kontrastu typografie. Odkoukáš principy švýcarské školy designu a naučíš se, že písmena mají stejné dramatické možnosti jako hudební tóny — tlak, tempo, pauzy, akcenty."
                       }
                     ]
                   }
@@ -755,7 +687,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-inner-block-2>"
+            "text": "<end-inner-block-12>"
           }
         ]
       },
@@ -766,7 +698,7 @@
         "children": [
           {
             "type": "text",
-            "text": "<end-blok-2>"
+            "text": "<end-blok-12>"
           }
         ]
       }
