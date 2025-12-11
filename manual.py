@@ -109,11 +109,22 @@ def save_filled_prompt(output_dir, block_number, content):
         f.write(content)
     return path
 
-def main():
-    input_path = os.path.join("manual_input", "tutorial.txt")
-    template_path = os.path.join("prompts", "expand.txt")
-    json_path = os.path.join("manual_input", "client_input.json")
-    output_dir = "parsed_parts"
+def main(input_path: str = None, json_path: str = None, output_dir: str = None, 
+         template_path: str = None):
+    """
+    Main function with configurable paths for pipeline integration.
+    
+    Args:
+        input_path: Path to plan/tutorial text file with <blok-n> tags
+        json_path: Path to client input JSON file
+        output_dir: Directory to save generated prompts
+        template_path: Path to expand template
+    """
+    # Default paths
+    input_path = input_path or os.path.join("manual_input", "tutorial.txt")
+    template_path = template_path or os.path.join("prompts", "expand.txt")
+    json_path = json_path or os.path.join("manual_input", "client_input.json")
+    output_dir = output_dir or "parsed_parts"
 
     # STEP 1: Load client input JSON and extract values (BEFORE generation blocks)
     print("📋 Loading client input data from JSON...")
@@ -128,7 +139,7 @@ def main():
     # STEP 2: Read expand template
     if not os.path.exists(template_path):
         print(f"❌ Soubor šablony pro expand nebyl nalezen: {template_path}")
-        return
+        return 1
     template = read_expand_template(template_path)
     
     # STEP 3: Replace placeholders in template with values from JSON (BEFORE generation blocks)
@@ -136,25 +147,57 @@ def main():
     template = replace_placeholders(template, client_values)
     
     # STEP 4: Read input tutorial and parse blocks
-    print("\n📖 Reading input tutorial and parsing blocks...")
+    print(f"\n📖 Reading input from {input_path}...")
+    if not os.path.exists(input_path):
+        print(f"❌ Input file not found: {input_path}")
+        return 1
+        
     with open(input_path, encoding='utf-8') as f:
         input_text = f.read()
     
     blocks = parse_blocks(input_text)
     if not blocks:
         print("❌ Nebyly nalezeny žádné bloky ve vstupním textu.")
-        return
+        return 1
     
     print(f"✅ Nalezeno {len(blocks)} blok(ů)")
     
     # STEP 5: For each parsed block, fill the template and save
-    print("\n📝 Generating prompts for each block...")
+    print(f"\n📝 Generating prompts to {output_dir}...")
+    os.makedirs(output_dir, exist_ok=True)
+    
     for block_number, block_content in blocks:
         filled = fill_template(template, block_content)
-        output_path = save_filled_prompt(output_dir, block_number, filled)
-        print(f"   ✅ Blok {block_number}: {output_path}")
+        out_path = save_filled_prompt(output_dir, block_number, filled)
+        print(f"   ✅ Blok {block_number}: {out_path}")
     
     print(f"\n✨ Hotovo! Vygenerováno {len(blocks)} prompt(ů).")
+    return 0
+    
     
 if __name__ == '__main__':
-    main()
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Parse plan blocks and generate prompts")
+    parser.add_argument("--input", "-i", 
+                        default="manual_input/tutorial.txt",
+                        help="Input file with <blok-n> tags (default: manual_input/tutorial.txt)")
+    parser.add_argument("--json", "-j",
+                        default="manual_input/client_input.json", 
+                        help="Client input JSON file (default: manual_input/client_input.json)")
+    parser.add_argument("--output", "-o",
+                        default="parsed_parts",
+                        help="Output directory for prompts (default: parsed_parts)")
+    parser.add_argument("--template", "-t",
+                        default="prompts/expand.txt",
+                        help="Expand template file (default: prompts/expand.txt)")
+    
+    args = parser.parse_args()
+    
+    exit_code = main(
+        input_path=args.input,
+        json_path=args.json,
+        output_dir=args.output,
+        template_path=args.template
+    )
+    exit(exit_code or 0)

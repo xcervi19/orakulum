@@ -1,352 +1,350 @@
+#!/usr/bin/env python3
 """
-Automated ChatGPT content generation using pyautogui.
-Processes prompts from stage_2_prepared_html/ and saves outputs to stage_3_generated_html/
+ChatGPT Automation Script
+
+Uses pyautogui to automate sending prompts to ChatGPT and capturing responses.
+Processes all prompt files from an input directory and saves responses to output.
+
+Requirements:
+- ChatGPT browser window must be open and visible
+- Button images in buttons/ folder (textarea.png, firebutton.png, copy.png)
+
+Usage:
+    python3 automate_chatgpt.py --input parsed_parts/ --output stage_2_generated_parts/
+    python3 automate_chatgpt.py -i stage_2_prepared_html/ -o stage_3_generated_html/
 """
+
+import os
+import sys
+import time
+import argparse
+from pathlib import Path
 
 import cv2
 import numpy as np
 import mss
 import pyautogui
 import pyperclip
-import platform
-import time
-import sys
-import re
-from pathlib import Path
-from typing import Optional, Tuple
 
-# Configuration
-INPUT_DIR = Path("stage_2_prepared_html")
-OUTPUT_DIR = Path("stage_3_generated_html")
-BUTTONS_DIR = Path("buttons")
 
 # Button image paths
-TEXTAREA_BUTTON = BUTTONS_DIR / "textarea.png"
-SEND_BUTTON = BUTTONS_DIR / "firebutton.png"
-COPY_BUTTON = BUTTONS_DIR / "copy.png"
-STOP_BUTTON = BUTTONS_DIR / "stoper.png"  # "Stop generating" button
-SCROLL_BUTTON = BUTTONS_DIR / "scroll.png"  # Scroll button
-NEW_CHAT_BUTTON = BUTTONS_DIR / "new.png"  # Optional: for starting new chats
+BUTTONS_DIR = Path("buttons")
+TEXTAREA_IMG = BUTTONS_DIR / "textarea.png"
+FIRE_BUTTON_IMG = BUTTONS_DIR / "firebutton.png"
+COPY_BUTTON_IMG = BUTTONS_DIR / "copy.png"
+SCROLL_IMG = BUTTONS_DIR / "scroll.png"
 
-# Timing configuration
-WAIT_AFTER_CLICK = 0.5
-WAIT_AFTER_PASTE = 0.3
-WAIT_FOR_RESPONSE = 30  # Initial wait for response
-WAIT_FOR_COPY = 2
-MAX_RESPONSE_WAIT = 120  # Maximum time to wait for response
-CHECK_INTERVAL = 2  # Check every N seconds if response is ready
-
-# Retry configuration
-MAX_RETRIES = 3
-RETRY_DELAY = 2
-
-# Monitor configuration (0 = primary, 1 = secondary, etc.)
-MONITOR = 0
+# Timing settings
+DELAY_AFTER_PASTE = 0.5
+DELAY_AFTER_SEND = 3.0
+DELAY_WAIT_RESPONSE = 60.0  # Max wait time for response
+DELAY_BETWEEN_PROMPTS = 2.0
 
 
-def send_text(text: str) -> bool:
-    """Copy text to clipboard and paste it using keyboard shortcut."""
-    try:
-        pyperclip.copy(text)
-        time.sleep(WAIT_AFTER_PASTE)
-        mod = "command" if platform.system() == "Darwin" else "ctrl"
-        pyautogui.hotkey(mod, "v")
-        time.sleep(WAIT_AFTER_PASTE)
-        return True
-    except Exception as e:
-        print(f"   ❌ Error sending text: {e}")
-        return False
-
-
-def find_button(image_path: Path, threshold: float = 0.8, monitor: int = 0) -> bool:
+def find_and_click(image_path: str, threshold: float = 0.8, monitor: int = 0) -> bool:
     """
-    Check if button image exists on screen (without clicking).
-    Returns True if button is found, False otherwise.
-    """
-    if not image_path.exists():
-        return False
+    Find an image on screen and click its center.
     
-    template = cv2.imread(str(image_path), 0)  # Read as grayscale
-    if template is None:
-        return False
-    
-    try:
-        with mss.mss() as sct:
-            full = sct.monitors[0]
-            mon = sct.monitors[monitor]
-            img = np.array(sct.grab(mon))
+    Args:
+        image_path: Path to template image
+        threshold: Match confidence threshold (0-1)
+        monitor: Monitor index to search
         
-        gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
-        res = cv2.matchTemplate(gray, template, cv2.TM_CCOEFF_NORMED)
-        _, max_val, _, _ = cv2.minMaxLoc(res)
-        
-        return max_val >= threshold
-    except:
-        return False
-
-
-def find_and_click(image_path: Path, threshold: float = 0.8, monitor: int = 0, retries: int = 3) -> bool:
+    Returns:
+        True if found and clicked, False otherwise
     """
-    Find button image on screen and click it.
-    Uses template matching with multiple threshold attempts.
-    """
-    if not image_path.exists():
-        print(f"   ⚠️  Button image not found: {image_path}")
-        return False
-    
-    template = cv2.imread(str(image_path), 0)  # Read as grayscale
+    template = cv2.imread(str(image_path), 0)
     if template is None:
-        print(f"   ⚠️  Could not read image: {image_path}")
+        print(f"❌ Could not load image: {image_path}")
         return False
     
     pyautogui.FAILSAFE = False
     
-    # Try with decreasing thresholds if first attempt fails
-    thresholds = [threshold, threshold - 0.1, threshold - 0.2, 0.6]
+    with mss.mss() as sct:
+        full = sct.monitors[0]
+        mon = sct.monitors[monitor]
+        img = np.array(sct.grab(mon))
     
-    for attempt_threshold in thresholds:
-        try:
-            with mss.mss() as sct:
-                full = sct.monitors[0]
-                mon = sct.monitors[monitor]
-                img = np.array(sct.grab(mon))
-            
-            gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
-            res = cv2.matchTemplate(gray, template, cv2.TM_CCOEFF_NORMED)
-            _, max_val, _, max_loc = cv2.minMaxLoc(res)
-            
-            if max_val >= attempt_threshold:
-                h, w = template.shape[:2]
-                cx = max_loc[0] + w // 2
-                cy = max_loc[1] + h // 2
-                x = mon['left'] + cx
-                y = mon['top'] + cy
-                sw, sh = pyautogui.size()
-                sx = sw / full['width']
-                sy = sh / full['height']
-                
-                pyautogui.moveTo(int(x * sx), int(y * sy), duration=0.1)
-                time.sleep(0.1)
-                pyautogui.click()
-                time.sleep(WAIT_AFTER_CLICK)
-                return True
-        except Exception as e:
-            if attempt_threshold == thresholds[-1]:  # Last attempt
-                print(f"   ❌ Error finding button: {e}")
-            continue
+    gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
+    res = cv2.matchTemplate(gray, template, cv2.TM_CCOEFF_NORMED)
+    _, max_val, _, max_loc = cv2.minMaxLoc(res)
     
-    return False
-
-
-def wait_for_response(max_wait: int = MAX_RESPONSE_WAIT) -> bool:
-    """
-    Wait for ChatGPT to finish generating response.
-    Checks if "Stop generating" button exists - if it does, still generating.
-    When button disappears, generation is complete.
-    """
-    print(f"   ⏳ Waiting for response (max {max_wait}s)...")
-    start_time = time.time()
+    if max_val < threshold:
+        return False
     
-    # Wait a bit first - response needs time to start
-    time.sleep(2)
+    h, w = template.shape[:2]
+    cx = max_loc[0] + w // 2
+    cy = max_loc[1] + h // 2
     
-    while time.time() - start_time < max_wait:
-        # Check if "Stop generating" button exists
-        is_generating = find_button(STOP_BUTTON, threshold=0.7, monitor=MONITOR)
-        
-        if not is_generating:
-            # Button not found - generation is complete
-            print(f"   ✅ Response complete (stop button disappeared)")
-            return True
-        
-        # Still generating, wait a bit more
-        time.sleep(CHECK_INTERVAL)
+    x = mon['left'] + cx
+    y = mon['top'] + cy
     
-    print(f"   ⏱️  Max wait time reached, assuming complete")
+    sw, sh = pyautogui.size()
+    sx = sw / full['width']
+    sy = sh / full['height']
+    
+    pyautogui.moveTo(int(x * sx), int(y * sy), duration=0.05)
+    pyautogui.click()
+    
     return True
 
 
-def process_single_prompt(prompt_text: str, prompt_name: str) -> Optional[str]:
+def send_prompt(prompt_text: str) -> bool:
     """
-    Process a single prompt through ChatGPT and return the response.
-    Returns the response text or None if failed.
+    Send a prompt to ChatGPT by clicking textarea, pasting, and clicking send.
+    
+    Args:
+        prompt_text: The prompt text to send
+        
+    Returns:
+        True if successfully sent, False otherwise
     """
-    print(f"\n📝 Processing: {prompt_name}")
+    # Click textarea
+    if not find_and_click(str(TEXTAREA_IMG)):
+        print("❌ Could not find textarea")
+        return False
     
-    # Step 1: Find and click textarea
-    print("   🔍 Looking for textarea...")
-    if not find_and_click(TEXTAREA_BUTTON, threshold=0.7, monitor=MONITOR):
-        print("   ❌ Could not find textarea")
-        return None
-    
-    # Step 2: Clear any existing text and paste prompt
-    print("   📋 Pasting prompt...")
-    # Select all - use command on Mac, ctrl on Windows/Linux
-    select_all_key = "command" if platform.system() == "Darwin" else "ctrl"
-    pyautogui.hotkey(select_all_key, "a")
     time.sleep(0.2)
     
-    if not send_text(prompt_text):
-        print("   ❌ Failed to paste prompt")
-        return None
+    # Paste prompt
+    pyperclip.copy(prompt_text)
+    pyautogui.hotkey('command', 'v')  # Use 'ctrl', 'v' on Windows/Linux
     
-    # Step 3: Click send button
-    print("   🚀 Sending prompt...")
-    if not find_and_click(SEND_BUTTON, threshold=0.7, monitor=MONITOR):
-        print("   ❌ Could not find send button")
-        return None
+    time.sleep(DELAY_AFTER_PASTE)
     
-    # Step 4: Wait for response to complete
-    wait_for_response()
+    # Click send button
+    if not find_and_click(str(FIRE_BUTTON_IMG)):
+        print("❌ Could not find send button")
+        return False
     
-    # Step 5: Scroll down to reveal copy button
-    print("   📜 Scrolling to reveal copy button...")
-    time.sleep(1)  # Small delay after generation completes
-    
-    # Try to find and click scroll button
-    if find_and_click(SCROLL_BUTTON, threshold=0.7, monitor=MONITOR):
-        time.sleep(1)  # Wait for scroll to complete
-    else:
-        # Fallback: use keyboard scroll (Page Down or arrow keys)
-        print("   ⚠️  Scroll button not found, using keyboard scroll...")
-        pyautogui.press('pagedown')
-        time.sleep(1)
-    
-    # Step 6: Find and click copy button (must use button, not keyboard shortcut)
-    print("   📋 Copying response using copy button...")
-    time.sleep(WAIT_FOR_COPY)
-    
-    if not find_and_click(COPY_BUTTON, threshold=0.7, monitor=MONITOR):
-        print("   ❌ Could not find copy button")
-        return None
-    
-    # Wait a moment for clipboard to update
-    time.sleep(0.5)
-    response = pyperclip.paste()
-    
-    if not response or len(response.strip()) < 10:
-        print("   ❌ Failed to copy response or response too short")
-        return None
-    
-    print(f"   ✅ Got response ({len(response)} chars)")
-    return response
+    return True
 
 
-def extract_number_from_filename(filename: str) -> Optional[int]:
-    """Extract number from filename like 'part1.txt' -> 1, 'part12.txt' -> 12"""
-    match = re.search(r'(\d+)', filename)
-    return int(match.group(1)) if match else None
-
-
-def get_output_filename(input_filename: str) -> str:
-    """Generate output filename from input filename: part1.txt -> parthtml1.txt"""
-    number = extract_number_from_filename(input_filename)
-    if number is not None:
-        return f"parthtml{number}.txt"
-    else:
-        # Fallback: use input filename with parthtml prefix
-        stem = Path(input_filename).stem
-        return f"parthtml_{stem}.txt"
-
-
-def process_all_prompts():
-    """Process all prompt files from INPUT_DIR and save to OUTPUT_DIR"""
+def wait_for_response(timeout: float = DELAY_WAIT_RESPONSE) -> bool:
+    """
+    Wait for ChatGPT to finish generating response.
+    Detects completion by checking if copy button appears.
     
-    # Ensure directories exist
-    INPUT_DIR.mkdir(exist_ok=True)
-    OUTPUT_DIR.mkdir(exist_ok=True)
+    Args:
+        timeout: Maximum time to wait in seconds
+        
+    Returns:
+        True if response completed, False if timeout
+    """
+    start_time = time.time()
     
-    # Get all .txt files from input directory
-    prompt_files = sorted(INPUT_DIR.glob("*.txt"))
+    print("   ⏳ Waiting for response...", end="", flush=True)
     
-    if not prompt_files:
-        print(f"❌ No .txt files found in {INPUT_DIR}")
+    while time.time() - start_time < timeout:
+        # Check if copy button is visible (indicates response complete)
+        if find_and_click(str(COPY_BUTTON_IMG), threshold=0.7):
+            print(" Done!")
+            return True
+        
+        time.sleep(2)
+        print(".", end="", flush=True)
+    
+    print(" Timeout!")
+    return False
+
+
+def copy_response() -> str:
+    """
+    Copy the ChatGPT response using the copy button.
+    
+    Returns:
+        The copied response text
+    """
+    # The copy button was already clicked in wait_for_response
+    time.sleep(0.3)
+    return pyperclip.paste()
+
+
+def process_prompt_file(input_file: Path, output_file: Path) -> bool:
+    """
+    Process a single prompt file: send to ChatGPT and save response.
+    
+    Args:
+        input_file: Path to prompt file
+        output_file: Path to save response
+        
+    Returns:
+        True if successful, False otherwise
+    """
+    # Skip if output already exists
+    if output_file.exists():
+        print(f"   ⏭️  Skipping (output exists): {output_file.name}")
+        return True
+    
+    # Read prompt
+    with open(input_file, 'r', encoding='utf-8') as f:
+        prompt = f.read()
+    
+    print(f"   📤 Sending: {input_file.name}")
+    
+    # Send prompt
+    if not send_prompt(prompt):
+        print(f"   ❌ Failed to send: {input_file.name}")
+        return False
+    
+    time.sleep(DELAY_AFTER_SEND)
+    
+    # Wait for response
+    if not wait_for_response():
+        print(f"   ❌ Response timeout: {input_file.name}")
+        return False
+    
+    # Copy and save response
+    response = copy_response()
+    
+    if not response or len(response) < 10:
+        print(f"   ❌ Empty response: {input_file.name}")
+        return False
+    
+    # Save response
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(response)
+    
+    print(f"   ✅ Saved: {output_file.name} ({len(response)} chars)")
+    
+    return True
+
+
+def process_directory(input_dir: str, output_dir: str, pattern: str = "*.txt") -> dict:
+    """
+    Process all prompt files in a directory.
+    
+    Args:
+        input_dir: Directory with prompt files
+        output_dir: Directory to save responses
+        pattern: Glob pattern for input files
+        
+    Returns:
+        Summary dict with counts
+    """
+    input_path = Path(input_dir)
+    output_path = Path(output_dir)
+    
+    if not input_path.exists():
+        print(f"❌ Input directory not found: {input_dir}")
+        return {"total": 0, "success": 0, "failed": 0, "skipped": 0}
+    
+    # Find input files
+    files = sorted(input_path.glob(pattern))
+    
+    if not files:
+        print(f"❌ No {pattern} files found in {input_dir}")
+        return {"total": 0, "success": 0, "failed": 0, "skipped": 0}
+    
+    print(f"\n📁 Found {len(files)} files in {input_dir}")
+    print(f"📂 Output directory: {output_dir}")
+    print("=" * 60)
+    
+    output_path.mkdir(parents=True, exist_ok=True)
+    
+    results = {"total": len(files), "success": 0, "failed": 0, "skipped": 0}
+    
+    for i, input_file in enumerate(files, 1):
+        print(f"\n[{i}/{len(files)}] Processing: {input_file.name}")
+        
+        # Generate output filename
+        output_file = output_path / input_file.name
+        
+        # Check if already processed
+        if output_file.exists():
+            results["skipped"] += 1
+            print(f"   ⏭️  Skipping (output exists)")
+            continue
+        
+        # Process the file
+        success = process_prompt_file(input_file, output_file)
+        
+        if success:
+            results["success"] += 1
+        else:
+            results["failed"] += 1
+        
+        # Delay between prompts to avoid rate limiting
+        if i < len(files):
+            time.sleep(DELAY_BETWEEN_PROMPTS)
+    
+    return results
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Automate ChatGPT prompts using pyautogui"
+    )
+    parser.add_argument(
+        "--input", "-i",
+        required=True,
+        help="Input directory with prompt files"
+    )
+    parser.add_argument(
+        "--output", "-o",
+        required=True,
+        help="Output directory for responses"
+    )
+    parser.add_argument(
+        "--pattern", "-p",
+        default="*.txt",
+        help="File pattern to match (default: *.txt)"
+    )
+    parser.add_argument(
+        "--delay", "-d",
+        type=float,
+        default=DELAY_WAIT_RESPONSE,
+        help=f"Max wait time for response (default: {DELAY_WAIT_RESPONSE}s)"
+    )
+    parser.add_argument(
+        "--test",
+        action="store_true",
+        help="Test mode: verify buttons can be found without sending"
+    )
+    
+    args = parser.parse_args()
+    
+    print("\n" + "=" * 60)
+    print("🤖 CHATGPT AUTOMATION")
+    print("=" * 60)
+    
+    # Verify button images exist
+    for btn_path in [TEXTAREA_IMG, FIRE_BUTTON_IMG, COPY_BUTTON_IMG]:
+        if not btn_path.exists():
+            print(f"❌ Button image not found: {btn_path}")
+            print("   Please capture button screenshots and save to buttons/")
+            sys.exit(1)
+    
+    if args.test:
+        print("\n🔍 Test mode: Checking if buttons can be found...")
+        print(f"   Textarea: {'✅' if find_and_click(str(TEXTAREA_IMG)) else '❌'}")
+        time.sleep(0.5)
+        print(f"   Fire button: {'✅' if find_and_click(str(FIRE_BUTTON_IMG)) else '❌'}")
         return
     
-    print(f"📁 Found {len(prompt_files)} prompt files")
-    print(f"📂 Input: {INPUT_DIR}")
-    print(f"📂 Output: {OUTPUT_DIR}")
-    print(f"\n⏸️  Make sure ChatGPT is open and visible on monitor {MONITOR}")
-    print("⏸️  Starting in 5 seconds...")
-    time.sleep(5)
+    # Give user time to focus ChatGPT window
+    print("\n⚠️  Make sure ChatGPT browser window is visible!")
+    print("   Starting in 3 seconds...")
+    time.sleep(3)
     
-    successful = 0
-    failed = 0
-    skipped = 0
+    # Process directory
+    global DELAY_WAIT_RESPONSE
+    DELAY_WAIT_RESPONSE = args.delay
     
-    for prompt_file in prompt_files:
-        # Check if output already exists
-        output_filename = get_output_filename(prompt_file.name)
-        output_path = OUTPUT_DIR / output_filename
-        
-        if output_path.exists():
-            print(f"\n⏭️  Skipping {prompt_file.name} (output already exists: {output_filename})")
-            skipped += 1
-            continue
-        
-        # Read prompt
-        try:
-            with open(prompt_file, 'r', encoding='utf-8') as f:
-                prompt_text = f.read().strip()
-        except Exception as e:
-            print(f"\n❌ Error reading {prompt_file.name}: {e}")
-            failed += 1
-            continue
-        
-        if not prompt_text:
-            print(f"\n⚠️  {prompt_file.name} is empty, skipping")
-            skipped += 1
-            continue
-        
-        # Process prompt with retries
-        response = None
-        for attempt in range(MAX_RETRIES):
-            if attempt > 0:
-                print(f"   🔄 Retry attempt {attempt + 1}/{MAX_RETRIES}")
-                time.sleep(RETRY_DELAY)
-            
-            response = process_single_prompt(prompt_text, prompt_file.name)
-            if response:
-                break
-        
-        if response:
-            # Save response
-            try:
-                with open(output_path, 'w', encoding='utf-8') as f:
-                    f.write(response)
-                print(f"   💾 Saved to {output_filename}")
-                successful += 1
-            except Exception as e:
-                print(f"   ❌ Error saving to {output_path}: {e}")
-                failed += 1
-        else:
-            print(f"   ❌ Failed to get response after {MAX_RETRIES} attempts")
-            failed += 1
-        
-        # Delay between prompts to avoid rate limits
-        if prompt_file != prompt_files[-1]:  # Not the last file
-            print(f"   ⏸️  Waiting 3 seconds before next prompt...")
-            time.sleep(3)
+    results = process_directory(args.input, args.output, args.pattern)
     
-    # Summary
-    print(f"\n{'='*60}")
-    print(f"✨ Processing complete!")
-    print(f"   ✅ Successful: {successful}")
-    print(f"   ❌ Failed: {failed}")
-    print(f"   ⏭️  Skipped: {skipped}")
-    print(f"   📊 Total: {len(prompt_files)}")
-    print(f"{'='*60}")
+    # Print summary
+    print("\n" + "=" * 60)
+    print("📊 SUMMARY")
+    print("=" * 60)
+    print(f"   Total files: {results['total']}")
+    print(f"   ✅ Success: {results['success']}")
+    print(f"   ⏭️  Skipped: {results['skipped']}")
+    print(f"   ❌ Failed: {results['failed']}")
+    
+    sys.exit(0 if results['failed'] == 0 else 1)
 
 
 if __name__ == "__main__":
-    try:
-        process_all_prompts()
-    except KeyboardInterrupt:
-        print("\n\n⚠️  Interrupted by user")
-        sys.exit(1)
-    except Exception as e:
-        print(f"\n\n❌ Fatal error: {e}")
-        import traceback
-        traceback.print_exc()
-        sys.exit(1)
-
+    main()
