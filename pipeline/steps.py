@@ -1,28 +1,32 @@
 """
-Pipeline step implementations.
+Pipeline Steps
+
 Each function implements one step of the career-plan generation pipeline.
 Uses OpenAI API for all LLM interactions.
 """
 
 import json
 import time
-import subprocess
 from pathlib import Path
 from typing import Dict, Optional
 
 from .db import update_lead_field, mark_status
 from .db import STATUS_PLAN_READY, STATUS_HTML_READY
-from .logging_utils import PipelineLogger
-from .openai_client import call_llm, call_llm_with_file, process_prompt_batch
+from .logger import PipelineLogger
+from .llm import call_llm, process_prompt_batch
+
+# Import processors
+from processors.block_parser import parse_plan_blocks, fill_expand_template, load_expand_template
+from processors.html_wrapper import wrap_directory
+from processors.html_to_json import transform_html_directory
+from processors.json_cleaner import clean_json_directory
+from processors.uploader import upload_from_directory
 
 
 def run_input_transform(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 2: Input transform prompt.
+    Step 1: Input transform prompt.
     Converts raw client description into structured JSON.
-    
-    Template: prompts/input_transform.txt
-    Placeholder: [VSTUP] -> lead['description']
     """
     logger.log_step_start("input_transform", {"description_length": len(lead.get("description", ""))})
     start_time = time.time()
@@ -37,20 +41,21 @@ def run_input_transform(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Di
     
     # Save prompt to run directory
     prompt_path = run_dir / "input_transform" / "prompt.txt"
+    prompt_path.parent.mkdir(parents=True, exist_ok=True)
     with open(prompt_path, "w", encoding="utf-8") as f:
         f.write(prompt)
     
     # Call OpenAI API
     logger.log_info("Calling OpenAI API for input transform...")
-    output_path = run_dir / "input_transform" / "output.json"
     
     response = call_llm(
         prompt=prompt,
-        system_prompt="You are a career counselor assistant. Analyze the input and return structured JSON.",
+        system_prompt="You are a career counselor assistant. Analyze the input and return structured JSON only.",
         json_mode=True
     )
     
     # Save response
+    output_path = run_dir / "input_transform" / "output.json"
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(response)
     
@@ -61,7 +66,8 @@ def run_input_transform(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Di
         logger.log_info("Input transform result stored in database")
     except json.JSONDecodeError:
         logger.log_info("Response is not valid JSON, storing as text")
-        update_lead_field(lead["id"], "input_transform", {"raw": response})
+        result_json = {"raw": response}
+        update_lead_field(lead["id"], "input_transform", result_json)
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("input_transform", duration_ms, str(output_path))
@@ -70,13 +76,14 @@ def run_input_transform(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Di
         "prompt_path": str(prompt_path),
         "output_path": str(output_path),
         "response_length": len(response),
+        "parsed_data": result_json,
     }
 
 
 def run_plan_prompt(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 3: Plan synthesis prompt.
-    Generates the 15-block master plan using init_plan.txt template.
+    Step 2: Plan synthesis prompt.
+    Generates the 15-block master plan.
     """
     logger.log_step_start("plan_prompt")
     start_time = time.time()
@@ -86,37 +93,53 @@ def run_plan_prompt(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     with open(template_path, "r", encoding="utf-8") as f:
         template = f.read()
     
-    # Get input transform data
-    input_data = lead.get("input_transform", {})
+    # Get input transform data (reload from file to ensure fresh data)
+    input_transform_path = run_dir / "input_transform" / "output.json"
+    input_data = {}
+    if input_transform_path.exists():
+        with open(input_transform_path, "r", encoding="utf-8") as f:
+            try:
+                input_data = json.load(f)
+            except json.JSONDecodeError:
+                pass
     
-    # Fill template with structured data
+    # Build context from input_transform
+    context_parts = []
+    if input_data.get("obor"):
+        context_parts.append(f"Obor: {input_data['obor']}")
+    if input_data.get("seniorita"):
+        context_parts.append(f"Seniorita: {input_data['seniorita']}")
+    if input_data.get("hlavni_cil"):
+        context_parts.append(f"Hlavní cíl: {input_data['hlavni_cil']}")
+    if input_data.get("technologie"):
+        context_parts.append(f"Technologie: {', '.join(input_data['technologie'])}")
+    
+    context = "\n".join(context_parts) if context_parts else lead.get("description", "")
+    
+    # Fill template - append context
     prompt = template
-    if isinstance(input_data, dict):
-        for key, value in input_data.items():
-            placeholder = f"[{key.upper()}]"
-            if isinstance(value, str):
-                prompt = prompt.replace(placeholder, value)
-    
-    # Also replace with description
-    prompt = prompt.replace("[DESCRIPTION]", lead.get("description", ""))
-    prompt = prompt.replace("[VSTUP]", lead.get("description", ""))
+    if "[VSTUP]" in prompt:
+        prompt = prompt.replace("[VSTUP]", context)
+    else:
+        prompt = prompt + f"\n\n### KONTEXT KLIENTA:\n{context}"
     
     # Save prompt
     prompt_path = run_dir / "plan" / "prompt.txt"
+    prompt_path.parent.mkdir(parents=True, exist_ok=True)
     with open(prompt_path, "w", encoding="utf-8") as f:
         f.write(prompt)
     
     # Call OpenAI API
     logger.log_info("Calling OpenAI API for plan generation...")
-    output_path = run_dir / "plan" / "plan.txt"
     
     response = call_llm(
         prompt=prompt,
-        system_prompt="You are an expert career counselor. Generate a comprehensive career plan with <blok-n> tags.",
+        system_prompt="You are an expert career counselor. Generate a comprehensive 15-step career plan with <blok-n> tags as specified.",
         max_tokens=8000,
     )
     
     # Save response
+    output_path = run_dir / "plan" / "plan.txt"
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(response)
     
@@ -134,70 +157,100 @@ def run_plan_prompt(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
         "prompt_path": str(prompt_path),
         "output_path": str(output_path),
         "response_length": len(response),
+        "input_data": input_data,
     }
 
 
 def generate_blocks(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 4: Generate per-block prompts using manual.py.
-    Parses the plan into individual block prompts.
+    Step 3: Parse plan into individual block prompts.
     """
     logger.log_step_start("generate_blocks")
     start_time = time.time()
     
     plan_path = run_dir / "plan" / "plan.txt"
     output_dir = run_dir / "parsed_parts"
+    output_dir.mkdir(parents=True, exist_ok=True)
     
-    # Run manual.py with client-specific paths
-    cmd = [
-        "python3", "manual.py",
-        "--input", str(plan_path),
-        "--output", str(output_dir),
-    ]
+    # Read plan
+    with open(plan_path, "r", encoding="utf-8") as f:
+        plan_text = f.read()
     
-    logger.log_info(f"Running: {' '.join(cmd)}")
+    # Parse blocks
+    blocks = parse_plan_blocks(plan_text)
     
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    if not blocks:
+        raise RuntimeError("No blocks found in plan")
     
-    if result.returncode != 0:
-        raise RuntimeError(f"manual.py failed: {result.stderr}")
+    # Get client data from input_transform
+    input_transform_path = run_dir / "input_transform" / "output.json"
+    input_data = {}
+    if input_transform_path.exists():
+        with open(input_transform_path, "r", encoding="utf-8") as f:
+            try:
+                input_data = json.load(f)
+            except json.JSONDecodeError:
+                pass
     
-    # Count generated files
-    block_files = list(output_dir.glob("prompt_block_*.txt"))
+    # Extract client parameters
+    obor = input_data.get("obor", "nezadáno")
+    seniorita = input_data.get("seniorita", "nezadáno")
+    hlavni_cil = input_data.get("hlavni_cil", "nezadáno")
+    
+    # Load and fill template for each block
+    template = load_expand_template()
+    
+    generated_files = []
+    for block_number, block_content in blocks:
+        filled = fill_expand_template(
+            template=template,
+            block_content=block_content,
+            obor=obor,
+            seniorita=seniorita,
+            hlavni_cil=hlavni_cil
+        )
+        
+        output_path = output_dir / f"prompt_block_{block_number}.txt"
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(filled)
+        
+        generated_files.append(str(output_path))
+        logger.log_info(f"Generated block {block_number}")
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("generate_blocks", duration_ms)
-    logger.log_info(f"Generated {len(block_files)} block prompts")
+    logger.log_info(f"Generated {len(generated_files)} block prompts")
     
     return {
         "output_dir": str(output_dir),
-        "block_count": len(block_files),
+        "block_count": len(generated_files),
+        "client_params": {"obor": obor, "seniorita": seniorita, "hlavni_cil": hlavni_cil},
     }
 
 
 def run_stage2(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 5: Expand block prompts via OpenAI API (Stage 2).
-    Processes each block prompt through the LLM.
+    Step 4: Expand block prompts via OpenAI API.
     """
     logger.log_step_start("stage2_expand")
     start_time = time.time()
     
     input_dir = run_dir / "parsed_parts"
     output_dir = run_dir / "stage_2_generated_parts"
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     logger.log_info("Processing block prompts via OpenAI API...")
     
     results = process_prompt_batch(
         input_dir=str(input_dir),
         output_dir=str(output_dir),
-        system_prompt="You are an expert career counselor. Expand the given career plan section with detailed, actionable content.",
+        system_prompt="You are an expert career counselor. Expand the given career plan section with detailed, actionable content in Czech.",
         pattern="prompt_block_*.txt"
     )
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("stage2_expand", duration_ms)
-    logger.log_info(f"Stage 2: {results['success']} succeeded, {results['failed']} failed, {results['skipped']} skipped")
+    logger.log_info(f"Stage 2: {results['success']} succeeded, {results['failed']} failed")
     
     if results['failed'] > 0:
         raise RuntimeError(f"Stage 2 failed for {results['failed']} files")
@@ -211,8 +264,7 @@ def run_stage2(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
 
 def prep_html(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 6: Prepare HTML prompts.
-    Wraps Stage 2 responses with HTML transform template.
+    Step 5: Wrap expanded content with HTML transform template.
     """
     logger.log_step_start("prep_html")
     start_time = time.time()
@@ -220,56 +272,47 @@ def prep_html(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     input_dir = run_dir / "stage_2_generated_parts"
     output_dir = run_dir / "stage_2_prepared_html"
     
-    # Run prepare_html_prompts.py
-    cmd = [
-        "python3", "prepare_html_prompts.py",
-        "--input", str(input_dir),
-        "--output", str(output_dir),
-    ]
+    logger.log_info("Wrapping content with HTML template...")
     
-    logger.log_info(f"Running: {' '.join(cmd)}")
-    
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    
-    if result.returncode != 0:
-        raise RuntimeError(f"prepare_html_prompts.py failed: {result.stderr}")
-    
-    # Count prepared files
-    html_files = list(output_dir.glob("*.txt"))
+    count = wrap_directory(
+        input_dir=str(input_dir),
+        output_dir=str(output_dir),
+        template_path="prompts/html_transform.txt"
+    )
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("prep_html", duration_ms)
-    logger.log_info(f"Prepared {len(html_files)} HTML prompts")
+    logger.log_info(f"Wrapped {count} files with HTML template")
     
     return {
         "output_dir": str(output_dir),
-        "file_count": len(html_files),
+        "file_count": count,
     }
 
 
 def run_stage3(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 7: HTML generation via OpenAI API (Stage 3).
-    Processes HTML prompts through the LLM.
+    Step 6: HTML generation via OpenAI API.
     """
     logger.log_step_start("stage3_html")
     start_time = time.time()
     
     input_dir = run_dir / "stage_2_prepared_html"
     output_dir = run_dir / "stage_3_generated_html"
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     logger.log_info("Processing HTML prompts via OpenAI API...")
     
     results = process_prompt_batch(
         input_dir=str(input_dir),
         output_dir=str(output_dir),
-        system_prompt="You are a UI/HTML expert. Transform the input into semantic HTML with data-ui attributes. Output only HTML, no markdown.",
+        system_prompt="You are a UI/HTML expert. Transform the input into semantic HTML with data-ui attributes. Output only valid HTML, no markdown, no explanations.",
         pattern="*.txt"
     )
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("stage3_html", duration_ms)
-    logger.log_info(f"Stage 3: {results['success']} succeeded, {results['failed']} failed, {results['skipped']} skipped")
+    logger.log_info(f"Stage 3: {results['success']} succeeded, {results['failed']} failed")
     
     if results['failed'] > 0:
         raise RuntimeError(f"Stage 3 failed for {results['failed']} files")
@@ -286,8 +329,7 @@ def run_stage3(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
 
 def html_to_json_step(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 8: HTML → JSON transformation.
-    Converts HTML files to structured JSON.
+    Step 7: Transform HTML to structured JSON.
     """
     logger.log_step_start("html_to_json")
     start_time = time.time()
@@ -295,67 +337,48 @@ def html_to_json_step(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict
     input_dir = run_dir / "stage_3_generated_html"
     output_dir = run_dir / "transformed"
     
-    # Run html_to_json.py
-    cmd = [
-        "python3", "html_to_json.py",
-        "--input", str(input_dir),
-        "--output", str(output_dir),
-    ]
+    logger.log_info("Converting HTML to JSON...")
     
-    logger.log_info(f"Running: {' '.join(cmd)}")
-    
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    
-    if result.returncode != 0:
-        raise RuntimeError(f"html_to_json.py failed: {result.stderr}")
-    
-    # Count JSON files
-    json_files = list(output_dir.glob("*.json"))
+    results = transform_html_directory(
+        input_dir=str(input_dir),
+        output_dir=str(output_dir)
+    )
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("html_to_json", duration_ms)
-    logger.log_info(f"Created {len(json_files)} JSON files")
+    logger.log_info(f"Transformed {results['success']} files to JSON")
     
     return {
         "output_dir": str(output_dir),
-        "file_count": len(json_files),
+        "results": results,
     }
 
 
 def clean_json(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 9a: Clean markdown artifacts from JSON.
+    Step 8: Clean markdown artifacts from JSON.
     """
     logger.log_step_start("clean_json")
     start_time = time.time()
     
     json_dir = run_dir / "transformed"
     
-    # Run clean_markdown.py
-    cmd = [
-        "python3", "clean_markdown.py",
-        "--directory", str(json_dir),
-    ]
+    logger.log_info("Cleaning markdown artifacts...")
     
-    logger.log_info(f"Running: {' '.join(cmd)}")
-    
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    
-    if result.returncode != 0:
-        raise RuntimeError(f"clean_markdown.py failed: {result.stderr}")
+    results = clean_json_directory(str(json_dir))
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("clean_json", duration_ms)
     
     return {
         "directory": str(json_dir),
+        "results": results,
     }
 
 
 def upload_pages(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 9b: Upload to Supabase.
-    Uploads cleaned JSON files to client_learning_pages.
+    Step 9: Upload to Supabase.
     """
     logger.log_step_start("upload_pages")
     start_time = time.time()
@@ -363,28 +386,15 @@ def upload_pages(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     json_dir = run_dir / "transformed"
     client_id = lead["id"]
     
-    # Run upload_learning_content.py
-    cmd = [
-        "python3", "upload_learning_content.py",
-        client_id,
-        "--directory", str(json_dir),
-    ]
+    logger.log_info(f"Uploading pages for client {client_id}...")
     
-    logger.log_info(f"Running: {' '.join(cmd)}")
-    
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    
-    if result.returncode != 0:
-        raise RuntimeError(f"upload_learning_content.py failed: {result.stderr}")
-    
-    # Count uploaded files
-    json_files = list(json_dir.glob("*.json"))
+    results = upload_from_directory(client_id, str(json_dir))
     
     duration_ms = int((time.time() - start_time) * 1000)
     logger.log_step_complete("upload_pages", duration_ms)
-    logger.log_info(f"Uploaded {len(json_files)} pages for client {client_id}")
+    logger.log_info(f"Uploaded {results['success']} pages")
     
     return {
         "client_id": client_id,
-        "page_count": len(json_files),
+        "results": results,
     }

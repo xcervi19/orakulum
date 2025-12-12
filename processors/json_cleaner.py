@@ -1,10 +1,14 @@
-import json
-import re
-from pathlib import Path
-from typing import Any, Dict, List, Union
+"""
+JSON Cleaner
 
-# Default directory for transformed JSON files
-TRANSFORMED_DIR = "transformed"
+Removes markdown artifacts from JSON text nodes.
+"""
+
+import os
+import re
+import json
+from pathlib import Path
+from typing import Dict, List, Any, Union
 
 
 def clean_text(text: str) -> str:
@@ -51,69 +55,93 @@ def clean_node(node: Union[Dict, List, Any]) -> Union[Dict, List, Any]:
         return node
     
     elif isinstance(node, list):
-        # Recursively process all items
         return [clean_node(item) for item in node]
     
     else:
-        # Return primitive values as-is
         return node
 
 
-def clean_json_file(file_path: Path) -> bool:
+def clean_markdown_artifacts(data: Union[Dict, List]) -> Union[Dict, List]:
     """
-    Clean markdown artifacts from a single JSON file.
-    Returns True if successful, False otherwise.
+    Clean markdown artifacts from JSON data.
+    
+    Args:
+        data: JSON data (dict or list)
+        
+    Returns:
+        Cleaned JSON data
+    """
+    return clean_node(data)
+
+
+def clean_json_file(file_path: str) -> bool:
+    """
+    Clean a single JSON file in place.
+    
+    Args:
+        file_path: Path to JSON file
+        
+    Returns:
+        True if successful
     """
     try:
-        # Load JSON
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Clean all text nodes
-        cleaned_data = clean_node(data)
+        cleaned = clean_markdown_artifacts(data)
         
-        # Save back to same file
         with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(cleaned_data, f, ensure_ascii=False, indent=2)
+            json.dump(cleaned, f, ensure_ascii=False, indent=2)
         
         return True
-    
     except Exception as e:
-        print(f"   ❌ Error processing {file_path.name}: {e}")
+        print(f"   ❌ Error cleaning {file_path}: {e}")
         return False
 
 
-def clean_directory(directory: str = TRANSFORMED_DIR) -> int:
+def clean_json_directory(directory: str, pattern: str = "*.json") -> Dict[str, Any]:
     """
     Clean all JSON files in a directory.
-    Returns count of successfully cleaned files.
+    
+    Args:
+        directory: Directory with JSON files
+        pattern: Glob pattern for files
+        
+    Returns:
+        Summary dict with counts
     """
     dir_path = Path(directory)
-    json_files = sorted(dir_path.glob("*.json"))
+    
+    if not dir_path.exists():
+        print(f"❌ Directory not found: {directory}")
+        return {"total": 0, "success": 0, "failed": 0}
+    
+    json_files = sorted(dir_path.glob(pattern))
     
     if not json_files:
-        print(f"❌ No JSON files found in {directory}")
-        return 0
+        print(f"❌ No {pattern} files found in {directory}")
+        return {"total": 0, "success": 0, "failed": 0}
     
     print(f"📁 Found {len(json_files)} JSON files in {directory}")
     
-    cleaned_count = 0
-    for json_file in json_files:
-        if clean_json_file(json_file):
-            print(f"   ✅ Cleaned {json_file.name}")
-            cleaned_count += 1
+    results = {"total": len(json_files), "success": 0, "failed": 0}
     
-    print(f"\n✨ Done! Cleaned {cleaned_count}/{len(json_files)} files")
-    return cleaned_count
+    for json_file in json_files:
+        if clean_json_file(str(json_file)):
+            results["success"] += 1
+            print(f"   ✅ Cleaned {json_file.name}")
+        else:
+            results["failed"] += 1
+    
+    print(f"\n✨ Cleaned {results['success']}/{results['total']} files")
+    return results
 
 
 if __name__ == "__main__":
     import argparse
     
-    parser = argparse.ArgumentParser(description="Clean markdown artifacts from JSON files")
-    parser.add_argument("--directory", "-d", default=TRANSFORMED_DIR,
-                        help=f"Directory with JSON files (default: {TRANSFORMED_DIR})")
+    parser = argparse.ArgumentParser(description="Clean markdown artifacts from JSON")
+    parser.add_argument("--directory", "-d", required=True, help="Directory with JSON files")
     
     args = parser.parse_args()
-    clean_directory(args.directory)
-
+    clean_json_directory(args.directory)

@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-Daily Pipeline Runner
+Orakulum Pipeline Runner
 
-Orchestrates the full career-plan generation pipeline:
+Automated end-to-end career-plan generation pipeline:
 1. Fetches flagged leads from Supabase
 2. Processes each lead through all pipeline steps
 3. Uploads final content to client_learning_pages
 
 Usage:
-    python3 daily_runner.py                    # Process all flagged leads
-    python3 daily_runner.py --client CLIENT_ID # Process specific client
-    python3 daily_runner.py --dry-run          # Show what would be processed
-    python3 daily_runner.py --resume CLIENT_ID # Resume failed processing
+    python3 run_pipeline.py                    # Process all flagged leads
+    python3 run_pipeline.py --client CLIENT_ID # Process specific client
+    python3 run_pipeline.py --dry-run          # Preview without processing
+    python3 run_pipeline.py --resume CLIENT_ID # Resume failed processing
 """
 
 import argparse
@@ -39,7 +39,7 @@ from pipeline.steps import (
     clean_json,
     upload_pages,
 )
-from pipeline.logging_utils import PipelineLogger, setup_run_directory
+from pipeline.logger import PipelineLogger, setup_run_directory
 
 
 MAX_RETRIES = 3
