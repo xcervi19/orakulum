@@ -1,0 +1,39 @@
+<section data-ui="block">
+  <header data-ui="section-header">
+    <h2 data-ui="heading">Název kroku: Pokročilé techniky programování a optimalizace kódu pro digitální marketing a grafiku</h2>
+  </header>
+  <p data-ui="paragraph"><strong>Hlavní záměr:</strong> Zlepšení efektivity a kvality kódu v digitálním marketingu a grafických aplikacích</p>
+  <div data-ui="tasks">
+    <p data-ui="paragraph"><strong>Obsah kroku:</strong></p>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Detailní vysvětlení tématu: V digitálním marketingu a grafice je kritické zajistit, aby aplikace a kód byly nejen funkční, ale také efektivní a optimalizované. Optimalizace přispívá k rychlejšímu načítání stránek, plynulejším interakcím a lepší uživatelské zkušenosti.</li>
+      <li data-ui="list-item">Příklady: Představte si, že máte webovou stránku s bohatými grafickými prvky. Optimalizace kódu může zahrnovat kompresi obrázků, lazy loading pro zlepšení rychlosti načítání nebo využití CDN pro rychlejší dodání obsahu.</li>
+      <li data-ui="list-item">Případové studie nebo modelové situace: Například redesign webu pro e-commerce platformu, kde byla snížena velikost obrázků, optimalizovány skripty a stránka se načítá o 2 sekundy rychleji, což vedlo ke zvýšení konverzí o 15 %.</li>
+      <li data-ui="list-item">
+        <div data-ui="qa-block">
+          <p data-ui="question">Typické pohovorové otázky a optimální odpovědi: "Jak byste optimalizoval webové stránky pro lepší výkon?"</p>
+          <p data-ui="answer">Odpověď: "Začal bych analýzou stávajícího výkonu pomocí nástrojů jako Google PageSpeed Insights. Následně bych implementoval optimalizace jako minifikaci CSS a JavaScriptu, kompresi obrázků a využití cache."</p>
+        </div>
+      </li>
+      <li data-ui="list-item">Mini úkoly nebo praktická cvičení: Vyberte si webovou stránku a změřte její výkon. Identifikujte tři oblasti pro optimalizaci a proveďte je. Porovnejte výsledky před a po optimalizaci.</li>
+      <li data-ui="list-item">Návaznost na krok n-1: Po aplikaci základních znalostí na složitější úkoly nyní přistupujeme k optimalizaci těchto aplikací pro reálné podmínky a lepší výsledky.</li>
+    </ul>
+  </div>
+  <section data-ui="tasks">
+    <h3 data-ui="heading">Praktická část:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Navrhněte a implementujte jednoduchý skript pro lazy loading obrázků na webové stránce. Tento skript by měl detekovat, kdy se obrázek objeví v zorném poli uživatele, a teprve poté jej načíst.</li>
+    </ul>
+  </section>
+  <section data-ui="metric-list">
+    <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="metric">Měřitelné zlepšení rychlosti načítání webových stránek o nejméně 20 %.</li>
+      <li data-ui="metric">Zvýšení uživatelské spokojenosti, což se může projevit v nižším bounce rate nebo vyšší době strávené na stránce.</li>
+    </ul>
+  </section>
+  <section data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <p data-ui="paragraph">Prozkoumejte využití umělé inteligence v optimalizaci grafického obsahu. Například pomocí AI generovat a optimalizovat obrázky pro různé platformy dynamicky podle zařízení nebo uživatelských preferencí. Tato technika může přinést revoluci v přizpůsobení obsahu pro individuální uživatelské zkušenosti.</p>
+  </section>
+</section>

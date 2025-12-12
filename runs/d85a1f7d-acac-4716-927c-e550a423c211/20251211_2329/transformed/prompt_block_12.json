@@ -1,0 +1,414 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Finanční gramotnost a řízení zdrojů"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Hlavní záměr: Efektivní řízení finančních a materiálních zdrojů v rámci projektů."
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "section",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Obsah kroku:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Detailní vysvětlení tématu:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Finanční gramotnost v digitálním marketingu a grafice zahrnuje schopnost plánovat, sledovat a hodnotit finanční aspekty projektů. Zahrnuje porozumění základním pojmům jako je rozpočet, náklady, návratnost investic (ROI) a jejich aplikaci na marketingové kampaně a grafické projekty."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Příklady:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Například při plánování online reklamní kampaně je třeba stanovit rozpočet na PPC (pay-per-click) reklamy, předpovědět potenciální návratnost na základě analýzy klíčových slov a konkurenčních nabídek."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Případové studie nebo modelové situace:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Analyzujte úspěšnou kampaň na sociálních médiích, kde byl rozpočet efektivně alokován mezi různé kanály, což vedlo k vyššímu ROI. Rozložte náklady a strategické rozhodnutí, které vedly k úspěchu."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Typické pohovorové otázky a optimální odpovědi:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "ul",
+                        "ui": "bullet-list",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "question",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "\"Jak byste přistoupili k rozpočtování pro novou digitální kampaň?\""
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "answer",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Odpovězte, že začnete segmentací cílového trhu, analýzou dostupných dat a historických výdajů, abyste vytvořili realistický a efektivní rozpočet."
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "li",
+                            "ui": "list-item",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "question",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "\"Jak měříte návratnost investic v grafickém projektu?\""
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "answer",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Odpovězte, že pomocí metrik jako je náklad na akvizici zákazníka (CAC) a celoživotní hodnota zákazníka (CLV), s důrazem na vizuální analýzu dat."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Mini úkoly nebo praktická cvičení:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Vytvořte jednoduchý rozpočet pro fiktivní marketingovou kampaň, simulujte změny v alokaci zdrojů a vyhodnoťte jejich dopad na celkový rozpočet a ROI."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Návaznost na krok n-1:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " V předchozím kroku jste se naučili, jak použít adaptabilitu k efektivnímu řízení zdrojů. Nyní aplikujte tyto dovednosti na finanční aspekty a optimalizaci rozpočtů."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "section",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Praktická část:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Diagram:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Vytvoření Ganttova diagramu pro plánování a sledování finančních výdajů v kampani."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Strukturovaný problém:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Navrhněte, jak optimalizovat rozpočet kampaně s omezenými zdroji a maximálním dopadem na cílovou skupinu."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "section",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ukazatele úspěchu:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Schopnost vytvořit a udržet rozpočet, který zůstává v plánovaném rozsahu."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Prokázaná návratnost investic ve vašich projektech, doložená analýzou a metrikami."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Naučte se, jak aplikovat principy udržitelnosti v řízení zdrojů pro dlouhodobý úspěch. Propojíte digitální marketing s environmentálními a sociálními aspekty, například optimalizací zdrojů pro snížení uhlíkové stopy reklamních kampaní nebo podporou grafiky, která komunikuje udržitelné hodnoty."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,225 @@
+<blok-1>
+Název kroku: Základy JavaScriptu a moderních frameworků
+Cíl kroku: Získání solidní základny v JavaScriptu a schopnost pracovat s moderními technologiemi.
+Co přesně projít:
+- Syntaxe JavaScriptu, DOM manipulace, funkcionální programování
+- Asynchronous JavaScript: Promises, async/await
+- Základní práce s frameworky jako React nebo Angular
+Jak poznám, že mám krok splněný:
+- Schopnost napsat jednoduchou aplikaci využívající JavaScript a alespoň jeden moderní framework
+<inner-block-1>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak lze JavaScript využít pro tvorbu interaktivních vizualizací dat nebo her.
+<end-inner-block-1>
+<end-blok-1>
+
+<blok-2>
+Název kroku: Pokročilé techniky programování a optimalizace kódu
+Cíl kroku: Zlepšení efektivity a kvality kódu.
+Co přesně projít:
+- Optimalizace výkonu, paměti a časové složitosti
+- Testování kódu: Unit a integration testing s využitím nástrojů jako Jest
+- Refaktoring pro čitelný a udržovatelný kód
+- Předchozí krok: Aplikace znalostí základů na složitější úkoly a projekty
+Jak poznám, že mám krok splněný:
+- Schopnost identifikovat a optimalizovat oblasti v kódu, které mohou být vylepšeny
+<inner-block-2>
+Bonus / laterální rozšíření:
+- Naučte se používat techniky jako memoization pro zvýšení efektivity v reálných aplikacích.
+<end-inner-block-2>
+<end-blok-2>
+
+<blok-3>
+Název kroku: Měkké dovednosti a týmová spolupráce
+Cíl kroku: Zvýšení schopnosti efektivně komunikovat a spolupracovat v týmu.
+Co přesně projít:
+- Aktivní naslouchání a zpětná vazba
+- Facilitace schůzek a řešení konfliktů
+- Předchozí krok: Aplikace technik na týmové projekty, které využívají optimalizovaný kód
+Jak poznám, že mám krok splněný:
+- Pozitivní zpětná vazba od členů týmu na vaši komunikaci a spolupráci
+<inner-block-3>
+Bonus / laterální rozšíření:
+- Prozkoumejte techniky koučování a mentoringu pro rozvoj členů týmu.
+<end-inner-block-3>
+<end-blok-3>
+
+<blok-4>
+Název kroku: Strategické myšlení a plánování projektů
+Cíl kroku: Schopnost plánovat a realizovat projekty s ohledem na obchodní cíle.
+Co přesně projít:
+- Principy projektového řízení: Scrum, Kanban
+- Nastavení cílů a měření úspěchu projektu
+- Předchozí krok: Integrace měkkých dovedností do strategického plánování
+Jak poznám, že mám krok splněný:
+- Úspěšně naplánovaný a realizovaný projekt s jasně definovanými cíli a metrikami úspěchu
+<inner-block-4>
+Bonus / laterální rozšíření:
+- Naučte se, jak analyzovat a řídit rizika v projektech pro minimalizaci potenciálních problémů.
+<end-inner-block-4>
+<end-blok-4>
+
+<blok-5>
+Název kroku: Kreativní řešení problémů
+Cíl kroku: Posílení schopnosti inovativně přistupovat k výzvám a nalézat originální řešení.
+Co přesně projít:
+- Techniky kreativního myšlení: Brainstorming, mind mapping
+- Design thinking: Empathy, Define, Ideate, Prototype, Test
+- Předchozí krok: Aplikace strategického myšlení na kreativní procesy
+Jak poznám, že mám krok splněný:
+- Vyřešení komplexního problému pomocí kreativních metod s pozitivním dopadem na projekt
+<inner-block-5>
+Bonus / laterální rozšíření:
+- Vyzkoušejte si řešení problémů z jiných oborů, jako je design nebo marketing, pro rozšíření svého pohledu.
+<end-inner-block-5>
+<end-blok-5>
+
+<blok-6>
+Název kroku: Analytické dovednosti a datová gramotnost
+Cíl kroku: Efektivní využití dat pro podporu rozhodování a optimalizaci procesů.
+Co přesně projít:
+- Základy statistiky a analýzy dat
+- Nástroje pro zpracování dat: Excel, SQL, Tableau
+- Předchozí krok: Použití analytických dovedností pro evaluaci a zlepšení kreativních řešení
+Jak poznám, že mám krok splněný:
+- Schopnost analyzovat data a použít je k informovaným rozhodnutím v rámci projektů
+<inner-block-6>
+Bonus / laterální rozšíření:
+- Naučte se, jak vizualizovat data pro lepší komunikaci s týmem a klienty.
+<end-inner-block-6>
+<end-blok-6>
+
+<blok-7>
+Název kroku: Vedení týmu a rozvoj leadershipu
+Cíl kroku: Ovládnutí klíčových aspektů efektivního vedení týmu.
+Co přesně projít:
+- Styly vedení a jejich aplikace
+- Rozvoj týmu a motivace členů
+- Předchozí krok: Integrace analytických dovedností do rozhodovacích procesů v rámci vedení týmu
+Jak poznám, že mám krok splněný:
+- Schopnost vést tým k dosažení cílů s pozitivní zpětnou vazbou na váš styl vedení
+<inner-block-7>
+Bonus / laterální rozšíření:
+- Prozkoumejte principy emoční inteligence a jejich aplikaci ve vedení týmu.
+<end-inner-block-7>
+<end-blok-7>
+
+<blok-8>
+Název kroku: Networking a budování profesionálních vztahů
+Cíl kroku: Vytvoření silné sítě profesionálních kontaktů pro podporu kariérního růstu.
+Co přesně projít:
+- Techniky efektivního networkingu
+- Budování a udržování dlouhodobých vztahů
+- Předchozí krok: Využití leadershipu pro rozšíření své profesionální sítě
+Jak poznám, že mám krok splněný:
+- Navázání několika nových profesionálních kontaktů, které mohou přispět k rozvoji vaší kariéry
+<inner-block-8>
+Bonus / laterální rozšíření:
+- Naučte se, jak využít sociální sítě pro podporu osobní značky a kariérního růstu.
+<end-inner-block-8>
+<end-blok-8>
+
+<blok-9>
+Název kroku: Pokročilá prezentace a storytelling
+Cíl kroku: Umět efektivně prezentovat a sdílet myšlenky, projekty a výsledky.
+Co přesně projít:
+- Techniky úspěšného storytellingu
+- Využití vizuálních pomůcek a prezentací
+- Předchozí krok: Aplikace networkingových dovedností k prezentaci svých projektů a nápadů
+Jak poznám, že mám krok splněný:
+- Prezentace, která zaujme publikum a získá pozitivní zpětnou vazbu
+<inner-block-9>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak může být humor efektivně použit v prezentacích pro zvýšení jejich dopadu.
+<end-inner-block-9>
+<end-blok-9>
+
+<blok-10>
+Název kroku: Digitální transformace a inovace
+Cíl kroku: Schopnost řídit inovativní projekty a přizpůsobit se digitálním změnám.
+Co přesně projít:
+- Trendy a technologie digitální transformace
+- Inovativní myšlení a řízení změn
+- Předchozí krok: Využití storytellingu pro komunikaci digitálních inovací
+Jak poznám, že mám krok splněný:
+- Realizace projektu, který přináší inovaci nebo digitální změnu s měřitelným přínosem
+<inner-block-10>
+Bonus / laterální rozšíření:
+- Prozkoumejte případy digitální transformace v jiných odvětvích pro inspiraci a nové nápady.
+<end-inner-block-10>
+<end-blok-10>
+
+<blok-11>
+Název kroku: Adaptabilita a kontinuální učení
+Cíl kroku: Zajištění schopnosti rychle se přizpůsobovat novým podmínkám a technologiím.
+Co přesně projít:
+- Techniky rychlého učení a adaptace
+- Osvojení návyků pro celoživotní vzdělávání
+- Předchozí krok: Aplikace inovativního myšlení k osvojení nových technologií
+Jak poznám, že mám krok splněný:
+- Schopnost rychle se naučit a přizpůsobit nové technologii nebo metodě
+<inner-block-11>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak může mindfulness přispět ke zlepšení schopnosti adaptace a učení.
+<end-inner-block-11>
+<end-blok-11>
+
+<blok-12>
+Název kroku: Finanční gramotnost a řízení zdrojů
+Cíl kroku: Efektivní řízení finančních a materiálních zdrojů v rámci projektů.
+Co přesně projít:
+- Základy finančního řízení: rozpočty, náklady, návratnost investic
+- Nástroje pro řízení zdrojů a optimalizaci
+- Předchozí krok: Použití adaptability k efektivnímu řízení zdrojů v rámci měnících se podmínek
+Jak poznám, že mám krok splněný:
+- Úspěšné řízení projektu v rámci daného rozpočtu a zdrojů s prokázanou návratností
+<inner-block-12>
+Bonus / laterální rozšíření:
+- Naučte se, jak aplikovat principy udržitelnosti v řízení zdrojů pro dlouhodobý úspěch.
+<end-inner-block-12>
+<end-blok-12>
+
+<blok-13>
+Název kroku: Kultivace osobní značky
+Cíl kroku: Budování a propagace silné osobní značky pro zvýšení kariérních příležitostí.
+Co přesně projít:
+- Definování a komunikace osobní značky
+- Využití online platforem a médií pro propagaci
+- Předchozí krok: Využití finanční gramotnosti k investování do osobní značky
+Jak poznám, že mám krok splněný:
+- Získání většího povědomí a uznání ve vašem oboru díky osobní značce
+<inner-block-13>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak může být storytelling použit pro posílení vaší osobní značky.
+<end-inner-block-13>
+<end-blok-13>
+
+<blok-14>
+Název kroku: Vyjednávací dovednosti a zvládání konfliktů
+Cíl kroku: Schopnost efektivně vyjednávat a řešit konflikty pro dosažení win-win situací.
+Co přesně projít:
+- Techniky vyjednávání a kompromisu
+- Řešení konfliktů: analýza situace a strategie
+- Předchozí krok: Využití osobní značky při vyjednávání a řešení konfliktů
+Jak poznám, že mám krok splněný:
+- Úspěšné dosažení dohody v náročné situaci s pozitivním výsledkem pro všechny strany
+<inner-block-14>
+Bonus / laterální rozšíření:
+- Prozkoumejte různé kulturní přístupy k vyjednávání a jak se adaptovat v mezinárodním prostředí.
+<end-inner-block-14>
+<end-blok-14>
+
+<blok-15>
+Název kroku: Přechod na leadership a strategické řízení
+Cíl kroku: Připravenost pro přechod na vedoucí pozici a řízení organizace.
+Co přesně projít:
+- Strategické řízení a rozhodování
+- Vedení organizace: vize, kultura, změna
+- Předchozí krok: Integrace vyjednávacích dovedností do strategického řízení
+Jak poznám, že mám krok splněný:
+- Připravenost a sebevědomí pro převzetí vedoucí role s jasnou vizí a strategií
+<inner-block-15>
+Bonus / laterální rozšíření:
+- Učte se od dalších lídrů: mentoring a získávání různých perspektiv pro vlastní rozvoj.
+<end-inner-block-15>
+<end-blok-15>

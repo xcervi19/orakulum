@@ -1,0 +1,50 @@
+<section data-ui="block">
+  <header data-ui="section-header">
+    <h2 data-ui="heading">Název kroku: Kultivace osobní značky</h2>
+    <p data-ui="paragraph">Hlavní záměr: Budování a propagace silné osobní značky pro zvýšení kariérních příležitostí.</p>
+  </header>
+  <div data-ui="block">
+    <h3 data-ui="heading">Obsah kroku:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Detailní vysvětlení tématu: Osobní značka v digitálním marketingu a grafice je vaším profesionálním otiskem, který vás odlišuje od ostatních. Jde o konzistentní prezentaci vašich hodnot, dovedností, a projektů. V digitálním světě je důležité, aby vaše osobní značka rezonovala napříč různými médii a platformami.</li>
+      <li data-ui="list-item">Příklady: Vytvořte si profesionální portfolio na platformách jako Behance nebo Dribbble, kde ukážete své nejlepší projekty. Na LinkedIn pravidelně sdílejte články a myšlenky týkající se trendů v digitálním marketingu a grafice. Můžete také psát blogy na Medium a sdílet své znalosti a zkušenosti.</li>
+      <li data-ui="list-item">Případové studie nebo modelové situace: Zvažte úspěšné osobnosti jako je Jessica Walsh, grafická designérka, která kombinovala osobní branding s kreativními projekty, čímž se stala známou v oboru. Analyzujte, jak její osobní značka pomohla k rozšíření její kariéry.</li>
+      <li data-ui="list-item">Typické pohovorové otázky a optimální odpovědi:</li>
+      <ul data-ui="bullet-list">
+        <li data-ui="list-item">
+          <div data-ui="qa-block">
+            <p data-ui="question">"Jak vaše osobní značka ovlivňuje vaši práci v digitálním marketingu a grafice?"</p>
+            <p data-ui="answer">Odpovězte, že vaše osobní značka vám pomáhá lépe komunikovat s klienty a kolegy, protože jasně definuje vaše hodnoty a přístup k práci.</p>
+          </div>
+        </li>
+        <li data-ui="list-item">
+          <div data-ui="qa-block">
+            <p data-ui="question">"Můžete nám ukázat, jak jste propagovali svou osobní značku online?"</p>
+            <p data-ui="answer">Připravte si konkrétní příklady, například příspěvky na sociálních sítích, které získaly vysokou míru zapojení.</p>
+          </div>
+        </li>
+      </ul>
+      <li data-ui="list-item">Mini úkoly nebo praktická cvičení: Vytvořte si osobní SWOT analýzu k identifikaci svých silných a slabých stránek. Zjistěte, jak tyto poznatky můžete použít k posílení své osobní značky.</li>
+      <li data-ui="list-item">Návaznost na krok n-1: Využití finanční gramotnosti k investování do osobní značky vám pomohlo určit rozpočet na samostatné projekty nebo další vzdělávání. Nyní tyto investice využijte k posílení svého profesního profilu.</li>
+    </ul>
+  </div>
+  <div data-ui="block">
+    <h3 data-ui="heading">Praktická část:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Workshop na vytvoření profesionálního portfolia: Použijte nástroje jako Adobe Portfolio nebo Wix. Připravte strukturu, která obsahuje úvod, vaše projekty, kontaktní informace a sekci o vás.</li>
+      <li data-ui="list-item">Diagram: Vytvořte myšlenkovou mapu, která zobrazuje hodnoty a dovednosti, které chcete komunikovat prostřednictvím své osobní značky.</li>
+    </ul>
+  </div>
+  <div data-ui="block">
+    <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+    <ul data-ui="metric-list">
+      <li data-ui="metric">Zvýšení počtu sledujících na profesionálních platformách o 30% během 6 měsíců.</li>
+      <li data-ui="metric">Pozvání na alespoň jednu konferenci nebo workshop jako řečník či panelista.</li>
+      <li data-ui="metric">Nárůst počtu osob, které se s vámi spojí na LinkedIn díky vaší aktivní účasti a sdílení obsahu.</li>
+    </ul>
+  </div>
+  <div data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <p data-ui="paragraph">Prozkoumejte, jak může být storytelling použit pro posílení vaší osobní značky. V digitálním marketingu a grafice může být vyprávění příběhů silným nástrojem pro vytváření emocionálního spojení s publikem. Zkuste integrovat osobní anekdoty nebo příběhy do své profesionální prezentace, abyste vytvořili autentický a zapamatovatelný obraz.</p>
+  </div>
+</section>

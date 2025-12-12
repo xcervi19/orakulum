@@ -1,0 +1,52 @@
+<section data-ui="block">
+    <header data-ui="section-header">
+        <h2 data-ui="heading">Název kroku: Finanční gramotnost a řízení zdrojů</h2>
+    </header>
+    <div data-ui="section">
+        <p data-ui="paragraph">Hlavní záměr: Efektivní řízení finančních a materiálních zdrojů v rámci projektů.</p>
+        <div data-ui="section">
+            <h3 data-ui="heading">Obsah kroku:</h3>
+            <ul data-ui="bullet-list">
+                <li data-ui="list-item"><strong>Detailní vysvětlení tématu:</strong> Finanční gramotnost v digitálním marketingu a grafice zahrnuje schopnost plánovat, sledovat a hodnotit finanční aspekty projektů. Zahrnuje porozumění základním pojmům jako je rozpočet, náklady, návratnost investic (ROI) a jejich aplikaci na marketingové kampaně a grafické projekty.</li>
+                <li data-ui="list-item"><strong>Příklady:</strong> Například při plánování online reklamní kampaně je třeba stanovit rozpočet na PPC (pay-per-click) reklamy, předpovědět potenciální návratnost na základě analýzy klíčových slov a konkurenčních nabídek.</li>
+                <li data-ui="list-item"><strong>Případové studie nebo modelové situace:</strong> Analyzujte úspěšnou kampaň na sociálních médiích, kde byl rozpočet efektivně alokován mezi různé kanály, což vedlo k vyššímu ROI. Rozložte náklady a strategické rozhodnutí, které vedly k úspěchu.</li>
+                <li data-ui="list-item"><strong>Typické pohovorové otázky a optimální odpovědi:</strong>
+                    <ul data-ui="bullet-list">
+                        <li data-ui="list-item">
+                            <p data-ui="question">"Jak byste přistoupili k rozpočtování pro novou digitální kampaň?"</p>
+                            <p data-ui="answer">Odpovězte, že začnete segmentací cílového trhu, analýzou dostupných dat a historických výdajů, abyste vytvořili realistický a efektivní rozpočet.</p>
+                        </li>
+                        <li data-ui="list-item">
+                            <p data-ui="question">"Jak měříte návratnost investic v grafickém projektu?"</p>
+                            <p data-ui="answer">Odpovězte, že pomocí metrik jako je náklad na akvizici zákazníka (CAC) a celoživotní hodnota zákazníka (CLV), s důrazem na vizuální analýzu dat.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li data-ui="list-item"><strong>Mini úkoly nebo praktická cvičení:</strong> Vytvořte jednoduchý rozpočet pro fiktivní marketingovou kampaň, simulujte změny v alokaci zdrojů a vyhodnoťte jejich dopad na celkový rozpočet a ROI.</li>
+                <li data-ui="list-item"><strong>Návaznost na krok n-1:</strong> V předchozím kroku jste se naučili, jak použít adaptabilitu k efektivnímu řízení zdrojů. Nyní aplikujte tyto dovednosti na finanční aspekty a optimalizaci rozpočtů.</li>
+            </ul>
+        </div>
+        <div data-ui="section">
+            <h3 data-ui="heading">Praktická část:</h3>
+            <ul data-ui="bullet-list">
+                <li data-ui="list-item"><strong>Diagram:</strong> Vytvoření Ganttova diagramu pro plánování a sledování finančních výdajů v kampani.</li>
+                <li data-ui="list-item"><strong>Strukturovaný problém:</strong> Navrhněte, jak optimalizovat rozpočet kampaně s omezenými zdroji a maximálním dopadem na cílovou skupinu.</li>
+            </ul>
+        </div>
+        <div data-ui="section">
+            <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+            <ul data-ui="bullet-list">
+                <li data-ui="list-item">Schopnost vytvořit a udržet rozpočet, který zůstává v plánovaném rozsahu.</li>
+                <li data-ui="list-item">Prokázaná návratnost investic ve vašich projektech, doložená analýzou a metrikami.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section data-ui="block">
+    <header data-ui="section-header">
+        <h2 data-ui="heading">Bonus / laterální rozšíření:</h2>
+    </header>
+    <div data-ui="section">
+        <p data-ui="paragraph">Naučte se, jak aplikovat principy udržitelnosti v řízení zdrojů pro dlouhodobý úspěch. Propojíte digitální marketing s environmentálními a sociálními aspekty, například optimalizací zdrojů pro snížení uhlíkové stopy reklamních kampaní nebo podporou grafiky, která komunikuje udržitelné hodnoty.</p>
+    </div>
+</section>

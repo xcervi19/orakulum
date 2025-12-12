@@ -1,0 +1,400 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "h2",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Název kroku: Networking a budování profesionálních vztahů"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Vytvoření silné sítě profesionálních kontaktů pro podporu kariérního růstu v digitálním marketingu a grafice."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Detailní vysvětlení tématu:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Networking je klíčovým prvkem kariérního růstu v digitálním marketingu a grafice. Jedná se o strategické vytváření a udržování vztahů, které mohou vést k novým příležitostem, spolupráci a sdílení znalostí. V tomto oboru je důležité být viditelný a aktivní v komunitě, což vám může pomoci udržet krok s nejnovějšími trendy a technologiemi."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Příklady:"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ul",
+                    "ui": "bullet-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Technický: Účast na webinářích a online konferencích zaměřených na digitální marketing, kde můžete přímo komunikovat s předními odborníky a kolegy."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Analogický: Představte si networking jako péči o zahradu – vyžaduje pravidelnou údržbu, zalévání a někdy i prořezávání, aby květiny (vaše vztahy) mohly růst a rozkvést."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Případové studie nebo modelové situace:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " Analyzujte situaci, kdy profesionál z oblasti digitálního marketingu využil LinkedIn k navázání kontaktu s klíčovým hráčem v oboru, což vedlo k získání nového projektu či zaměstnání."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "div",
+                    "ui": "qa-block",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "strong",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Typické pohovorové otázky a optimální odpovědi:"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Otázka: \"Jak získáváte nové klienty nebo projekty?\""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Odpověď: \"Kombinuji tradiční metody, jako je networking na oborových konferencích, s moderními technikami, jako je používání sociálních médií pro rozšiřování mé profesní sítě a budování osobní značky.\""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Mini úkoly nebo praktická cvičení:"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ul",
+                    "ui": "bullet-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vytvořte si seznam top 10 profesionálů v oboru digitálního marketingu a grafiky, které chcete oslovit. Připravte si osobní zprávu, kterou jim pošlete na LinkedIn, a sledujte jejich reakce."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Návaznost na krok n-1:"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " V předchozím kroku jste se naučili, jak využít leadership k rozšíření své profesionální sítě. Nyní je čas aplikovat tyto dovednosti k prohloubení a udržování těchto vztahů."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Diagram: Vytvořte myšlenkovou mapu svých současných kontaktů a identifikujte oblasti, kde můžete rozšířit svou síť."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Navázání alespoň pěti nových profesionálních kontaktů, kteří mohou přispět k rozvoji vaší kariéry."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Aktivní účast na dvou odborných akcích měsíčně, ať už virtuálních nebo fyzických."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Naučte se, jak využít sociální sítě pro podporu osobní značky a kariérního růstu. Prozkoumejte interdisciplinární přístup tím, že se zaměříte na psychologii barev v grafickém designu a jak tato znalost může ovlivnit vaši vizibilitu a interakci na platformách jako Instagram a Pinterest."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

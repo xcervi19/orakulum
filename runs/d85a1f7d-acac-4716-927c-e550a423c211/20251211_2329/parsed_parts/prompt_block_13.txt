@@ -1,0 +1,61 @@
+Vygeneruj kompletní obsah kariérního kroku s číslem [n] podle této přesné struktury:
+
+<blok-n>
+Název kroku: ...
+Hlavní záměr: ...
+Obsah kroku:
+- detailní vysvětlení tématu
+- příklady (mohou být technické, kódové, analogické, příběhové)
+- případové studie nebo modelové situace
+- typické pohovorové otázky a optimální odpovědi
+- mini úkoly nebo praktická cvičení
+- návaznost na krok n-1
+Praktická část:
+- může obsahovat kód, algoritmus, diagram, hádanku, live-coding postup nebo strukturovaný problém
+Ukazatele úspěchu:
+- měřitelné nebo jasně pozorovatelné indikátory
+<inner-block-n>
+Bonus / laterální rozšíření:
+- originální pohled, neobvyklý rámec, průnik jiných disciplín, meta-heuristika
+<end-inner-block-n>
+<end-blok-n>
+
+VSTUP:
+<<<
+Název kroku: Kultivace osobní značky
+Cíl kroku: Budování a propagace silné osobní značky pro zvýšení kariérních příležitostí.
+Co přesně projít:
+- Definování a komunikace osobní značky
+- Využití online platforem a médií pro propagaci
+- Předchozí krok: Využití finanční gramotnosti k investování do osobní značky
+Jak poznám, že mám krok splněný:
+- Získání většího povědomí a uznání ve vašem oboru díky osobní značce
+<inner-block-13>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak může být storytelling použit pro posílení vaší osobní značky.
+<end-inner-block-13>
+>>>
+
+Parametry uživatele:
+
+obor: digitální marketing a grafika
+
+seniorita: nezadanáo
+
+hlavní cíl: nezadanáo
+
+Pokyny:
+
+Vytvoř přesně jeden krok s číslem n.
+
+Obsah přizpůsob oboru a senioritě uživatele.
+
+Předávej hluboké, praktické a expertní informace.
+
+Vysvětli, jak krok přímo zvyšuje šanci uspět u pohovoru v uvedeném oboru.
+
+Buď kreativní a dovol si zahrnout kód, diagramy, případovky, mini testy atd.
+
+Bonus musí přinést originální, interdisciplinární nebo laterální vhled.
+
+Nepoužívej jiné tagy než uvedené.

@@ -1,0 +1,49 @@
+<section data-ui="block">
+  <header data-ui="section-header">
+    <h2 data-ui="heading">Název kroku: Strategické myšlení a plánování projektů v digitálním marketingu a grafice</h2>
+  </header>
+  <p data-ui="paragraph">Hlavní záměr: Schopnost plánovat a realizovat projekty v oblasti digitálního marketingu a grafiky s ohledem na obchodní cíle a potřeby klientů.</p>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h3 data-ui="heading">Obsah kroku:</h3>
+    </header>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Detailní vysvětlení tématu: V digitálním marketingu a grafice je strategické myšlení klíčové pro efektivní plánování kampaní a projektů. To zahrnuje pochopení obchodních cílů klienta a vytvoření strategie, která tyto cíle podporuje. Je důležité propojit kreativitu s datově řízeným přístupem, abyste mohli navrhnout projekty, které nejenže vypadají dobře, ale také přinášejí výsledky.</li>
+      <li data-ui="list-item">Příklady: Představte si, že pracujete na kampani pro nový produkt. Vaším úkolem je nejprve pochopit cílovou skupinu a její preference. Poté navrhnete kreativní koncept, který osloví tuto skupinu, a stanovíte klíčové metriky úspěchu, jako je počet zobrazení, míra prokliku nebo konverze.</li>
+      <li data-ui="list-item">Případové studie nebo modelové situace: Studujte úspěšné kampaně, které použily inovativní přístupy k řešení problémů, jako je například použití interaktivního obsahu nebo virální marketingové techniky.</li>
+      <li data-ui="list-item">
+        Typické pohovorové otázky a optimální odpovědi:
+        <ul data-ui="bullet-list">
+          <li data-ui="list-item">"Jak byste přistoupili k plánování kampaně pro nový produkt?" Optimální odpověď by zahrnovala výzkum trhu, definování cílové skupiny, stanovení cílů a měření úspěchu kampaně.</li>
+          <li data-ui="list-item">"Jak řešíte konflikty v týmu během projektové realizace?" Zmínit důležitost komunikace, kompromisu a zaměření na společný cíl.</li>
+        </ul>
+      </li>
+      <li data-ui="list-item">Mini úkoly nebo praktická cvičení: Vytvořte jednoduchý projektový plán pro fiktivní produktovou kampaň, zahrnující klíčové milníky, rozpočet a metriky úspěchu.</li>
+      <li data-ui="list-item">Návaznost na krok 4: Využijte měkké dovednosti, jako je komunikace a týmová spolupráce, které jste rozvinuli v předchozím kroku, pro efektivní vedení projektů.</li>
+    </ul>
+  </section>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h3 data-ui="heading">Praktická část:</h3>
+    </header>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Strukturovaný problém: Vytvořit Ganttův diagram pro projekt digitální kampaně, zahrnující všechny fáze od výzkumu až po vyhodnocení výsledků. Pomocí nástroje jako je Trello nebo Asana vytvořte vizuální plán úkolů.</li>
+    </ul>
+  </section>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+    </header>
+    <ul data-ui="metric-list">
+      <li data-ui="metric">Měřitelné nebo jasně pozorovatelné indikátory: Úspěšně naplánovaný projekt s jasně definovanými cíli, jako je zvýšení povědomí o značce o 20 % během 3 měsíců nebo dosažení 10% konverzního poměru.</li>
+    </ul>
+  </section>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    </header>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Prozkoumejte, jak designové myšlení z oblasti produktového designu může být aplikováno na strategické plánování v digitálním marketingu. Například, jak iterativní procesy testování a zpětné vazby mohou zlepšit návrh a efektivitu marketingových kampaní.</li>
+    </ul>
+  </section>
+</section>

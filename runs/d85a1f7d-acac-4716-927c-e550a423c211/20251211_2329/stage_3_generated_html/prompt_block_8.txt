@@ -1,0 +1,55 @@
+<section data-ui="block">
+  <h2 data-ui="heading">Název kroku: Networking a budování profesionálních vztahů</h2>
+  <p data-ui="paragraph">Hlavní záměr: Vytvoření silné sítě profesionálních kontaktů pro podporu kariérního růstu v digitálním marketingu a grafice.</p>
+  <div data-ui="section">
+    <h3 data-ui="section-header">Obsah kroku:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph"><strong>Detailní vysvětlení tématu:</strong> Networking je klíčovým prvkem kariérního růstu v digitálním marketingu a grafice. Jedná se o strategické vytváření a udržování vztahů, které mohou vést k novým příležitostem, spolupráci a sdílení znalostí. V tomto oboru je důležité být viditelný a aktivní v komunitě, což vám může pomoci udržet krok s nejnovějšími trendy a technologiemi.</p>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph"><strong>Příklady:</strong></p>
+        <ul data-ui="bullet-list">
+          <li data-ui="list-item">Technický: Účast na webinářích a online konferencích zaměřených na digitální marketing, kde můžete přímo komunikovat s předními odborníky a kolegy.</li>
+          <li data-ui="list-item">Analogický: Představte si networking jako péči o zahradu – vyžaduje pravidelnou údržbu, zalévání a někdy i prořezávání, aby květiny (vaše vztahy) mohly růst a rozkvést.</li>
+        </ul>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph"><strong>Případové studie nebo modelové situace:</strong> Analyzujte situaci, kdy profesionál z oblasti digitálního marketingu využil LinkedIn k navázání kontaktu s klíčovým hráčem v oboru, což vedlo k získání nového projektu či zaměstnání.</p>
+      </li>
+      <li data-ui="list-item">
+        <div data-ui="qa-block">
+          <p data-ui="question"><strong>Typické pohovorové otázky a optimální odpovědi:</strong></p>
+          <p data-ui="question">Otázka: "Jak získáváte nové klienty nebo projekty?"</p>
+          <p data-ui="answer">Odpověď: "Kombinuji tradiční metody, jako je networking na oborových konferencích, s moderními technikami, jako je používání sociálních médií pro rozšiřování mé profesní sítě a budování osobní značky."</p>
+        </div>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph"><strong>Mini úkoly nebo praktická cvičení:</strong></p>
+        <ul data-ui="bullet-list">
+          <li data-ui="list-item">Vytvořte si seznam top 10 profesionálů v oboru digitálního marketingu a grafiky, které chcete oslovit. Připravte si osobní zprávu, kterou jim pošlete na LinkedIn, a sledujte jejich reakce.</li>
+        </ul>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph"><strong>Návaznost na krok n-1:</strong> V předchozím kroku jste se naučili, jak využít leadership k rozšíření své profesionální sítě. Nyní je čas aplikovat tyto dovednosti k prohloubení a udržování těchto vztahů.</p>
+      </li>
+    </ul>
+  </div>
+  <div data-ui="section">
+    <h3 data-ui="section-header">Praktická část:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Diagram: Vytvořte myšlenkovou mapu svých současných kontaktů a identifikujte oblasti, kde můžete rozšířit svou síť.</li>
+    </ul>
+  </div>
+  <div data-ui="section">
+    <h3 data-ui="section-header">Ukazatele úspěchu:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Navázání alespoň pěti nových profesionálních kontaktů, kteří mohou přispět k rozvoji vaší kariéry.</li>
+      <li data-ui="list-item">Aktivní účast na dvou odborných akcích měsíčně, ať už virtuálních nebo fyzických.</li>
+    </ul>
+  </div>
+  <div data-ui="section">
+    <h3 data-ui="section-header">Bonus / laterální rozšíření:</h3>
+    <p data-ui="paragraph">Naučte se, jak využít sociální sítě pro podporu osobní značky a kariérního růstu. Prozkoumejte interdisciplinární přístup tím, že se zaměříte na psychologii barev v grafickém designu a jak tato znalost může ovlivnit vaši vizibilitu a interakci na platformách jako Instagram a Pinterest.</p>
+  </div>
+</section>

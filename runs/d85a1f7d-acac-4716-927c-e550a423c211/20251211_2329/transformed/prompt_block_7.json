@@ -1,0 +1,426 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Vedení týmu a rozvoj leadershipu v digitálním marketingu a grafice"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Ovládnutí klíčových aspektů efektivního vedení týmu v oblasti digitálního marketingu a grafiky."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h2",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Obsah kroku:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Detailní vysvětlení tématu: Vedení týmu v digitálním marketingu a grafice vyžaduje nejen znalosti oboru, ale také schopnost efektivně komunikovat a motivovat členy týmu, kteří často pracují na různorodých úkolech od SEO po grafický design. Je důležité pochopit různé styly vedení, jako je demokratický, autokratický nebo transformační styl, a jak je aplikovat v závislosti na situaci a složení týmu."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Příklady: Představte si situaci, kdy vedete tým během kampaně na nový produkt. Jako vedoucí musíte nejen rozdělit úkoly podle schopností jednotlivých členů, ale také zajistit, aby všichni směřovali k jednotnému cíli a rozuměli jeho důležitosti."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Případové studie nebo modelové situace: Uvažujte o společnosti, která úspěšně přešla z tradičních médií na digitální marketing díky transformačnímu vedení. Vedoucí týmu zde použil strategii zaměřenou na vzdělávání a motivaci členů týmu k přijetí nových digitálních nástrojů."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Typické pohovorové otázky a optimální odpovědi:"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ul",
+                    "ui": "bullet-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "qa-block",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "span",
+                                "ui": "question",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "\"Jaký styl vedení preferujete a proč?\""
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "element",
+                                "tag": "span",
+                                "ui": "answer",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Odpověď by měla zahrnovat zkušenosti s různými styly a schopnost přizpůsobit styl vedení podle potřeb týmu a projektů."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "qa-block",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "span",
+                                "ui": "question",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "\"Jak motivujete svůj tým k dosažení cílů?\""
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "element",
+                                "tag": "span",
+                                "ui": "answer",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Zaměřte se na konkrétní příklady, například zavedení pravidelných brainstormingových setkání nebo používání gamifikace."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Mini úkoly nebo praktická cvičení: Vytvořte plán pro vedení fiktivní marketingové kampaně, včetně rozdělení úkolů, stanovení cílů a metrik úspěchu. Zapojte různé styly vedení a vyhodnoťte jejich efektivitu."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Návaznost na krok n-1: Integrace analytických dovedností do rozhodovacích procesů pomáhá při vyhodnocování výkonu týmu a úspěšnosti kampaní, což je klíčové pro efektivní vedení."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h2",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Praktická část:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Diagram: Vytvořte diagram znázorňující strukturu vašeho týmu a role jednotlivých členů. Ukažte, jak byste rozdělovali úkoly na základě jejich odbornosti a stylu vedení."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Strukturovaný problém: Zkuste vymyslet řešení pro situaci, kdy máte v týmu člena, který neustále zpožďuje termíny. Jak byste situaci řešili s ohledem na rozvoj týmu a jednotlivce?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h2",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ukazatele úspěchu:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "metric-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Pozitivní zpětná vazba od členů týmu na váš styl vedení."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Zvýšení efektivity týmu a dosažení stanovených cílů v rámci kampaní."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Schopnost přizpůsobit styl vedení podle situace a potřeb týmu, což bude reflektováno v úspěšnosti projektů."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h2",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Bonus / laterální rozšíření:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Prozkoumejte principy emoční inteligence a jejich aplikaci ve vedení týmu. Emoční inteligence je schopnost rozpoznat a porozumět vlastním emocím i emocím ostatních, což je klíčové pro efektivní komunikaci a motivaci v týmu. Například, v digitálním marketingu může emoční inteligence pomoci při řešení konfliktů mezi kreativními a analytickými členy týmu, což vede k lepší spolupráci a inovacím."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

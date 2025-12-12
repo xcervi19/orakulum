@@ -1,0 +1,266 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Vyjednávací dovednosti a zvládání konfliktů"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Hlavní záměr: Schopnost efektivně vyjednávat a řešit konflikty pro dosažení win-win situací."
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "section",
+            "children": [
+              {
+                "type": "element",
+                "tag": "p",
+                "ui": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Obsah kroku:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Detailní vysvětlení tématu: Vyjednávací dovednosti a schopnost zvládat konflikty jsou klíčovými kompetencemi v digitálním marketingu a grafice. Úspěšné vyjednávání zahrnuje chápání potřeb a zájmů všech zúčastněných stran, identifikaci společných cílů a navrhování kreativních řešení, která jsou prospěšná pro všechny."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Příklady: Představte si situaci, kde jako grafik potřebujete přesvědčit klienta o změně designu, který lépe odpovídá jeho značce. Použijte techniky aktivního naslouchání, reflexe a otevřených otázek k pochopení klientových obav a následně nabídněte vizuální demonstraci alternativních možností."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Případové studie: Na základě reálného projektu, kde marketingový tým musel přesvědčit vedení o změně online strategie, analyzujte použitou taktiku a dosažené výsledky. Co mohlo být uděláno jinak pro lepší výsledek?"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Typické pohovorové otázky a optimální odpovědi: Jak byste vyřešili konflikt mezi týmem návrhářů a marketingovým oddělením ohledně prioritního projektu? Odpověď: „Zaměřil bych se na facilitaci diskuse, abychom pochopili obě perspektivy, identifikovali klíčové priority a společně našli kompromis, který respektuje časové a rozpočtové omezení.“"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Mini úkoly nebo praktická cvičení: Vytvořte scénář vyjednávacího setkání mezi grafikem a klientem. Zkuste simulovat různé strategie, jako je BATNA (Best Alternative to a Negotiated Agreement) a vyhodnoťte jejich účinnost."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Návaznost na krok n-1: Využijte dovednosti osobní značky k posílení své pozice při vyjednávání. Vaše důvěryhodnost a reputace mohou být rozhodujícími faktory při přesvědčování druhé strany."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "section",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Praktická část:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Diagram: Navrhněte myšlenkovou mapu vyjednávacího procesu, která zahrnuje všechny fáze od přípravy po uzavření dohody. Diagram by měl zahrnovat klíčové otázky, které je třeba zvážit, a rozhodovací body."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Strukturovaný problém: Představte si, že váš návrh byl zamítnut klientem. Navrhněte strategii, jak znovu otevřít diskusi a dosáhnout přijatelných úprav."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "div",
+            "ui": "section",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ukazatele úspěchu:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Měřitelné indikátory: Získání pozitivní zpětné vazby od klienta po realizaci projektu, kde byly uplatněny vyjednávací techniky."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Pozorovatelné indikátory: Úspěšné zprostředkování dohody mezi interními týmy, které vedlo k harmonizaci cílů projektů."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "inner-block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Prozkoumejte různé kulturní přístupy k vyjednávání a jak se adaptovat v mezinárodním prostředí: Například v některých asijských kulturách je důraz kladen na budování dlouhodobých vztahů před samotným obchodem. Naučte se, jak tyto kulturní rozdíly mohou ovlivnit vyjednávací strategie a jak je efektivně využít při práci s mezinárodními klienty."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-n>
+Název kroku: Základy JavaScriptu a moderních frameworků v digitálním marketingu
+Hlavní záměr: Získání solidní základny v JavaScriptu a schopnost pracovat s moderními technologiemi pro zlepšení interaktivity a efektivity digitálních marketingových kampaní.
+Obsah kroku:
+- Detailní vysvětlení tématu: JavaScript je klíčovým nástrojem pro tvorbu interaktivních webových stránek a aplikací, což může výrazně zvýšit angažovanost uživatelů v digitálních marketingových kampaních. Naučte se základní syntaxi, jako jsou proměnné, funkce, smyčky a podmínky, a jak tyto koncepty uplatnit při manipulaci s Document Object Model (DOM) pro dynamické úpravy obsahu webové stránky.
+- Příklady: Představte si kampaň, kde uživatelé mohou interagovat s dynamickým obsahem, jako je personalizovaná nabídka, která se automaticky aktualizuje podle jejich chování na webu. Takového efektu dosáhnete pomocí JavaScriptu a frameworku jako React pro efektivní správu stavu aplikace.
+- Případové studie nebo modelové situace: Zvážit můžete případovou studii úspěšné marketingové kampaně, která využila JavaScript k personalizaci obsahu v reálném čase, čímž zvýšila konverzní poměr o 20 %.
+- Typické pohovorové otázky a optimální odpovědi:
+  1. Jak byste použili JavaScript k zlepšení uživatelské zkušenosti na našich webových stránkách?
+     - Odpověď: Použil bych JavaScript pro asynchronní načítání obsahu, což zkrátí dobu načítání stránky a zlepší uživatelskou zkušenost. Dále bych využil framework jako React pro jednodušší správu složitých stavů uživatelského rozhraní.
+  2. Jaký je rozdíl mezi callbacky a promisy v JavaScriptu?
+     - Odpověď: Callbacks jsou funkce předávané jako argumenty do jiných funkcí, které se vyvolají po dokončení úkolu. Promises jsou objekty, které představují dokončené nebo neúspěšné asynchronní operace a umožňují lepší kontrolu nad tokem asynchronního kódu.
+- Mini úkoly nebo praktická cvičení: Vytvořte malou dynamickou aplikaci s personalizovanou nabídkou, která se mění podle údajů z uživatelského profilu uloženého na serveru. Využijte k tomu JavaScript a React.
+- Návaznost na krok n-1: Pokud jste před tímto krokem pracovali na základech HTML a CSS, nyní můžete začlenit JavaScript pro zlepšení interaktivity a použít frameworky pro efektivnější správu složitějších aplikací.
+Praktická část:
+- Vytvořte jednoduchou aplikaci v Reactu, která zobrazuje dynamický seznam produktů na základě dat získaných asynchronně z API. Implementujte funkce pro filtrování a řazení produktů, abyste simulovali základní e-commerce prostředí.
+Ukazatele úspěchu:
+- Měřitelným indikátorem úspěchu je schopnost napsat a nasadit interaktivní webovou aplikaci, která využívá JavaScript a React, a která umožňuje uživatelům provádět personalizované interakce.
+<inner-block-n>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak lze JavaScript integrovat s nástroji pro analýzu dat, jako je D3.js, pro tvorbu interaktivních vizualizací, které mohou poskytnout cenné informace o chování uživatelů a efektivitě marketingových kampaní. To může zahrnovat vizualizace jako heatmapy, které ukazují, kde uživatelé na stránce nejčastěji klikají.
+<end-inner-block-n>
+<end-blok-n>

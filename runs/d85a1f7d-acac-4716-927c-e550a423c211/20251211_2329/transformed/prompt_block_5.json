@@ -1,0 +1,336 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "h2",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Název kroku: Kreativní řešení problémů v digitálním marketingu a grafice"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Hlavní záměr: Posílení schopnosti inovativně přistupovat k výzvám a nalézat originální řešení v oblasti digitálního marketingu a grafiky."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Detailní vysvětlení tématu: Kreativní řešení problémů je zásadní pro úspěch v digitálním marketingu a grafice, kde je třeba neustále inovovat a přizpůsobovat se měnícím se trendům a technologiím. Tato schopnost zahrnuje kombinaci kreativního myšlení, designového myšlení a aplikace strategických metod, které jste se naučili v předchozím kroku."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Příklady: V digitálním marketingu si představte situaci, kdy potřebujete zvýšit angažovanost uživatelů na sociálních sítích. Použitím techniky brainstorming můžete generovat nové způsoby interakce s publikem, jako jsou interaktivní příběhy nebo personalizovaný obsah. V grafice může být výzvou vytvořit unikátní vizuál, který zaujme. Pomocí mind mappingu rozvinete několik vizuálních konceptů, které byste mohli dále rozpracovat."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Případové studie nebo modelové situace: Uvažujte o známém případu, kdy společnost Coca-Cola úspěšně použila design thinking pro vytvoření emotivních reklamních kampaní, které rezonovaly s publikem na osobní úrovni. Tato kampaň začala s fází empatie, kdy tým opravdu pochopil své zákazníky, což vedlo k definování jasného problému a následné ideaci a testování."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "div",
+                    "ui": "qa-block",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Otázka: \"Jakým způsobem přistupujete k řešení problémů v kreativním týmu?\""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Odpověď: \"Začínám identifikací klíčových výzev a poté aplikuji design thinking proces. To zahrnuje empatii se zákazníky, definování problému, generování nápadů, vytváření prototypů a jejich testování. Tímto způsobem nacházíme inovativní a efektivní řešení.\""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "div",
+                    "ui": "tasks",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Vytvořte mind map pro kampaň nové značky, která má oslovit mladší generaci. Zaměřte se na klíčové hodnoty, které chcete komunikovat, a různé kanály, které můžete využít."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "task",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Proveďte brainstorming na téma \"Jak zvýšit organický dosah grafického obsahu na Instagramu\" a sepište 10 nápadů."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Návaznost na krok n-1: V předchozím kroku jste se naučili aplikovat strategické myšlení na kreativní procesy. Nyní, s těmito základy, budete schopni nejen strategicky plánovat, ale i kreativně řešit problémy a přicházet s inovativními řešeními."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Vytvořte prototyp digitální kampaně pro fiktivní produkt, který je zaměřený na ekologickou udržitelnost. Použijte design thinking proces a zdokumentujte každý krok tohoto procesu včetně testování prototypu. Využijte diagramy pro vizualizaci procesu a rozhodnutí."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Měřitelné nebo jasně pozorovatelné indikátory zahrnují úspěšné vyřešení komplexního problému pomocí kreativních metod s pozitivním dopadem na projekt, například zvýšení angažovanosti uživatelů o 20% nebo vytvoření grafického konceptu, který byl schválen a implementován klientem."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Prozkoumejte, jak se kreativní řešení problémů uplatňuje v jiných oborech, jako je architektura nebo psychologie, a jak tyto principy mohou obohatit váš přístup v digitálním marketingu a grafice. Například, jak architekti využívají prostorové myšlení k řešení problémů, což může inspirovat vaši práci s vizuálními prvky v marketingových kampaních."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

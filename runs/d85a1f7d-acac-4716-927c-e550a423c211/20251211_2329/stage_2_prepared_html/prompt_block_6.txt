@@ -1,0 +1,42 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-6>
+Název kroku: Analytické dovednosti a datová gramotnost
+Hlavní záměr: Efektivní využití dat pro podporu rozhodování a optimalizaci procesů v digitálním marketingu a grafice.
+Obsah kroku:
+- detailní vysvětlení tématu: Analytické dovednosti a datová gramotnost jsou klíčovými schopnostmi v digitálním marketingu a grafice. Tato oblast zahrnuje schopnost porozumět statistickým konceptům, analyzovat data z různých zdrojů a využívat je pro strategické rozhodování. Bez ohledu na senioritu mohou tyto dovednosti výrazně zvýšit vaši schopnost navrhovat efektivní kampaně a optimalizovat kreativní obsah.
+- příklady: Představte si, že pracujete na kampani pro nový produkt. Pomocí Excelu můžete analyzovat demografické údaje zákazníků, zjistit, která skupina je nejaktivnější a na základě toho cílit reklamu. Pomocí SQL můžete extrahovat data o návštěvnosti webu a identifikovat, které kanály přinášejí nejvíce konverzí. Tableau pak použijete k vizualizaci těchto údajů pro prezentaci týmu nebo klientovi.
+- případové studie nebo modelové situace: Představme si projekt, kde marketingový tým využívá datovou analýzu pro optimalizaci reklamní kampaně. Na základě dat z Google Analytics zjistili, že většina konverzí přichází z mobilních zařízení. Tým tedy upraví design a obsah reklamy tak, aby byl atraktivnější pro mobilní uživatele, což vede k 20% zvýšení konverzí.
+- typické pohovorové otázky a optimální odpovědi:
+  - Otázka: "Jak byste využili datovou analýzu k optimalizaci kampaně?"
+    - Odpověď: "Nejprve bych identifikoval klíčové metriky úspěchu, jako je míra konverze nebo engagement. Pomocí nástrojů jako Excel a SQL bych analyzoval historická data a identifikoval trendy. Poté bych využil Tableau, abych vizualizoval data pro snadnou interpretaci a rozhodování."
+- mini úkoly nebo praktická cvičení:
+  - Cvičení: Stáhněte si veřejně dostupná data o návštěvnosti webu a pokuste se identifikovat klíčové trendy pomocí Excelu a SQL.
+- návaznost na krok n-1: Použití analytických dovedností pro evaluaci a zlepšení kreativních řešení se přímo promítá do schopnosti vytvářet datově podložené strategie.
+
+Praktická část:
+- Vytvořte jednoduchou databázi pomocí SQL, kde budete ukládat data o zákaznících a jejich interakcích s vašimi kampaněmi. Poté vytvořte dotaz, který identifikuje nejúspěšnější marketingový kanál.
+
+Ukazatele úspěchu:
+- Schopnost analyzovat data a použít je k informovaným rozhodnutím v rámci projektů.
+- Zvýšená efektivita kampaní díky optimalizaci na základě datových analýz.
+
+<inner-block-6>
+Bonus / laterální rozšíření:
+- Naučte se, jak vizualizovat data pro lepší komunikaci s týmem a klienty, a to nejen pomocí běžných grafů, ale také pomocí infografik, které kombinují prvky grafického designu a datové analýzy pro maximální vizuální dopad.
+<end-inner-block-6>
+<end-blok-6>

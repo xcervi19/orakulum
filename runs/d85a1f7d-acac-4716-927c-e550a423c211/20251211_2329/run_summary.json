@@ -1,0 +1,56 @@
+{
+  "client_id": "d85a1f7d-acac-4716-927c-e550a423c211",
+  "run_dir": "runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329",
+  "started_at": "2025-12-11T22:29:11.412598",
+  "completed_at": "2025-12-11T22:36:43.360987",
+  "status": "completed",
+  "steps": [
+    {
+      "name": "input_transform",
+      "status": "completed",
+      "duration_ms": 7072
+    },
+    {
+      "name": "plan_prompt",
+      "status": "completed",
+      "duration_ms": 35289
+    },
+    {
+      "name": "generate_blocks",
+      "status": "completed",
+      "duration_ms": 118
+    },
+    {
+      "name": "stage2_expand",
+      "status": "completed",
+      "duration_ms": 268192
+    },
+    {
+      "name": "prep_html",
+      "status": "completed",
+      "duration_ms": 78
+    },
+    {
+      "name": "stage3_html",
+      "status": "completed",
+      "duration_ms": 135161
+    },
+    {
+      "name": "html_to_json",
+      "status": "completed",
+      "duration_ms": 1121
+    },
+    {
+      "name": "clean_json",
+      "status": "completed",
+      "duration_ms": 43
+    },
+    {
+      "name": "upload_pages",
+      "status": "completed",
+      "duration_ms": 3474
+    }
+  ],
+  "errors": [],
+  "total_duration_seconds": 451.948389
+}

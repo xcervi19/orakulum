@@ -1,0 +1,61 @@
+Vygeneruj kompletní obsah kariérního kroku s číslem [n] podle této přesné struktury:
+
+<blok-n>
+Název kroku: ...
+Hlavní záměr: ...
+Obsah kroku:
+- detailní vysvětlení tématu
+- příklady (mohou být technické, kódové, analogické, příběhové)
+- případové studie nebo modelové situace
+- typické pohovorové otázky a optimální odpovědi
+- mini úkoly nebo praktická cvičení
+- návaznost na krok n-1
+Praktická část:
+- může obsahovat kód, algoritmus, diagram, hádanku, live-coding postup nebo strukturovaný problém
+Ukazatele úspěchu:
+- měřitelné nebo jasně pozorovatelné indikátory
+<inner-block-n>
+Bonus / laterální rozšíření:
+- originální pohled, neobvyklý rámec, průnik jiných disciplín, meta-heuristika
+<end-inner-block-n>
+<end-blok-n>
+
+VSTUP:
+<<<
+Název kroku: Adaptabilita a kontinuální učení
+Cíl kroku: Zajištění schopnosti rychle se přizpůsobovat novým podmínkám a technologiím.
+Co přesně projít:
+- Techniky rychlého učení a adaptace
+- Osvojení návyků pro celoživotní vzdělávání
+- Předchozí krok: Aplikace inovativního myšlení k osvojení nových technologií
+Jak poznám, že mám krok splněný:
+- Schopnost rychle se naučit a přizpůsobit nové technologii nebo metodě
+<inner-block-11>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak může mindfulness přispět ke zlepšení schopnosti adaptace a učení.
+<end-inner-block-11>
+>>>
+
+Parametry uživatele:
+
+obor: digitální marketing a grafika
+
+seniorita: nezadanáo
+
+hlavní cíl: nezadanáo
+
+Pokyny:
+
+Vytvoř přesně jeden krok s číslem n.
+
+Obsah přizpůsob oboru a senioritě uživatele.
+
+Předávej hluboké, praktické a expertní informace.
+
+Vysvětli, jak krok přímo zvyšuje šanci uspět u pohovoru v uvedeném oboru.
+
+Buď kreativní a dovol si zahrnout kód, diagramy, případovky, mini testy atd.
+
+Bonus musí přinést originální, interdisciplinární nebo laterální vhled.
+
+Nepoužívej jiné tagy než uvedené.

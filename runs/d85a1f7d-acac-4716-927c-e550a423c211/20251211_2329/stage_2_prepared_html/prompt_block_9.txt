@@ -1,0 +1,39 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-9>
+Název kroku: Pokročilá prezentace a storytelling
+Hlavní záměr: Umět efektivně prezentovat a sdílet myšlenky, projekty a výsledky v oblasti digitálního marketingu a grafiky.
+Obsah kroku:
+- Detailní vysvětlení tématu: Efektivní storytelling je klíčem k úspěchu v digitálním marketingu a grafice. Vyprávění příběhů pomáhá vytvářet emocionální spojení s publikem, což zvyšuje zapamatovatelnost a angažovanost. Zásady dobrého storytellingu zahrnují jasnou strukturu (úvod, zápletka, vrchol, rozuzlení), použití metafor a analogií a personalizaci obsahu.
+- Příklady: Představte si, že propagujete nový grafický software. Místo prostého popisu funkcí, vyprávějte příběh designéra, který díky tomuto softwaru urychlil svou práci a získal významného klienta.
+- Případové studie nebo modelové situace: Analyzujte úspěšné kampaně jako je "Dumb Ways to Die", které využily animaci a storytelling k šíření povědomí o bezpečnosti na železnici.
+- Typické pohovorové otázky a optimální odpovědi: "Jak byste využil storytelling ve své práci?" Odpovězte konkrétním příkladem, jak jste použili příběh k vylepšení marketingové kampaně.
+- Mini úkoly nebo praktická cvičení: Vytvořte miniprezentaci o svém dosavadním projektu, která zahrnuje příběh s jasnou strukturou, a prezentujte ji kolegovi.
+- Návaznost na krok n-1: Použijte networkingové dovednosti k získání zpětné vazby na své prezentace od odborníků v oboru.
+
+Praktická část:
+- Vytvořte prezentační diagram, který vizualizuje příběh vaší poslední kampaně. Zahrňte klíčové body jako protagonistu, konflikt, řešení a výsledek.
+- Navrhněte interaktivní prvky, které by mohly být součástí vaší prezentace, například QR kódy s odkazy na ukázková videa nebo interaktivní grafiku.
+
+Ukazatele úspěchu:
+- Prezentace, která získá pozitivní zpětnou vazbu od alespoň tří kolegů nebo mentorů.
+- Schopnost jasně a poutavě přednést klíčovou myšlenku projektu do 5 minut.
+<inner-block-9>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak může být humor efektivně použit v prezentacích pro zvýšení jejich dopadu. Například, skvělým příkladem je využití humoru v kampaních jako je "The Man Your Man Could Smell Like" od Old Spice, která proměnila běžnou reklamu v virální hit.
+<end-inner-block-9>
+<end-blok-9>

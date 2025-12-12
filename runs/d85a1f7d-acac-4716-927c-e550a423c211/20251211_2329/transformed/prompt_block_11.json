@@ -1,0 +1,227 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "h2",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Název kroku: Adaptabilita a kontinuální učení"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Zajištění schopnosti rychle se přizpůsobovat novým podmínkám a technologiím v oboru digitálního marketingu a grafiky."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Detailní vysvětlení tématu: Adaptabilita a kontinuální učení jsou klíčovými schopnostmi, které umožňují odborníkům v digitálním marketingu a grafice držet krok s rychlými změnami v technologiích a trendech. Schopnost rychle se učit nové nástroje, platformy a techniky je zásadní pro udržení konkurenceschopnosti."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Příklady: V digitálním marketingu může být nutné rychle se přizpůsobit novým algoritmům sociálních médií, zatímco v grafice může jít o zvládnutí nového designového softwaru. Představte si, že právě vyšla nová verze Adobe Illustratoru s revolučními funkcemi pro 3D modelování. Rychlé osvojení těchto funkcí může zvýšit vaši hodnotu v očích zaměstnavatele."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případové studie nebo modelové situace: Firma XYZ přijala novou platformu pro automatizaci marketingu. Zaměstnanci, kteří se rychle naučili tuto platformu používat, přinesli firmě významné úspory a efektivitu, což vedlo k povýšení a zvýšení platů."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Typické pohovorové otázky a optimální odpovědi: \"Jakým způsobem zůstáváte v obraze s nejnovějšími trendy a technologiemi?\" Optimální odpověď: \"Pravidelně sleduji odborné blogy, účastním se webinářů a online kurzů. Nedávno jsem se například zúčastnil kurzu o nových nástrojích v digitálním marketingu.\""
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini úkoly nebo praktická cvičení: Najděte a zúčastněte se online kurzu na platformě jako Coursera nebo Udemy zaměřeného na nový aspekt digitálního marketingu nebo grafiky, který jste dosud neovládali."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Návaznost na krok n-1: V předchozím kroku jste se naučili aplikovat inovativní myšlení na nové technologie. Nyní tento přístup využijte k rychlému osvojení nových nástrojů."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Diagram: Vytvořte myšlenkovou mapu, která vizualizuje proces, jakým si osvojíte nový marketingový nástroj od základů po pokročilé funkce."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Live-coding postup: Vytvořte jednoduchou grafiku pomocí nového nástroje nebo funkce, kterou jste se právě naučili."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Schopnost rychle se naučit a přizpůsobit nové technologii nebo metodě je ověřena, když jste schopni aplikovat nově nabyté znalosti v reálném pracovním projektu nebo simulovaném prostředí."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Prozkoumejte, jak může mindfulness přispět ke zlepšení schopnosti adaptace a učení. Mindfulness může pomoci zlepšit koncentraci a snížit stres, což usnadňuje rychlejší a efektivnější učení nových dovedností. Zkuste začlenit krátké meditační techniky do vaší denní rutiny, abyste zvýšili svou schopnost soustředit se a učit se."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

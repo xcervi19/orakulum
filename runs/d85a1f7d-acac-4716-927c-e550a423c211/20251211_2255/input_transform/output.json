@@ -1,0 +1,21 @@
+{
+  "career_goals": {
+    "programming": "JavaScript",
+    "leadership": true,
+    "desired_salary": 200000
+  },
+  "input_quality": {
+    "clarity": "low",
+    "specificity": "low"
+  },
+  "uncertainties": [
+    "Type of industry or field of work desired",
+    "Level of programming experience",
+    "Current skills and qualifications",
+    "Preferred work location"
+  ],
+  "inferences": {
+    "interest_in_technology": true,
+    "interest_in_leadership": true
+  }
+}

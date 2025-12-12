@@ -1,0 +1,41 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-12>
+Název kroku: Finanční gramotnost a řízení zdrojů
+Hlavní záměr: Efektivní řízení finančních a materiálních zdrojů v rámci projektů.
+Obsah kroku:
+- **Detailní vysvětlení tématu**: Finanční gramotnost v digitálním marketingu a grafice zahrnuje schopnost plánovat, sledovat a hodnotit finanční aspekty projektů. Zahrnuje porozumění základním pojmům jako je rozpočet, náklady, návratnost investic (ROI) a jejich aplikaci na marketingové kampaně a grafické projekty.
+- **Příklady**: Například při plánování online reklamní kampaně je třeba stanovit rozpočet na PPC (pay-per-click) reklamy, předpovědět potenciální návratnost na základě analýzy klíčových slov a konkurenčních nabídek. 
+- **Případové studie nebo modelové situace**: Analyzujte úspěšnou kampaň na sociálních médiích, kde byl rozpočet efektivně alokován mezi různé kanály, což vedlo k vyššímu ROI. Rozložte náklady a strategické rozhodnutí, které vedly k úspěchu.
+- **Typické pohovorové otázky a optimální odpovědi**:
+  - "Jak byste přistoupili k rozpočtování pro novou digitální kampaň?" Odpovězte, že začnete segmentací cílového trhu, analýzou dostupných dat a historických výdajů, abyste vytvořili realistický a efektivní rozpočet.
+  - "Jak měříte návratnost investic v grafickém projektu?" Odpovězte, že pomocí metrik jako je náklad na akvizici zákazníka (CAC) a celoživotní hodnota zákazníka (CLV), s důrazem na vizuální analýzu dat.
+- **Mini úkoly nebo praktická cvičení**: Vytvořte jednoduchý rozpočet pro fiktivní marketingovou kampaň, simulujte změny v alokaci zdrojů a vyhodnoťte jejich dopad na celkový rozpočet a ROI.
+- **Návaznost na krok n-1**: V předchozím kroku jste se naučili, jak použít adaptabilitu k efektivnímu řízení zdrojů. Nyní aplikujte tyto dovednosti na finanční aspekty a optimalizaci rozpočtů.
+
+Praktická část:
+- **Diagram**: Vytvoření Ganttova diagramu pro plánování a sledování finančních výdajů v kampani. 
+- **Strukturovaný problém**: Navrhněte, jak optimalizovat rozpočet kampaně s omezenými zdroji a maximálním dopadem na cílovou skupinu.
+
+Ukazatele úspěchu:
+- Schopnost vytvořit a udržet rozpočet, který zůstává v plánovaném rozsahu.
+- Prokázaná návratnost investic ve vašich projektech, doložená analýzou a metrikami.
+<inner-block-12>
+Bonus / laterální rozšíření:
+- Naučte se, jak aplikovat principy udržitelnosti v řízení zdrojů pro dlouhodobý úspěch. Propojíte digitální marketing s environmentálními a sociálními aspekty, například optimalizací zdrojů pro snížení uhlíkové stopy reklamních kampaní nebo podporou grafiky, která komunikuje udržitelné hodnoty.
+<end-inner-block-12>
+<end-blok-12>

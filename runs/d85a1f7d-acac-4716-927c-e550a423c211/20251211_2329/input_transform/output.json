@@ -1,0 +1,23 @@
+{
+  "job_preferences": {
+    "programming_language": "JavaScript",
+    "role": "Team Leader",
+    "salary_expectation": 200000
+  },
+  "input_quality": {
+    "clarity": "medium",
+    "specificity": "low",
+    "coherence": "medium"
+  },
+  "uncertainties": [
+    "The frequency and context in which the client wishes to program in JavaScript.",
+    "The exact industry or type of company the client is interested in.",
+    "The currency of the salary expectation (assuming CZK but not explicitly stated).",
+    "Experience and qualifications related to the desired team leader role."
+  ],
+  "inferences": {
+    "The client is interested in a leadership position with some coding responsibilities in JavaScript."
+ 
+  	: "The client may be new to leadership roles, given the lack of specified experience."
+  }
+}

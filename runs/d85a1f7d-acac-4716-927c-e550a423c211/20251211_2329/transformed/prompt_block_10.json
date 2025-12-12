@@ -1,0 +1,344 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "h2",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Název kroku: Digitální transformace a inovace"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Hlavní záměr"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Schopnost řídit inovativní projekty a přizpůsobit se digitálním změnám."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Detailní vysvětlení tématu: Digitální transformace v oboru digitálního marketingu a grafiky znamená nejen aplikaci nových technologií, ale také změnu myšlení a procesů. Klíčem je porozumět, jak technologie jako AI, big data a cloud computing mění způsob, jakým oslovujeme zákazníky a vytváříme obsah."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Příklady: Například využití AI pro personalizaci marketingových kampaní nebo automatizaci grafických návrhů. Představte si AI, která analyzuje data zákazníků a generuje personalizované vizuály pro každého uživatele."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Případové studie: Analyzujte, jak společnosti jako Adobe využívají AI a strojové učení ke změně způsobu, jakým poskytují své grafické nástroje. Jak například implementace Adobe Sensei pomohla zvýšit efektivitu návrhářských týmů."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Typické pohovorové otázky a optimální odpovědi:"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "div",
+                    "ui": "qa-block",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "\"Jak byste integrovali nejnovější digitální technologie do naší marketingové strategie?\""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Odpověď: \"Začal bych analýzou aktuálních procesů a identifikoval oblasti, kde by technologie jako AI nebo big data mohly přinést největší přínos. Například by to mohlo zahrnovat zefektivnění analýzy zákaznických dat pro lepší cílení kampaní.\""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Mini úkoly nebo praktická cvičení: Vytvořte projekt, kde navrhnete marketingovou kampaň s využitím nejnovějších technologických trendů, jako je AR nebo VR, a sledujte její dopad na angažovanost zákazníků."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Návaznost na krok 9: Využijte storytelling techniky pro efektivní komunikaci hodnoty vašich digitálních inovací. Například vytvořte narativní strukturu, která vysvětluje, jak váš projekt přináší zákazníkům přidanou hodnotu."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Navrhněte diagram procesu digitální transformace ve vašem aktuálním projektu. Zahrňte klíčové kroky, jako je analýza dat, implementace technologie a měření úspěchu."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Proveďte live-coding cvičení, kde pomocí dostupného API vytvoříte jednoduchý personalizovaný marketingový e-mail."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Měřitelné indikátory zahrnují zvýšení efektivity projektového řízení o X%, zkrácení doby uvedení na trh nových kampaní, nebo zvýšení zákaznické angažovanosti o Y%."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "p",
+                    "ui": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Prozkoumejte, jak digitální transformace ovlivňuje jiné kreativní obory jako film nebo hudba. Například jak streamingové služby změnily distribuci a marketing hudby. Tato analýza může přinést inspirativní nápady pro vaše marketingové strategie a otevřít nové cesty pro spolupráci mezi různými kreativními odvětvími."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

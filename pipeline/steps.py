@@ -1,6 +1,7 @@
 """
 Pipeline step implementations.
 Each function implements one step of the career-plan generation pipeline.
+Uses OpenAI API for all LLM interactions.
 """
 
 import json
@@ -12,6 +13,7 @@ from typing import Dict, Optional
 from .db import update_lead_field, mark_status
 from .db import STATUS_PLAN_READY, STATUS_HTML_READY
 from .logging_utils import PipelineLogger
+from .openai_client import call_llm, call_llm_with_file, process_prompt_batch
 
 
 def run_input_transform(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
@@ -38,40 +40,37 @@ def run_input_transform(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Di
     with open(prompt_path, "w", encoding="utf-8") as f:
         f.write(prompt)
     
-    # Output path for ChatGPT response
+    # Call OpenAI API
+    logger.log_info("Calling OpenAI API for input transform...")
     output_path = run_dir / "input_transform" / "output.json"
     
-    logger.log_info(f"Input transform prompt saved to {prompt_path}")
-    logger.log_info("Waiting for ChatGPT response (run automate_chatgpt.py or paste manually)")
+    response = call_llm(
+        prompt=prompt,
+        system_prompt="You are a career counselor assistant. Analyze the input and return structured JSON.",
+        json_mode=True
+    )
+    
+    # Save response
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(response)
+    
+    # Parse and store in database
+    try:
+        result_json = json.loads(response)
+        update_lead_field(lead["id"], "input_transform", result_json)
+        logger.log_info("Input transform result stored in database")
+    except json.JSONDecodeError:
+        logger.log_info("Response is not valid JSON, storing as text")
+        update_lead_field(lead["id"], "input_transform", {"raw": response})
     
     duration_ms = int((time.time() - start_time) * 1000)
-    logger.log_step_complete("input_transform", duration_ms, str(prompt_path))
+    logger.log_step_complete("input_transform", duration_ms, str(output_path))
     
     return {
         "prompt_path": str(prompt_path),
         "output_path": str(output_path),
+        "response_length": len(response),
     }
-
-
-def load_input_transform_result(lead_id: str, run_dir: Path, logger: PipelineLogger) -> Optional[Dict]:
-    """
-    Load the input transform result after ChatGPT has responded.
-    Updates the lead in database with the parsed JSON.
-    """
-    output_path = run_dir / "input_transform" / "output.json"
-    
-    if not output_path.exists():
-        logger.log_info(f"Waiting for input transform output at {output_path}")
-        return None
-    
-    with open(output_path, "r", encoding="utf-8") as f:
-        result = json.load(f)
-    
-    # Store in database
-    update_lead_field(lead_id, "input_transform", result)
-    logger.log_info("Input transform result stored in database")
-    
-    return result
 
 
 def run_plan_prompt(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
@@ -87,11 +86,10 @@ def run_plan_prompt(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     with open(template_path, "r", encoding="utf-8") as f:
         template = f.read()
     
-    # Get input transform data (should be loaded already)
+    # Get input transform data
     input_data = lead.get("input_transform", {})
     
     # Fill template with structured data
-    # (Adjust placeholders based on your actual template)
     prompt = template
     if isinstance(input_data, dict):
         for key, value in input_data.items():
@@ -99,7 +97,7 @@ def run_plan_prompt(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
             if isinstance(value, str):
                 prompt = prompt.replace(placeholder, value)
     
-    # Also replace with description if template uses it
+    # Also replace with description
     prompt = prompt.replace("[DESCRIPTION]", lead.get("description", ""))
     prompt = prompt.replace("[VSTUP]", lead.get("description", ""))
     
@@ -108,38 +106,35 @@ def run_plan_prompt(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     with open(prompt_path, "w", encoding="utf-8") as f:
         f.write(prompt)
     
+    # Call OpenAI API
+    logger.log_info("Calling OpenAI API for plan generation...")
     output_path = run_dir / "plan" / "plan.txt"
     
-    logger.log_info(f"Plan prompt saved to {prompt_path}")
+    response = call_llm(
+        prompt=prompt,
+        system_prompt="You are an expert career counselor. Generate a comprehensive career plan with <blok-n> tags.",
+        max_tokens=8000,
+    )
+    
+    # Save response
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(response)
+    
+    # Store in database
+    update_lead_field(lead["id"], "plan", response)
+    logger.log_info("Plan text stored in database")
+    
+    # Update status
+    mark_status(lead["id"], STATUS_PLAN_READY)
     
     duration_ms = int((time.time() - start_time) * 1000)
-    logger.log_step_complete("plan_prompt", duration_ms, str(prompt_path))
+    logger.log_step_complete("plan_prompt", duration_ms, str(output_path))
     
     return {
         "prompt_path": str(prompt_path),
         "output_path": str(output_path),
+        "response_length": len(response),
     }
-
-
-def load_plan_result(lead_id: str, run_dir: Path, logger: PipelineLogger) -> Optional[str]:
-    """
-    Load the plan result after ChatGPT has responded.
-    Updates the lead in database with the plan text.
-    """
-    output_path = run_dir / "plan" / "plan.txt"
-    
-    if not output_path.exists():
-        logger.log_info(f"Waiting for plan output at {output_path}")
-        return None
-    
-    with open(output_path, "r", encoding="utf-8") as f:
-        plan_text = f.read()
-    
-    # Store in database
-    update_lead_field(lead_id, "plan", plan_text)
-    logger.log_info("Plan text stored in database")
-    
-    return plan_text
 
 
 def generate_blocks(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
@@ -182,34 +177,35 @@ def generate_blocks(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
 
 def run_stage2(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 5: Send prompts to ChatGPT (Stage 2).
-    Processes each block prompt through ChatGPT.
+    Step 5: Expand block prompts via OpenAI API (Stage 2).
+    Processes each block prompt through the LLM.
     """
-    logger.log_step_start("stage2_chatgpt")
+    logger.log_step_start("stage2_expand")
     start_time = time.time()
     
     input_dir = run_dir / "parsed_parts"
     output_dir = run_dir / "stage_2_generated_parts"
     
-    # Run automate_chatgpt.py
-    cmd = [
-        "python3", "automate_chatgpt.py",
-        "--input", str(input_dir),
-        "--output", str(output_dir),
-    ]
+    logger.log_info("Processing block prompts via OpenAI API...")
     
-    logger.log_info(f"Running: {' '.join(cmd)}")
-    logger.log_info("This step requires ChatGPT automation...")
-    
-    # Note: This will be run separately or manually
-    # For now, just prepare the directories
+    results = process_prompt_batch(
+        input_dir=str(input_dir),
+        output_dir=str(output_dir),
+        system_prompt="You are an expert career counselor. Expand the given career plan section with detailed, actionable content.",
+        pattern="prompt_block_*.txt"
+    )
     
     duration_ms = int((time.time() - start_time) * 1000)
-    logger.log_step_complete("stage2_chatgpt", duration_ms)
+    logger.log_step_complete("stage2_expand", duration_ms)
+    logger.log_info(f"Stage 2: {results['success']} succeeded, {results['failed']} failed, {results['skipped']} skipped")
+    
+    if results['failed'] > 0:
+        raise RuntimeError(f"Stage 2 failed for {results['failed']} files")
     
     return {
         "input_dir": str(input_dir),
         "output_dir": str(output_dir),
+        "results": results,
     }
 
 
@@ -253,27 +249,30 @@ def prep_html(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
 
 def run_stage3(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     """
-    Step 7: ChatGPT HTML generation (Stage 3).
-    Processes HTML prompts through ChatGPT.
+    Step 7: HTML generation via OpenAI API (Stage 3).
+    Processes HTML prompts through the LLM.
     """
-    logger.log_step_start("stage3_chatgpt")
+    logger.log_step_start("stage3_html")
     start_time = time.time()
     
     input_dir = run_dir / "stage_2_prepared_html"
     output_dir = run_dir / "stage_3_generated_html"
     
-    # Run automate_chatgpt.py for stage 3
-    cmd = [
-        "python3", "automate_chatgpt.py",
-        "--input", str(input_dir),
-        "--output", str(output_dir),
-    ]
+    logger.log_info("Processing HTML prompts via OpenAI API...")
     
-    logger.log_info(f"Running: {' '.join(cmd)}")
-    logger.log_info("This step requires ChatGPT automation...")
+    results = process_prompt_batch(
+        input_dir=str(input_dir),
+        output_dir=str(output_dir),
+        system_prompt="You are a UI/HTML expert. Transform the input into semantic HTML with data-ui attributes. Output only HTML, no markdown.",
+        pattern="*.txt"
+    )
     
     duration_ms = int((time.time() - start_time) * 1000)
-    logger.log_step_complete("stage3_chatgpt", duration_ms)
+    logger.log_step_complete("stage3_html", duration_ms)
+    logger.log_info(f"Stage 3: {results['success']} succeeded, {results['failed']} failed, {results['skipped']} skipped")
+    
+    if results['failed'] > 0:
+        raise RuntimeError(f"Stage 3 failed for {results['failed']} files")
     
     # Update status
     mark_status(lead["id"], STATUS_HTML_READY)
@@ -281,6 +280,7 @@ def run_stage3(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
     return {
         "input_dir": str(input_dir),
         "output_dir": str(output_dir),
+        "results": results,
     }
 
 
@@ -388,4 +388,3 @@ def upload_pages(lead: Dict, run_dir: Path, logger: PipelineLogger) -> Dict:
         "client_id": client_id,
         "page_count": len(json_files),
     }
-

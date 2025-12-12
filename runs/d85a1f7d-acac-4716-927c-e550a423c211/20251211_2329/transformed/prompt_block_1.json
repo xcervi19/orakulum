@@ -1,0 +1,295 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "h2",
+        "ui": "heading",
+        "children": [
+          {
+            "type": "text",
+            "text": "Název kroku: Základy JavaScriptu a moderních frameworků v digitálním marketingu"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Získání solidní základny v JavaScriptu a schopnost pracovat s moderními technologiemi pro zlepšení interaktivity a efektivity digitálních marketingových kampaní."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Detailní vysvětlení tématu: JavaScript je klíčovým nástrojem pro tvorbu interaktivních webových stránek a aplikací, což může výrazně zvýšit angažovanost uživatelů v digitálních marketingových kampaních. Naučte se základní syntaxi, jako jsou proměnné, funkce, smyčky a podmínky, a jak tyto koncepty uplatnit při manipulaci s Document Object Model (DOM) pro dynamické úpravy obsahu webové stránky."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Příklady: Představte si kampaň, kde uživatelé mohou interagovat s dynamickým obsahem, jako je personalizovaná nabídka, která se automaticky aktualizuje podle jejich chování na webu. Takového efektu dosáhnete pomocí JavaScriptu a frameworku jako React pro efektivní správu stavu aplikace."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případové studie nebo modelové situace: Zvážit můžete případovou studii úspěšné marketingové kampaně, která využila JavaScript k personalizaci obsahu v reálném čase, čímž zvýšila konverzní poměr o 20 %."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "\n                Typické pohovorové otázky a optimální odpovědi:\n                "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ol",
+                    "ui": "numbered-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "div",
+                            "ui": "qa-block",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "question",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Jak byste použili JavaScript k zlepšení uživatelské zkušenosti na našich webových stránkách?"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "answer",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Odpověď: Použil bych JavaScript pro asynchronní načítání obsahu, což zkrátí dobu načítání stránky a zlepší uživatelskou zkušenost. Dále bych využil framework jako React pro jednodušší správu složitých stavů uživatelského rozhraní."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "div",
+                            "ui": "qa-block",
+                            "children": [
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "question",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Jaký je rozdíl mezi callbacky a promisy v JavaScriptu?"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "element",
+                                "tag": "p",
+                                "ui": "answer",
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "text": "Odpověď: Callbacks jsou funkce předávané jako argumenty do jiných funkcí, které se vyvolají po dokončení úkolu. Promises jsou objekty, které představují dokončené nebo neúspěšné asynchronní operace a umožňují lepší kontrolu nad tokem asynchronního kódu."
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini úkoly nebo praktická cvičení: Vytvořte malou dynamickou aplikaci s personalizovanou nabídkou, která se mění podle údajů z uživatelského profilu uloženého na serveru. Využijte k tomu JavaScript a React."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Návaznost na krok n-1: Pokud jste před tímto krokem pracovali na základech HTML a CSS, nyní můžete začlenit JavaScript pro zlepšení interaktivity a použít frameworky pro efektivnější správu složitějších aplikací."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Vytvořte jednoduchou aplikaci v Reactu, která zobrazuje dynamický seznam produktů na základě dat získaných asynchronně z API. Implementujte funkce pro filtrování a řazení produktů, abyste simulovali základní e-commerce prostředí."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "metric-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Měřitelným indikátorem úspěchu je schopnost napsat a nasadit interaktivní webovou aplikaci, která využívá JavaScript a React, a která umožňuje uživatelům provádět personalizované interakce."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "inner-block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Prozkoumejte, jak lze JavaScript integrovat s nástroji pro analýzu dat, jako je D3.js, pro tvorbu interaktivních vizualizací, které mohou poskytnout cenné informace o chování uživatelů a efektivitě marketingových kampaní. To může zahrnovat vizualizace jako heatmapy, které ukazují, kde uživatelé na stránce nejčastěji klikají."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-15>
+Název kroku: Přechod na leadership a strategické řízení
+Hlavní záměr: Připravenost pro přechod na vedoucí pozici a řízení organizace.
+Obsah kroku:
+- Detailní vysvětlení tématu:
+  Přechod na vedoucí pozici v oboru digitálního marketingu a grafiky vyžaduje nejen technické znalosti, ale také dovednosti v oblasti strategického řízení. To zahrnuje schopnost formulovat a komunikovat jasnou vizi, řídit firemní kulturu a efektivně zvládat změny. Tyto dovednosti jsou klíčové pro úspěšné vedení týmu a dosažení obchodních cílů.
+
+- Příklady:
+  - Technický příklad: Vytvořte strategický plán, který propojuje digitální marketingové kampaně s grafickým designem, a který je v souladu s celkovou vizí organizace.
+  - Analogický příklad: Představte si orchestr, kde každý člen orchestru má svou roli, ale dirigent je ten, kdo nastavuje tempo a koordinuje všechny části harmonicky dohromady.
+
+- Případové studie nebo modelové situace:
+  - Případová studie: Analyzujte úspěšnou kampaň, kde integrace digitálního marketingu a vizuální identity vedla k výraznému zvýšení povědomí o značce. Identifikujte klíčové strategie a rozhodnutí, které k úspěchu vedly.
+
+- Typické pohovorové otázky a optimální odpovědi:
+  - Otázka: Jak byste definoval svou strategii pro vedení týmu v kreativním oboru?
+    - Odpověď: "Moje strategie spočívá v budování otevřené a inovativní kultury, kde každý člen týmu má prostor pro kreativitu a sdílení nápadů. Důraz kladu na jasné komunikační kanály a pravidelné zpětné vazby, které pomáhají týmu růst a přizpůsobit se měnícím se požadavkům trhu."
+
+- Mini úkoly nebo praktická cvičení:
+  - Vytvořte SWOT analýzu pro vaši aktuální pracovní situaci a identifikujte oblasti, které je třeba zlepšit pro úspěšný přechod na vedoucí pozici.
+
+- Návaznost na krok n-1:
+  - Integrace vyjednávacích dovedností do strategického řízení je základem pro efektivní komunikaci s týmem a vedením. Ujistěte se, že tyto dovednosti umíte aplikovat v praxi.
+
+Praktická část:
+- Vypracujte diagram strategické mapy, která zobrazuje klíčové iniciativy a cíle vaší organizace v oblasti digitálního marketingu a grafiky. Diagram by měl zahrnovat tok rozhodovacích procesů a klíčové milníky.
+
+Ukazatele úspěchu:
+- Měřitelné nebo jasně pozorovatelné indikátory:
+  - Získání pozitivní zpětné vazby od týmu ohledně vedení a řízení.
+  - Zvýšení efektivity marketingových kampaní a jejich souladu s vizí organizace.
+  - Připravenost a sebevědomí při přijímání strategických rozhodnutí.
+
+<inner-block-15>
+Bonus / laterální rozšíření:
+- Učte se od dalších lídrů: mentoring a získávání různých perspektiv pro vlastní rozvoj mohou zahrnovat interdisciplinární přístup, kde můžete čerpat inspiraci z oblastí jako psychologie, sociologie nebo dokonce umění pro rozvoj inovativních přístupů k vedení týmů.
+<end-inner-block-15>
+<end-blok-15>

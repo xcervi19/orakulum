@@ -1,0 +1,252 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Pokročilá prezentace a storytelling"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Umět efektivně prezentovat a sdílet myšlenky, projekty a výsledky v oblasti digitálního marketingu a grafiky."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "tasks",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Detailní vysvětlení tématu: Efektivní storytelling je klíčem k úspěchu v digitálním marketingu a grafice. Vyprávění příběhů pomáhá vytvářet emocionální spojení s publikem, což zvyšuje zapamatovatelnost a angažovanost. Zásady dobrého storytellingu zahrnují jasnou strukturu (úvod, zápletka, vrchol, rozuzlení), použití metafor a analogií a personalizaci obsahu."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Příklady: Představte si, že propagujete nový grafický software. Místo prostého popisu funkcí, vyprávějte příběh designéra, který díky tomuto softwaru urychlil svou práci a získal významného klienta."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případové studie nebo modelové situace: Analyzujte úspěšné kampaně jako je \"Dumb Ways to Die\", které využily animaci a storytelling k šíření povědomí o bezpečnosti na železnici."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Typické pohovorové otázky a optimální odpovědi: \"Jak byste využil storytelling ve své práci?\" Odpovězte konkrétním příkladem, jak jste použili příběh k vylepšení marketingové kampaně."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini úkoly nebo praktická cvičení: Vytvořte miniprezentaci o svém dosavadním projektu, která zahrnuje příběh s jasnou strukturou, a prezentujte ji kolegovi."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Návaznost na krok n-1: Použijte networkingové dovednosti k získání zpětné vazby na své prezentace od odborníků v oboru."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "tasks",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Vytvořte prezentační diagram, který vizualizuje příběh vaší poslední kampaně. Zahrňte klíčové body jako protagonistu, konflikt, řešení a výsledek."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Navrhněte interaktivní prvky, které by mohly být součástí vaší prezentace, například QR kódy s odkazy na ukázková videa nebo interaktivní grafiku."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "metric-list",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Prezentace, která získá pozitivní zpětnou vazbu od alespoň tří kolegů nebo mentorů."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Schopnost jasně a poutavě přednést klíčovou myšlenku projektu do 5 minut."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Prozkoumejte, jak může být humor efektivně použit v prezentacích pro zvýšení jejich dopadu. Například, skvělým příkladem je využití humoru v kampaních jako je \"The Man Your Man Could Smell Like\" od Old Spice, která proměnila běžnou reklamu v virální hit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

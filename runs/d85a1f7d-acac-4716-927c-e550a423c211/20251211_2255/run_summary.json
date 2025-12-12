@@ -1,0 +1,27 @@
+{
+  "client_id": "d85a1f7d-acac-4716-927c-e550a423c211",
+  "run_dir": "runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2255",
+  "started_at": "2025-12-11T21:55:53.031946",
+  "completed_at": "2025-12-11T21:56:01.638071",
+  "status": "failed",
+  "steps": [
+    {
+      "name": "input_transform",
+      "status": "completed",
+      "duration_ms": 6099
+    },
+    {
+      "name": "plan_prompt",
+      "status": "completed",
+      "duration_ms": 2000
+    }
+  ],
+  "errors": [
+    {
+      "step": "pipeline",
+      "error": "RuntimeError: manual.py failed: ",
+      "retry_count": 0
+    }
+  ],
+  "total_duration_seconds": 8.606125
+}

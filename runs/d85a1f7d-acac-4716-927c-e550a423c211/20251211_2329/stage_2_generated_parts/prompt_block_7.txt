@@ -1,0 +1,26 @@
+<blok-7>
+Název kroku: Vedení týmu a rozvoj leadershipu v digitálním marketingu a grafice
+Hlavní záměr: Ovládnutí klíčových aspektů efektivního vedení týmu v oblasti digitálního marketingu a grafiky.
+Obsah kroku:
+- Detailní vysvětlení tématu: Vedení týmu v digitálním marketingu a grafice vyžaduje nejen znalosti oboru, ale také schopnost efektivně komunikovat a motivovat členy týmu, kteří často pracují na různorodých úkolech od SEO po grafický design. Je důležité pochopit různé styly vedení, jako je demokratický, autokratický nebo transformační styl, a jak je aplikovat v závislosti na situaci a složení týmu.
+- Příklady: Představte si situaci, kdy vedete tým během kampaně na nový produkt. Jako vedoucí musíte nejen rozdělit úkoly podle schopností jednotlivých členů, ale také zajistit, aby všichni směřovali k jednotnému cíli a rozuměli jeho důležitosti. 
+- Případové studie nebo modelové situace: Uvažujte o společnosti, která úspěšně přešla z tradičních médií na digitální marketing díky transformačnímu vedení. Vedoucí týmu zde použil strategii zaměřenou na vzdělávání a motivaci členů týmu k přijetí nových digitálních nástrojů.
+- Typické pohovorové otázky a optimální odpovědi:
+  - "Jaký styl vedení preferujete a proč?" Odpověď by měla zahrnovat zkušenosti s různými styly a schopnost přizpůsobit styl vedení podle potřeb týmu a projektů.
+  - "Jak motivujete svůj tým k dosažení cílů?" Zaměřte se na konkrétní příklady, například zavedení pravidelných brainstormingových setkání nebo používání gamifikace.
+- Mini úkoly nebo praktická cvičení: Vytvořte plán pro vedení fiktivní marketingové kampaně, včetně rozdělení úkolů, stanovení cílů a metrik úspěchu. Zapojte různé styly vedení a vyhodnoťte jejich efektivitu.
+- Návaznost na krok n-1: Integrace analytických dovedností do rozhodovacích procesů pomáhá při vyhodnocování výkonu týmu a úspěšnosti kampaní, což je klíčové pro efektivní vedení.
+
+Praktická část:
+- Diagram: Vytvořte diagram znázorňující strukturu vašeho týmu a role jednotlivých členů. Ukažte, jak byste rozdělovali úkoly na základě jejich odbornosti a stylu vedení. 
+- Strukturovaný problém: Zkuste vymyslet řešení pro situaci, kdy máte v týmu člena, který neustále zpožďuje termíny. Jak byste situaci řešili s ohledem na rozvoj týmu a jednotlivce?
+
+Ukazatele úspěchu:
+- Pozitivní zpětná vazba od členů týmu na váš styl vedení.
+- Zvýšení efektivity týmu a dosažení stanovených cílů v rámci kampaní.
+- Schopnost přizpůsobit styl vedení podle situace a potřeb týmu, což bude reflektováno v úspěšnosti projektů.
+<inner-block-7>
+Bonus / laterální rozšíření:
+- Prozkoumejte principy emoční inteligence a jejich aplikaci ve vedení týmu. Emoční inteligence je schopnost rozpoznat a porozumět vlastním emocím i emocím ostatních, což je klíčové pro efektivní komunikaci a motivaci v týmu. Například, v digitálním marketingu může emoční inteligence pomoci při řešení konfliktů mezi kreativními a analytickými členy týmu, což vede k lepší spolupráci a inovacím.
+<end-inner-block-7>
+<end-blok-7>

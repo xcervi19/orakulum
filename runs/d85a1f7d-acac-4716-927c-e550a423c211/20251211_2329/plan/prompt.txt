@@ -16,4 +16,6 @@ Bonus / laterální rozšíření:
 ### **PRAVIDLA:** * n = číslo kroku od 1 do 15, * nepoužívej jiné tagy než <blok-n>, <end-blok-n>, <inner-block-n>, <end-inner-block-n>, * nevysvětluj postup, pouze generuj výstup, * výsledek musí působit jako gradující cesta, ne seznam izolovaných kroků, * výstup musí být originální, hluboký a překvapivě strukturovaný.
 
 ### VSTUP OD UŽIVATELE:
-[VSTUP]
+chci proste nejakou praci kde budu obcas programovat javascript a chci plast kolem 200k 
+
+Chci byt tem leader

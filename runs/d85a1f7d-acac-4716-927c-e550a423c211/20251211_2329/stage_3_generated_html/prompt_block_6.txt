@@ -1,0 +1,41 @@
+<section data-ui="block">
+  <header data-ui="section-header">
+    <h2 data-ui="heading">Název kroku: Analytické dovednosti a datová gramotnost</h2>
+    <p data-ui="paragraph">Hlavní záměr: Efektivní využití dat pro podporu rozhodování a optimalizaci procesů v digitálním marketingu a grafice.</p>
+  </header>
+  <div data-ui="section">
+    <h3 data-ui="heading">Obsah kroku:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Detailní vysvětlení tématu: Analytické dovednosti a datová gramotnost jsou klíčovými schopnostmi v digitálním marketingu a grafice. Tato oblast zahrnuje schopnost porozumět statistickým konceptům, analyzovat data z různých zdrojů a využívat je pro strategické rozhodování. Bez ohledu na senioritu mohou tyto dovednosti výrazně zvýšit vaši schopnost navrhovat efektivní kampaně a optimalizovat kreativní obsah.</li>
+      <li data-ui="list-item">Příklady: Představte si, že pracujete na kampani pro nový produkt. Pomocí Excelu můžete analyzovat demografické údaje zákazníků, zjistit, která skupina je nejaktivnější a na základě toho cílit reklamu. Pomocí SQL můžete extrahovat data o návštěvnosti webu a identifikovat, které kanály přinášejí nejvíce konverzí. Tableau pak použijete k vizualizaci těchto údajů pro prezentaci týmu nebo klientovi.</li>
+      <li data-ui="list-item">Případové studie nebo modelové situace: Představme si projekt, kde marketingový tým využívá datovou analýzu pro optimalizaci reklamní kampaně. Na základě dat z Google Analytics zjistili, že většina konverzí přichází z mobilních zařízení. Tým tedy upraví design a obsah reklamy tak, aby byl atraktivnější pro mobilní uživatele, což vede k 20% zvýšení konverzí.</li>
+      <li data-ui="list-item">Typické pohovorové otázky a optimální odpovědi:
+        <div data-ui="qa-block">
+          <p data-ui="question">Otázka: "Jak byste využili datovou analýzu k optimalizaci kampaně?"</p>
+          <p data-ui="answer">Odpověď: "Nejprve bych identifikoval klíčové metriky úspěchu, jako je míra konverze nebo engagement. Pomocí nástrojů jako Excel a SQL bych analyzoval historická data a identifikoval trendy. Poté bych využil Tableau, abych vizualizoval data pro snadnou interpretaci a rozhodování."</p>
+        </div>
+      </li>
+      <li data-ui="list-item">Mini úkoly nebo praktická cvičení:
+        <ol data-ui="numbered-list">
+          <li data-ui="list-item">Cvičení: Stáhněte si veřejně dostupná data o návštěvnosti webu a pokuste se identifikovat klíčové trendy pomocí Excelu a SQL.</li>
+        </ol>
+      </li>
+      <li data-ui="list-item">Návaznost na krok n-1: Použití analytických dovedností pro evaluaci a zlepšení kreativních řešení se přímo promítá do schopnosti vytvářet datově podložené strategie.</li>
+    </ul>
+  </div>
+  <div data-ui="section">
+    <h3 data-ui="heading">Praktická část:</h3>
+    <p data-ui="paragraph">Vytvořte jednoduchou databázi pomocí SQL, kde budete ukládat data o zákaznících a jejich interakcích s vašimi kampaněmi. Poté vytvořte dotaz, který identifikuje nejúspěšnější marketingový kanál.</p>
+  </div>
+  <div data-ui="section">
+    <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">Schopnost analyzovat data a použít je k informovaným rozhodnutím v rámci projektů.</li>
+      <li data-ui="list-item">Zvýšená efektivita kampaní díky optimalizaci na základě datových analýz.</li>
+    </ul>
+  </div>
+  <div data-ui="block">
+    <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+    <p data-ui="paragraph">Naučte se, jak vizualizovat data pro lepší komunikaci s týmem a klienty, a to nejen pomocí běžných grafů, ale také pomocí infografik, které kombinují prvky grafického designu a datové analýzy pro maximální vizuální dopad.</p>
+  </div>
+</section>

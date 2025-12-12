@@ -1,0 +1,57 @@
+<section data-ui="block">
+    <h2 data-ui="heading">Název kroku: Digitální transformace a inovace</h2>
+    <div data-ui="section">
+        <h3 data-ui="section-header">Hlavní záměr</h3>
+        <p data-ui="paragraph">Schopnost řídit inovativní projekty a přizpůsobit se digitálním změnám.</p>
+    </div>
+    <div data-ui="section">
+        <h3 data-ui="section-header">Obsah kroku</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Detailní vysvětlení tématu: Digitální transformace v oboru digitálního marketingu a grafiky znamená nejen aplikaci nových technologií, ale také změnu myšlení a procesů. Klíčem je porozumět, jak technologie jako AI, big data a cloud computing mění způsob, jakým oslovujeme zákazníky a vytváříme obsah.</p>
+            </li>
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Příklady: Například využití AI pro personalizaci marketingových kampaní nebo automatizaci grafických návrhů. Představte si AI, která analyzuje data zákazníků a generuje personalizované vizuály pro každého uživatele.</p>
+            </li>
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Případové studie: Analyzujte, jak společnosti jako Adobe využívají AI a strojové učení ke změně způsobu, jakým poskytují své grafické nástroje. Jak například implementace Adobe Sensei pomohla zvýšit efektivitu návrhářských týmů.</p>
+            </li>
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Typické pohovorové otázky a optimální odpovědi:</p>
+                <div data-ui="qa-block">
+                    <div data-ui="question">"Jak byste integrovali nejnovější digitální technologie do naší marketingové strategie?"</div>
+                    <div data-ui="answer">Odpověď: "Začal bych analýzou aktuálních procesů a identifikoval oblasti, kde by technologie jako AI nebo big data mohly přinést největší přínos. Například by to mohlo zahrnovat zefektivnění analýzy zákaznických dat pro lepší cílení kampaní."</div>
+                </div>
+            </li>
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Mini úkoly nebo praktická cvičení: Vytvořte projekt, kde navrhnete marketingovou kampaň s využitím nejnovějších technologických trendů, jako je AR nebo VR, a sledujte její dopad na angažovanost zákazníků.</p>
+            </li>
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Návaznost na krok 9: Využijte storytelling techniky pro efektivní komunikaci hodnoty vašich digitálních inovací. Například vytvořte narativní strukturu, která vysvětluje, jak váš projekt přináší zákazníkům přidanou hodnotu.</p>
+            </li>
+        </ul>
+    </div>
+    <div data-ui="section">
+        <h3 data-ui="section-header">Praktická část</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Navrhněte diagram procesu digitální transformace ve vašem aktuálním projektu. Zahrňte klíčové kroky, jako je analýza dat, implementace technologie a měření úspěchu.</p>
+            </li>
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Proveďte live-coding cvičení, kde pomocí dostupného API vytvoříte jednoduchý personalizovaný marketingový e-mail.</p>
+            </li>
+        </ul>
+    </div>
+    <div data-ui="section">
+        <h3 data-ui="section-header">Ukazatele úspěchu</h3>
+        <p data-ui="paragraph">Měřitelné indikátory zahrnují zvýšení efektivity projektového řízení o X%, zkrácení doby uvedení na trh nových kampaní, nebo zvýšení zákaznické angažovanosti o Y%.</p>
+    </div>
+    <div data-ui="section">
+        <h3 data-ui="section-header">Bonus / laterální rozšíření</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">
+                <p data-ui="paragraph">Prozkoumejte, jak digitální transformace ovlivňuje jiné kreativní obory jako film nebo hudba. Například jak streamingové služby změnily distribuci a marketing hudby. Tato analýza může přinést inspirativní nápady pro vaše marketingové strategie a otevřít nové cesty pro spolupráci mezi různými kreativními odvětvími.</p>
+            </li>
+        </ul>
+    </div>
+</section>

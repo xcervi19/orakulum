@@ -1,0 +1,20 @@
+<blok-n>
+Název kroku: Pokročilé techniky programování a optimalizace kódu pro digitální marketing a grafiku
+Hlavní záměr: Zlepšení efektivity a kvality kódu v digitálním marketingu a grafických aplikacích
+Obsah kroku:
+- detailní vysvětlení tématu: V digitálním marketingu a grafice je kritické zajistit, aby aplikace a kód byly nejen funkční, ale také efektivní a optimalizované. Optimalizace přispívá k rychlejšímu načítání stránek, plynulejším interakcím a lepší uživatelské zkušenosti.
+- příklady: Představte si, že máte webovou stránku s bohatými grafickými prvky. Optimalizace kódu může zahrnovat kompresi obrázků, lazy loading pro zlepšení rychlosti načítání nebo využití CDN pro rychlejší dodání obsahu.
+- případové studie nebo modelové situace: Například redesign webu pro e-commerce platformu, kde byla snížena velikost obrázků, optimalizovány skripty a stránka se načítá o 2 sekundy rychleji, což vedlo ke zvýšení konverzí o 15 %.
+- typické pohovorové otázky a optimální odpovědi: "Jak byste optimalizoval webové stránky pro lepší výkon?" Odpověď: "Začal bych analýzou stávajícího výkonu pomocí nástrojů jako Google PageSpeed Insights. Následně bych implementoval optimalizace jako minifikaci CSS a JavaScriptu, kompresi obrázků a využití cache."
+- mini úkoly nebo praktická cvičení: Vyberte si webovou stránku a změřte její výkon. Identifikujte tři oblasti pro optimalizaci a proveďte je. Porovnejte výsledky před a po optimalizaci.
+- návaznost na krok n-1: Po aplikaci základních znalostí na složitější úkoly nyní přistupujeme k optimalizaci těchto aplikací pro reálné podmínky a lepší výsledky.
+Praktická část:
+- Navrhněte a implementujte jednoduchý skript pro lazy loading obrázků na webové stránce. Tento skript by měl detekovat, kdy se obrázek objeví v zorném poli uživatele, a teprve poté jej načíst.
+Ukazatele úspěchu:
+- Měřitelné zlepšení rychlosti načítání webových stránek o nejméně 20 %.
+- Zvýšení uživatelské spokojenosti, což se může projevit v nižším bounce rate nebo vyšší době strávené na stránce.
+<inner-block-n>
+Bonus / laterální rozšíření:
+- Prozkoumejte využití umělé inteligence v optimalizaci grafického obsahu. Například pomocí AI generovat a optimalizovat obrázky pro různé platformy dynamicky podle zařízení nebo uživatelských preferencí. Tato technika může přinést revoluci v přizpůsobení obsahu pro individuální uživatelské zkušenosti.
+<end-inner-block-n>
+<end-blok-n>

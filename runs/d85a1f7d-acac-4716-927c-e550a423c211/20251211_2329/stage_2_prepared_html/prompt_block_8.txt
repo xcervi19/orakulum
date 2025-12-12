@@ -1,0 +1,51 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-8>
+Název kroku: Networking a budování profesionálních vztahů
+Hlavní záměr: Vytvoření silné sítě profesionálních kontaktů pro podporu kariérního růstu v digitálním marketingu a grafice.
+Obsah kroku:
+- Detailní vysvětlení tématu:
+  Networking je klíčovým prvkem kariérního růstu v digitálním marketingu a grafice. Jedná se o strategické vytváření a udržování vztahů, které mohou vést k novým příležitostem, spolupráci a sdílení znalostí. V tomto oboru je důležité být viditelný a aktivní v komunitě, což vám může pomoci udržet krok s nejnovějšími trendy a technologiemi.
+
+- Příklady:
+  - Technický: Účast na webinářích a online konferencích zaměřených na digitální marketing, kde můžete přímo komunikovat s předními odborníky a kolegy.
+  - Analogický: Představte si networking jako péči o zahradu – vyžaduje pravidelnou údržbu, zalévání a někdy i prořezávání, aby květiny (vaše vztahy) mohly růst a rozkvést.
+
+- Případové studie nebo modelové situace:
+  Analyzujte situaci, kdy profesionál z oblasti digitálního marketingu využil LinkedIn k navázání kontaktu s klíčovým hráčem v oboru, což vedlo k získání nového projektu či zaměstnání.
+
+- Typické pohovorové otázky a optimální odpovědi:
+  - Otázka: "Jak získáváte nové klienty nebo projekty?"
+    - Odpověď: "Kombinuji tradiční metody, jako je networking na oborových konferencích, s moderními technikami, jako je používání sociálních médií pro rozšiřování mé profesní sítě a budování osobní značky."
+
+- Mini úkoly nebo praktická cvičení:
+  - Vytvořte si seznam top 10 profesionálů v oboru digitálního marketingu a grafiky, které chcete oslovit. Připravte si osobní zprávu, kterou jim pošlete na LinkedIn, a sledujte jejich reakce.
+
+- Návaznost na krok n-1:
+  V předchozím kroku jste se naučili, jak využít leadership k rozšíření své profesionální sítě. Nyní je čas aplikovat tyto dovednosti k prohloubení a udržování těchto vztahů.
+
+Praktická část:
+- Diagram: Vytvořte myšlenkovou mapu svých současných kontaktů a identifikujte oblasti, kde můžete rozšířit svou síť.
+
+Ukazatele úspěchu:
+- Navázání alespoň pěti nových profesionálních kontaktů, kteří mohou přispět k rozvoji vaší kariéry.
+- Aktivní účast na dvou odborných akcích měsíčně, ať už virtuálních nebo fyzických.
+<inner-block-8>
+Bonus / laterální rozšíření:
+- Naučte se, jak využít sociální sítě pro podporu osobní značky a kariérního růstu. Prozkoumejte interdisciplinární přístup tím, že se zaměříte na psychologii barev v grafickém designu a jak tato znalost může ovlivnit vaši vizibilitu a interakci na platformách jako Instagram a Pinterest.
+<end-inner-block-8>
+<end-blok-8>

@@ -1,0 +1,40 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-10>
+Název kroku: Digitální transformace a inovace
+Hlavní záměr: Schopnost řídit inovativní projekty a přizpůsobit se digitálním změnám.
+Obsah kroku:
+- Detailní vysvětlení tématu: Digitální transformace v oboru digitálního marketingu a grafiky znamená nejen aplikaci nových technologií, ale také změnu myšlení a procesů. Klíčem je porozumět, jak technologie jako AI, big data a cloud computing mění způsob, jakým oslovujeme zákazníky a vytváříme obsah.
+- Příklady: Například využití AI pro personalizaci marketingových kampaní nebo automatizaci grafických návrhů. Představte si AI, která analyzuje data zákazníků a generuje personalizované vizuály pro každého uživatele.
+- Případové studie: Analyzujte, jak společnosti jako Adobe využívají AI a strojové učení ke změně způsobu, jakým poskytují své grafické nástroje. Jak například implementace Adobe Sensei pomohla zvýšit efektivitu návrhářských týmů.
+- Typické pohovorové otázky a optimální odpovědi:
+  - "Jak byste integrovali nejnovější digitální technologie do naší marketingové strategie?" Odpověď: "Začal bych analýzou aktuálních procesů a identifikoval oblasti, kde by technologie jako AI nebo big data mohly přinést největší přínos. Například by to mohlo zahrnovat zefektivnění analýzy zákaznických dat pro lepší cílení kampaní."
+- Mini úkoly nebo praktická cvičení: Vytvořte projekt, kde navrhnete marketingovou kampaň s využitím nejnovějších technologických trendů, jako je AR nebo VR, a sledujte její dopad na angažovanost zákazníků.
+- Návaznost na krok 9: Využijte storytelling techniky pro efektivní komunikaci hodnoty vašich digitálních inovací. Například vytvořte narativní strukturu, která vysvětluje, jak váš projekt přináší zákazníkům přidanou hodnotu.
+
+Praktická část:
+- Navrhněte diagram procesu digitální transformace ve vašem aktuálním projektu. Zahrňte klíčové kroky, jako je analýza dat, implementace technologie a měření úspěchu.
+- Proveďte live-coding cvičení, kde pomocí dostupného API vytvoříte jednoduchý personalizovaný marketingový e-mail.
+
+Ukazatele úspěchu:
+- Měřitelné indikátory zahrnují zvýšení efektivity projektového řízení o X%, zkrácení doby uvedení na trh nových kampaní, nebo zvýšení zákaznické angažovanosti o Y%.
+
+<inner-block-10>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak digitální transformace ovlivňuje jiné kreativní obory jako film nebo hudba. Například jak streamingové služby změnily distribuci a marketing hudby. Tato analýza může přinést inspirativní nápady pro vaše marketingové strategie a otevřít nové cesty pro spolupráci mezi různými kreativními odvětvími.
+<end-inner-block-10>
+<end-blok-10>

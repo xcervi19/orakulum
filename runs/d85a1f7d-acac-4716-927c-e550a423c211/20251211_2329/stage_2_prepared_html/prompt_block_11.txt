@@ -1,0 +1,38 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-11>
+Název kroku: Adaptabilita a kontinuální učení
+Hlavní záměr: Zajištění schopnosti rychle se přizpůsobovat novým podmínkám a technologiím v oboru digitálního marketingu a grafiky.
+Obsah kroku:
+- Detailní vysvětlení tématu: Adaptabilita a kontinuální učení jsou klíčovými schopnostmi, které umožňují odborníkům v digitálním marketingu a grafice držet krok s rychlými změnami v technologiích a trendech. Schopnost rychle se učit nové nástroje, platformy a techniky je zásadní pro udržení konkurenceschopnosti.
+- Příklady: V digitálním marketingu může být nutné rychle se přizpůsobit novým algoritmům sociálních médií, zatímco v grafice může jít o zvládnutí nového designového softwaru. Představte si, že právě vyšla nová verze Adobe Illustratoru s revolučními funkcemi pro 3D modelování. Rychlé osvojení těchto funkcí může zvýšit vaši hodnotu v očích zaměstnavatele.
+- Případové studie nebo modelové situace: Firma XYZ přijala novou platformu pro automatizaci marketingu. Zaměstnanci, kteří se rychle naučili tuto platformu používat, přinesli firmě významné úspory a efektivitu, což vedlo k povýšení a zvýšení platů.
+- Typické pohovorové otázky a optimální odpovědi: "Jakým způsobem zůstáváte v obraze s nejnovějšími trendy a technologiemi?" Optimální odpověď: "Pravidelně sleduji odborné blogy, účastním se webinářů a online kurzů. Nedávno jsem se například zúčastnil kurzu o nových nástrojích v digitálním marketingu."
+- Mini úkoly nebo praktická cvičení: Najděte a zúčastněte se online kurzu na platformě jako Coursera nebo Udemy zaměřeného na nový aspekt digitálního marketingu nebo grafiky, který jste dosud neovládali.
+- Návaznost na krok n-1: V předchozím kroku jste se naučili aplikovat inovativní myšlení na nové technologie. Nyní tento přístup využijte k rychlému osvojení nových nástrojů.
+
+Praktická část:
+- Diagram: Vytvořte myšlenkovou mapu, která vizualizuje proces, jakým si osvojíte nový marketingový nástroj od základů po pokročilé funkce.
+- Live-coding postup: Vytvořte jednoduchou grafiku pomocí nového nástroje nebo funkce, kterou jste se právě naučili.
+
+Ukazatele úspěchu:
+- Schopnost rychle se naučit a přizpůsobit nové technologii nebo metodě je ověřena, když jste schopni aplikovat nově nabyté znalosti v reálném pracovním projektu nebo simulovaném prostředí.
+<inner-block-11>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak může mindfulness přispět ke zlepšení schopnosti adaptace a učení. Mindfulness může pomoci zlepšit koncentraci a snížit stres, což usnadňuje rychlejší a efektivnější učení nových dovedností. Zkuste začlenit krátké meditační techniky do vaší denní rutiny, abyste zvýšili svou schopnost soustředit se a učit se.
+<end-inner-block-11>
+<end-blok-11>

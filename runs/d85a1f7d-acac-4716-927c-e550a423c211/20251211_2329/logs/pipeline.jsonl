@@ -1,0 +1,37 @@
+{"event": "info", "message": "Starting pipeline for client d85a1f7d-acac-4716-927c-e550a423c211", "details": {}, "timestamp": "2025-12-11T22:29:11.698458", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Run directory: runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329", "details": {}, "timestamp": "2025-12-11T22:29:11.699292", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "input_transform", "details": {"description_length": 109}, "timestamp": "2025-12-11T22:29:11.703045", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Calling OpenAI API for input transform...", "details": {}, "timestamp": "2025-12-11T22:29:11.709383", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Input transform result stored in database", "details": {}, "timestamp": "2025-12-11T22:29:18.777608", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "input_transform", "duration_ms": 7072, "output_path": "runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/input_transform/output.json", "timestamp": "2025-12-11T22:29:18.778706", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "plan_prompt", "details": {}, "timestamp": "2025-12-11T22:29:18.782736", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Calling OpenAI API for plan generation...", "details": {}, "timestamp": "2025-12-11T22:29:18.791666", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Plan text stored in database", "details": {}, "timestamp": "2025-12-11T22:29:53.924021", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "plan_prompt", "duration_ms": 35289, "output_path": "runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/plan/plan.txt", "timestamp": "2025-12-11T22:29:54.076923", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "generate_blocks", "details": {}, "timestamp": "2025-12-11T22:29:54.084745", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Running: python3 manual.py --input runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/plan/plan.txt --output runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/parsed_parts", "details": {}, "timestamp": "2025-12-11T22:29:54.090710", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "generate_blocks", "duration_ms": 118, "output_path": null, "timestamp": "2025-12-11T22:29:54.209090", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Generated 15 block prompts", "details": {}, "timestamp": "2025-12-11T22:29:54.210482", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "stage2_expand", "details": {}, "timestamp": "2025-12-11T22:29:54.212387", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Processing block prompts via OpenAI API...", "details": {}, "timestamp": "2025-12-11T22:29:54.215956", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "stage2_expand", "duration_ms": 268192, "output_path": null, "timestamp": "2025-12-11T22:34:22.408165", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Stage 2: 15 succeeded, 0 failed, 0 skipped", "details": {}, "timestamp": "2025-12-11T22:34:22.408662", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "prep_html", "details": {}, "timestamp": "2025-12-11T22:34:22.413573", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Running: python3 prepare_html_prompts.py --input runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/stage_2_generated_parts --output runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/stage_2_prepared_html", "details": {}, "timestamp": "2025-12-11T22:34:22.417874", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "prep_html", "duration_ms": 78, "output_path": null, "timestamp": "2025-12-11T22:34:22.495880", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Prepared 15 HTML prompts", "details": {}, "timestamp": "2025-12-11T22:34:22.501097", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "stage3_html", "details": {}, "timestamp": "2025-12-11T22:34:22.505370", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Processing HTML prompts via OpenAI API...", "details": {}, "timestamp": "2025-12-11T22:34:22.508987", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "stage3_html", "duration_ms": 135161, "output_path": null, "timestamp": "2025-12-11T22:36:37.670883", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Stage 3: 15 succeeded, 0 failed, 0 skipped", "details": {}, "timestamp": "2025-12-11T22:36:37.679966", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "html_to_json", "details": {}, "timestamp": "2025-12-11T22:36:38.491570", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Running: python3 html_to_json.py --input runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/stage_3_generated_html --output runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/transformed", "details": {}, "timestamp": "2025-12-11T22:36:38.500783", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "html_to_json", "duration_ms": 1121, "output_path": null, "timestamp": "2025-12-11T22:36:39.621777", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Created 15 JSON files", "details": {}, "timestamp": "2025-12-11T22:36:39.624759", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "clean_json", "details": {}, "timestamp": "2025-12-11T22:36:39.627219", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Running: python3 clean_markdown.py --directory runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/transformed", "details": {}, "timestamp": "2025-12-11T22:36:39.629399", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "clean_json", "duration_ms": 43, "output_path": null, "timestamp": "2025-12-11T22:36:39.673054", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "upload_pages", "details": {}, "timestamp": "2025-12-11T22:36:39.674604", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Running: python3 upload_learning_content.py d85a1f7d-acac-4716-927c-e550a423c211 --directory runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2329/transformed", "details": {}, "timestamp": "2025-12-11T22:36:39.676073", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "upload_pages", "duration_ms": 3474, "output_path": null, "timestamp": "2025-12-11T22:36:43.150799", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Uploaded 15 pages for client d85a1f7d-acac-4716-927c-e550a423c211", "details": {}, "timestamp": "2025-12-11T22:36:43.157002", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}

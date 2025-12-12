@@ -1,0 +1,35 @@
+<section data-ui="block">
+    <div data-ui="section-header">
+        <h2 data-ui="heading">Název kroku: Pokročilá prezentace a storytelling</h2>
+    </div>
+    <p data-ui="paragraph">Hlavní záměr: Umět efektivně prezentovat a sdílet myšlenky, projekty a výsledky v oblasti digitálního marketingu a grafiky.</p>
+    <div data-ui="tasks">
+        <h3 data-ui="heading">Obsah kroku:</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">Detailní vysvětlení tématu: Efektivní storytelling je klíčem k úspěchu v digitálním marketingu a grafice. Vyprávění příběhů pomáhá vytvářet emocionální spojení s publikem, což zvyšuje zapamatovatelnost a angažovanost. Zásady dobrého storytellingu zahrnují jasnou strukturu (úvod, zápletka, vrchol, rozuzlení), použití metafor a analogií a personalizaci obsahu.</li>
+            <li data-ui="list-item">Příklady: Představte si, že propagujete nový grafický software. Místo prostého popisu funkcí, vyprávějte příběh designéra, který díky tomuto softwaru urychlil svou práci a získal významného klienta.</li>
+            <li data-ui="list-item">Případové studie nebo modelové situace: Analyzujte úspěšné kampaně jako je "Dumb Ways to Die", které využily animaci a storytelling k šíření povědomí o bezpečnosti na železnici.</li>
+            <li data-ui="list-item">Typické pohovorové otázky a optimální odpovědi: "Jak byste využil storytelling ve své práci?" Odpovězte konkrétním příkladem, jak jste použili příběh k vylepšení marketingové kampaně.</li>
+            <li data-ui="list-item">Mini úkoly nebo praktická cvičení: Vytvořte miniprezentaci o svém dosavadním projektu, která zahrnuje příběh s jasnou strukturou, a prezentujte ji kolegovi.</li>
+            <li data-ui="list-item">Návaznost na krok n-1: Použijte networkingové dovednosti k získání zpětné vazby na své prezentace od odborníků v oboru.</li>
+        </ul>
+    </div>
+    <div data-ui="tasks">
+        <h3 data-ui="heading">Praktická část:</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">Vytvořte prezentační diagram, který vizualizuje příběh vaší poslední kampaně. Zahrňte klíčové body jako protagonistu, konflikt, řešení a výsledek.</li>
+            <li data-ui="list-item">Navrhněte interaktivní prvky, které by mohly být součástí vaší prezentace, například QR kódy s odkazy na ukázková videa nebo interaktivní grafiku.</li>
+        </ul>
+    </div>
+    <div data-ui="metric-list">
+        <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="metric">Prezentace, která získá pozitivní zpětnou vazbu od alespoň tří kolegů nebo mentorů.</li>
+            <li data-ui="metric">Schopnost jasně a poutavě přednést klíčovou myšlenku projektu do 5 minut.</li>
+        </ul>
+    </div>
+    <div data-ui="block">
+        <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+        <p data-ui="paragraph">Prozkoumejte, jak může být humor efektivně použit v prezentacích pro zvýšení jejich dopadu. Například, skvělým příkladem je využití humoru v kampaních jako je "The Man Your Man Could Smell Like" od Old Spice, která proměnila běžnou reklamu v virální hit.</p>
+    </div>
+</section>

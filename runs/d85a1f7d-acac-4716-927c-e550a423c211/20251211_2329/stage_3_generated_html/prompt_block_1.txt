@@ -1,0 +1,49 @@
+<section data-ui="block">
+    <h2 data-ui="heading">Název kroku: Základy JavaScriptu a moderních frameworků v digitálním marketingu</h2>
+    <p data-ui="paragraph">Hlavní záměr: Získání solidní základny v JavaScriptu a schopnost pracovat s moderními technologiemi pro zlepšení interaktivity a efektivity digitálních marketingových kampaní.</p>
+
+    <div data-ui="section">
+        <h3 data-ui="section-header">Obsah kroku:</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">Detailní vysvětlení tématu: JavaScript je klíčovým nástrojem pro tvorbu interaktivních webových stránek a aplikací, což může výrazně zvýšit angažovanost uživatelů v digitálních marketingových kampaních. Naučte se základní syntaxi, jako jsou proměnné, funkce, smyčky a podmínky, a jak tyto koncepty uplatnit při manipulaci s Document Object Model (DOM) pro dynamické úpravy obsahu webové stránky.</li>
+            <li data-ui="list-item">Příklady: Představte si kampaň, kde uživatelé mohou interagovat s dynamickým obsahem, jako je personalizovaná nabídka, která se automaticky aktualizuje podle jejich chování na webu. Takového efektu dosáhnete pomocí JavaScriptu a frameworku jako React pro efektivní správu stavu aplikace.</li>
+            <li data-ui="list-item">Případové studie nebo modelové situace: Zvážit můžete případovou studii úspěšné marketingové kampaně, která využila JavaScript k personalizaci obsahu v reálném čase, čímž zvýšila konverzní poměr o 20 %.</li>
+            <li data-ui="list-item">
+                Typické pohovorové otázky a optimální odpovědi:
+                <ol data-ui="numbered-list">
+                    <li data-ui="list-item">
+                        <div data-ui="qa-block">
+                            <p data-ui="question">Jak byste použili JavaScript k zlepšení uživatelské zkušenosti na našich webových stránkách?</p>
+                            <p data-ui="answer">Odpověď: Použil bych JavaScript pro asynchronní načítání obsahu, což zkrátí dobu načítání stránky a zlepší uživatelskou zkušenost. Dále bych využil framework jako React pro jednodušší správu složitých stavů uživatelského rozhraní.</p>
+                        </div>
+                    </li>
+                    <li data-ui="list-item">
+                        <div data-ui="qa-block">
+                            <p data-ui="question">Jaký je rozdíl mezi callbacky a promisy v JavaScriptu?</p>
+                            <p data-ui="answer">Odpověď: Callbacks jsou funkce předávané jako argumenty do jiných funkcí, které se vyvolají po dokončení úkolu. Promises jsou objekty, které představují dokončené nebo neúspěšné asynchronní operace a umožňují lepší kontrolu nad tokem asynchronního kódu.</p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            <li data-ui="list-item">Mini úkoly nebo praktická cvičení: Vytvořte malou dynamickou aplikaci s personalizovanou nabídkou, která se mění podle údajů z uživatelského profilu uloženého na serveru. Využijte k tomu JavaScript a React.</li>
+            <li data-ui="list-item">Návaznost na krok n-1: Pokud jste před tímto krokem pracovali na základech HTML a CSS, nyní můžete začlenit JavaScript pro zlepšení interaktivity a použít frameworky pro efektivnější správu složitějších aplikací.</li>
+        </ul>
+    </div>
+
+    <div data-ui="section">
+        <h3 data-ui="section-header">Praktická část:</h3>
+        <p data-ui="paragraph">Vytvořte jednoduchou aplikaci v Reactu, která zobrazuje dynamický seznam produktů na základě dat získaných asynchronně z API. Implementujte funkce pro filtrování a řazení produktů, abyste simulovali základní e-commerce prostředí.</p>
+    </div>
+
+    <div data-ui="section">
+        <h3 data-ui="section-header">Ukazatele úspěchu:</h3>
+        <ul data-ui="metric-list">
+            <li data-ui="metric">Měřitelným indikátorem úspěchu je schopnost napsat a nasadit interaktivní webovou aplikaci, která využívá JavaScript a React, a která umožňuje uživatelům provádět personalizované interakce.</li>
+        </ul>
+    </div>
+
+    <section data-ui="inner-block">
+        <h3 data-ui="section-header">Bonus / laterální rozšíření:</h3>
+        <p data-ui="paragraph">Prozkoumejte, jak lze JavaScript integrovat s nástroji pro analýzu dat, jako je D3.js, pro tvorbu interaktivních vizualizací, které mohou poskytnout cenné informace o chování uživatelů a efektivitě marketingových kampaní. To může zahrnovat vizualizace jako heatmapy, které ukazují, kde uživatelé na stránce nejčastěji klikají.</p>
+    </section>
+</section>

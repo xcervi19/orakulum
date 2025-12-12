@@ -1,0 +1,13 @@
+{"event": "info", "message": "Starting pipeline for client d85a1f7d-acac-4716-927c-e550a423c211", "details": {}, "timestamp": "2025-12-11T21:55:53.278924", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Run directory: runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2255", "details": {}, "timestamp": "2025-12-11T21:55:53.279961", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "input_transform", "details": {"description_length": 109}, "timestamp": "2025-12-11T21:55:53.286360", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Calling OpenAI API for input transform...", "details": {}, "timestamp": "2025-12-11T21:55:53.293211", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Input transform result stored in database", "details": {}, "timestamp": "2025-12-11T21:55:59.390294", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "input_transform", "duration_ms": 6099, "output_path": "runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2255/input_transform/output.json", "timestamp": "2025-12-11T21:55:59.391211", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "plan_prompt", "details": {}, "timestamp": "2025-12-11T21:55:59.397977", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Calling OpenAI API for plan generation...", "details": {}, "timestamp": "2025-12-11T21:55:59.405719", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Plan text stored in database", "details": {}, "timestamp": "2025-12-11T21:56:01.248175", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_complete", "step": "plan_prompt", "duration_ms": 2000, "output_path": "runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2255/plan/plan.txt", "timestamp": "2025-12-11T21:56:01.404176", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_start", "step": "generate_blocks", "details": {}, "timestamp": "2025-12-11T21:56:01.412435", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "info", "message": "Running: python3 manual.py --input runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2255/plan/plan.txt --output runs/d85a1f7d-acac-4716-927c-e550a423c211/20251211_2255/parsed_parts", "details": {}, "timestamp": "2025-12-11T21:56:01.418372", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}
+{"event": "step_error", "step": "pipeline", "error": "RuntimeError: manual.py failed: ", "retry_count": 0, "timestamp": "2025-12-11T21:56:01.482424", "client_id": "d85a1f7d-acac-4716-927c-e550a423c211"}

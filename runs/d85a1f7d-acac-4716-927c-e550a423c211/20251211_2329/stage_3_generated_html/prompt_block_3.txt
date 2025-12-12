@@ -1,0 +1,35 @@
+<section data-ui="block">
+    <header data-ui="section-header">
+        <h2 data-ui="heading">Název kroku: Měkké dovednosti a týmová spolupráce v digitálním marketingu a grafice</h2>
+    </header>
+    <p data-ui="paragraph">Hlavní záměr: Zvýšení schopnosti efektivně komunikovat a spolupracovat v týmu v kontextu digitálního marketingu a grafického designu.</p>
+    <div data-ui="block">
+        <h3 data-ui="heading">Obsah kroku:</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">Detailní vysvětlení tématu: Měkké dovednosti, jako je aktivní naslouchání, efektivní komunikace a řešení konfliktů, jsou klíčové pro úspěch v digitálním marketingu a grafice, kde je spolupráce mezi kreativními a technickými týmy běžná. Aktivní naslouchání umožňuje lepší pochopení potřeb klienta a spolupracovníků, zatímco efektivní komunikace zajišťuje, že vaše myšlenky a návrhy jsou správně pochopeny a oceněny.</li>
+            <li data-ui="list-item">Příklady: Představte si situaci, kdy váš tým pracuje na kampani pro nového klienta. Aktivní naslouchání během briefingů může odhalit klíčové potřeby klienta, zatímco efektivní komunikace může zajistit, že návrhy vašeho týmu budou v souladu s klientovými očekáváními.</li>
+            <li data-ui="list-item">Případové studie: Například firma XYZ zlepšila své výsledky kampaní o 30 % díky zavedení pravidelných týmových schůzek zaměřených na zpětnou vazbu a aktivní naslouchání.</li>
+            <li data-ui="list-item">Typické pohovorové otázky a optimální odpovědi: "Jak řešíte konflikty v týmu?" Odpověď: "Věřím v otevřenou komunikaci a naslouchání všem stranám. Například jsem nedávno použil techniku mediace k vyřešení neshody mezi designéry a marketingovým týmem, což vedlo k úspěšnému dokončení projektu včas."</li>
+            <li data-ui="list-item">Mini úkoly nebo praktická cvičení: Zorganizujte týmovou schůzku a požádejte členy týmu o zpětnou vazbu na váš způsob komunikace. Zaměřte se na aktivní naslouchání a zkuste implementovat jejich návrhy.</li>
+            <li data-ui="list-item">Návaznost na krok n-1: Tento krok navazuje na aplikaci technik na týmové projekty, kde je klíčové, aby optimalizovaný kód byl nejen funkční, ale také komunikován a prezentován srozumitelně všem členům týmu.</li>
+        </ul>
+    </div>
+    <div data-ui="block">
+        <h3 data-ui="heading">Praktická část:</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">Může obsahovat diagram ukazující proces efektivní týmové komunikace během brainstormingu, kde každý člen týmu má rovnou příležitost přispět svými nápady.</li>
+            <li data-ui="list-item">Live-coding postup pro vytvoření jednoduchého grafického návrhu, který tým může dále iterovat na základě zpětné vazby všech členů.</li>
+        </ul>
+    </div>
+    <div data-ui="block">
+        <h3 data-ui="heading">Ukazatele úspěchu:</h3>
+        <ul data-ui="bullet-list">
+            <li data-ui="list-item">Pozitivní zpětná vazba od členů týmu na vaši komunikaci a spolupráci, která může být měřena pravidelnými anonymními dotazníky.</li>
+            <li data-ui="list-item">Zvýšená efektivita týmových projektů, například rychlejší dokončení návrhů a kampaní díky lepší komunikaci.</li>
+        </ul>
+    </div>
+    <section data-ui="block">
+        <h3 data-ui="heading">Bonus / laterální rozšíření:</h3>
+        <p data-ui="paragraph">Prozkoumejte techniky koučování a mentoringu pro rozvoj členů týmu. Například, jak můžete využít koučovací přístup k podpoře a vedení juniorních grafiků a marketérů, což může vést k zvýšení jejich kompetencí a motivace. Zapojení koučovacích technik může také obohatit váš osobní styl vedení a posílit týmovou soudržnost.</p>
+    </section>
+</section>

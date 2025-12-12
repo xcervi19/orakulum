@@ -1,0 +1,294 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Strategické myšlení a plánování projektů v digitálním marketingu a grafice"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "ui": "paragraph",
+        "children": [
+          {
+            "type": "text",
+            "text": "Hlavní záměr: Schopnost plánovat a realizovat projekty v oblasti digitálního marketingu a grafiky s ohledem na obchodní cíle a potřeby klientů."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Obsah kroku:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Detailní vysvětlení tématu: V digitálním marketingu a grafice je strategické myšlení klíčové pro efektivní plánování kampaní a projektů. To zahrnuje pochopení obchodních cílů klienta a vytvoření strategie, která tyto cíle podporuje. Je důležité propojit kreativitu s datově řízeným přístupem, abyste mohli navrhnout projekty, které nejenže vypadají dobře, ale také přinášejí výsledky."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Příklady: Představte si, že pracujete na kampani pro nový produkt. Vaším úkolem je nejprve pochopit cílovou skupinu a její preference. Poté navrhnete kreativní koncept, který osloví tuto skupinu, a stanovíte klíčové metriky úspěchu, jako je počet zobrazení, míra prokliku nebo konverze."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případové studie nebo modelové situace: Studujte úspěšné kampaně, které použily inovativní přístupy k řešení problémů, jako je například použití interaktivního obsahu nebo virální marketingové techniky."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "\n        Typické pohovorové otázky a optimální odpovědi:\n        "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ul",
+                    "ui": "bullet-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "\"Jak byste přistoupili k plánování kampaně pro nový produkt?\" Optimální odpověď by zahrnovala výzkum trhu, definování cílové skupiny, stanovení cílů a měření úspěchu kampaně."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "\"Jak řešíte konflikty v týmu během projektové realizace?\" Zmínit důležitost komunikace, kompromisu a zaměření na společný cíl."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini úkoly nebo praktická cvičení: Vytvořte jednoduchý projektový plán pro fiktivní produktovou kampaň, zahrnující klíčové milníky, rozpočet a metriky úspěchu."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Návaznost na krok 4: Využijte měkké dovednosti, jako je komunikace a týmová spolupráce, které jste rozvinuli v předchozím kroku, pro efektivní vedení projektů."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Praktická část:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Strukturovaný problém: Vytvořit Ganttův diagram pro projekt digitální kampaně, zahrnující všechny fáze od výzkumu až po vyhodnocení výsledků. Pomocí nástroje jako je Trello nebo Asana vytvořte vizuální plán úkolů."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ukazatele úspěchu:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "metric-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Měřitelné nebo jasně pozorovatelné indikátory: Úspěšně naplánovaný projekt s jasně definovanými cíli, jako je zvýšení povědomí o značce o 20 % během 3 měsíců nebo dosažení 10% konverzního poměru."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "section",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "header",
+            "ui": "section-header",
+            "children": [
+              {
+                "type": "element",
+                "tag": "h3",
+                "ui": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Bonus / laterální rozšíření:"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Prozkoumejte, jak designové myšlení z oblasti produktového designu může být aplikováno na strategické plánování v digitálním marketingu. Například, jak iterativní procesy testování a zpětné vazby mohou zlepšit návrh a efektivitu marketingových kampaní."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

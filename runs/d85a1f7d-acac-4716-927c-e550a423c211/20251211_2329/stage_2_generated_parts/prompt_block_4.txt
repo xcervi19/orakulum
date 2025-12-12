@@ -1,0 +1,21 @@
+<blok-5>
+Název kroku: Strategické myšlení a plánování projektů v digitálním marketingu a grafice
+Hlavní záměr: Schopnost plánovat a realizovat projekty v oblasti digitálního marketingu a grafiky s ohledem na obchodní cíle a potřeby klientů.
+Obsah kroku:
+- Detailní vysvětlení tématu: V digitálním marketingu a grafice je strategické myšlení klíčové pro efektivní plánování kampaní a projektů. To zahrnuje pochopení obchodních cílů klienta a vytvoření strategie, která tyto cíle podporuje. Je důležité propojit kreativitu s datově řízeným přístupem, abyste mohli navrhnout projekty, které nejenže vypadají dobře, ale také přinášejí výsledky.
+- Příklady: Představte si, že pracujete na kampani pro nový produkt. Vaším úkolem je nejprve pochopit cílovou skupinu a její preference. Poté navrhnete kreativní koncept, který osloví tuto skupinu, a stanovíte klíčové metriky úspěchu, jako je počet zobrazení, míra prokliku nebo konverze.
+- Případové studie nebo modelové situace: Studujte úspěšné kampaně, které použily inovativní přístupy k řešení problémů, jako je například použití interaktivního obsahu nebo virální marketingové techniky.
+- Typické pohovorové otázky a optimální odpovědi:
+  - "Jak byste přistoupili k plánování kampaně pro nový produkt?" Optimální odpověď by zahrnovala výzkum trhu, definování cílové skupiny, stanovení cílů a měření úspěchu kampaně.
+  - "Jak řešíte konflikty v týmu během projektové realizace?" Zmínit důležitost komunikace, kompromisu a zaměření na společný cíl.
+- Mini úkoly nebo praktická cvičení: Vytvořte jednoduchý projektový plán pro fiktivní produktovou kampaň, zahrnující klíčové milníky, rozpočet a metriky úspěchu.
+- Návaznost na krok 4: Využijte měkké dovednosti, jako je komunikace a týmová spolupráce, které jste rozvinuli v předchozím kroku, pro efektivní vedení projektů.
+Praktická část:
+- Strukturovaný problém: Vytvořit Ganttův diagram pro projekt digitální kampaně, zahrnující všechny fáze od výzkumu až po vyhodnocení výsledků. Pomocí nástroje jako je Trello nebo Asana vytvořte vizuální plán úkolů.
+Ukazatele úspěchu:
+- Měřitelné nebo jasně pozorovatelné indikátory: Úspěšně naplánovaný projekt s jasně definovanými cíli, jako je zvýšení povědomí o značce o 20 % během 3 měsíců nebo dosažení 10% konverzního poměru.
+<inner-block-5>
+Bonus / laterální rozšíření:
+- Prozkoumejte, jak designové myšlení z oblasti produktového designu může být aplikováno na strategické plánování v digitálním marketingu. Například, jak iterativní procesy testování a zpětné vazby mohou zlepšit návrh a efektivitu marketingových kampaní.
+<end-inner-block-5>
+<end-blok-5>

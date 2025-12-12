@@ -1,0 +1,342 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Kultivace osobní značky"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Hlavní záměr: Budování a propagace silné osobní značky pro zvýšení kariérních příležitostí."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Detailní vysvětlení tématu: Osobní značka v digitálním marketingu a grafice je vaším profesionálním otiskem, který vás odlišuje od ostatních. Jde o konzistentní prezentaci vašich hodnot, dovedností, a projektů. V digitálním světě je důležité, aby vaše osobní značka rezonovala napříč různými médii a platformami."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Příklady: Vytvořte si profesionální portfolio na platformách jako Behance nebo Dribbble, kde ukážete své nejlepší projekty. Na LinkedIn pravidelně sdílejte články a myšlenky týkající se trendů v digitálním marketingu a grafice. Můžete také psát blogy na Medium a sdílet své znalosti a zkušenosti."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případové studie nebo modelové situace: Zvažte úspěšné osobnosti jako je Jessica Walsh, grafická designérka, která kombinovala osobní branding s kreativními projekty, čímž se stala známou v oboru. Analyzujte, jak její osobní značka pomohla k rozšíření její kariéry."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Typické pohovorové otázky a optimální odpovědi:"
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "ul",
+                "ui": "bullet-list",
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "\"Jak vaše osobní značka ovlivňuje vaši práci v digitálním marketingu a grafice?\""
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Odpovězte, že vaše osobní značka vám pomáhá lépe komunikovat s klienty a kolegy, protože jasně definuje vaše hodnoty a přístup k práci."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "li",
+                    "ui": "list-item",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "div",
+                        "ui": "qa-block",
+                        "children": [
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "question",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "\"Můžete nám ukázat, jak jste propagovali svou osobní značku online?\""
+                              }
+                            ]
+                          },
+                          {
+                            "type": "element",
+                            "tag": "p",
+                            "ui": "answer",
+                            "children": [
+                              {
+                                "type": "text",
+                                "text": "Připravte si konkrétní příklady, například příspěvky na sociálních sítích, které získaly vysokou míru zapojení."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini úkoly nebo praktická cvičení: Vytvořte si osobní SWOT analýzu k identifikaci svých silných a slabých stránek. Zjistěte, jak tyto poznatky můžete použít k posílení své osobní značky."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Návaznost na krok n-1: Využití finanční gramotnosti k investování do osobní značky vám pomohlo určit rozpočet na samostatné projekty nebo další vzdělávání. Nyní tyto investice využijte k posílení svého profesního profilu."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Workshop na vytvoření profesionálního portfolia: Použijte nástroje jako Adobe Portfolio nebo Wix. Připravte strukturu, která obsahuje úvod, vaše projekty, kontaktní informace a sekci o vás."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Diagram: Vytvořte myšlenkovou mapu, která zobrazuje hodnoty a dovednosti, které chcete komunikovat prostřednictvím své osobní značky."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "metric-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Zvýšení počtu sledujících na profesionálních platformách o 30% během 6 měsíců."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Pozvání na alespoň jednu konferenci nebo workshop jako řečník či panelista."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "metric",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Nárůst počtu osob, které se s vámi spojí na LinkedIn díky vaší aktivní účasti a sdílení obsahu."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Prozkoumejte, jak může být storytelling použit pro posílení vaší osobní značky. V digitálním marketingu a grafice může být vyprávění příběhů silným nástrojem pro vytváření emocionálního spojení s publikem. Zkuste integrovat osobní anekdoty nebo příběhy do své profesionální prezentace, abyste vytvořili autentický a zapamatovatelný obraz."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

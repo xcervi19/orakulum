@@ -1,0 +1,74 @@
+<section data-ui="block">
+  <header data-ui="section-header">
+    <h2 data-ui="heading">Název kroku: Vedení týmu a rozvoj leadershipu v digitálním marketingu a grafice</h2>
+  </header>
+  <p data-ui="paragraph">Hlavní záměr: Ovládnutí klíčových aspektů efektivního vedení týmu v oblasti digitálního marketingu a grafiky.</p>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h2 data-ui="heading">Obsah kroku:</h2>
+    </header>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Detailní vysvětlení tématu: Vedení týmu v digitálním marketingu a grafice vyžaduje nejen znalosti oboru, ale také schopnost efektivně komunikovat a motivovat členy týmu, kteří často pracují na různorodých úkolech od SEO po grafický design. Je důležité pochopit různé styly vedení, jako je demokratický, autokratický nebo transformační styl, a jak je aplikovat v závislosti na situaci a složení týmu.</p>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Příklady: Představte si situaci, kdy vedete tým během kampaně na nový produkt. Jako vedoucí musíte nejen rozdělit úkoly podle schopností jednotlivých členů, ale také zajistit, aby všichni směřovali k jednotnému cíli a rozuměli jeho důležitosti.</p>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Případové studie nebo modelové situace: Uvažujte o společnosti, která úspěšně přešla z tradičních médií na digitální marketing díky transformačnímu vedení. Vedoucí týmu zde použil strategii zaměřenou na vzdělávání a motivaci členů týmu k přijetí nových digitálních nástrojů.</p>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Typické pohovorové otázky a optimální odpovědi:</p>
+        <ul data-ui="bullet-list">
+          <li data-ui="list-item">
+            <p data-ui="qa-block">
+              <span data-ui="question">"Jaký styl vedení preferujete a proč?"</span> 
+              <span data-ui="answer">Odpověď by měla zahrnovat zkušenosti s různými styly a schopnost přizpůsobit styl vedení podle potřeb týmu a projektů.</span>
+            </p>
+          </li>
+          <li data-ui="list-item">
+            <p data-ui="qa-block">
+              <span data-ui="question">"Jak motivujete svůj tým k dosažení cílů?"</span> 
+              <span data-ui="answer">Zaměřte se na konkrétní příklady, například zavedení pravidelných brainstormingových setkání nebo používání gamifikace.</span>
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Mini úkoly nebo praktická cvičení: Vytvořte plán pro vedení fiktivní marketingové kampaně, včetně rozdělení úkolů, stanovení cílů a metrik úspěchu. Zapojte různé styly vedení a vyhodnoťte jejich efektivitu.</p>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Návaznost na krok n-1: Integrace analytických dovedností do rozhodovacích procesů pomáhá při vyhodnocování výkonu týmu a úspěšnosti kampaní, což je klíčové pro efektivní vedení.</p>
+      </li>
+    </ul>
+  </section>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h2 data-ui="heading">Praktická část:</h2>
+    </header>
+    <ul data-ui="bullet-list">
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Diagram: Vytvořte diagram znázorňující strukturu vašeho týmu a role jednotlivých členů. Ukažte, jak byste rozdělovali úkoly na základě jejich odbornosti a stylu vedení.</p>
+      </li>
+      <li data-ui="list-item">
+        <p data-ui="paragraph">Strukturovaný problém: Zkuste vymyslet řešení pro situaci, kdy máte v týmu člena, který neustále zpožďuje termíny. Jak byste situaci řešili s ohledem na rozvoj týmu a jednotlivce?</p>
+      </li>
+    </ul>
+  </section>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h2 data-ui="heading">Ukazatele úspěchu:</h2>
+    </header>
+    <ul data-ui="metric-list">
+      <li data-ui="metric">Pozitivní zpětná vazba od členů týmu na váš styl vedení.</li>
+      <li data-ui="metric">Zvýšení efektivity týmu a dosažení stanovených cílů v rámci kampaní.</li>
+      <li data-ui="metric">Schopnost přizpůsobit styl vedení podle situace a potřeb týmu, což bude reflektováno v úspěšnosti projektů.</li>
+    </ul>
+  </section>
+  <section data-ui="block">
+    <header data-ui="section-header">
+      <h2 data-ui="heading">Bonus / laterální rozšíření:</h2>
+    </header>
+    <p data-ui="paragraph">Prozkoumejte principy emoční inteligence a jejich aplikaci ve vedení týmu. Emoční inteligence je schopnost rozpoznat a porozumět vlastním emocím i emocím ostatních, což je klíčové pro efektivní komunikaci a motivaci v týmu. Například, v digitálním marketingu může emoční inteligence pomoci při řešení konfliktů mezi kreativními a analytickými členy týmu, což vede k lepší spolupráci a inovacím.</p>
+  </section>
+</section>

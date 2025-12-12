@@ -1,0 +1,40 @@
+Transform the input text into UI-oriented HTML.
+
+Rules:
+1. Every piece of text must be wrapped in an HTML element.
+2. Use classic HTML tags (section, header, h1–h6, p, ul, ol, li, pre, code, div).
+3. Add a data-ui attribute describing the UI role of each element.
+   Examples: block, section-header, label, heading, paragraph, bullet-list, numbered-list, list-item, code-block, qa-block, question, answer, tasks, task, metric-list, metric.
+4. Preserve all original text. Do not remove or summarize anything.
+5. Detect headings and map them to h2 with data-ui="heading" (or other levels if obvious).
+6. For algorithm or code-like content, use:
+   <pre data-ui="code-block" data-language="algorithm"><code>…</code></pre>
+7. Do not output Markdown. Output only HTML.
+8. Do not wrap the entire output in backticks or fences.
+
+Output: pure HTML with data-ui attributes.
+Input:
+<blok-3>
+Název kroku: Měkké dovednosti a týmová spolupráce v digitálním marketingu a grafice
+Hlavní záměr: Zvýšení schopnosti efektivně komunikovat a spolupracovat v týmu v kontextu digitálního marketingu a grafického designu.
+Obsah kroku:
+- Detailní vysvětlení tématu: Měkké dovednosti, jako je aktivní naslouchání, efektivní komunikace a řešení konfliktů, jsou klíčové pro úspěch v digitálním marketingu a grafice, kde je spolupráce mezi kreativními a technickými týmy běžná. Aktivní naslouchání umožňuje lepší pochopení potřeb klienta a spolupracovníků, zatímco efektivní komunikace zajišťuje, že vaše myšlenky a návrhy jsou správně pochopeny a oceněny.
+- Příklady: Představte si situaci, kdy váš tým pracuje na kampani pro nového klienta. Aktivní naslouchání během briefingů může odhalit klíčové potřeby klienta, zatímco efektivní komunikace může zajistit, že návrhy vašeho týmu budou v souladu s klientovými očekáváními.
+- Případové studie: Například firma XYZ zlepšila své výsledky kampaní o 30 % díky zavedení pravidelných týmových schůzek zaměřených na zpětnou vazbu a aktivní naslouchání.
+- Typické pohovorové otázky a optimální odpovědi: "Jak řešíte konflikty v týmu?" Odpověď: "Věřím v otevřenou komunikaci a naslouchání všem stranám. Například jsem nedávno použil techniku mediace k vyřešení neshody mezi designéry a marketingovým týmem, což vedlo k úspěšnému dokončení projektu včas."
+- Mini úkoly nebo praktická cvičení: Zorganizujte týmovou schůzku a požádejte členy týmu o zpětnou vazbu na váš způsob komunikace. Zaměřte se na aktivní naslouchání a zkuste implementovat jejich návrhy.
+- Návaznost na krok n-1: Tento krok navazuje na aplikaci technik na týmové projekty, kde je klíčové, aby optimalizovaný kód byl nejen funkční, ale také komunikován a prezentován srozumitelně všem členům týmu.
+
+Praktická část:
+- Může obsahovat diagram ukazující proces efektivní týmové komunikace během brainstormingu, kde každý člen týmu má rovnou příležitost přispět svými nápady.
+- Live-coding postup pro vytvoření jednoduchého grafického návrhu, který tým může dále iterovat na základě zpětné vazby všech členů.
+
+Ukazatele úspěchu:
+- Pozitivní zpětná vazba od členů týmu na vaši komunikaci a spolupráci, která může být měřena pravidelnými anonymními dotazníky.
+- Zvýšená efektivita týmových projektů, například rychlejší dokončení návrhů a kampaní díky lepší komunikaci.
+
+<inner-block-3>
+Bonus / laterální rozšíření:
+- Prozkoumejte techniky koučování a mentoringu pro rozvoj členů týmu. Například, jak můžete využít koučovací přístup k podpoře a vedení juniorních grafiků a marketérů, což může vést k zvýšení jejich kompetencí a motivace. Zapojení koučovacích technik může také obohatit váš osobní styl vedení a posílit týmovou soudržnost.
+<end-inner-block-3>
+<end-blok-3>

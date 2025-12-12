@@ -1,0 +1,281 @@
+[
+  {
+    "type": "element",
+    "tag": "section",
+    "ui": "block",
+    "children": [
+      {
+        "type": "element",
+        "tag": "header",
+        "ui": "section-header",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h2",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Název kroku: Analytické dovednosti a datová gramotnost"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Hlavní záměr: Efektivní využití dat pro podporu rozhodování a optimalizaci procesů v digitálním marketingu a grafice."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Obsah kroku:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Detailní vysvětlení tématu: Analytické dovednosti a datová gramotnost jsou klíčovými schopnostmi v digitálním marketingu a grafice. Tato oblast zahrnuje schopnost porozumět statistickým konceptům, analyzovat data z různých zdrojů a využívat je pro strategické rozhodování. Bez ohledu na senioritu mohou tyto dovednosti výrazně zvýšit vaši schopnost navrhovat efektivní kampaně a optimalizovat kreativní obsah."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Příklady: Představte si, že pracujete na kampani pro nový produkt. Pomocí Excelu můžete analyzovat demografické údaje zákazníků, zjistit, která skupina je nejaktivnější a na základě toho cílit reklamu. Pomocí SQL můžete extrahovat data o návštěvnosti webu a identifikovat, které kanály přinášejí nejvíce konverzí. Tableau pak použijete k vizualizaci těchto údajů pro prezentaci týmu nebo klientovi."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Případové studie nebo modelové situace: Představme si projekt, kde marketingový tým využívá datovou analýzu pro optimalizaci reklamní kampaně. Na základě dat z Google Analytics zjistili, že většina konverzí přichází z mobilních zařízení. Tým tedy upraví design a obsah reklamy tak, aby byl atraktivnější pro mobilní uživatele, což vede k 20% zvýšení konverzí."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Typické pohovorové otázky a optimální odpovědi:\n        "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "div",
+                    "ui": "qa-block",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "question",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Otázka: \"Jak byste využili datovou analýzu k optimalizaci kampaně?\""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "element",
+                        "tag": "p",
+                        "ui": "answer",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Odpověď: \"Nejprve bych identifikoval klíčové metriky úspěchu, jako je míra konverze nebo engagement. Pomocí nástrojů jako Excel a SQL bych analyzoval historická data a identifikoval trendy. Poté bych využil Tableau, abych vizualizoval data pro snadnou interpretaci a rozhodování.\""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mini úkoly nebo praktická cvičení:\n        "
+                  },
+                  {
+                    "type": "element",
+                    "tag": "ol",
+                    "ui": "numbered-list",
+                    "children": [
+                      {
+                        "type": "element",
+                        "tag": "li",
+                        "ui": "list-item",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "Cvičení: Stáhněte si veřejně dostupná data o návštěvnosti webu a pokuste se identifikovat klíčové trendy pomocí Excelu a SQL."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Návaznost na krok n-1: Použití analytických dovedností pro evaluaci a zlepšení kreativních řešení se přímo promítá do schopnosti vytvářet datově podložené strategie."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Praktická část:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Vytvořte jednoduchou databázi pomocí SQL, kde budete ukládat data o zákaznících a jejich interakcích s vašimi kampaněmi. Poté vytvořte dotaz, který identifikuje nejúspěšnější marketingový kanál."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "section",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ukazatele úspěchu:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "ul",
+            "ui": "bullet-list",
+            "children": [
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Schopnost analyzovat data a použít je k informovaným rozhodnutím v rámci projektů."
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "li",
+                "ui": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Zvýšená efektivita kampaní díky optimalizaci na základě datových analýz."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "div",
+        "ui": "block",
+        "children": [
+          {
+            "type": "element",
+            "tag": "h3",
+            "ui": "heading",
+            "children": [
+              {
+                "type": "text",
+                "text": "Bonus / laterální rozšíření:"
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "p",
+            "ui": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Naučte se, jak vizualizovat data pro lepší komunikaci s týmem a klienty, a to nejen pomocí běžných grafů, ale také pomocí infografik, které kombinují prvky grafického designu a datové analýzy pro maximální vizuální dopad."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
