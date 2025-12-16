@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orakulum Onboarding</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Live Activity Panel */
+        .live-activity-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            pointer-events: none; /* Non-clickable as requested */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .activity-item {
+            background: rgba(26, 29, 36, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transform: translateX(50px);
+            opacity: 0;
+            animation: slideIn 0.5s forwards;
+        }
+
+        @keyframes slideIn {
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOut {
+            to {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .activity-content {
+            flex: 1;
+        }
+
+        .activity-role {
+            font-size: 11px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .activity-action {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* Main Container */
+        .main-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .progress-bar {
+            position: absolute;
+            top: -40px;
+            left: 20px;
+            right: 20px;
+            height: 4px;
+            background: #2a2d35;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
+            display: none;
+        }
+
+        .step-card.active {
+            opacity: 1;
+            transform: translateY(0);
+            display: block;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        p.subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .option-btn {
+            background: #2a2d35;
+            border: 1px solid transparent;
+            color: var(--text-primary);
+            padding: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 15px;
+        }
+
+        .option-btn:hover {
+            background: #323640;
+            border-color: var(--accent);
+        }
+
+        .option-btn.selected {
+            background: rgba(59, 130, 246, 0.2);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 16px;
+            background: #2a2d35;
+            border: 1px solid #3f4451;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 24px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .primary-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .primary-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .micro-copy {
+            margin-top: 16px;
+            font-size: 12px;
+            color: #52525b;
+        }
+
+        /* Loading State */
+        .loading-screen {
+            display: none;
+            text-align: center;
+        }
+
+        .loading-screen.active {
+            display: block;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--accent);
+            animation: spin 1s linear infinite;
+            margin: 0 auto 24px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 18px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            min-height: 27px; /* prevent layout shift */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Live Activity Panel (Passive) -->
+    <div class="live-activity-panel" id="activityPanel">
+        <!-- Items will be injected here via JS -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <!-- Step 0: Intro -->
+        <div class="step-card active" id="step0">
+            <h1>Orakulum</h1>
+            <p class="subtitle">Tvůj osobní kariérní architekt. Vstup do systému, který ti pomůže dosáhnout tvých cílů.</p>
+            <button class="primary-btn" onclick="nextStep()">Začít</button>
+            <div class="micro-copy">Tento týden vytvořeno 42 nových plánů</div>
+        </div>
+
+        <!-- Step 1: Cíl -->
+        <div class="step-card" id="step1">
+            <h1>Tvůj hlavní cíl</h1>
+            <p class="subtitle">Kam směřuješ?</p>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(1, 'Získat první job v IT')">Získat první job v IT</button>
+                <button class="option-btn" onclick="selectOption(1, 'Povýšit na Seniora')">Povýšit na Seniora</button>
+                <button class="option-btn" onclick="selectOption(1, 'Změnit obor')">Změnit obor</button>
+                <button class="option-btn" onclick="selectOption(1, 'Freelance / Podnikání')">Freelance / Podnikání</button>
+            </div>
+            <input type="text" id="input1" placeholder="Nebo napiš vlastní cíl..." oninput="clearSelection(1)">
+            <button class="primary-btn" onclick="nextStep()">Pokračovat</button>
+        </div>
+
+        <!-- Step 2: Oblast -->
+        <div class="step-card" id="step2">
+            <h1>Oblast zájmu</h1>
+            <p class="subtitle">V čem se chceš realizovat?</p>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(2, 'Frontend Development')">Frontend Development</button>
+                <button class="option-btn" onclick="selectOption(2, 'Backend Development')">Backend Development</button>
+                <button class="option-btn" onclick="selectOption(2, 'Data Science / AI')">Data Science / AI</button>
+                <button class="option-btn" onclick="selectOption(2, 'Product Management')">Product Management</button>
+            </div>
+            <input type="text" id="input2" placeholder="Jiné..." oninput="clearSelection(2)">
+            <button class="primary-btn" onclick="nextStep()">Pokračovat</button>
+        </div>
+
+        <!-- Step 3: Úroveň -->
+        <div class="step-card" id="step3">
+            <h1>Aktuální úroveň</h1>
+            <p class="subtitle">Jak se teď cítíš?</p>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(3, 'Úplný začátečník')">Úplný začátečník</button>
+                <button class="option-btn" onclick="selectOption(3, 'Mírně pokročilý')">Mírně pokročilý</button>
+                <button class="option-btn" onclick="selectOption(3, 'Medior')">Medior</button>
+                <button class="option-btn" onclick="selectOption(3, 'Senior')">Senior</button>
+            </div>
+            <button class="primary-btn" onclick="nextStep()">Pokračovat</button>
+        </div>
+
+        <!-- Step 4: Konkrétnost -->
+        <div class="step-card" id="step4">
+            <h1>Míra detailu</h1>
+            <p class="subtitle">Jak podrobný plán potřebuješ?</p>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(4, 'Strategický přehled')">Strategický přehled</button>
+                <button class="option-btn" onclick="selectOption(4, 'Detailní kroky')">Detailní kroky</button>
+                <button class="option-btn" onclick="selectOption(4, 'Technický deep-dive')">Technický deep-dive</button>
+                <button class="option-btn" onclick="selectOption(4, 'Kariérní roadmapa')">Kariérní roadmapa</button>
+            </div>
+            <button class="primary-btn" onclick="nextStep()">Pokračovat</button>
+        </div>
+
+        <!-- Step 5: Časový horizont -->
+        <div class="step-card" id="step5">
+            <h1>Časový horizont</h1>
+            <p class="subtitle">Kdy chceš vidět výsledky?</p>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(5, '3 měsíce')">3 měsíce</button>
+                <button class="option-btn" onclick="selectOption(5, '6 měsíců')">6 měsíců</button>
+                <button class="option-btn" onclick="selectOption(5, '1 rok')">1 rok</button>
+                <button class="option-btn" onclick="selectOption(5, 'ASAP')">ASAP</button>
+            </div>
+            <button class="primary-btn" onclick="nextStep()">Pokračovat</button>
+        </div>
+
+        <!-- Step 6: Email + Submit -->
+        <div class="step-card" id="step6">
+            <h1>Finální krok</h1>
+            <p class="subtitle">Kam máme poslat výsledek analýzy?</p>
+            <input type="text" id="nameInput" placeholder="Tvé jméno">
+            <input type="email" id="emailInput" placeholder="Tvůj email">
+            <button class="primary-btn" onclick="submitForm()">Odeslat žádost</button>
+            <div class="micro-copy">Bez spamu. Jen tvůj kariérní plán.</div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div class="step-card loading-screen" id="loadingStep">
+            <div class="spinner"></div>
+            <div class="loading-text" id="loadingText">Analyzujeme cíl...</div>
+            <p class="subtitle">Prosím čekej, systém pracuje.</p>
+        </div>
+    </div>
+
+    <script>
+        // --- CONFIG ---
+        // TODO: Replace with environment variables or safe injection
+        const SUPABASE_URL = 'https://smxhdiixzjdwomecvcpw.supabase.co'; // Found in database_schema.sql
+        const SUPABASE_KEY = ''; // NEEDS TO BE PROVIDED
+
+        // Initialize Supabase (will fail if key is empty, but structure is here)
+        let supabase = null;
+        if (SUPABASE_KEY) {
+            supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+        }
+
+        // --- STATE ---
+        let currentStep = 0;
+        const totalSteps = 6;
+        const formData = {
+            goal: '',
+            area: '',
+            level: '',
+            specificity: '',
+            horizon: '',
+            name: '',
+            email: ''
+        };
+
+        // --- LIVE ACTIVITY ---
+        const activities = [
+            { role: 'Backend Engineer', action: 'dokončil plán' },
+            { role: 'Frontend Dev', action: 'Interview Readiness +6' },
+            { role: 'Data Scientist', action: 'zahájil trénink' },
+            { role: 'Product Owner', action: 'dokončil analýzu' },
+            { role: 'Junior Dev', action: 'získal první offer' },
+            { role: 'System', action: 'nová data nahrána' },
+            { role: 'AI Agent', action: 'optimalizoval cestu' }
+        ];
+
+        function startLiveActivity() {
+            const panel = document.getElementById('activityPanel');
+            
+            setInterval(() => {
+                const item = activities[Math.floor(Math.random() * activities.length)];
+                const div = document.createElement('div');
+                div.className = 'activity-item';
+                div.innerHTML = `
+                    <div class="avatar">${item.role.charAt(0)}</div>
+                    <div class="activity-content">
+                        <div class="activity-role">${item.role}</div>
+                        <div class="activity-action">${item.action}</div>
+                    </div>
+                `;
+                panel.prepend(div);
+
+                // Remove old items
+                if (panel.children.length > 3) {
+                    panel.lastElementChild.remove();
+                }
+            }, 7000); // 7 seconds
+        }
+
+        startLiveActivity();
+
+        // --- NAVIGATION ---
+        function updateProgress() {
+            const progress = (currentStep / totalSteps) * 100;
+            document.getElementById('progressFill').style.width = `${progress}%`;
+        }
+
+        function showStep(stepIndex) {
+            // Hide all steps
+            document.querySelectorAll('.step-card').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show current step
+            const stepId = stepIndex <= totalSteps ? `step${stepIndex}` : 'loadingStep';
+            const el = document.getElementById(stepId);
+            if (el) el.classList.add('active');
+            
+            currentStep = stepIndex;
+            updateProgress();
+        }
+
+        function nextStep() {
+            // Validate current step
+            if (currentStep > 0 && currentStep < 6) {
+                const input = document.getElementById(`input${currentStep}`);
+                if (input && input.value) {
+                    // Custom input
+                     saveStepData(currentStep, input.value);
+                } else if (!getStepData(currentStep)) {
+                    // No selection
+                    alert('Prosím vyber jednu z možností nebo napiš vlastní.');
+                    return;
+                }
+            }
+
+            if (currentStep < totalSteps) {
+                showStep(currentStep + 1);
+            }
+        }
+
+        // --- FORM HANDLING ---
+        function selectOption(step, value) {
+            // Visual feedback
+            const container = document.getElementById(`step${step}`);
+            container.querySelectorAll('.option-btn').forEach(btn => {
+                btn.classList.remove('selected');
+                if (btn.innerText === value) btn.classList.add('selected');
+            });
+            
+            // Clear text input if any
+            const input = document.getElementById(`input${step}`);
+            if (input) input.value = '';
+
+            saveStepData(step, value);
+        }
+
+        function clearSelection(step) {
+            const container = document.getElementById(`step${step}`);
+            container.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+            saveStepData(step, ''); // Will be taken from input value in nextStep
+        }
+
+        function saveStepData(step, value) {
+            switch(step) {
+                case 1: formData.goal = value; break;
+                case 2: formData.area = value; break;
+                case 3: formData.level = value; break;
+                case 4: formData.specificity = value; break;
+                case 5: formData.horizon = value; break;
+            }
+        }
+
+        function getStepData(step) {
+            switch(step) {
+                case 1: return formData.goal;
+                case 2: return formData.area;
+                case 3: return formData.level;
+                case 4: return formData.specificity;
+                case 5: return formData.horizon;
+                default: return null;
+            }
+        }
+
+        // --- SUBMIT ---
+        async function submitForm() {
+            const name = document.getElementById('nameInput').value;
+            const email = document.getElementById('emailInput').value;
+
+            if (!name || !email) {
+                alert('Prosím vyplň jméno a email.');
+                return;
+            }
+
+            formData.name = name;
+            formData.email = email;
+
+            // Show loading
+            showStep(totalSteps + 1); // Loading screen
+            rotateLoadingMessages();
+
+            // Construct description
+            const description = `
+Cíl: ${formData.goal}
+Oblast: ${formData.area}
+Úroveň: ${formData.level}
+Detail: ${formData.specificity}
+Horizont: ${formData.horizon}
+`.trim();
+
+            console.log("Submitting:", { name, email, description });
+
+            try {
+                // Simulate delay as requested (min 2-3s)
+                await new Promise(resolve => setTimeout(resolve, 3000));
+
+                if (supabase) {
+                    const { data, error } = await supabase
+                        .from('junior_leads')
+                        .insert([
+                            { 
+                                id: crypto.randomUUID(),
+                                name: name, 
+                                email: email, 
+                                description: description,
+                                status: 'FLAGGED',
+                                created_at: new Date().toISOString()
+                            }
+                        ]);
+                    
+                    if (error) throw error;
+                } else {
+                    console.warn("Supabase not initialized (missing key). Simulate success.");
+                }
+
+                // Success state (could be another screen)
+                document.getElementById('loadingStep').innerHTML = `
+                    <h1>Hotovo!</h1>
+                    <p class="subtitle">Tvůj plán se generuje. Zkontroluj svůj email.</p>
+                `;
+
+            } catch (err) {
+                console.error("Error submitting:", err);
+                alert("Nastala chyba při odesílání. Zkus to prosím znovu.");
+                showStep(totalSteps); // Go back
+            }
+        }
+
+        function rotateLoadingMessages() {
+            const messages = [
+                "Analyzujeme cíl...",
+                "Mapujeme příležitosti...",
+                "Připravujeme osobní prostor...",
+                "Generujeme strukturu...",
+                "Finalizujeme plán..."
+            ];
+            let i = 0;
+            const el = document.getElementById('loadingText');
+            
+            const interval = setInterval(() => {
+                i = (i + 1) % messages.length;
+                if (el) el.innerText = messages[i];
+            }, 1500);
+        }
+
+    </script>
+</body>
+</html>
