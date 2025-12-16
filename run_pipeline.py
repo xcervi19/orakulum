@@ -24,6 +24,8 @@ from pipeline.db import (
     fetch_lead_by_id,
     mark_status,
     mark_failure,
+    unblock_lead,
+    STATUS_FLAGGED,
     STATUS_PROCESSING,
     STATUS_UPLOADED,
     STATUS_BLOCKED,
@@ -40,6 +42,7 @@ from pipeline.steps import (
     upload_pages,
 )
 from pipeline.logger import PipelineLogger, setup_run_directory
+from processors.uploader import delete_client_pages
 
 
 MAX_RETRIES = 3
@@ -201,9 +204,41 @@ def resume_client(client_id: str) -> bool:
     return process_client(lead)
 
 
+def delete_client(client_id: str, reset_status: bool = False) -> bool:
+    """
+    Delete all pages for a client and optionally reset their status.
+    
+    Args:
+        client_id: Client UUID
+        reset_status: If True, also reset status to FLAGGED for reprocessing
+        
+    Returns:
+        True if successful
+    """
+    lead = fetch_lead_by_id(client_id)
+    
+    if not lead:
+        print(f"❌ Client not found: {client_id}")
+        return False
+    
+    print(f"\n🗑️  Deleting data for client: {client_id}")
+    print(f"   Name: {lead.get('name', 'N/A')}")
+    
+    # Delete pages from client_learning_pages
+    deleted_count = delete_client_pages(client_id)
+    
+    # Optionally reset status
+    if reset_status:
+        unblock_lead(client_id)
+        print(f"   ✅ Status reset to FLAGGED")
+    
+    print(f"\n✨ Deleted {deleted_count} pages for client {client_id}")
+    return True
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Daily Pipeline Runner - Process career plans for flagged leads"
+        description="Orakulum Pipeline Runner - Automated career plan generation"
     )
     parser.add_argument(
         "--client", "-c",
@@ -212,11 +247,20 @@ def main():
     parser.add_argument(
         "--dry-run", "-n",
         action="store_true",
-        help="Show what would be processed without actually processing"
+        help="Preview what would be processed without running"
     )
     parser.add_argument(
         "--resume", "-r",
         help="Resume processing for a specific client"
+    )
+    parser.add_argument(
+        "--delete", "-d",
+        help="Delete all pages for a client (client ID)"
+    )
+    parser.add_argument(
+        "--reset",
+        action="store_true",
+        help="When used with --delete, also reset client status to FLAGGED"
     )
     
     args = parser.parse_args()
@@ -227,7 +271,10 @@ def main():
     print("=" * 60)
     
     try:
-        if args.dry_run:
+        if args.delete:
+            success = delete_client(args.delete, reset_status=args.reset)
+            sys.exit(0 if success else 1)
+        elif args.dry_run:
             dry_run()
         elif args.resume:
             success = resume_client(args.resume)
