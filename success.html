@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Děkujeme! - Orakulum</title>
+    <link rel="stylesheet" href="onboarding.css">
+    <style>
+        .success-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: var(--bg-main);
+            padding: var(--space-2xl);
+        }
+        
+        .success-content {
+            max-width: 600px;
+            text-align: center;
+            background: var(--bg-card);
+            padding: var(--space-2xl);
+            border-radius: 24px;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: var(--space-xl);
+            animation: scaleIn 0.5s ease-out;
+        }
+        
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .success-title {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+        }
+        
+        .success-message {
+            font-size: var(--font-size-lg);
+            color: var(--text-secondary);
+            margin-bottom: var(--space-2xl);
+            line-height: 1.6;
+        }
+        
+        .success-steps {
+            background: var(--bg-main);
+            padding: var(--space-xl);
+            border-radius: 16px;
+            margin-bottom: var(--space-2xl);
+            text-align: left;
+        }
+        
+        .success-step {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+        
+        .success-step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .step-icon-small {
+            font-size: var(--font-size-2xl);
+        }
+        
+        .step-text {
+            flex: 1;
+            font-size: var(--font-size-base);
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-content">
+            <div class="success-icon">🎉</div>
+            <h1 class="success-title">Skvělé! Jste na začátku své cesty</h1>
+            <p class="success-message">
+                Váš personalizovaný kariérní plán se právě vytváří. 
+                Za několik minut vám přijde email s přístupem.
+            </p>
+            
+            <div class="success-steps">
+                <div class="success-step">
+                    <div class="step-icon-small">✅</div>
+                    <div class="step-text">Analyzovali jsme váš cíl a zkušenosti</div>
+                </div>
+                <div class="success-step">
+                    <div class="step-icon-small">📊</div>
+                    <div class="step-text">Mapovali jsme optimální cestu</div>
+                </div>
+                <div class="success-step">
+                    <div class="step-icon-small">🎯</div>
+                    <div class="step-text">Připravili jsme váš osobní prostor</div>
+                </div>
+            </div>
+            
+            <p class="success-message" style="font-size: var(--font-size-base);">
+                <strong>Co bude dál?</strong><br>
+                1. Obdržíte email s přihlašovacími údaji<br>
+                2. Prozkoumáte svůj personalizovaný plán<br>
+                3. Začnete pracovat na svých cílech
+            </p>
+            
+            <a href="/" class="btn btn-primary btn-large">
+                Zpět na homepage
+            </a>
+        </div>
+    </div>
+</body>
+</html>

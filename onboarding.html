@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orakulum - Začněte svou kariéru</title>
+    <link rel="stylesheet" href="onboarding.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Live Activity Panel -->
+        <aside class="live-activity-panel" id="liveActivityPanel">
+            <div class="activity-header">
+                <div class="pulse-indicator"></div>
+                <span class="activity-title">Aktivita v systému</span>
+            </div>
+            <div class="activity-list" id="activityList">
+                <!-- Activities will be injected here -->
+            </div>
+            <div class="activity-footer">
+                <span class="activity-stat">Tento týden vytvořeno 127 plánů</span>
+            </div>
+        </aside>
+
+        <!-- Main Onboarding Area -->
+        <main class="onboarding-main">
+            <!-- Progress Bar -->
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-label" id="progressLabel">Krok 1 z 7</div>
+            </div>
+
+            <!-- Step Container -->
+            <div class="step-container" id="stepContainer">
+                
+                <!-- Step 0: Intro -->
+                <div class="step active" data-step="0">
+                    <div class="step-content intro-content">
+                        <div class="step-icon">🎯</div>
+                        <h1 class="step-title">Vítejte v Orakulum</h1>
+                        <p class="step-description">
+                            Za 2 minuty vytvoříme váš personalizovaný kariérní plán.<br>
+                            Připojte se ke stovkám profesionálů, kteří již začali svou cestu.
+                        </p>
+                        <button class="btn btn-primary btn-large" onclick="nextStep()">
+                            Začít
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 1: Cíl -->
+                <div class="step" data-step="1">
+                    <div class="step-content">
+                        <div class="step-number">1/6</div>
+                        <h2 class="step-title">Jaký je váš hlavní cíl?</h2>
+                        <p class="step-subtitle">Vyberte, co nejvíce odpovídá vaší situaci</p>
+                        
+                        <div class="options-grid">
+                            <button class="option-card" onclick="selectOption('goal', 'first_job')" data-field="goal" data-value="first_job">
+                                <div class="option-icon">💼</div>
+                                <div class="option-label">První práce v IT</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('goal', 'career_switch')" data-field="goal" data-value="career_switch">
+                                <div class="option-icon">🔄</div>
+                                <div class="option-label">Změna kariéry do IT</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('goal', 'level_up')" data-field="goal" data-value="level_up">
+                                <div class="option-icon">📈</div>
+                                <div class="option-label">Posun na vyšší úroveň</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('goal', 'skill_upgrade')" data-field="goal" data-value="skill_upgrade">
+                                <div class="option-icon">⚡</div>
+                                <div class="option-label">Rozšíření dovedností</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Oblast -->
+                <div class="step" data-step="2">
+                    <div class="step-content">
+                        <div class="step-number">2/6</div>
+                        <h2 class="step-title">V jaké oblasti chcete pracovat?</h2>
+                        <p class="step-subtitle">Zaměřte se na to, co vás zajímá</p>
+                        
+                        <div class="options-grid">
+                            <button class="option-card" onclick="selectOption('area', 'frontend')" data-field="area" data-value="frontend">
+                                <div class="option-icon">🎨</div>
+                                <div class="option-label">Frontend Development</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('area', 'backend')" data-field="area" data-value="backend">
+                                <div class="option-icon">⚙️</div>
+                                <div class="option-label">Backend Development</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('area', 'fullstack')" data-field="area" data-value="fullstack">
+                                <div class="option-icon">🔧</div>
+                                <div class="option-label">Full-Stack Development</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('area', 'mobile')" data-field="area" data-value="mobile">
+                                <div class="option-icon">📱</div>
+                                <div class="option-label">Mobile Development</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('area', 'data')" data-field="area" data-value="data">
+                                <div class="option-icon">📊</div>
+                                <div class="option-label">Data & Analytics</div>
+                            </button>
+                            <button class="option-card" onclick="selectOption('area', 'devops')" data-field="area" data-value="devops">
+                                <div class="option-icon">🚀</div>
+                                <div class="option-label">DevOps & Cloud</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Úroveň -->
+                <div class="step" data-step="3">
+                    <div class="step-content">
+                        <div class="step-number">3/6</div>
+                        <h2 class="step-title">Jaká je vaše současná úroveň?</h2>
+                        <p class="step-subtitle">Buďte upřímní - pomože nám to vytvořit lepší plán</p>
+                        
+                        <div class="options-list">
+                            <button class="option-list-item" onclick="selectOption('level', 'absolute_beginner')" data-field="level" data-value="absolute_beginner">
+                                <div class="option-content">
+                                    <div class="option-title">Absolutní začátečník</div>
+                                    <div class="option-desc">Žádné zkušenosti s programováním</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                            <button class="option-list-item" onclick="selectOption('level', 'beginner')" data-field="level" data-value="beginner">
+                                <div class="option-content">
+                                    <div class="option-title">Začátečník</div>
+                                    <div class="option-desc">Základní znalost syntaxe, malé projekty</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                            <button class="option-list-item" onclick="selectOption('level', 'intermediate')" data-field="level" data-value="intermediate">
+                                <div class="option-content">
+                                    <div class="option-title">Mírně pokročilý</div>
+                                    <div class="option-desc">Dokončené projekty, znalost frameworků</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                            <button class="option-list-item" onclick="selectOption('level', 'advanced')" data-field="level" data-value="advanced">
+                                <div class="option-content">
+                                    <div class="option-title">Pokročilý</div>
+                                    <div class="option-desc">Pracovní zkušenosti, komplexní aplikace</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Konkrétnost -->
+                <div class="step" data-step="4">
+                    <div class="step-content">
+                        <div class="step-number">4/6</div>
+                        <h2 class="step-title">Řekněte nám víc o sobě</h2>
+                        <p class="step-subtitle">Popište stručně vaši situaci a cíle</p>
+                        
+                        <div class="input-group">
+                            <textarea 
+                                id="description" 
+                                class="text-input" 
+                                placeholder="Např: Učím se JavaScript už 6 měsíců, vytvořil jsem pár vlastních projektů a chci získat první práci jako frontend developer..."
+                                rows="6"
+                                maxlength="1000"
+                            ></textarea>
+                            <div class="input-hint">
+                                <span id="charCount">0</span> / 1000 znaků
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="validateAndNextStep(4)">
+                            Pokračovat
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 5: Časový horizont -->
+                <div class="step" data-step="5">
+                    <div class="step-content">
+                        <div class="step-number">5/6</div>
+                        <h2 class="step-title">Jak rychle chcete dosáhnout svého cíle?</h2>
+                        <p class="step-subtitle">Nastavíme tempo podle vašich možností</p>
+                        
+                        <div class="options-list">
+                            <button class="option-list-item" onclick="selectOption('timeline', '3_months')" data-field="timeline" data-value="3_months">
+                                <div class="option-content">
+                                    <div class="option-title">3 měsíce</div>
+                                    <div class="option-desc">Intenzivní tempo, plné nasazení</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                            <button class="option-list-item" onclick="selectOption('timeline', '6_months')" data-field="timeline" data-value="6_months">
+                                <div class="option-content">
+                                    <div class="option-title">6 měsíců</div>
+                                    <div class="option-desc">Vyvážené tempo, stabilní pokrok</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                            <button class="option-list-item" onclick="selectOption('timeline', '12_months')" data-field="timeline" data-value="12_months">
+                                <div class="option-content">
+                                    <div class="option-title">12 měsíců</div>
+                                    <div class="option-desc">Klidné tempo, paralelně s prací</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                            <button class="option-list-item" onclick="selectOption('timeline', 'flexible')" data-field="timeline" data-value="flexible">
+                                <div class="option-content">
+                                    <div class="option-title">Flexibilně</div>
+                                    <div class="option-desc">Podle vlastního tempa</div>
+                                </div>
+                                <div class="option-check">→</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6: Email + Submit -->
+                <div class="step" data-step="6">
+                    <div class="step-content">
+                        <div class="step-number">6/6</div>
+                        <h2 class="step-title">Poslední krok!</h2>
+                        <p class="step-subtitle">Kam vám pošleme váš personalizovaný plán?</p>
+                        
+                        <div class="input-group">
+                            <label for="name" class="input-label">Vaše jméno</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                class="text-input" 
+                                placeholder="Jan Novák"
+                                required
+                            />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email" class="input-label">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                class="text-input" 
+                                placeholder="vas@email.cz"
+                                required
+                            />
+                        </div>
+
+                        <button class="btn btn-primary btn-large" onclick="submitOnboarding()">
+                            Vytvořit můj plán
+                        </button>
+
+                        <p class="privacy-note">
+                            Pokračováním souhlasíte s použitím vašich údajů k vytvoření kariérního plánu.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="navigation-buttons" id="navigationButtons">
+                <button class="btn btn-secondary btn-back" id="backButton" onclick="prevStep()">
+                    ← Zpět
+                </button>
+            </div>
+        </main>
+
+        <!-- Loading Screen -->
+        <div class="loading-screen" id="loadingScreen">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <h2 class="loading-title">Vytváříme váš osobní plán...</h2>
+                <p class="loading-step" id="loadingStep">Analyzujeme váš cíl</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="onboarding.js"></script>
+</body>
+</html>
